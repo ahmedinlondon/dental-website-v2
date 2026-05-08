@@ -20,7 +20,7 @@ body.services-page {
 
   background: #f7fbff;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
 
   color: #08213d;
 
@@ -62,21 +62,21 @@ body.services-page {
 
   position: absolute;
 
-  top: 22px;
+  top: 24px;
 
-  left: 32px;
+  left: 28px;
 
   z-index: 3;
 
   text-decoration: none;
 
-  color: #c7a46a;
+  color: #ffffff;
 
-  font-size: 18px;
+  font-size: 14px;
 
-  font-weight: 400;
+  font-weight: 300;
 
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 
   pointer-events: auto;
 
@@ -86,11 +86,11 @@ body.services-page {
 
   width: 100%;
 
-  height: 78px;
+  height: 58px;
 
-  margin-top: 74px;
+  margin-top: 58px;
 
-  padding: 0 34px;
+  padding: 0 30px;
 
   box-sizing: border-box;
 
@@ -100,11 +100,11 @@ body.services-page {
 
   justify-content: center;
 
-  background: rgba(8, 33, 61, 0.42);
+  background: rgba(255, 255, 255, 0.16);
 
   border-top: 1px solid rgba(255, 255, 255, 0.22);
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 
   backdrop-filter: blur(18px);
 
@@ -130,7 +130,7 @@ body.services-page {
 
   color: #ffffff;
 
-  font-size: 17px;
+  font-size: 15px;
 
   font-weight: 300;
 
@@ -154,11 +154,11 @@ body.services-page {
 
   position: absolute;
 
-  right: 34px;
+  right: 30px;
 
-  width: 34px;
+  width: 32px;
 
-  height: 24px;
+  height: 21px;
 
   padding: 0;
 
@@ -180,7 +180,7 @@ body.services-page {
 
   display: block;
 
-  height: 2px;
+  height: 1.5px;
 
   width: 100%;
 
@@ -196,13 +196,13 @@ body.services-page {
 
   width: 100%;
 
-  height: 430px;
+  height: 455px;
 
-  background-image: url('/dental-website-v2/chair.png');
+  background-image: url('/dental-website-v2/chair-v2.png');
 
   background-size: cover;
 
-  background-position: center 43%;
+  background-position: center center;
 
   background-repeat: no-repeat;
 
@@ -224,13 +224,25 @@ body.services-page {
 
       90deg,
 
-      rgba(247, 251, 255, 0.94) 0%,
+      rgba(219, 239, 250, 0.82) 0%,
 
-      rgba(232, 245, 255, 0.82) 26%,
+      rgba(151, 203, 229, 0.42) 30%,
 
-      rgba(232, 245, 255, 0.30) 54%,
+      rgba(80, 154, 194, 0.10) 58%,
 
-      rgba(232, 245, 255, 0.05) 100%
+      rgba(255, 255, 255, 0.00) 100%
+
+    ),
+
+    linear-gradient(
+
+      180deg,
+
+      rgba(5, 31, 55, 0.18) 0%,
+
+      rgba(5, 31, 55, 0.05) 44%,
+
+      rgba(247, 251, 255, 0.18) 100%
 
     );
 
@@ -242,9 +254,9 @@ body.services-page {
 
   z-index: 2;
 
-  padding: 180px 0 0 60px;
+  padding: 175px 0 0 54px;
 
-  max-width: 720px;
+  max-width: 600px;
 
   box-sizing: border-box;
 
@@ -252,17 +264,17 @@ body.services-page {
 
 .services-hero-kicker {
 
-  margin: 0 0 14px;
+  margin: 0 0 13px;
 
-  color: #247eb4;
+  color: #ffffff;
 
-  font-size: 15px;
+  font-size: 13px;
 
   line-height: 1;
 
-  font-weight: 600;
+  font-weight: 300;
 
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
 
   text-transform: uppercase;
 
@@ -272,15 +284,15 @@ body.services-page {
 
   margin: 0;
 
-  color: #08213d;
+  color: #ffffff;
 
-  font-size: 43px;
+  font-size: 42px;
 
   line-height: 1.12;
 
   font-weight: 300;
 
-  letter-spacing: -0.035em;
+  letter-spacing: 0.01em;
 
 }
 
@@ -288,15 +300,15 @@ body.services-page {
 
   display: block;
 
-  margin-top: 10px;
+  margin-top: 7px;
 
   font-family: 'Kingsley Roman', serif;
 
-  color: #247eb4;
+  color: #ffffff;
 
-  font-size: 52px;
+  font-size: 49px;
 
-  line-height: 0.9;
+  line-height: 0.95;
 
   font-weight: 400;
 
@@ -306,11 +318,11 @@ body.services-page {
 
 .services-hero-line {
 
-  width: 78px;
+  width: 76px;
 
-  height: 2px;
+  height: 1px;
 
-  background: #247eb4;
+  background: rgba(255, 255, 255, 0.92);
 
   margin-top: 22px;
 
@@ -322,39 +334,41 @@ body.services-page {
 
   position: absolute;
 
-  right: 64px;
+  right: 48px;
 
-  top: 132px;
+  bottom: 42px;
 
   z-index: 3;
 
-  width: 315px;
+  width: 430px;
 
-  padding: 34px 32px 30px;
+  min-height: 175px;
+
+  padding: 24px 28px 24px;
 
   box-sizing: border-box;
 
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.46);
 
-  border: 1px solid rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.52);
 
   backdrop-filter: blur(18px);
 
   -webkit-backdrop-filter: blur(18px);
 
-  box-shadow: 0 18px 44px rgba(8, 33, 61, 0.13);
+  box-shadow: 0 18px 42px rgba(8, 33, 61, 0.14);
 
 }
 
 .services-intro-label {
 
-  margin: 0 0 16px;
+  margin: 0 0 12px;
 
-  color: #247eb4;
+  color: #1f83b9;
 
-  font-size: 13px;
+  font-size: 12px;
 
-  font-weight: 600;
+  font-weight: 400;
 
   letter-spacing: 0.15em;
 
@@ -362,29 +376,15 @@ body.services-page {
 
 }
 
-.services-intro-glass h2 {
-
-  margin: 0 0 16px;
-
-  color: #08213d;
-
-  font-size: 25px;
-
-  line-height: 1.22;
-
-  font-weight: 500;
-
-  letter-spacing: -0.02em;
-
-}
+.services-intro-text,
 
 .services-intro-glass p {
 
-  margin: 0 0 22px;
+  margin: 0 0 18px;
 
   color: #08213d;
 
-  font-size: 15px;
+  font-size: 13.5px;
 
   line-height: 1.55;
 
@@ -400,21 +400,21 @@ body.services-page {
 
   justify-content: center;
 
-  min-height: 44px;
+  min-height: 38px;
 
-  padding: 0 22px;
+  padding: 0 18px;
 
-  background: #247eb4;
+  background: #1f83b9;
 
   color: #ffffff;
 
   text-decoration: none;
 
-  font-size: 13px;
+  font-size: 11.5px;
 
-  font-weight: 400;
+  font-weight: 300;
 
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
 
   text-transform: uppercase;
 
@@ -426,19 +426,19 @@ body.services-page {
 
   .services-logo {
 
-    top: 22px;
+    top: 24px;
 
-    left: 32px;
+    left: 28px;
 
-    font-size: 18px;
+    font-size: 14px;
 
   }
 
   .services-nav-glass {
 
-    height: 78px;
+    height: 58px;
 
-    margin-top: 74px;
+    margin-top: 58px;
 
   }
 
@@ -450,25 +450,25 @@ body.services-page {
 
   .services-nav-links a {
 
-    font-size: 16px;
+    font-size: 14.5px;
 
   }
 
   .services-hero {
 
-    height: 420px;
+    height: 455px;
 
     background-size: cover;
 
-    background-position: center 44%;
+    background-position: center center;
 
   }
 
   .services-hero-content {
 
-    padding: 178px 0 0 60px;
+    padding: 176px 0 0 52px;
 
-    max-width: 620px;
+    max-width: 560px;
 
   }
 
@@ -482,31 +482,31 @@ body.services-page {
 
   .services-hero-script {
 
-    font-size: 50px;
+    font-size: 48px;
 
   }
 
   .services-intro-glass {
 
-    top: 128px;
+    right: 42px;
 
-    right: 52px;
+    bottom: 36px;
 
-    width: 310px;
+    width: 415px;
 
-    padding: 32px 30px 28px;
+    min-height: 170px;
 
-  }
-
-  .services-intro-glass h2 {
-
-    font-size: 24px;
+    padding: 23px 26px 23px;
 
   }
+
+  .services-intro-text,
 
   .services-intro-glass p {
 
-    font-size: 14.5px;
+    font-size: 13.2px;
+
+    line-height: 1.52;
 
   }
 
@@ -516,29 +516,23 @@ body.services-page {
 
 @media (max-width: 768px) {
 
-  .services-navbar {
-
-    top: 0;
-
-  }
-
   .services-logo {
 
     top: 22px;
 
-    left: 24px;
+    left: 22px;
 
-    font-size: 16px;
+    font-size: 13px;
 
   }
 
   .services-nav-glass {
 
-    height: 64px;
+    height: 56px;
 
-    margin-top: 66px;
+    margin-top: 56px;
 
-    padding: 0 24px;
+    padding: 0 22px;
 
     justify-content: flex-end;
 
@@ -556,13 +550,13 @@ body.services-page {
 
     width: 30px;
 
-    height: 22px;
+    height: 20px;
 
   }
 
   .services-hero {
 
-    height: 620px;
+    height: 640px;
 
     background-position: center top;
 
@@ -576,11 +570,11 @@ body.services-page {
 
         180deg,
 
-        rgba(247, 251, 255, 0.88) 0%,
+        rgba(6, 37, 62, 0.32) 0%,
 
-        rgba(232, 245, 255, 0.58) 38%,
+        rgba(6, 37, 62, 0.10) 42%,
 
-        rgba(247, 251, 255, 0.95) 100%
+        rgba(247, 251, 255, 0.92) 100%
 
       );
 
@@ -588,7 +582,7 @@ body.services-page {
 
   .services-hero-content {
 
-    padding: 160px 24px 0;
+    padding: 150px 24px 0;
 
     max-width: none;
 
@@ -596,13 +590,13 @@ body.services-page {
 
   .services-hero-kicker {
 
-    font-size: 13px;
+    font-size: 12px;
 
   }
 
   .services-hero-content h1 {
 
-    font-size: 34px;
+    font-size: 32px;
 
     line-height: 1.12;
 
@@ -610,39 +604,36 @@ body.services-page {
 
   .services-hero-script {
 
-    font-size: 42px;
+    font-size: 41px;
 
   }
 
   .services-intro-glass {
 
-    left: 24px;
+    left: 22px;
 
-    right: 24px;
+    right: 22px;
 
-    top: auto;
-
-    bottom: 28px;
+    bottom: 26px;
 
     width: auto;
 
-    padding: 26px 24px;
+    min-height: 0;
+
+    padding: 24px 22px;
 
   }
 
-  .services-intro-glass h2 {
-
-    font-size: 23px;
-
-  }
+  .services-intro-text,
 
   .services-intro-glass p {
 
-    font-size: 14px;
+    font-size: 13.5px;
 
   }
 
 }
+
 
 /* ================= 2. INTRODUCTION SECTION ================= */
 
