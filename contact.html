@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css?v=60">
+
+  <link rel="stylesheet" href="contact.css?v43">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="contact-page">
+
+  <!-- ================= CONTACT NAV ================= -->
+
+  <header class="contact-navbar">
+
+    <div class="contact-logo">Dr. Yasmine Soliman</div>
+
+    <div class="contact-nav-row">
+
+      <nav class="contact-nav-strip">
+
+        <a href="index.html?v=4">Home</a>
+
+        <a href="about.html?v=4">About</a>
+
+        <a href="services.html?v=4">Services</a>
+
+        <a href="pricing.html?v=2">Pricing</a>
+
+        <a href="faq.html?v=60">FAQ</a>
+
+        <a href="contact.html?v=5" class="active">Contact</a>
+
+      </nav>
+
+      <button class="contact-menu-btn" onclick="openContactMenu()" aria-label="Open menu">
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+  <div id="contactMenuOverlay" class="contact-menu-overlay" onclick="closeContactMenu()"></div>
+
+  <aside id="contactSlideMenu" class="contact-slide-menu">
+
+    <button class="contact-menu-close" onclick="closeContactMenu()">×</button>
+
+    <a href="index.html?v=4"><strong>Home</strong><span>Welcome & overview</span></a>
+
+    <a href="about.html?v=4"><strong>About</strong><span>Meet Dr. Yasmine</span></a>
+
+    <a href="services.html?v=4"><strong>Services</strong><span>Braces, aligners & smile care</span></a>
+
+    <a href="pricing.html?v=2"><strong>Pricing</strong><span>Treatment fees & packages</span></a>
+
+    <a href="faq.html?v=60"><strong>FAQ</strong><span>Common patient questions</span></a>
+
+    <a href="contact.html?v=5"><strong>Contact</strong><span>Locations & appointments</span></a>
+
+  </aside>
+
+  <!-- ================= HERO ================= -->
+
+  <section class="contact-hero">
+
+    <div class="contact-hero-overlay">
+
+      <h1>CONTACT US</h1>
+
+      <p>Elite Care</p>
+
+    </div>
+
+  </section>
+
+  
+<!-- ================= MESSAGE / HELP ================= -->
+
+<section class="contact-support-section">
+
+  <!-- MESSAGE FORM -->
+
+  <div class="contact-form-card">
+
+    <h2>Send Us a Message</h2>
+
+    <div class="small-line"></div>
+
+    <form>
+
+      <div class="form-row">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+      </div>
+
+      <textarea placeholder="Your Message" rows="5"></textarea>
+
+      <button type="submit">
+
+        <i class="fa-regular fa-paper-plane"></i>
+
+        Send Message
+
+      </button>
+
+    </form>
+
+    <p class="privacy-note">
+
+      <i class="fa-solid fa-shield-halved"></i>
+
+      We respect your privacy and your information is safe with us.
+
+    </p>
+
+  </div>
+
+  <!-- HELP CARD -->
+
+  <div class="contact-help-card">
+
+    <h2>We’re Here to Help</h2>
+
+    <div class="small-line"></div>
+
+    <p class="help-intro">
+
+      Whether you have a question, need more information, or want to book an appointment, our team is ready to assist you.
+
+    </p>
+
+    <div class="help-item">
+
+      <i class="fa-solid fa-phone-volume"></i>
+
+      <div>
+
+        <strong>Call Us</strong>
+
+        <span>We’re available during working hours.</span>
+
+      </div>
+
+    </div>
+
+    <div class="help-item">
+
+      <i class="fa-regular fa-clock"></i>
+
+      <div>
+
+        <strong>Working Hours</strong>
+
+        <span>Saturday – Thursday: 10:00 AM – 8:00 PM</span>
+
+      </div>
+
+    </div>
+
+    <div class="help-item">
+
+      <i class="fa-regular fa-envelope"></i>
+
+      <div>
+
+        <strong>Email Us</strong>
+
+        <span>info@polydent.com</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= LOCATIONS ================= -->
+  <section class="contact-locations-section">
+
+    <div class="contact-section-heading">
+
+      <span>OUR LOCATIONS</span>
+
+    </div>
+
+    <div class="location-grid">
+
+      <div class="location-card">
+
+        <div class="location-image">
+
+      <img src="twintower.png" alt="Twin Towers Medical Center">
+        </div>
+
+        <div class="location-info">
+
+          <h2>Twin Towers<br>Medical Center</h2>
+
+          <div class="location-details">
+
+            <p><i class="fa-solid fa-location-dot"></i> Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
+
+            <p><i class="fa-regular fa-envelope"></i> <a href="mailto:info@polydent.com">info@polydent.com</a></p>
+
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:+201280004688">+20 128 000 4688</a></p>
+
+          </div>
+
+          <div class="location-map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3454.4307551971683!2d31.0095327!3d30.0244976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585a6b61b3a6b3%3A0x7d0b71070e0b6645!2sTwin%20Towers!5e0!3m2!1sen!2suk!4v1777241336907!5m2!1sen!2suk"
+
+              allowfullscreen=""
+
+              loading="lazy"
+
+              referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+
+          </div>
+
+          <a href="https://www.google.com/maps?q=Twin+Towers+Sheikh+Zayed+Cairo" target="_blank" class="location-btn dark">
+
+            <i class="fa-regular fa-compass"></i> Get Directions
+
+          </a>
+
+          <a href="https://wa.me/201280004688" target="_blank" class="location-btn light">
+
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="location-card">
+
+        <div class="location-image">
+
+       <img src="polygon.png" alt="PolyDent">
+
+        </div>
+
+        <div class="location-info">
+
+          <h2>PolyDent</h2>
+
+          <div class="location-details">
+
+            <p><i class="fa-solid fa-location-dot"></i> Sodic West, Polygon Building, 6 Beverly Hills, Giza Governorate, Egypt</p>
+
+            <p><i class="fa-regular fa-envelope"></i> <a href="mailto:info@polydent.com">info@polydent.com</a></p>
+
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:+201225590941">+20 122 559 0941</a></p>
+
+          </div>
+
+          <div class="location-map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.3636450214468!2d0!3d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145859de6856dbf3%3A0x733c6e385ee4bdfb!2sPolyDent!5e0!3m2!1sen!2suk!4v1778114849319!5m2!1sen!2suk"
+
+              allowfullscreen=""
+
+              loading="lazy"
+
+              referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+
+          </div>
+
+          <a href="https://maps.app.goo.gl/KwoF2sYUzkKgD4gw7?g_st=ic" target="_blank" class="location-btn dark">
+
+            <i class="fa-regular fa-compass"></i> Get Directions
+
+          </a>
+
+          <a href="https://wa.me/201225590941" target="_blank" class="location-btn light">
+
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+
+  <section class="contact-cta">
+
+    <div class="contact-cta-icon">
+
+      <i class="fa-regular fa-calendar-days"></i>
+
+    </div>
+
+    <div class="contact-cta-text">
+
+      <h2>Ready to book your appointment?</h2>
+
+      <p>Contact us today and we’ll take care of the rest.</p>
+
+    </div>
+
+    <div class="contact-cta-buttons">
+
+      <a href="tel:+201280004688" class="cta-call">
+
+        <i class="fa-solid fa-phone"></i> Call Now
+
+      </a>
+
+      <a href="https://wa.me/201280004688" target="_blank" class="cta-whatsapp">
+
+        <i class="fab fa-whatsapp"></i> WhatsApp
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <p>© 2026 Dr. Yasmine Soliman</p>
+
+    <div class="socials">
+
+      <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+
+      <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+
+      <a href="#" class="icon twitter"><i class="fab fa-x-twitter"></i></a>
+
+      <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+  </footer>
+
+  <script>
+
+    function openContactMenu() {
+
+      document.body.classList.add("contact-menu-open");
+
+    }
+
+    function closeContactMenu() {
+
+      document.body.classList.remove("contact-menu-open");
+
+    }
+
+  </script>
+
+</body>
+
+</html>
