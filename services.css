@@ -476,7 +476,7 @@ body.services-page {
 
   background:
 
-    linear-gradient(rgba(247,251,255,0.88), rgba(247,251,255,0.92)),
+    linear-gradient(rgba(247,251,255,0.82), rgba(247,251,255,0.88)),
 
     url("beach-background.png");
 
@@ -492,7 +492,7 @@ body.services-page {
 
   max-width: 1120px;
 
-  margin: 0 auto 16px;
+  margin: 0 auto 18px;
 
   text-align: left;
 
@@ -500,17 +500,25 @@ body.services-page {
 
 .services-section-heading p {
 
-  margin: 0 0 7px;
+  margin: 0 0 6px;
 
   color: #0f79c8;
 
-  font-size: 12px;
+  font-family: 'Kingsley Roman', cursive;
+
+  font-size: 36px;
+
+  line-height: 1;
 
   font-weight: 600;
 
-  letter-spacing: 0.12em;
+  letter-spacing: 0.5px;
 
-  text-transform: uppercase;
+  word-spacing: 2px;
+
+  text-transform: none;
+
+  text-shadow: none;
 
 }
 
@@ -576,7 +584,7 @@ body.services-page {
 
   min-height: 108px;
 
-  padding: 18px 18px;
+  padding: 18px;
 
   cursor: pointer;
 
@@ -594,23 +602,9 @@ body.services-page {
 
   border: 1px solid rgba(255,255,255,0.65);
 
-  backdrop-filter: blur(10px);
-
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(219, 239, 252, 0.68);
 
   transition: 0.28s ease;
-
-}
-
-.service-card:nth-child(1),
-
-.service-card:nth-child(2),
-
-.service-card:nth-child(3),
-
-.service-card:nth-child(5) {
-
-  background: rgba(219, 239, 252, 0.68);
 
 }
 
@@ -736,11 +730,7 @@ body.services-page {
 
   padding: 22px;
 
-  background: rgba(255,255,255,0.90);
-
-  backdrop-filter: blur(14px);
-
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255,255,255,0.88);
 
   border: 1px solid rgba(255,255,255,0.75);
 
@@ -884,13 +874,15 @@ body.services-page {
 
   background:
 
-    linear-gradient(rgba(247,251,255,0.94), rgba(247,251,255,0.96)),
+    linear-gradient(rgba(247,251,255,0.86), rgba(247,251,255,0.90)),
 
     url("beach-background.png");
 
   background-size: cover;
 
   background-position: center center;
+
+  background-repeat: no-repeat;
 
 }
 
@@ -914,11 +906,19 @@ body.services-page {
 
   color: #0f79c8;
 
-  letter-spacing: 0.12em;
+  font-family: 'Kingsley Roman', cursive;
 
-  font-size: 12px;
+  font-size: 36px;
+
+  line-height: 1;
 
   font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  word-spacing: 2px;
+
+  text-transform: none;
 
 }
 
@@ -938,15 +938,7 @@ body.services-page {
 
 .comparison-title span {
 
-  display: block;
-
-  width: 52px;
-
-  height: 2px;
-
-  background: #0f79c8;
-
-  margin-top: 10px;
+  display: none;
 
 }
 
