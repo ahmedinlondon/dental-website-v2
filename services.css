@@ -1539,21 +1539,43 @@ body.services-menu-open .services-nav-links a {
 
 /* ================= 12. MOBILE ================= */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-  /* ---------- Mobile global ---------- */
+  html,
+
+  body {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    overflow-x: hidden;
+
+  }
 
   body.services-page {
+
+    background: #f7fbff;
 
     font-family: 'Montserrat', 'Poppins', sans-serif;
 
   }
 
-  /* ---------- Mobile navbar / logo ---------- */
+  /* ===== MOBILE NAVBAR ===== */
 
   .services-navbar {
 
+    position: fixed;
+
     top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 15000;
+
+    pointer-events: none;
 
   }
 
@@ -1565,33 +1587,83 @@ body.services-menu-open .services-nav-links a {
 
   .services-logo:active {
 
-    font-size: 13px;
+    position: fixed;
 
-    margin-left: 22px;
+    top: 22px;
 
-    margin-top: 6px;
+    left: 20px;
 
-    margin-bottom: 4px;
+    margin: 0;
+
+    color: rgba(255,255,255,0.98);
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    text-decoration: none !important;
+
+    text-shadow: 0 2px 10px rgba(0,0,0,0.28);
+
+    z-index: 17000;
+
+    pointer-events: auto;
 
   }
 
   .services-nav-glass {
 
-    height: 52px;
+    height: 0;
 
-    min-height: 52px;
+    min-height: 0;
 
-    margin-top: 42px;
+    margin-top: 0;
 
-    padding: 0 22px;
+    background: transparent;
 
-    justify-content: flex-end;
+    border: none;
+
+    box-shadow: none;
+
+    backdrop-filter: none;
+
+    -webkit-backdrop-filter: none;
+
+    pointer-events: auto;
 
   }
 
   .services-nav-links {
 
     display: none;
+
+  }
+
+  .services-burger {
+
+    position: fixed;
+
+    top: 23px;
+
+    right: 22px;
+
+    width: 42px;
+
+    height: 42px;
+
+    z-index: 17000;
+
+  }
+
+  .services-burger span {
+
+    width: 30px;
+
+    height: 2px;
+
+    background: rgba(255,255,255,0.98);
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.20);
 
   }
 
@@ -1603,11 +1675,11 @@ body.services-menu-open .services-nav-links a {
 
     right: 0;
 
-    width: 86vw;
+    width: 82vw;
 
     height: 100vh;
 
-    padding: 96px 34px 40px;
+    padding: 100px 34px 42px;
 
     display: flex;
 
@@ -1623,7 +1695,7 @@ body.services-menu-open .services-nav-links a {
 
     -webkit-backdrop-filter: blur(18px);
 
-    z-index: 17000;
+    z-index: 18000;
 
   }
 
@@ -1631,9 +1703,9 @@ body.services-menu-open .services-nav-links a {
 
     color: #08213d;
 
-    padding: 0;
+    font-size: 21px;
 
-    font-size: 20px;
+    padding: 0;
 
     font-weight: 500;
 
@@ -1641,25 +1713,21 @@ body.services-menu-open .services-nav-links a {
 
   }
 
-  .services-burger {
-
-    position: static;
-
-    width: 32px;
-
-    height: 28px;
-
-    transform: none;
-
-  }
-
-  /* ---------- Mobile hero ---------- */
+  /* ===== MOBILE HERO ===== */
 
   .services-hero {
 
-    height: 615px;
+    height: 940px;
 
-    background-position: 42% top;
+    background-image: url('/dental-website-v2/chair-v2.png');
+
+    background-size: cover;
+
+    background-position: 62% top;
+
+    background-repeat: no-repeat;
+
+    overflow: hidden;
 
   }
 
@@ -1667,39 +1735,27 @@ body.services-menu-open .services-nav-links a {
 
     background:
 
-      radial-gradient(
+      linear-gradient(
 
-        ellipse at 32% 76%,
+        180deg,
 
-        rgba(255,255,255,0.34) 0%,
+        rgba(7,42,72,0.22) 0%,
 
-        rgba(255,255,255,0.15) 32%,
+        rgba(235,247,255,0.12) 32%,
 
-        rgba(255,255,255,0.00) 66%
-
-      ),
-
-      radial-gradient(
-
-        ellipse at 62% 8%,
-
-        rgba(8,48,82,0.24) 0%,
-
-        rgba(45,94,130,0.15) 30%,
-
-        rgba(255,255,255,0.00) 62%
+        rgba(247,251,255,0.82) 100%
 
       ),
 
-      radial-gradient(
+      linear-gradient(
 
-        ellipse at 18% 18%,
+        90deg,
 
-        rgba(92,145,180,0.16) 0%,
+        rgba(235,247,255,0.28) 0%,
 
-        rgba(150,195,220,0.08) 34%,
+        rgba(235,247,255,0.06) 60%,
 
-        rgba(255,255,255,0.00) 64%
+        rgba(255,255,255,0.00) 100%
 
       );
 
@@ -1707,7 +1763,7 @@ body.services-menu-open .services-nav-links a {
 
   .services-hero-content {
 
-    padding: 138px 22px 0;
+    padding: 142px 22px 0;
 
     max-width: none;
 
@@ -1717,35 +1773,49 @@ body.services-menu-open .services-nav-links a {
 
   .services-hero-content h1 {
 
-    font-size: 27px;
+    font-size: 31px;
 
-    line-height: 1.12;
+    line-height: 1.28;
 
-    letter-spacing: 4px;
+    letter-spacing: 6px;
+
+    font-weight: 200;
 
   }
 
   .services-hero-script {
 
-    margin-top: 12px;
+    margin-top: 18px;
 
-    font-size: 25px;
+    font-family: 'Kingsley Roman', cursive;
+
+    font-size: 29px;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+
+    word-spacing: 2px;
+
+    white-space: nowrap;
 
   }
 
   .services-intro-glass {
 
-    left: 24px !important;
+    left: 22px !important;
 
-    right: 24px !important;
+    right: 22px !important;
 
-    bottom: 28px !important;
+    bottom: 58px !important;
 
     width: auto !important;
 
-    padding: 20px 20px 76px !important;
+    padding: 34px 26px 112px !important;
 
-    background: rgba(255,255,255,0.16) !important;
+    background: rgba(255,255,255,0.22) !important;
 
     border: none !important;
 
@@ -1753,7 +1823,11 @@ body.services-menu-open .services-nav-links a {
 
     -webkit-backdrop-filter: blur(30px) !important;
 
+    box-shadow: 0 18px 42px rgba(8,33,61,0.10) !important;
+
   }
+
+  .services-intro-glass .services-intro-text,
 
   .services-intro-text,
 
@@ -1765,47 +1839,47 @@ body.services-menu-open .services-nav-links a {
 
     padding-right: 0 !important;
 
-    margin: 0 !important;
+    font-size: 15px !important;
 
-    font-size: 12.8px !important;
-
-    line-height: 1.54 !important;
+    line-height: 1.62 !important;
 
     text-align: left !important;
 
+    margin: 0 !important;
+
   }
+
+  .services-intro-glass .services-intro-btn,
 
   .services-intro-btn {
 
-    left: 20px !important;
+    left: 26px !important;
 
-    bottom: 20px !important;
+    bottom: 34px !important;
 
     right: auto !important;
 
-    width: 190px !important;
+    width: 250px !important;
 
-    height: 40px !important;
+    height: 52px !important;
 
-    min-height: 40px !important;
-
-    font-size: 10.5px !important;
+    font-size: 12px !important;
 
   }
 
-  /* ---------- Mobile services section ---------- */
+  /* ===== MOBILE SERVICES SECTION ===== */
 
   .services-grid-section {
 
-    padding: 34px 6% 46px;
+    padding: 48px 5% 52px;
 
     background-image: url("beach-background.png");
 
-    background-size: 125% auto;
+    background-size: 165% auto;
 
-    background-position: center 18%;
+    background-position: center 16%;
 
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 
   }
 
@@ -1813,29 +1887,31 @@ body.services-menu-open .services-nav-links a {
 
     text-align: left;
 
-    margin-bottom: 18px;
+    margin: 0 0 24px;
 
   }
 
   .services-section-heading p {
 
+    margin: 0 0 -2px;
+
     font-family: 'Kingsley Roman', cursive;
 
     color: #c6a15b;
 
-    font-size: 22px;
+    font-size: 30px;
 
-    line-height: 1;
+    line-height: 0.95;
 
     font-weight: 600;
 
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
 
     word-spacing: 1px;
 
-    white-space: nowrap;
+    text-align: left;
 
-    margin-bottom: 12px;
+    white-space: nowrap;
 
   }
 
@@ -1857,11 +1933,13 @@ body.services-menu-open .services-nav-links a {
 
     color: #08213d;
 
-    font-size: 17px;
+    font-size: 21px;
 
-    line-height: 1.1;
+    line-height: 1.05;
 
     font-weight: 300;
+
+    text-align: left;
 
     margin-bottom: 4px;
 
@@ -1875,7 +1953,7 @@ body.services-menu-open .services-nav-links a {
 
     color: #08213d;
 
-    font-size: 27px;
+    font-size: 30px;
 
     line-height: 1.12;
 
@@ -1885,13 +1963,17 @@ body.services-menu-open .services-nav-links a {
 
   .services-grid-intro {
 
-    text-align: left;
+    max-width: 100%;
 
-    font-size: 13.5px;
+    margin: 0 0 34px;
+
+    color: #36516b;
+
+    font-size: 15px;
 
     line-height: 1.55;
 
-    margin-bottom: 28px;
+    text-align: left;
 
   }
 
@@ -1899,17 +1981,23 @@ body.services-menu-open .services-nav-links a {
 
     display: block;
 
+    max-width: none;
+
   }
 
   .services-grid,
 
   .services-interactive.panel-open .services-grid {
 
+    display: grid;
+
     grid-template-columns: 1fr;
 
-    max-width: none;
+    gap: 26px;
 
-    gap: 22px;
+    width: 100%;
+
+    max-width: none;
 
   }
 
@@ -1917,33 +2005,29 @@ body.services-menu-open .services-nav-links a {
 
   .services-interactive.panel-open .service-card {
 
-    min-height: 122px;
+    min-height: 138px;
 
-    padding: 22px 20px 54px;
+    padding: 34px 22px 58px;
 
     display: flex;
 
-    flex-direction: column;
+    align-items: center;
 
     justify-content: center;
 
     text-align: center;
 
-    position: relative;
+    background: rgba(191,225,244,0.70);
 
     border: none;
 
-  }
+    position: relative;
 
-  .service-card:nth-child(1),
+    box-shadow: 0 14px 38px rgba(8,33,61,0.05);
 
-  .service-card:nth-child(2),
+    backdrop-filter: blur(10px);
 
-  .service-card:nth-child(3),
-
-  .service-card:nth-child(5) {
-
-    background: rgba(190, 222, 244, 0.82);
+    -webkit-backdrop-filter: blur(10px);
 
   }
 
@@ -1951,7 +2035,29 @@ body.services-menu-open .services-nav-links a {
 
   .service-card:nth-child(6) {
 
-    background: rgba(190, 231, 218, 0.84);
+    background: rgba(202,237,226,0.72);
+
+  }
+
+  .service-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 48px;
+
+    background: rgba(255,255,255,0.18);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
 
   }
 
@@ -1975,11 +2081,15 @@ body.services-menu-open .services-nav-links a {
 
     color: #08213d;
 
-    font-size: 21px;
+    font-size: 27px;
 
-    line-height: 1.18;
+    line-height: 1.2;
 
-    font-weight: 500;
+    font-weight: 600;
+
+    position: relative;
+
+    z-index: 2;
 
   }
 
@@ -1989,37 +2099,21 @@ body.services-menu-open .services-nav-links a {
 
     position: absolute;
 
-    left: 18px;
+    right: 24px;
 
-    right: 18px;
-
-    bottom: 14px;
-
-    height: 34px;
-
-    padding: 0 14px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-end;
-
-    background: rgba(255,255,255,0.22);
-
-    backdrop-filter: blur(10px);
-
-    -webkit-backdrop-filter: blur(10px);
+    bottom: 13px;
 
     color: #08213d;
 
-    font-size: 13px;
+    font-size: 17px;
 
-    font-weight: 500;
+    font-weight: 600;
+
+    z-index: 3;
 
   }
 
-  /* ---------- Mobile service popup ---------- */
+  /* ===== MOBILE SERVICE POPUP ===== */
 
   .service-panel {
 
@@ -2033,17 +2127,21 @@ body.services-menu-open .services-nav-links a {
 
     max-width: 390px;
 
-    max-height: 80vh;
+    max-height: 82vh;
 
     height: auto;
 
     transform: translate(-50%, -50%);
 
-    z-index: 9999;
+    overflow-y: auto;
 
-    padding: 20px;
+    padding: 24px;
 
-    background: rgba(255,255,255,0.90);
+    z-index: 20000;
+
+    background: rgba(255,255,255,0.94);
+
+    box-shadow: 0 22px 52px rgba(8,33,61,0.24);
 
     border: none;
 
@@ -2051,13 +2149,13 @@ body.services-menu-open .services-nav-links a {
 
   .service-panel img {
 
-    height: 170px;
+    height: 180px;
 
   }
 
   .service-panel h2 {
 
-    font-size: 24px;
+    font-size: 27px;
 
     line-height: 1.18;
 
@@ -2065,7 +2163,7 @@ body.services-menu-open .services-nav-links a {
 
   .service-panel h3 {
 
-    font-size: 18px;
+    font-size: 20px;
 
   }
 
@@ -2073,23 +2171,23 @@ body.services-menu-open .services-nav-links a {
 
   .service-panel li {
 
-    font-size: 13px;
+    font-size: 14px;
 
-    line-height: 1.48;
+    line-height: 1.55;
 
   }
 
-  /* ---------- Mobile comparison ---------- */
+  /* ===== MOBILE COMPARISON ===== */
 
   .comparison-section {
 
-    padding: 30px 6% 48px;
+    padding: 50px 5% 58px;
 
     background-image: url("beach-background.png");
 
-    background-size: 125% auto;
+    background-size: 165% auto;
 
-    background-position: center 88%;
+    background-position: center 78%;
 
     background-repeat: no-repeat;
 
@@ -2101,35 +2199,35 @@ body.services-menu-open .services-nav-links a {
 
   .comparison-title {
 
-    max-width: none;
-
-    margin: 0;
-
-    padding-left: 0;
-
     text-align: left;
+
+    padding: 0;
+
+    margin: 0 0 34px;
 
   }
 
   .comparison-title p {
 
+    margin: 0 0 -2px;
+
     font-family: 'Kingsley Roman', cursive;
 
     color: #c6a15b;
 
-    font-size: 22px;
+    font-size: 30px;
 
-    line-height: 1;
+    line-height: 0.95;
 
     font-weight: 600;
 
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
 
     word-spacing: 1px;
 
-    white-space: nowrap;
+    text-align: left;
 
-    margin: 0 0 12px;
+    white-space: nowrap;
 
   }
 
@@ -2140,6 +2238,8 @@ body.services-menu-open .services-nav-links a {
     line-height: 1;
 
     margin: 0;
+
+    color: #08213d;
 
   }
 
@@ -2173,7 +2273,7 @@ body.services-menu-open .services-nav-links a {
 
     color: #08213d;
 
-    font-size: 27px;
+    font-size: 30px;
 
     line-height: 1.12;
 
@@ -2181,9 +2281,9 @@ body.services-menu-open .services-nav-links a {
 
   }
 
-  .comparison-text,
-
   .comparison-labels,
+
+  .comparison-text,
 
   .comparison-title span {
 
@@ -2197,25 +2297,29 @@ body.services-menu-open .services-nav-links a {
 
     grid-template-columns: 1fr 1fr;
 
-    gap: 16px;
+    gap: 14px;
+
+    margin: 0 auto;
 
     max-width: 520px;
-
-    margin: 28px auto 0;
 
   }
 
   .mobile-comparison-card {
 
-    min-height: 178px;
+    min-height: 205px;
 
     border: none;
 
-    padding: 22px 12px;
+    padding: 28px 14px;
 
-    text-align: center;
+    display: flex;
 
-    cursor: pointer;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
 
   }
 
@@ -2229,7 +2333,7 @@ body.services-menu-open .services-nav-links a {
 
   .comparison-aligners-card {
 
-    background: #0b7f68;
+    background: #18735b;
 
     color: #ffffff;
 
@@ -2237,19 +2341,21 @@ body.services-menu-open .services-nav-links a {
 
   .comparison-card-icon {
 
-    font-size: 22px;
+    color: #ffffff;
 
-    margin-bottom: 14px;
+    font-size: 30px;
+
+    margin-bottom: 22px;
 
   }
 
   .mobile-comparison-card h3 {
 
-    margin: 0 0 26px;
-
-    font-size: 21px;
-
     color: #ffffff;
+
+    font-size: 25px;
+
+    font-weight: 600;
 
   }
 
@@ -2257,7 +2363,7 @@ body.services-menu-open .services-nav-links a {
 
     color: #ffffff;
 
-    font-size: 14px;
+    font-size: 18px;
 
     font-weight: 600;
 
@@ -2329,80 +2435,111 @@ body.services-menu-open .services-nav-links a {
 
   }
 
-  /* ---------- Mobile CTA ---------- */
+  /* ===== MOBILE CTA ===== */
 
   .services-cta-bar {
 
-    margin: 0 5%;
+    padding: 46px 6% 54px;
 
     flex-direction: column;
 
+    gap: 18px;
+
     text-align: center;
 
-    gap: 14px;
+    align-items: center;
 
-    padding: 28px 5%;
+    justify-content: center;
 
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    background: #ffffff;
+
+  }
+
+  .services-cta-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    font-size: 28px;
 
   }
 
   .services-cta-text h2 {
 
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 31px;
 
-    font-size: 23px;
+    line-height: 1.18;
 
-    line-height: 1.2;
-
-    font-weight: 400;
+    font-weight: 600;
 
   }
 
   .services-cta-text p {
 
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 17px;
 
-    font-size: 14px;
-
-    line-height: 1.45;
+    line-height: 1.48;
 
   }
 
   .services-cta-button {
 
-    margin-left: 0;
-
     width: 100%;
 
-    max-width: 290px;
+    max-width: 350px;
+
+    height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
 
   }
 
-  /* ---------- Mobile footer ---------- */
+  /* ===== MOBILE FOOTER ===== */
 
   .site-footer {
 
+    padding: 34px 5% 42px;
+
     flex-direction: column;
 
-    gap: 16px;
+    gap: 22px;
 
     text-align: center;
 
-    padding: 26px 5% 28px;
+  }
+
+  .site-footer p {
+
+    font-size: 16px;
+
+  }
+
+  .footer-socials {
+
+    gap: 20px;
 
   }
 
   .footer-socials a {
 
+    width: 52px;
+
+    height: 52px;
+
     border-radius: 50% !important;
+
+    font-size: 23px;
 
     overflow: hidden;
 
   }
 
 }
-
 /* ================= HERO PANEL FINAL FIX ================= */
 
 .services-intro-glass {
