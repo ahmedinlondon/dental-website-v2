@@ -1907,11 +1907,11 @@ body.services-menu-open .services-nav-links a {
 
 }
 
-/* ================= TEMP TEST - HERO PANEL FULL TEXT WIDTH ================= */
+/* ================= HERO PANEL FINAL FIX ================= */
 
-.services-intro-glass .services-intro-btn {
+.services-intro-glass {
 
-  display: none !important;
+  padding: 42px 42px 118px !important;
 
 }
 
@@ -1924,5 +1924,51 @@ body.services-menu-open .services-nav-links a {
   width: 100% !important;
 
   padding-right: 0 !important;
+
+  color: #08213d !important;
+
+  font-size: 13px !important;
+
+  line-height: 1.72 !important;
+
+  font-weight: 300 !important;
+
+}
+
+.services-intro-glass .services-intro-btn {
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  position: absolute !important;
+
+  left: 42px !important;
+
+  bottom: 38px !important;
+
+  width: 215px !important;
+
+  height: 46px !important;
+
+  background: #0f79c8 !important;
+
+  color: #ffffff !important;
+
+  text-decoration: none !important;
+
+  border-radius: 0 !important;
+
+  font-size: 11px !important;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 0.08em !important;
+
+  text-transform: uppercase !important;
+
+  box-shadow: 0 10px 24px rgba(15,121,200,0.24) !important;
 
 }
