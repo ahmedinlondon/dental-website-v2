@@ -886,6 +886,25 @@ function closeComparisonPopup(event) {
 
 }
 
+  function toggleServicesMenu(event) {
+
+  event.stopPropagation();
+
+  document.body.classList.toggle("services-menu-open");
+
+}
+
+document.addEventListener("click", function(e) {
+
+  if (!e.target.closest(".services-navbar")) {
+
+    document.body.classList.remove("services-menu-open");
+
+  }
+
+});
+
+  
 </script>
 
 </body>
