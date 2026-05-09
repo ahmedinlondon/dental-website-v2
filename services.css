@@ -476,9 +476,9 @@ body.services-page {
 
   background-image: url("beach-background.png");
 
-  background-size: 175% auto;
+  background-size: 125% auto;
 
-  background-position: center 42%;
+  background-position: center 18%;
 
   background-repeat: no-repeat;
 
@@ -738,6 +738,12 @@ body.services-page {
 
 }
 
+.services-interactive.panel-open {
+
+  background: transparent;
+
+}
+
 .service-panel img {
 
   width: 100%;
@@ -870,13 +876,15 @@ body.services-page {
 
   background-image: url("beach-background.png");
 
-  background-size: 175% auto;
+  background-size: 125% auto;
 
-  background-position: center 58%;
+  background-position: center 88%;
 
   background-repeat: no-repeat;
 
   margin-top: -1px;
+
+  border-top: none;
 
 }
 
