@@ -1,8 +1,40 @@
+<!--
+
+=========================================================
+
+SERVICES.HTML — SECTION INDEX
+
+=========================================================
+
+01. Document Head
+
+02. Navbar
+
+03. Hero Section
+
+04. Your Journey / Services Grid
+
+05. Comparison Section
+
+06. CTA Bar
+
+07. Footer
+
+08. Services Popup Data + Functions
+
+09. Mobile Comparison Popup Data + Functions
+
+=========================================================
+
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">
 
 <head>
+
+  <!-- ================= 01. DOCUMENT HEAD ================= -->
 
   <meta charset="UTF-8" />
 
@@ -10,13 +42,13 @@
 
   <title>Services | Dr. Yasmine Soliman</title>
 
-  <link rel="stylesheet" href="services.css?v=21" />
+  <link rel="stylesheet" href="services.css?v=22" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -24,7 +56,7 @@
 
 <body class="services-page">
 
-<!-- ================= NAVBAR ================= -->
+<!-- ================= 02. NAVBAR ================= -->
 
 <header class="services-navbar">
 
@@ -66,9 +98,7 @@
 
 </header>
 
-<!-- ================= HERO ================= -->
-
-<!-- ================= HERO ================= -->
+<!-- ================= 03. HERO SECTION ================= -->
 
 <section class="services-hero">
 
@@ -106,11 +136,19 @@
 
   </div>
 
-</section><!-- ================= 3. SERVICES GRID SECTION ================= -->
+</section>
+
+<!-- ================= 04. YOUR JOURNEY / SERVICES GRID ================= -->
 
 <section class="services-grid-section">
 
-  <h2>Orthodontic Services</h2>
+  <div class="services-section-heading">
+
+    <p>Your Journey</p>
+
+    <h2>Personalised Care for Every Smile</h2>
+
+  </div>
 
   <p class="services-grid-intro">
 
@@ -134,7 +172,7 @@
 
       </div>
 
-      <div class="service-card" onclick="openService('smiledesign',event)">
+      <div class="service-card" onclick="openService('smiledesign', event)">
 
         <i class="fa-regular fa-face-smile"></i>
 
@@ -202,7 +240,7 @@
 
 </section>
 
-<!-- ================= 4. COMPARISON SECTION ================= -->
+<!-- ================= 05. COMPARISON SECTION ================= -->
 
 <section class="comparison-section">
 
@@ -241,48 +279,45 @@
     </div>
 
   </div>
-<!-- ================= MOBILE COMPARISON CARDS ================= -->
 
-<div class="mobile-comparison-cards">
+  <div class="mobile-comparison-cards">
 
-  <button class="mobile-comparison-card comparison-braces-card" onclick="openComparisonPopup('braces')">
+    <button class="mobile-comparison-card comparison-braces-card" onclick="openComparisonPopup('braces')">
 
-    <div class="comparison-card-icon">
+      <div class="comparison-card-icon">
 
-      <i class="fa-solid fa-teeth-open"></i>
+        <i class="fa-solid fa-teeth-open"></i>
 
-    </div>
+      </div>
 
-    <h3>BRACES</h3>
+      <h3>BRACES</h3>
 
-    <span>Read more →</span>
+      <span>Read more →</span>
 
-  </button>
+    </button>
 
-  <button class="mobile-comparison-card comparison-aligners-card" onclick="openComparisonPopup('aligners')">
+    <button class="mobile-comparison-card comparison-aligners-card" onclick="openComparisonPopup('aligners')">
 
-    <div class="comparison-card-icon">
+      <div class="comparison-card-icon">
 
-      <i class="fa-solid fa-align-center"></i>
+        <i class="fa-solid fa-align-center"></i>
 
-    </div>
+      </div>
 
-    <h3>ALIGNERS</h3>
+      <h3>ALIGNERS</h3>
 
-    <span>Read more →</span>
+      <span>Read more →</span>
 
-  </button>
+    </button>
 
-</div>
+  </div>
 
-<div id="comparisonOverlay" class="comparison-overlay" onclick="closeComparisonPopup(event)">
+  <div id="comparisonOverlay" class="comparison-overlay" onclick="closeComparisonPopup(event)">
 
-  <div id="comparisonPopup" class="comparison-popup" onclick="event.stopPropagation()"></div>
+    <div id="comparisonPopup" class="comparison-popup" onclick="event.stopPropagation()"></div>
 
-</div>
+  </div>
 
-<!-- ================= END MOBILE COMPARISON CARDS ================= -->
-  
   <div class="comparison-text">
 
     <div class="comparison-row">
@@ -369,7 +404,7 @@
 
 </section>
 
-<!-- ================= 5. BOOK CONSULTATION BAR ================= -->
+<!-- ================= 06. CTA BAR ================= -->
 
 <section class="services-cta-bar">
 
@@ -391,7 +426,7 @@
 
 </section>
 
-<!-- ================= 6. FOOTER / SOCIAL MEDIA ================= -->
+<!-- ================= 07. FOOTER ================= -->
 
 <footer class="site-footer">
 
@@ -410,6 +445,8 @@
   </div>
 
 </footer>
+
+<!-- ================= 08. SERVICES POPUP DATA + FUNCTIONS ================= -->
 
 <script>
 
@@ -690,7 +727,7 @@ function openService(service, event) {
   }
 
 }
-  
+
 function closeService(event) {
 
   if (event) {
@@ -734,6 +771,8 @@ document.addEventListener("click", function(e) {
   }
 
 });
+
+<!-- ================= 09. MOBILE COMPARISON POPUP DATA + FUNCTIONS ================= -->
 
 const comparisonData = {
 
@@ -846,10 +885,9 @@ function closeComparisonPopup(event) {
   document.body.style.overflow = "";
 
 }
-  
+
 </script>
 
 </body>
 
 </html>
-
