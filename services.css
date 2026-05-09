@@ -252,15 +252,19 @@ body.services-page {
 
 body.services-menu-open .services-nav-links {
 
-  position: absolute;
+  position: fixed;
 
-  top: 54px;
+  top: 0;
 
-  right: 28px;
+  right: 0;
 
-  width: 220px;
+  width: 380px;
 
-  padding: 20px 24px;
+  max-width: 88vw;
+
+  height: 100vh;
+
+  padding: 110px 42px 42px;
 
   display: flex;
 
@@ -268,17 +272,29 @@ body.services-menu-open .services-nav-links {
 
   align-items: flex-start;
 
-  gap: 18px;
+  gap: 28px;
 
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255,255,255,0.94);
 
-  backdrop-filter: blur(22px);
+  backdrop-filter: blur(18px);
 
-  -webkit-backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(18px);
 
-  box-shadow: 0 18px 42px rgba(8, 33, 61, 0.14);
+  box-shadow: -18px 0 42px rgba(8, 33, 61, 0.18);
 
   z-index: 17000;
+
+}
+
+body.services-menu-open .services-nav-links a {
+
+  color: #08213d;
+
+  padding: 0;
+
+  font-size: 21px;
+
+  font-weight: 500;
 
 }
 
