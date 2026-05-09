@@ -476,9 +476,9 @@ body.services-page {
 
   background-image: url("beach-background.png");
 
-  background-size: 145% auto;
+  background-size: 175% auto;
 
-  background-position: center 38%;
+  background-position: center 42%;
 
   background-repeat: no-repeat;
 
@@ -864,21 +864,19 @@ body.services-page {
 
 /* ================= 07. COMPARISON SECTION ================= */
 
-}
-
-/* ================= 07. COMPARISON SECTION ================= */
-
 .comparison-section {
 
   padding: 28px 5% 30px;
 
   background-image: url("beach-background.png");
 
-  background-size: 145% auto;
+  background-size: 175% auto;
 
   background-position: center 58%;
 
   background-repeat: no-repeat;
+
+  margin-top: -1px;
 
 }
 
