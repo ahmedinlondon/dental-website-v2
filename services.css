@@ -440,11 +440,9 @@ body.services-page {
 
   .services-logo {
 
-    top: 24px;
-
-    left: 28px;
-
     font-size: 14px;
+
+    margin-left: 28px;
 
   }
 
@@ -467,100 +465,6 @@ body.services-page {
     font-size: 14.5px;
 
   }
-
-  .services-hero {
-
-    height: 500px;
-
-    background-size: cover;
-
-    background-position: center center;
-
-  }
-
-  .services-hero-content {
-
-    max-width: 1050px;
-
-    padding: 125px 32px 0;
-
-    text-align: center;
-
-  }
-
-  .services-hero-content h1 {
-
-    font-size: 36px;
-
-    line-height: 1.05;
-
-    font-weight: 200;
-
-    letter-spacing: 7px;
-
-  }
-
-.services-hero-script {
-
-  margin-top: 6px;
-
-  color: rgba(255, 255, 255, 0.96);
-
-  font-size: 29px;
-
-  line-height: 1;
-
-  font-weight: 600;
-
-  text-shadow: 0 2px 12px rgba(5, 31, 55, 0.38);
-
-}
-
-.services-intro-glass {
-
-  left: 46px;
-
-  right: auto;
-
-  bottom: 38px;
-
-  width: 500px;
-
-  min-height: 0;
-
-  padding: 24px 24px;
-
-  display: grid;
-
-  grid-template-columns: 1fr 190px;
-
-  column-gap: 22px;
-
-  align-items: center;
-
-}
-
-  .services-intro-text,
-
-  .services-intro-glass p {
-
-    font-size: 14px;
-
-    line-height: 1.55;
-
-  }
-
-  .services-intro-btn {
-
-  width: 190px;
-
-  min-height: 42px;
-
-  padding: 0;
-
-  white-space: nowrap;
-
-}
 
 }
 
