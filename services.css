@@ -116,7 +116,7 @@ body.services-page {
 
   margin-left: 28px;
 
-  margin-bottom: 0;
+  margin-bottom: 10;
 
   text-decoration: none !important;
 
@@ -250,6 +250,45 @@ body.services-page {
 
 }
 
+body.services-menu-open .services-nav-links {
+
+  position: absolute;
+
+  top: 54px;
+
+  right: 28px;
+
+  width: 220px;
+
+  padding: 20px 24px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  background: rgba(255, 255, 255, 0.20);
+
+  backdrop-filter: blur(22px);
+
+  -webkit-backdrop-filter: blur(22px);
+
+  box-shadow: 0 18px 42px rgba(8, 33, 61, 0.14);
+
+  z-index: 17000;
+
+}
+
+body.services-menu-open .services-nav-links a {
+
+  padding: 0;
+
+}
+
+
 /* ================= 03. HERO SECTION ================= */
 
 .services-hero {
@@ -380,35 +419,37 @@ body.services-page {
 
 .services-intro-glass {
 
-  position: absolute;
+  position: absolute !important;
 
-  left: 52px;
+  left: 52px !important;
 
-  bottom: 46px;
+  bottom: 46px !important;
 
-  z-index: 3;
+  z-index: 3 !important;
 
-  width: 520px;
+  width: 520px !important;
 
-  min-height: 0;
+  min-height: 0 !important;
 
-  padding: 24px 30px;
+  padding: 24px 30px !important;
 
-  background: rgba(255, 255, 255, 0.16);
+  display: block !important;
 
-  border: none;
+  background: rgba(255, 255, 255, 0.14) !important;
 
-  backdrop-filter: blur(30px);
+  border: none !important;
 
-  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(32px) !important;
 
-  box-shadow: 0 18px 42px rgba(8, 33, 61, 0.10);
+  -webkit-backdrop-filter: blur(32px) !important;
+
+  box-shadow: 0 18px 42px rgba(8, 33, 61, 0.10) !important;
 
 }
 
 .services-intro-label {
 
-  display: none;
+  display: none !important;
 
 }
 
@@ -416,57 +457,57 @@ body.services-page {
 
 .services-intro-glass p {
 
-  margin: 0;
+  margin: 0 !important;
 
-  padding-right: 205px;
+  padding-right: 205px !important;
 
-  color: #08213d;
+  color: #08213d !important;
 
-  font-size: 13px;
+  font-size: 13px !important;
 
-  line-height: 1.72;
+  line-height: 1.72 !important;
 
-  font-weight: 300;
+  font-weight: 300 !important;
 
-  text-align: left;
+  text-align: left !important;
 
 }
 
 .services-intro-btn {
 
-  position: absolute;
+  position: absolute !important;
 
-  right: 30px;
+  right: 30px !important;
 
-  bottom: 30px;
+  bottom: 30px !important;
 
-  display: inline-flex;
+  display: inline-flex !important;
 
-  align-items: center;
+  align-items: center !important;
 
-  justify-content: center;
+  justify-content: center !important;
 
-  width: 155px;
+  width: 155px !important;
 
-  min-height: 40px;
+  min-height: 40px !important;
 
-  padding: 0;
+  padding: 0 !important;
 
-  background: #0f79c8;
+  background: #0f79c8 !important;
 
-  color: #ffffff;
+  color: #ffffff !important;
 
-  text-decoration: none;
+  text-decoration: none !important;
 
-  font-size: 10.5px;
+  font-size: 10.5px !important;
 
-  font-weight: 400;
+  font-weight: 400 !important;
 
-  letter-spacing: 0.08em;
+  letter-spacing: 0.08em !important;
 
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 
-  white-space: nowrap;
+  white-space: nowrap !important;
 
 }
 
