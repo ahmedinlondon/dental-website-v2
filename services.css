@@ -474,11 +474,9 @@ body.services-page {
 
   .services-logo {
 
-    top: 22px;
-
-    left: 22px;
-
     font-size: 13px;
+
+    margin-left: 22px;
 
   }
 
@@ -526,9 +524,9 @@ body.services-page {
 
         180deg,
 
-        rgba(6, 37, 62, 0.32) 0%,
+        rgba(6, 37, 62, 0.34) 0%,
 
-        rgba(6, 37, 62, 0.10) 42%,
+        rgba(6, 37, 62, 0.12) 42%,
 
         rgba(247, 251, 255, 0.92) 100%
 
@@ -538,7 +536,7 @@ body.services-page {
 
   .services-hero-content {
 
-    padding: 150px 24px 0;
+    padding: 145px 24px 0;
 
     max-width: none;
 
@@ -554,7 +552,7 @@ body.services-page {
 
   .services-hero-content h1 {
 
-    font-size: 32px;
+    font-size: 30px;
 
     line-height: 1.12;
 
@@ -564,11 +562,13 @@ body.services-page {
 
   .services-hero-script {
 
-    margin-top: 8px;
+    margin-top: 5px;
 
-    color: rgba(255, 255, 255, 0.94);
+    color: rgba(255, 255, 255, 0.96);
 
-    font-size: 30px;
+    font-size: 28px;
+
+    font-weight: 600;
 
   }
 
