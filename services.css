@@ -336,7 +336,6 @@ body.services-menu-open .services-nav-links a {
 
   overflow: hidden;
 
-  filter: brightness(1.03) contrast(1.04);
 
 }
 
@@ -352,9 +351,9 @@ body.services-menu-open .services-nav-links a {
 
     linear-gradient(
 
-      rgba(255,255,255,0.05),
+      rgba(255,255,255,0.08),
 
-      rgba(255,255,255,0.01)
+      rgba(255,255,255,0.02)
 
     ),
 
@@ -362,9 +361,9 @@ body.services-menu-open .services-nav-links a {
 
       90deg,
 
-      rgba(235,247,255,0.16) 0%,
+      rgba(235,247,255,0.22) 0%,
 
-      rgba(202,229,244,0.06) 36%,
+      rgba(202,229,244,0.10) 36%,
 
       rgba(255,255,255,0.00) 68%
 
