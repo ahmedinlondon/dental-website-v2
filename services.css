@@ -1787,7 +1787,7 @@ body.services-menu-open .services-nav-links a {
 
   .services-hero-content {
 
-    padding: 124px 22px 0;
+    padding: 98px 22px 0;
 
     max-width: none;
 
@@ -1806,6 +1806,32 @@ body.services-menu-open .services-nav-links a {
     font-weight: 200;
 
   }
+
+  .services-hero-script {
+
+  margin-top: 12px;
+
+  font-family: 'Kingsley Roman', cursive;
+
+  font-size: 31px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: 0.3px;
+
+  word-spacing: 2px;
+
+  white-space: nowrap;
+
+  text-shadow:
+
+    0 0 1px rgba(255,255,255,0.95),
+
+    0 0 10px rgba(255,255,255,0.12);
+
+}
 
   .services-hero-overlay {
 
@@ -1885,29 +1911,51 @@ body.services-menu-open .services-nav-links a {
 
 }
 
-  .services-intro-glass .services-intro-text,
+ .services-intro-glass .services-intro-text,
 
-  .services-intro-text,
+.services-intro-text,
 
-  .services-intro-glass p {
+.services-intro-glass p {
 
-    max-width: none !important;
+  max-width: 100% !important;
 
-    width: 100% !important;
+  padding-right: 0 !important;
 
-    padding-right: 0 !important;
+  font-size: 15.2px !important;
 
-    font-size: 15px !important;
+  margin: 0 !important;
 
-    line-height: 1.62 !important;
+  line-height: 1.72 !important;
 
-    text-align: left !important;
+  text-align: left !important;
 
-    margin: 0 !important;
+}
 
-  }
+  .services-intro-glass {
 
-  .services-intro-glass .services-intro-btn,
+  left: 22px !important;
+
+  right: 22px !important;
+
+  bottom: 42px !important;
+
+  width: auto !important;
+
+  padding: 24px 24px 82px !important;
+
+  background: rgba(255,255,255,0.18) !important;
+
+  border: none !important;
+
+  backdrop-filter: blur(30px) !important;
+
+  -webkit-backdrop-filter: blur(30px) !important;
+
+  box-shadow: 0 18px 42px rgba(8,33,61,0.10) !important;
+
+}
+  
+  
 
   .services-intro-btn {
 
