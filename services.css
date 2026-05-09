@@ -786,9 +786,9 @@ body.services-page {
 
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat: 1fr. 155px;
 
-  gap: 20px;
+  gap: 18px;
 
   transition: 0.35s ease;
 
