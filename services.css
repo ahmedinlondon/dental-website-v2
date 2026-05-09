@@ -493,6 +493,8 @@ body.services-menu-open .services-nav-links a {
 
 .services-intro-btn {
 
+  display: none !important;
+
   position: absolute !important;
 
   right: 30px !important;
