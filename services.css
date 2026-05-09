@@ -60,7 +60,13 @@ body.services-page {
 
 }
 
-.services-logo {
+.services-logo,
+
+.services-logo:visited,
+
+.services-logo:hover,
+
+.services-logo:active {
 
   display: inline-block;
 
@@ -76,11 +82,11 @@ body.services-page {
 
   margin-bottom: 0;
 
-  text-decoration: none;
+  text-decoration: none !important;
 
-  border-bottom: none;
+  border-bottom: none !important;
 
-  box-shadow: none;
+  box-shadow: none !important;
 
   text-shadow: 0 2px 10px rgba(0,0,0,0.42);
 
@@ -270,7 +276,7 @@ body.services-page {
 
   margin: 0 auto;
 
-  padding: 118px 32px 0;
+  padding: 126px 32px 0;
 
   box-sizing: border-box;
 
@@ -310,7 +316,7 @@ body.services-page {
 
   display: block;
 
-  margin-top: 2px;
+  margin-top: 12px;
 
   font-family: 'Kingsley Roman', cursive;
 
@@ -366,15 +372,15 @@ body.services-page {
 
   column-gap: 22px;
 
-  align-items: center;
+  align-items: stretch;
 
-  background: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.30);
 
-  border: 1px solid rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.52);
 
-  backdrop-filter: blur(22px);
+  backdrop-filter: blur(24px);
 
-  -webkit-backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(24px);
 
   box-shadow: 0 18px 42px rgba(8, 33, 61, 0.12);
 
@@ -400,6 +406,8 @@ body.services-page {
 
   font-weight: 300;
 
+  text-align: left;
+
 }
 
 .services-intro-btn {
@@ -414,9 +422,9 @@ body.services-page {
 
   min-height: 40px;
 
-  margin-top: 18px;
+  align-self: end;
 
-  align-self: center;
+  justify-self: end;
 
   padding: 0;
 
@@ -540,7 +548,7 @@ body.services-page {
 
   .services-hero-content {
 
-    padding: 145px 24px 0;
+    padding: 153px 24px 0;
 
     max-width: none;
 
@@ -566,7 +574,7 @@ body.services-page {
 
   .services-hero-script {
 
-    margin-top: 5px;
+    margin-top: 10px;
 
     color: rgba(255, 255, 255, 0.96);
 
@@ -614,109 +622,7 @@ body.services-page {
 
   }
 
-}
-
-/* ================= 2. INTRODUCTION SECTION ================= */
-
-.services-intro {
-
-  width: 100%;
-
-  min-height: 420px;
-
-  background-image:
-
-    linear-gradient(rgba(255,255,255,0.18), rgba(255,255,255,0.18)),
-
-    url("chair.png");
-
-  background-size: cover;
-
-  background-position: center center;
-
-  display: flex;
-
-  align-items: center;
-
-  padding: 0 5%;
-
-  box-sizing: border-box;
-
-}
-
-.intro-glass {
-
-  width: 52%;
-
-  max-width: 720px;
-
-  background: rgba(255,255,255,0.65);
-
-  backdrop-filter: blur(12px);
-
-  -webkit-backdrop-filter: blur(12px);
-
-  border: 1px solid rgba(255,255,255,0.4);
-
-  padding: 34px 42px;
-
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-
-  box-sizing: border-box;
-
-}
-
-.intro-glass h2 {
-
-  margin: 0 0 16px;
-
-  color: #0f2f57;
-
-  font-size: 28px;
-
-  line-height: 1.25;
-
-}
-
-.intro-glass p {
-
-  margin: 0 0 20px;
-
-  color: #0f2f57;
-
-  font-size: 16px;
-
-  line-height: 1.6;
-
-  text-align: left;
-
-}
-
-.intro-button {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 10px;
-
-  background: #1f6fb2;
-
-  color: white;
-
-  text-decoration: none;
-
-  padding: 13px 22px;
-
-  font-weight: 600;
-
-  font-size: 14px;
-
-  border-radius: 0;
-
-}
-
-/* ================= 3. SERVICES GRID SECTION ================= */
+}/* ================= 3. SERVICES GRID SECTION ================= */
 
 .services-grid-section {
 
