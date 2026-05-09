@@ -356,15 +356,15 @@ body.services-page {
 
   min-height: 0;
 
-  padding: 26px 28px;
+  padding: 24px 30px;
 
   box-sizing: border-box;
 
   display: grid;
 
-  grid-template-columns: 1fr 190px;
+  grid-template-columns: 1fr 170px;
 
-  column-gap: 26px;
+  column-gap: 22px;
 
   align-items: center;
 
@@ -394,9 +394,9 @@ body.services-page {
 
   color: #08213d;
 
-  font-size: 14px;
+  font-size: 13px;
 
-  line-height: 1.55;
+  line-height: 1.72;
 
   font-weight: 300;
 
@@ -410,9 +410,11 @@ body.services-page {
 
   justify-content: center;
 
-  width: 190px;
+  width: 170px;
 
-  min-height: 42px;
+  min-height: 40px;
+
+  margin-top: -6px;
 
   padding: 0;
 
@@ -422,7 +424,7 @@ body.services-page {
 
   text-decoration: none;
 
-  font-size: 11px;
+  font-size: 10.5px;
 
   font-weight: 400;
 
