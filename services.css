@@ -475,7 +475,7 @@ body.services-menu-open .services-nav-links a {
 
   margin: 0 !important;
 
-  padding-right: 205px !important;
+  padding-right: 0 !important;
 
   color: #08213d !important;
 
@@ -486,6 +486,8 @@ body.services-menu-open .services-nav-links a {
   font-weight: 300 !important;
 
   text-align: left !important;
+
+  max-width: 315px !important;
 
 }
 
@@ -526,7 +528,6 @@ body.services-menu-open .services-nav-links a {
   white-space: nowrap !important;
 
 }
-
 /* ================= 05. YOUR JOURNEY / SERVICES CARDS ================= */
 
 .services-grid-section {
@@ -1371,14 +1372,19 @@ body.services-menu-open .services-nav-links a {
 
 @media (min-width: 769px) and (max-width: 1180px) {
 
-  .services-logo {
+ .services-logo {
 
-    font-size: 14px;
+  display: block;
 
-    margin-left: 28px;
+  font-size: 14px;
 
-  }
+  margin-left: 28px;
 
+  margin-top: 14px;
+
+  margin-bottom: 8px;
+
+}
 .services-nav-glass {
 
   height: 50px;
