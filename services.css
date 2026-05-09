@@ -1326,13 +1326,13 @@ body.services-page {
 
   }
 
-  .services-nav-glass {
+.services-nav-glass {
 
-    height: 58px;
+  height: 50px;
 
-    margin-top: 58px;
+  margin-top: 22px;
 
-  }
+}
 
   .services-nav-links {
 
