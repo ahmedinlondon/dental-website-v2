@@ -106,7 +106,7 @@ body.services-page {
 
   display: inline-block;
 
-  color: rgba(255, 255, 255, 0.96);
+  color: rgba(255,255,255,0.98);
 
   font-size: 18px;
 
@@ -116,7 +116,7 @@ body.services-page {
 
   margin-left: 28px;
 
-  margin-bottom: 10;
+  margin-bottom: 10px;
 
   text-decoration: none !important;
 
@@ -124,7 +124,11 @@ body.services-page {
 
   box-shadow: none !important;
 
-  text-shadow: 0 2px 10px rgba(0,0,0,0.42);
+  text-shadow:
+
+    0 0 12px rgba(255,255,255,0.24),
+
+    0 2px 10px rgba(0,0,0,0.32);
 
   pointer-events: auto;
 
@@ -176,7 +180,7 @@ body.services-page {
 
 .services-nav-links a {
 
-  color: rgba(255,255,255,0.92);
+  color: rgba(255,255,255,0.98);
 
   text-decoration: none;
 
@@ -187,6 +191,12 @@ body.services-page {
   transition: 0.25s ease;
 
   padding: 16px 0 13px;
+
+  text-shadow:
+
+    0 0 10px rgba(255,255,255,0.22),
+
+    0 2px 8px rgba(0,0,0,0.24);
 
 }
 
@@ -244,9 +254,15 @@ body.services-page {
 
   height: 2px;
 
-  background: #ffffff;
+  background: rgba(255,255,255,0.98);
 
   display: block;
+
+  box-shadow:
+
+    0 0 10px rgba(255,255,255,0.28),
+
+    0 2px 8px rgba(0,0,0,0.22);
 
 }
 
@@ -296,14 +312,9 @@ body.services-menu-open .services-nav-links a {
 
   font-weight: 500;
 
-}
-
-body.services-menu-open .services-nav-links a {
-
-  padding: 0;
+  text-shadow: none;
 
 }
-
 
 /* ================= 03. HERO SECTION ================= */
 
@@ -379,7 +390,7 @@ body.services-menu-open .services-nav-links a {
 
   margin: 0;
 
-  color: #ffffff;
+  color: rgba(255,255,255,0.98);
 
   font-family: 'Montserrat', 'Poppins', sans-serif;
 
@@ -393,7 +404,11 @@ body.services-menu-open .services-nav-links a {
 
   text-transform: uppercase;
 
-  text-shadow: 0 2px 14px rgba(0,0,0,0.42);
+  text-shadow:
+
+    0 0 16px rgba(255,255,255,0.24),
+
+    0 2px 14px rgba(0,0,0,0.25);
 
 }
 
@@ -405,7 +420,7 @@ body.services-menu-open .services-nav-links a {
 
   font-family: 'Kingsley Roman', cursive;
 
-  color: rgba(255, 255, 255, 0.97);
+  color: rgba(255,255,255,0.99);
 
   font-size: 31px;
 
@@ -419,7 +434,11 @@ body.services-menu-open .services-nav-links a {
 
   text-transform: none;
 
-  text-shadow: 0 2px 12px rgba(5, 31, 55, 0.42);
+  text-shadow:
+
+    0 0 18px rgba(255,255,255,0.28),
+
+    0 2px 12px rgba(5,31,55,0.35);
 
 }
 
