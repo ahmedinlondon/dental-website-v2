@@ -102,15 +102,17 @@ body.services-page {
 
   position: relative;
 
-  background: rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.06);
 
-  backdrop-filter: blur(13px);
+  backdrop-filter: blur(18px);
 
-  -webkit-backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(18px);
 
-  border-top: 1px solid rgba(255,255,255,0.20);
+  border-top: 1px solid rgba(255,255,255,0.14);
 
-  border-bottom: 1px solid rgba(255,255,255,0.20);
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+
+  box-shadow: 0 6px 24px rgba(8, 33, 61, 0.06);
 
   box-sizing: border-box;
 
