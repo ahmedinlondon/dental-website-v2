@@ -1643,7 +1643,7 @@ body.services-menu-open .services-nav-links a {
 
     position: fixed;
 
-    top: 23px;
+    top: 34px;
 
     right: 22px;
 
@@ -1717,13 +1717,13 @@ body.services-menu-open .services-nav-links a {
 
   .services-hero {
 
-    height: 940px;
+    height: 900px;
 
     background-image: url('/dental-website-v2/chair-v2.png');
 
     background-size: cover;
 
-    background-position: 62% top;
+    background-position: 70% top;
 
     background-repeat: no-repeat;
 
@@ -1731,39 +1731,63 @@ body.services-menu-open .services-nav-links a {
 
   }
 
-  .services-hero-overlay {
+.services-hero-overlay {
 
-    background:
+  background:
 
-      linear-gradient(
+    radial-gradient(
 
-        180deg,
+      ellipse at 36% 74%,
 
-        rgba(7,42,72,0.22) 0%,
+      rgba(255,255,255,0.38) 0%,
 
-        rgba(235,247,255,0.12) 32%,
+      rgba(255,255,255,0.18) 34%,
 
-        rgba(247,251,255,0.82) 100%
+      rgba(255,255,255,0.00) 68%
 
-      ),
+    ),
 
-      linear-gradient(
+    radial-gradient(
 
-        90deg,
+      ellipse at 72% 8%,
 
-        rgba(235,247,255,0.28) 0%,
+      rgba(8,48,82,0.24) 0%,
 
-        rgba(235,247,255,0.06) 60%,
+      rgba(45,94,130,0.16) 32%,
 
-        rgba(255,255,255,0.00) 100%
+      rgba(255,255,255,0.00) 66%
 
-      );
+    ),
 
-  }
+    radial-gradient(
+
+      ellipse at 22% 14%,
+
+      rgba(92,145,180,0.18) 0%,
+
+      rgba(150,195,220,0.09) 34%,
+
+      rgba(255,255,255,0.00) 66%
+
+    ),
+
+    linear-gradient(
+
+      90deg,
+
+      rgba(235,247,255,0.24) 0%,
+
+      rgba(235,247,255,0.06) 60%,
+
+      rgba(255,255,255,0.00) 100%
+
+    );
+
+}
 
   .services-hero-content {
 
-    padding: 142px 22px 0;
+    padding: 124px 22px 0;
 
     max-width: none;
 
@@ -1783,49 +1807,83 @@ body.services-menu-open .services-nav-links a {
 
   }
 
-  .services-hero-script {
+  .services-hero-overlay {
 
-    margin-top: 18px;
+  background:
 
-    font-family: 'Kingsley Roman', cursive;
+    radial-gradient(
 
-    font-size: 29px;
+      ellipse at 36% 74%,
 
-    line-height: 1;
+      rgba(255,255,255,0.38) 0%,
 
-    font-weight: 600;
+      rgba(255,255,255,0.18) 34%,
 
-    letter-spacing: 0.4px;
+      rgba(255,255,255,0.00) 68%
 
-    word-spacing: 2px;
+    ),
 
-    white-space: nowrap;
+    radial-gradient(
 
-  }
+      ellipse at 72% 8%,
+
+      rgba(8,48,82,0.24) 0%,
+
+      rgba(45,94,130,0.16) 32%,
+
+      rgba(255,255,255,0.00) 66%
+
+    ),
+
+    radial-gradient(
+
+      ellipse at 22% 14%,
+
+      rgba(92,145,180,0.18) 0%,
+
+      rgba(150,195,220,0.09) 34%,
+
+      rgba(255,255,255,0.00) 66%
+
+    ),
+
+    linear-gradient(
+
+      90deg,
+
+      rgba(235,247,255,0.24) 0%,
+
+      rgba(235,247,255,0.06) 60%,
+
+      rgba(255,255,255,0.00) 100%
+
+    );
+
+}
 
   .services-intro-glass {
 
-    left: 22px !important;
+  left: 22px !important;
 
-    right: 22px !important;
+  right: 22px !important;
 
-    bottom: 58px !important;
+  bottom: 46px !important;
 
-    width: auto !important;
+  width: auto !important;
 
-    padding: 34px 26px 112px !important;
+  padding: 28px 24px 94px !important;
 
-    background: rgba(255,255,255,0.22) !important;
+  background: rgba(255,255,255,0.18) !important;
 
-    border: none !important;
+  border: none !important;
 
-    backdrop-filter: blur(30px) !important;
+  backdrop-filter: blur(30px) !important;
 
-    -webkit-backdrop-filter: blur(30px) !important;
+  -webkit-backdrop-filter: blur(30px) !important;
 
-    box-shadow: 0 18px 42px rgba(8,33,61,0.10) !important;
+  box-shadow: 0 18px 42px rgba(8,33,61,0.10) !important;
 
-  }
+}
 
   .services-intro-glass .services-intro-text,
 
