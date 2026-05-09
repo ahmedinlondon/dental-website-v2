@@ -1364,21 +1364,27 @@ body.services-menu-open .services-nav-links a {
 
   font-size: 13px;
 
+  color: #ffffff;
+
 }
+
+/* ===== SOCIAL ICONS ===== */
 
 .footer-socials {
 
   display: flex;
 
+  align-items: center;
+
   gap: 16px;
 
 }
 
-.footer-social a {
+.footer-socials a {
 
-  width: 52px;
+  width: 44px;
 
-  height: 52px;
+  height: 44px;
 
   border-radius: 50%;
 
@@ -1388,21 +1394,45 @@ body.services-menu-open .services-nav-links a {
 
   justify-content: center;
 
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 20px;
+
   overflow: hidden;
 
-}
-
-.footer-social i {
-
-  border-radius: 50%;
+  transition: 0.25s ease;
 
 }
+
+.footer-socials a:hover {
+
+  transform: translateY(-2px);
+
+}
+
+/* Instagram */
 
 .footer-socials a:nth-child(1) {
 
-  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #4f5bd5);
+  background: radial-gradient(
+
+    circle at 30% 30%,
+
+    #feda75,
+
+    #d62976,
+
+    #962fbf,
+
+    #4f5bd5
+
+  );
 
 }
+
+/* Facebook */
 
 .footer-socials a:nth-child(2) {
 
@@ -1410,11 +1440,15 @@ body.services-menu-open .services-nav-links a {
 
 }
 
+/* WhatsApp */
+
 .footer-socials a:nth-child(3) {
 
   background: #25d366;
 
 }
+
+/* YouTube */
 
 .footer-socials a:nth-child(4) {
 
