@@ -470,7 +470,7 @@ body.services-page {
 
   .services-hero {
 
-    height: 455px;
+    height: 500px;
 
     background-size: cover;
 
@@ -480,37 +480,61 @@ body.services-page {
 
   .services-hero-content {
 
-    padding: 176px 0 0 52px;
+    max-width: 1050px;
 
-    max-width: 560px;
+    padding: 150px 32px 0;
+
+    text-align: center;
 
   }
 
   .services-hero-content h1 {
 
-    font-size: 40px;
+    font-size: 36px;
 
-    font-weight: 300;
+    line-height: 1.05;
+
+    font-weight: 200;
+
+    letter-spacing: 7px;
 
   }
 
   .services-hero-script {
 
-    font-size: 48px;
+    margin-top: 7px;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    text-shadow: 0 2px 10px rgba(5, 31, 55, 0.28);
 
   }
 
   .services-intro-glass {
 
-    right: 42px;
+    left: 46px;
 
-    bottom: 36px;
+    right: auto;
 
-    width: 415px;
+    bottom: 38px;
 
-    min-height: 170px;
+    width: 520px;
 
-    padding: 23px 26px 23px;
+    min-height: 0;
+
+    padding: 24px 26px;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    column-gap: 24px;
+
+    align-items: center;
 
   }
 
@@ -518,9 +542,19 @@ body.services-page {
 
   .services-intro-glass p {
 
-    font-size: 13.2px;
+    font-size: 14px;
 
-    line-height: 1.52;
+    line-height: 1.55;
+
+  }
+
+  .services-intro-btn {
+
+    min-height: 42px;
+
+    padding: 0 20px;
+
+    white-space: nowrap;
 
   }
 
@@ -600,11 +634,13 @@ body.services-page {
 
     max-width: none;
 
+    text-align: center;
+
   }
 
   .services-hero-kicker {
 
-    font-size: 12px;
+    display: none;
 
   }
 
@@ -614,11 +650,17 @@ body.services-page {
 
     line-height: 1.12;
 
+    letter-spacing: 4px;
+
   }
 
   .services-hero-script {
 
-    font-size: 41px;
+    margin-top: 8px;
+
+    color: rgba(255, 255, 255, 0.94);
+
+    font-size: 30px;
 
   }
 
@@ -636,6 +678,8 @@ body.services-page {
 
     padding: 24px 22px;
 
+    display: block;
+
   }
 
   .services-intro-text,
@@ -644,10 +688,21 @@ body.services-page {
 
     font-size: 13.5px;
 
+    line-height: 1.55;
+
+    margin: 0 0 18px;
+
+  }
+
+  .services-intro-btn {
+
+    width: 100%;
+
+    min-height: 42px;
+
   }
 
 }
-
 
 /* ================= 2. INTRODUCTION SECTION ================= */
 
