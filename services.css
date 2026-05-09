@@ -351,6 +351,18 @@ body.services-menu-open .services-nav-links a {
 
     radial-gradient(
 
+  ellipse at 34% 72%,
+
+  rgba(255,255,255,0.34) 0%,
+
+  rgba(255,255,255,0.16) 30%,
+
+  rgba(255,255,255,0.00) 62%
+
+),
+
+    radial-gradient(
+
       ellipse at 82% 8%,
 
       rgba(8, 48, 82, 0.26) 0%,
