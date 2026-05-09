@@ -1907,10 +1907,22 @@ body.services-menu-open .services-nav-links a {
 
 }
 
-/* ================= TEMP TEST - HIDE HERO CTA ================= */
+/* ================= TEMP TEST - HERO PANEL FULL TEXT WIDTH ================= */
 
 .services-intro-glass .services-intro-btn {
 
   display: none !important;
+
+}
+
+.services-intro-glass .services-intro-text,
+
+.services-intro-glass p {
+
+  max-width: none !important;
+
+  width: 100% !important;
+
+  padding-right: 0 !important;
 
 }
