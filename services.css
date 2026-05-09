@@ -476,13 +476,13 @@ body.services-page {
 
   background:
 
-    linear-gradient(rgba(247,251,255,0.82), rgba(247,251,255,0.88)),
+    linear-gradient(rgba(247,251,255,0.64), rgba(247,251,255,0.72)),
 
     url("beach-background.png");
 
   background-size: cover;
 
-  background-position: center top;
+  background-position: center 28%;
 
   background-repeat: no-repeat;
 
@@ -502,19 +502,19 @@ body.services-page {
 
   margin: 0 0 6px;
 
-  color: #0f79c8;
+  color: #c6a15b;
 
   font-family: 'Kingsley Roman', cursive;
 
-  font-size: 36px;
+  font-size: 29px;
 
   line-height: 1;
 
   font-weight: 600;
 
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 
-  word-spacing: 2px;
+  word-spacing: 1px;
 
   text-transform: none;
 
@@ -868,22 +868,6 @@ body.services-page {
 
 /* ================= 07. COMPARISON SECTION ================= */
 
-.comparison-section {
-
-  padding: 28px 5% 30px;
-
-  background:
-
-    linear-gradient(rgba(247,251,255,0.86), rgba(247,251,255,0.90)),
-
-    url("beach-background.png");
-
-  background-size: cover;
-
-  background-position: center center;
-
-  background-repeat: no-repeat;
-
 }
 
 .comparison-photo {
@@ -904,19 +888,19 @@ body.services-page {
 
   margin: 0 0 6px;
 
-  color: #0f79c8;
+  color: #c6a15b;
 
   font-family: 'Kingsley Roman', cursive;
 
-  font-size: 36px;
+  font-size: 29px;
 
   line-height: 1;
 
   font-weight: 600;
 
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 
-  word-spacing: 2px;
+  word-spacing: 1px;
 
   text-transform: none;
 
