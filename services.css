@@ -1537,27 +1537,101 @@ body.services-menu-open .services-nav-links a {
 
 }
 
-/* ================= 12. MOBILE ================= */
+/* ================= 12. MOBILE VERSION - SERVICES PAGE ================= */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-  .services-logo {
+  html,
 
-    font-size: 13px;
+  body {
 
-    margin-left: 22px;
+    width: 100%;
+
+    max-width: 100%;
+
+    overflow-x: hidden;
+
+  }
+
+  body.services-page {
+
+    background: #f7fbff;
+
+  }
+
+  /* ===== MOBILE NAVBAR ===== */
+
+  .services-navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 15000;
+
+    pointer-events: none;
+
+  }
+
+  .services-logo,
+
+  .services-logo:visited,
+
+  .services-logo:hover,
+
+  .services-logo:active {
+
+    position: fixed;
+
+    top: 18px;
+
+    left: 20px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.98);
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    text-decoration: none !important;
+
+    z-index: 16000;
+
+    pointer-events: auto;
 
   }
 
   .services-nav-glass {
 
-    height: 56px;
+    height: 58px;
 
-    margin-top: 56px;
+    min-height: 58px;
 
-    padding: 0 22px;
+    margin-top: 76px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(16px);
+
+    -webkit-backdrop-filter: blur(16px);
+
+    border-top: 1px solid rgba(255,255,255,0.12);
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    display: flex;
 
     justify-content: flex-end;
+
+    align-items: center;
+
+    pointer-events: auto;
 
   }
 
@@ -1569,19 +1643,87 @@ body.services-menu-open .services-nav-links a {
 
   .services-burger {
 
-    position: static;
+    position: fixed;
 
-    width: 30px;
+    top: 96px;
 
-    height: 20px;
+    right: 22px;
+
+    width: 42px;
+
+    height: 42px;
+
+    z-index: 17000;
 
   }
 
+  .services-burger span {
+
+    width: 28px;
+
+    height: 2px;
+
+    background: rgba(255,255,255,0.98);
+
+  }
+
+  body.services-menu-open .services-nav-links {
+
+    position: fixed;
+
+    top: 0;
+
+    right: 0;
+
+    width: 82vw;
+
+    height: 100vh;
+
+    padding: 100px 34px 42px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 26px;
+
+    background: rgba(255,255,255,0.94);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    z-index: 18000;
+
+  }
+
+  body.services-menu-open .services-nav-links a {
+
+    color: #08213d;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    padding: 0;
+
+    text-shadow: none;
+
+  }
+
+  /* ===== MOBILE HERO ===== */
+
   .services-hero {
 
-    height: 640px;
+    height: 1080px;
+
+    background-image: url('/dental-website-v2/chair-v2.png');
+
+    background-size: cover;
 
     background-position: center top;
+
+    overflow: hidden;
 
   }
 
@@ -1593,11 +1735,23 @@ body.services-menu-open .services-nav-links a {
 
         180deg,
 
-        rgba(6, 37, 62, 0.34) 0%,
+        rgba(7,42,72,0.20) 0%,
 
-        rgba(6, 37, 62, 0.12) 42%,
+        rgba(235,247,255,0.20) 34%,
 
-        rgba(247, 251, 255, 0.92) 100%
+        rgba(247,251,255,0.88) 100%
+
+      ),
+
+      linear-gradient(
+
+        90deg,
+
+        rgba(235,247,255,0.34) 0%,
+
+        rgba(235,247,255,0.08) 58%,
+
+        rgba(255,255,255,0.00) 100%
 
       );
 
@@ -1605,7 +1759,7 @@ body.services-menu-open .services-nav-links a {
 
   .services-hero-content {
 
-    padding: 153px 24px 0;
+    padding: 210px 24px 0;
 
     max-width: none;
 
@@ -1615,75 +1769,141 @@ body.services-menu-open .services-nav-links a {
 
   .services-hero-content h1 {
 
-    font-size: 30px;
+    font-size: 38px;
 
-    line-height: 1.12;
+    line-height: 1.15;
 
-    letter-spacing: 4px;
+    letter-spacing: 7px;
+
+    font-weight: 200;
 
   }
 
   .services-hero-script {
 
-    margin-top: 10px;
+    margin-top: 18px;
 
-    font-size: 28px;
+    font-size: 39px;
+
+    line-height: 1;
+
+    white-space: nowrap;
 
   }
 
   .services-intro-glass {
 
-    left: 22px;
+    left: 26px !important;
 
-    right: 22px;
+    right: 26px !important;
 
-    bottom: 26px;
+    bottom: 74px !important;
 
-    width: auto;
+    width: auto !important;
 
-    padding: 24px 22px;
+    padding: 36px 30px 122px !important;
 
-    display: block;
+    background: rgba(255,255,255,0.20) !important;
+
+    backdrop-filter: blur(30px) !important;
+
+    -webkit-backdrop-filter: blur(30px) !important;
+
+    box-shadow: 0 18px 42px rgba(8,33,61,0.10) !important;
 
   }
 
-  .services-intro-text,
+  .services-intro-glass .services-intro-text,
 
   .services-intro-glass p {
 
-    font-size: 13.5px;
+    max-width: none !important;
 
-    line-height: 1.55;
+    width: 100% !important;
 
-    margin: 0 0 18px;
+    padding-right: 0 !important;
+
+    font-size: 16px !important;
+
+    line-height: 1.65 !important;
+
+    text-align: left !important;
+
+  }
+
+  .services-intro-glass .services-intro-btn {
+
+    left: 30px !important;
+
+    bottom: 36px !important;
+
+    width: 250px !important;
+
+    height: 54px !important;
+
+    font-size: 12px !important;
 
   }
 
-  .services-intro-btn {
-
-    width: 100%;
-
-    min-height: 42px;
-
-  }
+  /* ===== MOBILE SERVICES SECTION ===== */
 
   .services-grid-section {
 
-    padding: 42px 5% 48px;
+    padding: 52px 5% 46px;
+
+    background-image: url("beach-background.png");
+
+    background-size: cover;
+
+    background-position: center top;
+
+    background-repeat: no-repeat;
 
   }
 
-  .services-section-heading,
-
-  .services-grid-intro {
+  .services-section-heading {
 
     text-align: center;
+
+    margin: 0 auto 18px;
+
+  }
+
+  .services-section-heading p {
+
+    font-size: 33px;
+
+    color: #c6a15b;
+
+    text-align: center;
+
+    margin: 0 0 10px;
 
   }
 
   .services-section-heading h2 {
 
-    font-size: 26px;
+    font-size: 33px;
+
+    line-height: 1.18;
+
+    text-align: center;
+
+    font-weight: 400;
+
+  }
+
+  .services-grid-intro {
+
+    max-width: 92%;
+
+    margin: 0 auto 34px;
+
+    font-size: 18px;
+
+    line-height: 1.55;
+
+    text-align: center;
 
   }
 
@@ -1691,13 +1911,21 @@ body.services-menu-open .services-nav-links a {
 
     display: block;
 
+    max-width: none;
+
   }
 
   .services-grid,
 
   .services-interactive.panel-open .services-grid {
 
+    display: grid;
+
     grid-template-columns: 1fr;
+
+    gap: 22px;
+
+    width: 100%;
 
     max-width: none;
 
@@ -1707,65 +1935,81 @@ body.services-menu-open .services-nav-links a {
 
   .services-interactive.panel-open .service-card {
 
-    min-height: 145px;
+    min-height: 170px;
 
-    padding: 24px 22px 54px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    text-align: center;
-
-    justify-content: center;
-
-    position: relative;
-
-  }
-
-  .service-card i,
-
-  .service-card p {
-
-    display: none;
-
-  }
-
-  .service-card h3 {
-
-    font-size: 22px;
-
-    margin: 0;
-
-  }
-
-  .service-card span {
-
-    position: absolute;
-
-    left: 0;
-
-    right: 0;
-
-    bottom: 0;
-
-    height: 46px;
-
-    padding: 0 22px;
+    padding: 38px 22px 62px;
 
     display: flex;
 
     align-items: center;
 
-    justify-content: flex-end;
+    justify-content: center;
 
-    background: rgba(255,255,255,0.16);
+    text-align: center;
+
+    background: rgba(219,239,252,0.72);
+
+    border: none;
+
+    position: relative;
+
+  }
+
+  .service-card:nth-child(4),
+
+  .service-card:nth-child(6) {
+
+    background: rgba(224,245,239,0.78);
+
+  }
+
+  .service-card i,
+
+  .service-card p,
+
+  .services-interactive.panel-open .service-card i,
+
+  .services-interactive.panel-open .service-card p {
+
+    display: none;
+
+  }
+
+  .service-card h3,
+
+  .services-interactive.panel-open .service-card h3 {
+
+    margin: 0;
 
     color: #08213d;
 
-    font-size: 15px;
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
 
   }
+
+  .service-card span,
+
+  .services-interactive.panel-open .service-card span {
+
+    position: absolute;
+
+    right: 24px;
+
+    bottom: 22px;
+
+    color: #08213d;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+  }
+
+  /* ===== MOBILE SERVICE POPUP ===== */
 
   .service-panel {
 
@@ -1779,15 +2023,21 @@ body.services-menu-open .services-nav-links a {
 
     max-width: 390px;
 
-    max-height: 80vh;
+    max-height: 82vh;
 
     height: auto;
 
     transform: translate(-50%, -50%);
 
-    z-index: 9999;
+    overflow-y: auto;
 
-    padding: 20px;
+    padding: 24px;
+
+    background: rgba(255,255,255,0.94);
+
+    z-index: 20000;
+
+    box-shadow: 0 22px 52px rgba(8,33,61,0.24);
 
   }
 
@@ -1797,19 +2047,75 @@ body.services-menu-open .services-nav-links a {
 
   }
 
-  .comparison-text,
+  .service-panel h2 {
 
-  .comparison-labels,
+    font-size: 27px;
 
-  .comparison-title span {
+  }
 
-    display: none;
+  .service-panel p,
+
+  .service-panel li {
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+  }
+
+  /* ===== MOBILE COMPARISON ===== */
+
+  .comparison-section {
+
+    padding: 48px 5% 58px;
+
+    background-image: url("beach-background.png");
+
+    background-size: cover;
+
+    background-position: center bottom;
+
+    background-repeat: no-repeat;
 
   }
 
   .comparison-title {
 
     text-align: center;
+
+    padding: 0;
+
+  }
+
+  .comparison-title p {
+
+    font-size: 33px;
+
+    color: #c6a15b;
+
+    text-align: center;
+
+    margin: 0 0 8px;
+
+  }
+
+  .comparison-title h2 {
+
+    font-size: 34px;
+
+    line-height: 1.16;
+
+    text-align: center;
+
+    font-weight: 400;
+
+  }
+
+  .comparison-labels,
+
+  .comparison-text {
+
+    display: none;
 
   }
 
@@ -1821,23 +2127,25 @@ body.services-menu-open .services-nav-links a {
 
     gap: 16px;
 
-    max-width: 520px;
-
-    margin: 30px auto 0;
+    margin: 36px auto 0;
 
   }
 
   .mobile-comparison-card {
 
-    min-height: 190px;
+    min-height: 220px;
 
     border: none;
 
-    padding: 24px 12px;
+    padding: 28px 14px;
 
-    text-align: center;
+    display: flex;
 
-    cursor: pointer;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
 
   }
 
@@ -1845,33 +2153,31 @@ body.services-menu-open .services-nav-links a {
 
     background: #06213f;
 
-    color: #ffffff;
-
   }
 
   .comparison-aligners-card {
 
-    background: #0b7f68;
-
-    color: #ffffff;
+    background: #0f8a68;
 
   }
 
   .comparison-card-icon {
 
-    font-size: 24px;
+    color: #ffffff;
 
-    margin-bottom: 16px;
+    font-size: 32px;
+
+    margin-bottom: 22px;
 
   }
 
   .mobile-comparison-card h3 {
 
-    margin: 0 0 30px;
-
-    font-size: 22px;
-
     color: #ffffff;
+
+    font-size: 27px;
+
+    margin: 0 0 28px;
 
   }
 
@@ -1879,115 +2185,105 @@ body.services-menu-open .services-nav-links a {
 
     color: #ffffff;
 
-    font-size: 15px;
+    font-size: 20px;
 
     font-weight: 600;
 
   }
 
-  .comparison-overlay {
-
-    position: fixed;
-
-    inset: 0;
-
-    z-index: 12000;
-
-    background: rgba(0,0,0,0.28);
-
-    backdrop-filter: blur(3px);
-
-    -webkit-backdrop-filter: blur(3px);
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 24px;
-
-  }
-
-  .comparison-popup {
-
-    width: 86%;
-
-    max-width: 390px;
-
-    max-height: 80vh;
-
-    overflow-y: auto;
-
-    padding: 24px 22px;
-
-    position: relative;
-
-    background: rgba(255,255,255,0.94);
-
-  }
-
-  .comparison-popup-heading {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
-
-    margin-bottom: 18px;
-
-  }
-
-  .comparison-popup h2 {
-
-    margin: 0;
-
-    font-size: 25px;
-
-  }
-
-  .comparison-popup li {
-
-    font-size: 14px;
-
-    line-height: 1.45;
-
-    margin-bottom: 10px;
-
-  }
+  /* ===== MOBILE CTA ===== */
 
   .services-cta-bar {
 
-    margin: 0 5%;
+    padding: 48px 6% 54px;
 
     flex-direction: column;
 
+    gap: 18px;
+
     text-align: center;
 
-    gap: 14px;
+    background: #ffffff;
 
-    padding: 28px 5%;
+  }
+
+  .services-cta-icon {
+
+    width: 76px;
+
+    height: 76px;
+
+    font-size: 30px;
+
+  }
+
+  .services-cta-text h2 {
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+  }
+
+  .services-cta-text p {
+
+    font-size: 18px;
+
+    line-height: 1.5;
 
   }
 
   .services-cta-button {
 
-    margin-left: 0;
-
     width: 100%;
 
-    max-width: 290px;
+    max-width: 360px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
 
   }
 
+  /* ===== MOBILE FOOTER ===== */
+
   .site-footer {
+
+    padding: 34px 5% 42px;
 
     flex-direction: column;
 
-    gap: 16px;
+    gap: 22px;
 
     text-align: center;
 
-    padding: 26px 5% 28px;
+  }
+
+  .site-footer p {
+
+    font-size: 16px;
+
+  }
+
+  .footer-socials {
+
+    gap: 20px;
+
+  }
+
+  .footer-socials a {
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 50% !important;
+
+    font-size: 23px;
 
   }
 
