@@ -3877,3 +3877,61 @@ background:
   }
 
 }
+
+/* ================= iPAD PORTRAIT SERVICES POPUP FIX ================= */
+
+@media (min-width: 601px) and (max-width: 1180px) and (orientation: portrait) {
+
+  .services-interactive {
+
+    display: block !important;
+
+  }
+
+  .services-interactive.panel-open .services-grid {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+  }
+
+  .service-panel {
+
+    position: relative !important;
+
+    top: auto !important;
+
+    left: auto !important;
+
+    right: auto !important;
+
+    transform: none !important;
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    height: auto !important;
+
+    max-height: none !important;
+
+    margin: 34px 0 0 !important;
+
+    padding: 28px !important;
+
+    overflow: visible !important;
+
+  }
+
+  .service-panel img {
+
+    width: 100% !important;
+
+    height: 260px !important;
+
+    object-fit: cover !important;
+
+  }
+
+}
