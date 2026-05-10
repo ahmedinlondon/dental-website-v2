@@ -3685,3 +3685,179 @@ background:
   }
 
 }
+
+/* ================= iPAD COMPARISON CARDS FINAL ================= */
+
+@media (min-width: 601px) and (max-width: 1180px) {
+
+  .comparison-text,
+
+  .comparison-labels {
+
+    display: none !important;
+
+  }
+
+  .mobile-comparison-cards {
+
+    display: grid !important;
+
+    grid-template-columns: 1fr 1fr !important;
+
+    gap: 28px !important;
+
+    width: 88% !important;
+
+    max-width: 1040px !important;
+
+    margin: 42px auto 0 !important;
+
+  }
+
+  .mobile-comparison-card {
+
+    min-height: 300px !important;
+
+    padding: 42px 34px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    background: transparent !important;
+
+    border: 2px solid rgba(8,33,61,0.78) !important;
+
+    box-shadow: none !important;
+
+    backdrop-filter: none !important;
+
+    -webkit-backdrop-filter: none !important;
+
+    color: #08213d !important;
+
+    text-align: center !important;
+
+  }
+
+  .comparison-braces-card,
+
+  .comparison-aligners-card {
+
+    background: transparent !important;
+
+    color: #08213d !important;
+
+  }
+
+  .comparison-card-icon {
+
+    color: #08213d !important;
+
+    font-size: 34px !important;
+
+    margin-bottom: 28px !important;
+
+  }
+
+  .mobile-comparison-card h3 {
+
+    color: #08213d !important;
+
+    font-family: 'Montserrat', 'Poppins', sans-serif !important;
+
+    font-size: 30px !important;
+
+    line-height: 1.12 !important;
+
+    font-weight: 400 !important;
+
+    letter-spacing: 0.03em !important;
+
+    margin: 0 0 34px !important;
+
+  }
+
+  .mobile-comparison-card span {
+
+    color: #c6a15b !important;
+
+    font-size: 0 !important;
+
+    font-weight: 300 !important;
+
+  }
+
+  .mobile-comparison-card span::after {
+
+    content: "›";
+
+    font-size: 42px;
+
+    line-height: 1;
+
+    font-weight: 300;
+
+  }
+
+  .comparison-overlay {
+
+    background: transparent !important;
+
+  }
+
+  .comparison-popup {
+
+    width: 42% !important;
+
+    max-width: 500px !important;
+
+    min-height: 300px !important;
+
+    max-height: none !important;
+
+    position: fixed !important;
+
+    top: 50% !important;
+
+    left: 50% !important;
+
+    transform: translate(-50%, -50%) !important;
+
+    padding: 38px 40px !important;
+
+    background: rgba(255,255,255,0.94) !important;
+
+    border: 2px solid rgba(8,33,61,0.72) !important;
+
+    box-shadow: 0 24px 60px rgba(8,33,61,0.20) !important;
+
+  }
+
+  .comparison-popup h2 {
+
+    font-family: 'Montserrat', 'Poppins', sans-serif !important;
+
+    font-size: 30px !important;
+
+    font-weight: 400 !important;
+
+    color: #08213d !important;
+
+  }
+
+  .comparison-popup li {
+
+    font-size: 15px !important;
+
+    line-height: 1.55 !important;
+
+    color: #08213d !important;
+
+  }
+
+}
