@@ -3440,16 +3440,15 @@ background:
 
   background-image: none !important;
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: none !important;
 
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: none !important;
 
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255,255,255,0.45);
 
-  box-shadow: none;
+  box-shadow: none !important;
 
 }
-
   .comparison-card-icon,
 
   .mobile-comparison-card h3,
