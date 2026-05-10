@@ -2875,3 +2875,35 @@ background:
   }
 
 }
+
+/* ================= MOBILE HERO TOP SAFE AREA FIX ================= */
+
+@media (max-width: 600px) {
+
+  .services-hero {
+
+    padding-top: 34px !important;
+
+    box-sizing: border-box !important;
+
+  }
+
+  .services-logo,
+
+  .services-logo:visited,
+
+  .services-logo:hover,
+
+  .services-logo:active {
+
+    top: 46px !important;
+
+  }
+
+  .services-burger {
+
+    top: 47px !important;
+
+  }
+
+}
