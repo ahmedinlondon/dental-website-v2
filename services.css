@@ -3730,7 +3730,7 @@ background:
 
     background: transparent !important;
 
-    border: 2px solid rgba(8,33,61,0.78) !important;
+   border: 2px solid rgba(255,255,255,0.88) !important;
 
     box-shadow: none !important;
 
@@ -3832,7 +3832,7 @@ background:
 
     background: rgba(255,255,255,0.94) !important;
 
-    border: 2px solid rgba(8,33,61,0.72) !important;
+    border: 2px solid rgba(255,255,255,0.88) !important;
 
     box-shadow: 0 24px 60px rgba(8,33,61,0.20) !important;
 
@@ -3857,6 +3857,22 @@ background:
     line-height: 1.55 !important;
 
     color: #08213d !important;
+
+  }
+
+}
+
+/* ================= iPAD CTA POSITION FIX ================= */
+
+@media (min-width: 601px) and (max-width: 1180px) {
+
+  .services-cta-section,
+
+  .services-cta-bar,
+
+  .services-cta-wrapper {
+
+    margin-top: 70px !important;
 
   }
 
