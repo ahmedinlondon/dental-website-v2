@@ -1983,7 +1983,6 @@ background:
 
 }
 
- /* ===== MOBILE SERVICES HEADING ===== */
 
 /* ===== MOBILE SERVICES HEADING ===== */
 
@@ -1999,7 +1998,7 @@ background:
 
 .services-section-heading p {
 
-  margin: 0 0 10px;
+  margin: 0 0 18px;
 
   font-family: 'Kingsley Roman', cursive;
 
@@ -2045,13 +2044,13 @@ background:
 
   color: #08213d;
 
-  font-size: 13px;
+  font-size: 10px;
 
   line-height: 1;
 
-  font-weight: 400;
+  font-weight: 300;
 
-  letter-spacing: 0.14em;
+  letter-spacing: 0.10em;
 
   text-transform: uppercase;
 
