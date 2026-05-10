@@ -2964,9 +2964,7 @@ background:
 
 @media (max-width: 600px) {
 
-  .services-grid-section,
-
-  .comparison-section {
+  .services-grid-section {
 
     background-image:
 
@@ -2988,10 +2986,6 @@ background:
 
     background-repeat: no-repeat !important;
 
-  }
-
-  .services-grid-section {
-
     background-position: center top !important;
 
     padding-top: 30px !important;
@@ -3000,7 +2994,9 @@ background:
 
   .comparison-section {
 
-    background-position: center bottom !important;
+    background-image: none !important;
+
+    background: transparent !important;
 
     margin-top: -1px !important;
 
