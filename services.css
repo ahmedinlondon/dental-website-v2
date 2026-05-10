@@ -3388,9 +3388,9 @@ background:
 
   .services-interactive.panel-open .service-card span::after {
 
-    content: "→";
+    content: "›";
 
-    font-size: 34px;
+    font-size: 38px;
 
     line-height: 1.5;
 
