@@ -2983,3 +2983,51 @@ background:
   }
 
 }
+
+/* ================= MOBILE SERVICES HEADING FINAL FIX ================= */
+
+@media (max-width: 600px) {
+
+  .services-grid-section .services-section-heading p {
+
+    margin: 0 0 18px !important;
+
+  }
+
+  .services-grid-section .services-section-heading h2 {
+
+    margin: 0 !important;
+
+    font-size: 0 !important;
+
+    line-height: 1 !important;
+
+    letter-spacing: normal !important;
+
+    font-weight: normal !important;
+
+  }
+
+  .services-grid-section .services-section-heading h2::before {
+
+    content: "PERSONALISED CARE" !important;
+
+    display: block !important;
+
+    color: #36516b !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.2 !important;
+
+    font-weight: 400 !important;
+
+    letter-spacing: 0.08em !important;
+
+    text-transform: uppercase !important;
+
+    margin-bottom: 4px !important;
+
+  }
+
+}
