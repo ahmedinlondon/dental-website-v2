@@ -2972,9 +2972,9 @@ background:
 
         180deg,
 
-        rgba(235,247,255,0.22) 0%,
+        rgba(235,247,255,0.24) 0%,
 
-        rgba(235,247,255,0.08) 35%,
+        rgba(235,247,255,0.08) 38%,
 
         rgba(255,255,255,0.00) 100%
 
@@ -2982,7 +2982,7 @@ background:
 
       url("beach-background.png") !important;
 
-    background-size: 165% auto !important;
+    background-size: auto 100% !important;
 
     background-position: center top !important;
 
@@ -2997,6 +2997,12 @@ background:
     background: transparent !important;
 
     background-image: none !important;
+
+  }
+
+  .comparison-section {
+
+    margin-top: 0 !important;
 
   }
 
