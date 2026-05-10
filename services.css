@@ -3496,202 +3496,180 @@ background:
 }
 
 
-/* ================= SERVICES CTA + FOOTER FIX ================= */
+/* ================= MOBILE CTA + FOOTER ================= */
 
-.services-cta,
+.services-cta-bar {
 
-.cta-section,
+  margin: 0 5% !important;
 
-.booking-cta {
+  padding: 22px 18px !important;
 
-  background: #ffffff;
+  background: #ffffff !important;
 
-  border: 1px solid rgba(11, 35, 65, 0.18);
+  border: 1px solid rgba(10,37,69,0.16) !important;
 
-  margin: 56px auto 64px;
+  display: flex !important;
 
-  padding: 46px 28px;
+  flex-direction: column !important;
 
-  width: calc(100% - 48px);
+  text-align: center !important;
 
-  max-width: 760px;
+  gap: 16px !important;
 
-  box-sizing: border-box;
-
-  text-align: center;
-
-  border-radius: 0 !important;
+  box-sizing: border-box !important;
 
 }
 
-.services-cta .cta-icon,
+.services-cta-icon {
 
-.cta-section .cta-icon,
+  width: 58px !important;
 
-.booking-cta .cta-icon {
+  height: 58px !important;
 
-  width: 112px;
+  min-width: 58px !important;
 
-  height: 112px;
+  background: #e6f4ff !important;
 
-  margin: 0 auto 30px;
+  color: #061f3d !important;
 
-  background: #dff1fb;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  border-radius: 0 !important;
-
-  color: #0b2341;
+  font-size: 24px !important;
 
 }
 
-.services-cta h2,
+.services-cta-text h2 {
 
-.cta-section h2,
+  color: #071d3a !important;
 
-.booking-cta h2 {
+  font-size: 22px !important;
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-weight: 300 !important;
 
-  font-size: clamp(34px, 6vw, 48px);
+  line-height: 1.2 !important;
 
-  line-height: 1.18;
-
-  font-weight: 400;
-
-  color: #0b2341;
-
-  margin: 0 0 18px;
-
-  letter-spacing: -0.03em;
+  margin: 0 0 8px !important;
 
 }
 
-.services-cta p,
+.services-cta-text p {
 
-.cta-section p,
+  color: #111827 !important;
 
-.booking-cta p {
+  font-size: 14px !important;
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  line-height: 1.45 !important;
 
-  font-size: clamp(19px, 4vw, 28px);
-
-  line-height: 1.45;
-
-  font-weight: 400;
-
-  color: rgba(11, 35, 65, 0.72);
-
-  margin: 0 auto 34px;
-
-  max-width: 620px;
+  margin: 0 !important;
 
 }
 
-.services-cta a,
+.services-cta-button {
 
-.services-cta button,
+  width: 100% !important;
 
-.cta-section a,
+  max-width: none !important;
 
-.cta-section button,
+  height: 48px !important;
 
-.booking-cta a,
-
-.booking-cta button {
-
-  background: #0b2341 !important;
+  background: #061f3d !important;
 
   color: #ffffff !important;
-
-  border: 1px solid #0b2341 !important;
-
-  border-radius: 0 !important;
 
   box-shadow: none !important;
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  border-radius: 0 !important;
 
-  font-size: 15px;
+  font-size: 14px !important;
 
-  font-weight: 700;
-
-  letter-spacing: 0.14em;
-
-  text-transform: uppercase;
+  font-weight: 500 !important;
 
   text-decoration: none !important;
 
-  min-height: 78px;
+  display: flex !important;
 
-  width: 100%;
+  align-items: center !important;
 
-  max-width: 680px;
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
+  justify-content: center !important;
 
 }
 
-.services-cta a::after,
+.site-footer {
 
-.cta-section a::after,
+  margin-top: 26px !important;
 
-.booking-cta a::after {
+  padding: 26px 20px 28px !important;
 
-  content: "›";
+  background: #061f3d !important;
 
-  font-size: 28px;
+  text-align: center !important;
 
-  font-weight: 300;
-
-  margin-left: 10px;
-
-  line-height: 1;
+  display: block !important;
 
 }
 
-.services-footer,
+.site-footer p {
 
-.site-footer,
-
-footer {
-
-  background: #0b2341 !important;
+  margin: 0 0 18px !important;
 
   color: #ffffff !important;
 
-  padding: 54px 24px 64px;
+  font-size: 18px !important;
 
-  text-align: center;
-
-  border-radius: 0 !important;
+  font-weight: 300 !important;
 
 }
 
-.services-footer p,
+.footer-socials {
 
-.site-footer p,
+  display: flex !important;
 
-footer p {
+  justify-content: center !important;
+
+  gap: 28px !important;
+
+}
+
+.footer-socials a {
+
+  width: 48px !important;
+
+  height: 48px !important;
+
+  border-radius: 50% !important;
 
   color: #ffffff !important;
 
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  text-decoration: none !important;
 
-  font-size: 20px;
+  display: flex !important;
 
-  font-weight: 400;
+  align-items: center !important;
 
-  margin: 0 0 28px;
+  justify-content: center !important;
+
+  font-size: 20px !important;
+
+}
+
+.footer-socials a:nth-child(1) {
+
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5) !important;
+
+}
+
+.footer-socials a:nth-child(2) {
+
+  background: #1877f2 !important;
+
+}
+
+.footer-socials a:nth-child(3) {
+
+  background: #000000 !important;
+
+}
+
+.footer-socials a:nth-child(4) {
+
+  background: #ff0000 !important;
 
 }
