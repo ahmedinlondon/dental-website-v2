@@ -2325,89 +2325,113 @@ background:
 
   }
 
-  .comparison-title {
+/* ===== MOBILE COMPARISON HEADING ===== */
 
-    text-align: left;
+.comparison-title {
 
-    padding: 0;
+  text-align: left;
 
-    margin: 0 0 34px;
+  margin: 0 0 30px;
 
-  }
+  position: relative;
 
-  .comparison-title p {
+}
 
-    margin: 0 0 -2px;
+.comparison-title p {
 
-    font-family: 'Kingsley Roman', cursive;
+  margin: 0 0 18px;
 
-    color: #c6a15b;
+  font-family: 'Kingsley Roman', cursive;
 
-    font-size: 30px;
+  color: #c6a15b;
 
-    line-height: 0.95;
+  font-size: 28px;
 
-    font-weight: 600;
+  line-height: 1;
 
-    letter-spacing: 0.3px;
+  font-weight: 800;
 
-    word-spacing: 1px;
+  letter-spacing: 0.3px;
 
-    text-align: left;
+  word-spacing: 2px;
 
-    white-space: nowrap;
+  text-align: left;
 
-  }
+  white-space: nowrap;
 
-  .comparison-title h2 {
+  text-shadow:
 
-    font-size: 0;
+    0 0 1px rgba(198,161,91,0.85),
 
-    line-height: 1;
+    0 0 8px rgba(198,161,91,0.16);
 
-    margin: 0;
+}
 
-    color: #08213d;
+.comparison-title h2 {
 
-  }
+  margin: 0;
 
-  .comparison-title h2::before {
+  line-height: 1;
 
-    content: "Comparison";
+  text-align: left;
 
-    display: block;
+  font-size: 0;
 
-    color: #36516b;
+}
 
-    font-size: 13px;
+.comparison-title h2::before {
 
-    line-height: 1.2;
+  content: "COMPARISON";
 
-    font-weight: 400;
+  display: block;
 
-    letter-spacing: 0.08em;
+  color: #36516b;
 
-    text-transform: uppercase;
+  font-size: 10px;
 
-    margin-bottom: 5px;
+  line-height: 1;
 
-  }
+  font-weight: 300;
 
-  .comparison-title h2::after {
+  letter-spacing: 0.10em;
 
-    content: "Braces vs. Clear Aligners";
+  text-transform: uppercase;
 
-    display: block;
+  margin-bottom: 3px;
 
-    color: #08213d;
+}
 
-    font-size: 30px;
+.comparison-title h2::after {
 
-    line-height: 1.12;
+  content: "Braces vs. Clear Aligners";
 
-    font-weight: 400;
+  display: block;
 
-  }
+  color: #08213d;
+
+  font-size: 27px;
+
+  line-height: 1.06;
+
+  font-weight: 400;
+
+}
+
+.comparison-title::after {
+
+  content: "";
+
+  display: block;
+
+  width: 72px;
+
+  height: 2px;
+
+  background: rgba(198,161,91,0.62);
+
+  margin-top: 12px;
+
+}
 
   .comparison-labels,
 
