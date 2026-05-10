@@ -3428,35 +3428,27 @@ background:
 
 @media (max-width: 600px) {
 
-  .mobile-comparison-card,
+.mobile-comparison-card,
 
-  .comparison-braces-card,
+.comparison-card,
 
-  .comparison-aligners-card {
+.treatment-card {
 
-    background: rgba(255,255,255,0.008) !important;
+  background: transparent !important;
 
-    border-top: 1px solid rgba(255,255,255,0.55) !important;
+  background-color: transparent !important;
 
-    border-left: 1px solid rgba(255,255,255,0.22) !important;
+  background-image: none !important;
 
-    border-right: 1px solid rgba(255,255,255,0.12) !important;
+  backdrop-filter: blur(10px);
 
-    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  -webkit-backdrop-filter: blur(10px);
 
-    box-shadow:
+  border: 1px solid rgba(255, 255, 255, 0.45);
 
-      0 16px 42px rgba(8,33,61,0.10),
+  box-shadow: none;
 
-      inset 0 1px 0 rgba(255,255,255,0.58) !important;
-
-    backdrop-filter: blur(30px) saturate(165%) !important;
-
-    -webkit-backdrop-filter: blur(30px) saturate(165%) !important;
-
-    color: #08213d !important;
-
-  }
+}
 
   .comparison-card-icon,
 
