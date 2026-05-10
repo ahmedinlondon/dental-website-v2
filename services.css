@@ -2907,3 +2907,51 @@ background:
   }
 
 }
+
+/* ================= MOBILE CONTINUOUS BEACH BACKGROUND ================= */
+
+@media (max-width: 600px) {
+
+  .services-grid-section,
+
+  .comparison-section {
+
+    background-image:
+
+      linear-gradient(
+
+        180deg,
+
+        rgba(235,247,255,0.30) 0%,
+
+        rgba(235,247,255,0.12) 38%,
+
+        rgba(255,255,255,0.00) 100%
+
+      ),
+
+      url("beach-background.png") !important;
+
+    background-size: 165% auto !important;
+
+    background-repeat: no-repeat !important;
+
+  }
+
+  .services-grid-section {
+
+    background-position: center top !important;
+
+    padding-top: 30px !important;
+
+  }
+
+  .comparison-section {
+
+    background-position: center bottom !important;
+
+    margin-top: -1px !important;
+
+  }
+
+}
