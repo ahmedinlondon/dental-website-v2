@@ -1983,27 +1983,31 @@ background:
 
 }
 
-  .services-section-heading {
+ /* ===== MOBILE SERVICES HEADING ===== */
 
-    text-align: left;
+.services-section-heading {
 
-    margin: 0 0 22px;
+  text-align: left;
 
-  }
+  margin: -8px 0 18px;
 
- .services-section-heading p {
+  position: relative;
 
-  margin: 0 0 4px;
+}
+
+.services-section-heading p {
+
+  margin: 0;
 
   font-family: 'Kingsley Roman', cursive;
 
   color: #c6a15b;
 
-  font-size: 24px;
+  font-size: 26px;
 
   line-height: 1;
 
-  font-weight: 800;
+  font-weight: 700;
 
   letter-spacing: 0.2px;
 
@@ -2013,33 +2017,37 @@ background:
 
   white-space: nowrap;
 
+  text-shadow: 0 0 0.4px rgba(198,161,91,0.45);
+
 }
 
 .services-section-heading h2 {
 
-  font-size: 0;
+  margin: 6px 0 0;
 
   line-height: 1;
 
-  margin: 0;
+  text-align: left;
 
 }
 
 .services-section-heading h2::before {
 
-  content: "Personalised Care";
+  content: "PERSONALISED CARE";
 
   display: block;
 
   color: #08213d;
 
-  font-size: 19px;
+  font-size: 12px;
 
   line-height: 1;
 
   font-weight: 600;
 
-  text-align: left;
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
 
   margin-bottom: 2px;
 
@@ -2053,11 +2061,27 @@ background:
 
   color: #08213d;
 
-  font-size: 30px;
+  font-size: 27px;
 
   line-height: 1.08;
 
   font-weight: 400;
+
+}
+
+.services-section-heading::after {
+
+  content: "";
+
+  display: block;
+
+  width: 72px;
+
+  height: 1px;
+
+  background: rgba(198,161,91,0.55);
+
+  margin-top: 14px;
 
 }
 
