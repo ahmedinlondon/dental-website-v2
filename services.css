@@ -3424,4 +3424,78 @@ background:
 
 }
 
+/* ================= MOBILE COMPARISON CARDS GLASS FINAL ================= */
+
+@media (max-width: 600px) {
+
+  .mobile-comparison-card {
+
+    background: rgba(255,255,255,0.18) !important;
+
+    border: 1px solid rgba(255,255,255,0.58) !important;
+
+    box-shadow: 0 14px 34px rgba(8,33,61,0.07) !important;
+
+    backdrop-filter: blur(18px) !important;
+
+    -webkit-backdrop-filter: blur(18px) !important;
+
+  }
+
+  .comparison-braces-card,
+
+  .comparison-aligners-card {
+
+    background: rgba(255,255,255,0.18) !important;
+
+    color: #08213d !important;
+
+  }
+
+  .comparison-card-icon,
+
+  .mobile-comparison-card h3,
+
+  .mobile-comparison-card span {
+
+    color: #08213d !important;
+
+    font-family: 'Montserrat', 'Poppins', sans-serif !important;
+
+  }
+
+  .mobile-comparison-card h3 {
+
+    font-size: 25px !important;
+
+    line-height: 1.12 !important;
+
+    font-weight: 400 !important;
+
+    letter-spacing: 0.01em !important;
+
+  }
+
+  .mobile-comparison-card span {
+
+    color: #c6a15b !important;
+
+    font-size: 0 !important;
+
+  }
+
+  .mobile-comparison-card span::after {
+
+    content: "›";
+
+    font-size: 36px;
+
+    line-height: 1;
+
+    font-weight: 300;
+
+  }
+
+}
+
 
