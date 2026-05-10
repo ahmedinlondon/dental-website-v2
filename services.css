@@ -3263,3 +3263,141 @@ background:
   }
 
 }
+
+/* ================= MOBILE SERVICES CARDS GLASS FINAL ================= */
+
+@media (max-width: 600px) {
+
+  .service-card,
+
+  .services-interactive.panel-open .service-card {
+
+    min-height: 86px !important;
+
+    padding: 0 54px 0 26px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: flex-start !important;
+
+    background: rgba(255,255,255,0.34) !important;
+
+    border: 1px solid rgba(255,255,255,0.55) !important;
+
+    box-shadow: 0 14px 34px rgba(8,33,61,0.07) !important;
+
+    backdrop-filter: blur(18px) !important;
+
+    -webkit-backdrop-filter: blur(18px) !important;
+
+    position: relative !important;
+
+  }
+
+  .service-card:nth-child(4),
+
+  .service-card:nth-child(6),
+
+  .services-interactive.panel-open .service-card:nth-child(4),
+
+  .services-interactive.panel-open .service-card:nth-child(6) {
+
+    background: rgba(255,255,255,0.34) !important;
+
+  }
+
+  .service-card i,
+
+  .service-card p,
+
+  .services-interactive.panel-open .service-card i,
+
+  .services-interactive.panel-open .service-card p {
+
+    display: none !important;
+
+  }
+
+  .service-card h3,
+
+  .services-interactive.panel-open .service-card h3 {
+
+    margin: 0 !important;
+
+    color: #08213d !important;
+
+    font-family: 'Montserrat', 'Poppins', sans-serif !important;
+
+    font-size: 25px !important;
+
+    line-height: 1.1 !important;
+
+    font-weight: 400 !important;
+
+    letter-spacing: 0.01em !important;
+
+    text-align: left !important;
+
+    position: relative !important;
+
+    z-index: 2 !important;
+
+  }
+
+  .service-card span,
+
+  .services-interactive.panel-open .service-card span {
+
+    position: absolute !important;
+
+    right: 24px !important;
+
+    top: 50% !important;
+
+    bottom: auto !important;
+
+    transform: translateY(-50%) !important;
+
+    width: auto !important;
+
+    height: auto !important;
+
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    backdrop-filter: none !important;
+
+    -webkit-backdrop-filter: none !important;
+
+    color: #c6a15b !important;
+
+    font-size: 0 !important;
+
+    font-weight: 400 !important;
+
+    line-height: 1 !important;
+
+    z-index: 3 !important;
+
+  }
+
+  .service-card span::after,
+
+  .services-interactive.panel-open .service-card span::after {
+
+    content: "→";
+
+    font-size: 34px;
+
+    line-height: 1;
+
+    font-weight: 300;
+
+  }
+
+}
+
+
