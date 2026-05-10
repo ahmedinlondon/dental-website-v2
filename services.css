@@ -2773,3 +2773,91 @@ background:
   }
 
 }
+
+/* ================= MOBILE SERVICES HEADING FINAL OVERRIDE ================= */
+
+@media (max-width: 600px) {
+
+  .services-grid-section {
+
+    margin-top: 0 !important;
+
+    padding-top: 8px !important;
+
+  }
+
+  .services-section-heading {
+
+    margin: 0 0 22px !important;
+
+    text-align: left !important;
+
+  }
+
+  .services-section-heading p {
+
+    margin: 0 0 2px !important;
+
+    font-family: 'Kingsley Roman', cursive !important;
+
+    color: #c6a15b !important;
+
+    font-size: 22px !important;
+
+    line-height: 1 !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 0.2px !important;
+
+    word-spacing: 1px !important;
+
+    white-space: nowrap !important;
+
+  }
+
+  .services-section-heading h2 {
+
+    margin: 0 !important;
+
+    font-size: 0 !important;
+
+    line-height: 1 !important;
+
+  }
+
+  .services-section-heading h2::before {
+
+    content: "Personalised Care" !important;
+
+    display: block !important;
+
+    color: #08213d !important;
+
+    font-size: 19px !important;
+
+    line-height: 1 !important;
+
+    font-weight: 600 !important;
+
+    margin-bottom: 1px !important;
+
+  }
+
+  .services-section-heading h2::after {
+
+    content: "for Every Smile" !important;
+
+    display: block !important;
+
+    color: #08213d !important;
+
+    font-size: 30px !important;
+
+    line-height: 1.04 !important;
+
+    font-weight: 400 !important;
+
+  }
+
+}
