@@ -3031,3 +3031,15 @@ background:
   }
 
 }
+
+@media (max-width: 600px) {
+
+  .services-grid-section .services-section-heading p {
+
+    font-size: 31px !important;
+
+    line-height: 1 !important;
+
+  }
+
+}
