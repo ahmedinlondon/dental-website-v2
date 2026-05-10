@@ -3173,3 +3173,93 @@ background:
   }
 
 }
+
+/* ================= iPAD HERO + SECTION UNDERLINE FINAL OVERRIDE ================= */
+
+@media (min-width: 601px) and (max-width: 1180px) {
+
+  /* iPad hero headline reposition */
+
+  .services-hero-content {
+
+    text-align: center !important;
+
+  }
+
+  .services-hero-content h1 {
+
+    position: relative !important;
+
+    display: inline-block !important;
+
+    padding-top: 48px !important;
+
+  }
+
+  .services-hero-script {
+
+    position: absolute !important;
+
+    top: 0 !important;
+
+    left: 0 !important;
+
+    margin-top: 0 !important;
+
+    text-align: left !important;
+
+  }
+
+  .services-hero-content h1::after {
+
+    content: "";
+
+    display: block;
+
+    width: 82px;
+
+    height: 2px;
+
+    margin-top: 18px;
+
+    background: rgba(255,255,255,0.88);
+
+  }
+
+  /* iPad gold underline under Services heading */
+
+  .services-section-heading::after {
+
+    content: "";
+
+    display: block;
+
+    width: 72px;
+
+    height: 2px;
+
+    background: rgba(198,161,91,0.62);
+
+    margin-top: 12px;
+
+  }
+
+  /* iPad gold underline under Comparison heading */
+
+  .comparison-title::after {
+
+    content: "";
+
+    display: block;
+
+    width: 72px;
+
+    height: 2px;
+
+    background: rgba(198,161,91,0.62);
+
+    margin-top: 12px;
+
+  }
+
+}
