@@ -130,6 +130,31 @@ body.faq-page .site-header {
 
 }
 
+.faq-hero-img {
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center center;
+
+  z-index: 0;
+
+}
+
+.faq-hero-text {
+
+  z-index: 2;
+
+}
+
+
 /* =========================================================
 
    04. FAQ HERO TEXT
