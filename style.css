@@ -441,13 +441,15 @@ body.is-scrolled .header-main {
 
 .site-logo img {
 
-  width: 135px;
+  width: auto;
 
-  height: auto;
+  height: 98px;
 
   max-height: none;
 
   object-fit: contain;
+
+  display: block;
 
   opacity: 1;
 
