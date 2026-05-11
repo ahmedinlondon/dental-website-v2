@@ -1434,12 +1434,15 @@ body.menu-open .menu-overlay {
 
   }
 
-  .site-logo img {
+.site-logo img {
 
-    max-height: 52px;
+  width: auto;
 
-  }
+  height: 98px;
 
+  max-height: none;
+
+}
   .menu-inner {
 
     padding: 84px 7% 46px;
@@ -1522,17 +1525,25 @@ body.menu-open .menu-overlay {
 
   }
 
-  .site-logo img {
+.site-logo img {
 
-    max-height: 42px;
+  width: auto;
 
-  }
+  height: 74px;
 
-  body.is-scrolled .site-logo img {
+  max-height: none;
 
-    max-height: 38px;
+}
 
-  }
+body.is-scrolled .site-logo img {
+
+  width: auto;
+
+  height: 62px;
+
+  max-height: none;
+
+}
 
   .burger-btn {
 
