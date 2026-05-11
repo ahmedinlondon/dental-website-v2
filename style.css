@@ -1,1 +1,917 @@
+/* ================= V2 GLOBAL STYLE SYSTEM ================= */
 
+/* ---------- BASE ---------- */
+
+:root {
+
+  --v2-cream: #f6efe4;
+
+  --v2-ivory: #fffaf2;
+
+  --v2-white: #ffffff;
+
+  --v2-charcoal: #262321;
+
+  --v2-muted: #6f655c;
+
+  --v2-navy: #0f2f57;
+
+  --v2-gold: #b99657;
+
+  --v2-border: rgba(185, 150, 87, 0.28);
+
+  --v2-shadow: rgba(38, 35, 33, 0.12);
+
+  --v2-whatsapp: #25d366;
+
+}
+
+*,
+
+*::before,
+
+*::after {
+
+  box-sizing: border-box;
+
+  border-radius: 0 !important;
+
+}
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+body {
+
+  margin: 0;
+
+  font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+
+  background: var(--v2-ivory);
+
+  color: var(--v2-charcoal);
+
+}
+
+a {
+
+  color: inherit;
+
+  text-decoration: none;
+
+}
+
+/* ---------- GLOBAL HEADER ---------- */
+
+.site-header {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 9999;
+
+  background: var(--v2-white);
+
+  transition: all 0.45s ease;
+
+}
+
+.header-top {
+
+  background: var(--v2-cream);
+
+  padding: 10px 6%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+  transition: all 0.45s ease;
+
+}
+
+.header-doctor-name {
+
+  font-size: 15px;
+
+  letter-spacing: 0.08em;
+
+  color: var(--v2-gold);
+
+  font-weight: 400;
+
+  white-space: nowrap;
+
+}
+
+.header-contact {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 18px;
+
+  font-size: 12px;
+
+  letter-spacing: 0.06em;
+
+  color: var(--v2-charcoal);
+
+  text-transform: uppercase;
+
+}
+
+.header-consultation {
+
+  border: 1px solid var(--v2-gold);
+
+  padding: 7px 18px;
+
+  color: var(--v2-charcoal);
+
+  font-size: 11px;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  background: transparent;
+
+}
+
+.header-main {
+
+  height: 76px;
+
+  padding: 0 6%;
+
+  background: var(--v2-white);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  transition: all 0.45s ease;
+
+}
+
+.site-logo {
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+.site-logo img {
+
+  max-height: 48px;
+
+  width: auto;
+
+  display: block;
+
+}
+
+.logo-text {
+
+  font-size: 20px;
+
+  letter-spacing: 0.05em;
+
+  color: var(--v2-charcoal);
+
+  font-weight: 400;
+
+}
+
+/* scrolled header state */
+
+body.is-scrolled .header-top {
+
+  max-height: 0;
+
+  padding-top: 0;
+
+  padding-bottom: 0;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+}
+
+body.is-scrolled .header-main {
+
+  height: 64px;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+
+}
+
+/* ---------- BURGER ---------- */
+
+.burger-btn {
+
+  width: 44px;
+
+  height: 44px;
+
+  border: none;
+
+  background: transparent;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  align-items: flex-end;
+
+  z-index: 12000;
+
+}
+
+.burger-btn span {
+
+  width: 30px;
+
+  height: 1px;
+
+  background: var(--v2-charcoal);
+
+  display: block;
+
+  transition: all 0.45s ease;
+
+}
+
+.burger-btn span:nth-child(2) {
+
+  width: 22px;
+
+}
+
+body.menu-open .burger-btn span:nth-child(1) {
+
+  transform: translateY(8px) rotate(45deg);
+
+}
+
+body.menu-open .burger-btn span:nth-child(2) {
+
+  opacity: 0;
+
+}
+
+body.menu-open .burger-btn span:nth-child(3) {
+
+  transform: translateY(-8px) rotate(-45deg);
+
+}
+
+/* ---------- FULL SCREEN MENU ---------- */
+
+.menu-overlay {
+
+  position: fixed;
+
+  inset: 0;
+
+  background: var(--v2-cream);
+
+  z-index: 11000;
+
+  transform: translateX(100%);
+
+  transition: transform 0.75s cubic-bezier(0.45, 0, 0.15, 1);
+
+  overflow: hidden;
+
+}
+
+body.menu-open .menu-overlay {
+
+  transform: translateX(0);
+
+}
+
+.menu-overlay::before,
+
+.menu-overlay::after {
+
+  content: "";
+
+  position: absolute;
+
+  border: 1px solid rgba(185,150,87,0.18);
+
+  pointer-events: none;
+
+}
+
+.menu-overlay::before {
+
+  width: 420px;
+
+  height: 180px;
+
+  right: -90px;
+
+  top: 22%;
+
+  transform: rotate(-18deg);
+
+}
+
+.menu-overlay::after {
+
+  width: 520px;
+
+  height: 260px;
+
+  left: -180px;
+
+  bottom: 8%;
+
+  transform: rotate(14deg);
+
+}
+
+.menu-inner {
+
+  height: 100%;
+
+  padding: 120px 8% 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+.menu-nav {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+}
+
+.menu-nav a {
+
+  font-size: clamp(34px, 5vw, 68px);
+
+  font-weight: 300;
+
+  letter-spacing: 0.04em;
+
+  color: var(--v2-charcoal);
+
+  line-height: 1;
+
+}
+
+.menu-nav a::after {
+
+  content: " →";
+
+  color: var(--v2-gold);
+
+  font-weight: 300;
+
+}
+
+.menu-bottom {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  font-size: 13px;
+
+  color: var(--v2-muted);
+
+  letter-spacing: 0.04em;
+
+}
+
+/* ---------- HERO TEXT ANIMATION ---------- */
+
+.hero-reveal .script-line,
+
+.hero-reveal .hero-title,
+
+.hero-reveal .hero-subtitle {
+
+  opacity: 0;
+
+}
+
+.hero-reveal.animate .script-line {
+
+  animation: scriptWrite 1.2s ease forwards 0.35s;
+
+}
+
+.hero-reveal.animate .hero-title {
+
+  animation: heroFall 1s ease forwards 0.85s;
+
+}
+
+.hero-reveal.animate .hero-subtitle {
+
+  animation: heroFall 1s ease forwards 1.15s;
+
+}
+
+@keyframes scriptWrite {
+
+  from {
+
+    opacity: 0;
+
+    clip-path: inset(0 100% 0 0);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    clip-path: inset(0 0 0 0);
+
+  }
+
+}
+
+@keyframes heroFall {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(-18px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-reveal .script-line,
+
+  .hero-reveal .hero-title,
+
+  .hero-reveal .hero-subtitle {
+
+    opacity: 1 !important;
+
+    animation: none !important;
+
+    transform: none !important;
+
+    clip-path: none !important;
+
+  }
+
+}
+
+/* ---------- FLOATING CONTACT BUTTONS ---------- */
+
+.floating-contact {
+
+  position: fixed;
+
+  right: 22px;
+
+  z-index: 9500;
+
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 50% !important;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+
+  font-size: 23px;
+
+}
+
+.float-whatsapp {
+
+  top: 42vh;
+
+  background: var(--v2-whatsapp);
+
+  color: white;
+
+}
+
+.float-call {
+
+  top: 68vh;
+
+  background: var(--v2-white);
+
+  color: var(--v2-navy);
+
+  border: 1px solid rgba(15,47,87,0.18);
+
+}
+
+/* ---------- GLOBAL FOOTER ---------- */
+
+.site-footer {
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: var(--v2-cream);
+
+  padding: 70px 7% 32px;
+
+  color: var(--v2-charcoal);
+
+}
+
+.site-footer::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 520px;
+
+  height: 220px;
+
+  right: -120px;
+
+  top: 35px;
+
+  border: 1px solid rgba(185,150,87,0.14);
+
+  transform: rotate(-12deg);
+
+}
+
+.footer-inner {
+
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: 1.2fr 1fr 1fr;
+
+  gap: 50px;
+
+  align-items: start;
+
+}
+
+.footer-brand h2 {
+
+  margin: 0 0 16px;
+
+  font-weight: 300;
+
+  letter-spacing: 0.08em;
+
+  color: var(--v2-gold);
+
+}
+
+.footer-column h3 {
+
+  margin: 0 0 18px;
+
+  font-size: 13px;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+  font-weight: 500;
+
+}
+
+.footer-column p,
+
+.footer-brand p {
+
+  margin: 0 0 8px;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: var(--v2-muted);
+
+}
+
+.footer-cta {
+
+  display: inline-flex;
+
+  margin-top: 18px;
+
+  border: 1px solid var(--v2-gold);
+
+  padding: 11px 22px;
+
+  font-size: 11px;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+}
+
+.footer-socials {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 18px;
+
+}
+
+.footer-socials .icon,
+
+.icon {
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50% !important;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  font-size: 18px;
+
+  text-decoration: none;
+
+}
+
+.icon.instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #4f5bd5); }
+
+.icon.facebook { background: #1877f2; }
+
+.icon.whatsapp { background: #25d366; }
+
+.icon.youtube { background: #ff0000; }
+
+.footer-bottom {
+
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 48px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(185,150,87,0.22);
+
+  font-size: 12px;
+
+  color: var(--v2-muted);
+
+}
+
+/* ---------- GLOBAL BUTTONS ---------- */
+
+.btn,
+
+.global-btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 13px 24px;
+
+  border: 1px solid var(--v2-gold);
+
+  background: transparent;
+
+  color: var(--v2-charcoal);
+
+  font-size: 12px;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+
+}
+
+.btn:hover,
+
+.global-btn:hover {
+
+  background: var(--v2-gold);
+
+  color: white;
+
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1180px) {
+
+  .header-top {
+
+    padding: 9px 5%;
+
+  }
+
+  .header-main {
+
+    padding: 0 5%;
+
+  }
+
+  .header-contact {
+
+    gap: 12px;
+
+    font-size: 11px;
+
+  }
+
+  .footer-inner {
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .header-top {
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+  }
+
+  .header-doctor-name {
+
+    font-size: 13px;
+
+  }
+
+  .header-contact {
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 5px;
+
+    font-size: 10px;
+
+  }
+
+  .header-consultation {
+
+    padding: 6px 12px;
+
+    font-size: 10px;
+
+  }
+
+  .header-main {
+
+    height: 66px;
+
+  }
+
+  .site-logo img {
+
+    max-height: 40px;
+
+  }
+
+  .logo-text {
+
+    font-size: 17px;
+
+  }
+
+  .menu-inner {
+
+    padding: 105px 8% 48px;
+
+  }
+
+  .menu-bottom {
+
+    flex-direction: column;
+
+  }
+
+  .floating-contact {
+
+    right: 16px;
+
+    width: 48px;
+
+    height: 48px;
+
+  }
+
+  .float-whatsapp {
+
+    top: 42vh;
+
+  }
+
+  .float-call {
+
+    top: 70vh;
+
+  }
+
+  .footer-inner {
+
+    grid-template-columns: 1fr;
+
+    gap: 34px;
+
+  }
+
+  .site-footer {
+
+    padding: 56px 7% 28px;
+
+  }
+
+}
