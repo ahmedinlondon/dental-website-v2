@@ -343,7 +343,7 @@ a:hover {
 
   width: 100%;
 
-  height: var(--v2-header-height);
+  height: 108px;
 
   padding: 0 6%;
 
@@ -375,17 +375,21 @@ a:hover {
 
   justify-content: flex-start;
 
+  height: 100%;
+
 }
 
 .site-logo img {
 
   width: auto;
 
-  max-height: 74px;
+  height: 86px;
+
+  max-height: none;
 
   object-fit: contain;
 
-  opacity: 0.92;
+  opacity: 1;
 
 }
 
@@ -417,7 +421,7 @@ body.is-scrolled .header-top {
 
 body.is-scrolled .header-main {
 
-  height: var(--v2-header-compact-height);
+  height: 78px;
 
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.055);
 
@@ -425,7 +429,9 @@ body.is-scrolled .header-main {
 
 body.is-scrolled .site-logo img {
 
-  max-height: 58px;
+  height: 62px;
+
+  max-height: none;
 
 }
 
