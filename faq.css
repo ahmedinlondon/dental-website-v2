@@ -694,3 +694,55 @@ body.faq-page .site-header {
 }
 
 
+
+/* TEMP HEADER POLISH */
+
+.header-top {
+
+  align-items: center;
+
+  padding-top: 14px;
+
+  padding-bottom: 14px;
+
+}
+
+.header-contact-stacked {
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 5px;
+
+  text-align: right;
+
+}
+
+.header-contact-stacked span {
+
+  font-size: 11px;
+
+  letter-spacing: 0.09em;
+
+  line-height: 1.25;
+
+}
+
+.header-contact-stacked .header-consultation {
+
+  margin-top: 4px;
+
+  padding: 8px 22px;
+
+}
+
+.header-contact-stacked i {
+
+  font-size: 10px;
+
+  margin-right: 7px;
+
+  color: var(--v2-gold);
+
+}
