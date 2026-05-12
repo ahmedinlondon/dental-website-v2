@@ -862,11 +862,9 @@ body.menu-open .menu-overlay {
 
     opacity: 0;
 
-    clip-path: inset(0 100% 0 0);
+    transform: translateX(-18px) translateY(8px);
 
-    transform: translateY(10px);
-
-    filter: blur(2px);
+    filter: blur(3px);
 
   }
 
@@ -880,9 +878,7 @@ body.menu-open .menu-overlay {
 
     opacity: 1;
 
-    clip-path: inset(0 0 0 0);
-
-    transform: translateY(0);
+    transform: translateX(0) translateY(0);
 
     filter: blur(0);
 
