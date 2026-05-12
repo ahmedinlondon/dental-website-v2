@@ -645,7 +645,7 @@ body.faq-page .site-header {
 
     transform: translateY(-50%);
 
-     margin-top: 42px;
+     margin-top: 95px;
 
   }
 
@@ -657,7 +657,9 @@ body.faq-page .site-header {
 
     letter-spacing: 0.5px;
 
-  }
+    margin-left: 34px;
+
+}
 
   .faq-hero .hero-title {
 
