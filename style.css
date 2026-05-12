@@ -481,9 +481,9 @@ body.is-scrolled .header-main {
 
   justify-content: center;
 
-  align-items: flex-end;
+  align-items: center;
 
-  gap: 8px;
+  gap: 6px;
 
   position: relative;
 
@@ -497,7 +497,7 @@ body.is-scrolled .header-main {
 
   width: 34px;
 
-  height: 1.6px;
+  height: 2px;
 
   background: var(--v2-charcoal);
 
@@ -511,11 +511,6 @@ body.is-scrolled .header-main {
 
 }
 
-.burger-btn span:nth-child(2) {
-
-  width: 34px;
-
-}
 
 body.menu-open .burger-btn span:nth-child(1) {
 
