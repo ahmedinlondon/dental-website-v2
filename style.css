@@ -1891,3 +1891,91 @@ body.is-scrolled .site-logo img {
   }
 
 }
+
+/* MOBILE FOOTER FINAL POLISH */
+
+@media (max-width: 700px) {
+
+  .site-footer {
+
+    padding: 38px 7% 22px;
+
+  }
+
+  .footer-logo img {
+
+    width: 300px;
+
+    max-width: 86%;
+
+    height: auto;
+
+    max-height: none;
+
+    object-fit: contain;
+
+    margin: 0 0 22px;
+
+  }
+
+  .footer-inner {
+
+    gap: 28px;
+
+  }
+
+  .footer-brand p,
+
+  .footer-column p {
+
+    line-height: 1.45;
+
+    margin-bottom: 7px;
+
+  }
+
+  .footer-question {
+
+    margin-bottom: 10px !important;
+
+  }
+
+  .footer-cta {
+
+    margin-top: 22px;
+
+    height: 42px;
+
+    min-height: 42px;
+
+  }
+
+  .footer-clinic {
+
+    margin-bottom: 20px;
+
+    padding-bottom: 18px;
+
+  }
+
+  .footer-column h3 {
+
+    margin-bottom: 20px;
+
+  }
+
+  .footer-socials {
+
+    margin-top: 18px;
+
+  }
+
+  .footer-bottom {
+
+    margin-top: 30px;
+
+    padding-top: 22px;
+
+  }
+
+}
