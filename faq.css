@@ -870,3 +870,101 @@ body.faq-page .site-header {
   }
 
 }
+
+/* =========================================================
+
+   FAQ MAIN BODY POLISH — SCRIPT + TITLE + ARROWS
+
+========================================================= */
+
+/* stronger gold script headings */
+
+.faq-main-script,
+
+.faq-category-title {
+
+  color: #b88932;
+
+  font-family: 'Kingsley Roman', cursive;
+
+  font-weight: 800;
+
+  letter-spacing: 0.6px;
+
+  text-shadow:
+
+    0 0 1px rgba(184,137,50,0.85),
+
+    0 2px 8px rgba(90,55,24,0.12);
+
+}
+
+/* Curious? */
+
+.faq-main-script {
+
+  font-size: 50px;
+
+  margin-bottom: 10px;
+
+}
+
+/* Category titles */
+
+.faq-category-title {
+
+  font-size: 46px;
+
+  line-height: 0.95;
+
+}
+
+/* Make You ask. We answer. thinner and smaller */
+
+.faq-title {
+
+  font-size: clamp(32px, 3.4vw, 48px);
+
+  font-weight: 200;
+
+  letter-spacing: 0.025em;
+
+}
+
+/* Remove long arrow look — use clean arrow head */
+
+.faq-question span {
+
+  font-size: 0;
+
+  width: 18px;
+
+  height: 18px;
+
+  position: relative;
+
+  transform: translateY(4px);
+
+}
+
+.faq-question span::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 9px;
+
+  height: 9px;
+
+  border-top: 1.5px solid var(--faq-gold);
+
+  border-right: 1.5px solid var(--faq-gold);
+
+  transform: rotate(45deg);
+
+  right: 2px;
+
+  top: 4px;
+
+}
