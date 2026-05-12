@@ -192,19 +192,19 @@ body.faq-page .site-header {
 
 .faq-hero .script-line {
 
-  margin: 0 0 18px;
+  margin: 0 0 26px;
 
   font-family: 'Kingsley Roman', cursive;
 
   color: rgba(241,210,154,0.98);
 
-  font-size: 31px;
+  font-size: 38px;
 
   line-height: 1;
 
-  font-weight: 600;
+  font-weight: 700;
 
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
 
   word-spacing: 2px;
 
@@ -212,15 +212,15 @@ body.faq-page .site-header {
 
   text-shadow:
 
-    0 0 18px rgba(255,255,255,0.18),
+    0 0 18px rgba(255,255,255,0.22),
 
-    0 2px 12px rgba(5,31,55,0.28);
+    0 2px 12px rgba(5,31,55,0.32);
 
 }
 
 .faq-hero .hero-title {
 
-  margin: 0;
+  margin: 18px 0 0;
 
   color: rgba(255,255,255,0.98);
 
@@ -228,30 +228,7 @@ body.faq-page .site-header {
 
   font-size: clamp(28px, 3.2vw, 42px);
 
-  line-height: 1.16;
-
-  font-weight: 200;
-
-  letter-spacing: 5px;
-
-  text-transform: none;
-
-  text-shadow:
-
-    0 0 16px rgba(255,255,255,0.18),
-
-     
-.faq-hero .hero-title {
-
-  margin: 0;
-
-  color: rgba(255,255,255,0.98);
-
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-
-  font-size: clamp(28px, 3.2vw, 42px);
-
-  line-height: 1.16;
+  line-height: 1.22;
 
   font-weight: 200;
 
@@ -268,7 +245,6 @@ body.faq-page .site-header {
   max-width: 660px;
 
 }
-
 .faq-hero .hero-title span {
 
   display: inline;
