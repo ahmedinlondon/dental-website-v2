@@ -495,7 +495,11 @@ body.is-scrolled .header-main {
 
   display: block;
 
-  width: 34px;
+  width: 38px !important;
+
+  min-width: 38px;
+
+  max-width: 38px;
 
   height: 2px;
 
