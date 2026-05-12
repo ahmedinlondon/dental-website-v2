@@ -180,77 +180,143 @@ body.faq-page .site-header {
 
   width: 48%;
 
-  max-width: 620px;
+  max-width: 700px;
 
-  padding-left: 7%;
+  padding-left: 6.5%;
 
-  padding-top: 10px;
+  padding-top: 0;
 
   color: #ffffff;
 
+  top: 50%;
+
+  transform: translateY(-50%);
+
 }
+
+/* SCRIPT LINE */
 
 .faq-hero .script-line {
 
-  margin: 0 0 38px;
+  margin: 0 0 22px;
 
   font-family: 'Kingsley Roman', cursive;
 
   color: rgba(241,210,154,0.98);
 
-  font-size: 56px;
+  font-size: 62px;
 
   line-height: 1;
 
   font-weight: 700;
 
-  letter-spacing: 0.7px;
+  letter-spacing: 0.6px;
 
   word-spacing: 2px;
 
   text-transform: none;
 
+  opacity: 0;
+
+  animation: faqScriptReveal 3.8s ease forwards;
+
   text-shadow:
 
-    0 0 18px rgba(255,255,255,0.22),
+    0 0 18px rgba(255,255,255,0.18),
 
-    0 2px 12px rgba(5,31,55,0.32);
+    0 2px 12px rgba(5,31,55,0.28);
 
 }
 
+/* MAIN HERO TITLE */
+
 .faq-hero .hero-title {
 
-  margin: 78px 0 0;
+  margin: 0;
 
   color: rgba(255,255,255,0.98);
 
   font-family: 'Montserrat', 'Poppins', sans-serif;
 
-  font-size: clamp(28px, 3.2vw, 42px);
+  font-size: clamp(34px, 3.8vw, 52px);
 
   line-height: 1.22;
 
   font-weight: 200;
 
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 
   text-transform: none;
 
+  max-width: 720px;
+
+  opacity: 0;
+
+  transform: translateY(50px);
+
+  animation: faqHeroDrop 2.8s ease forwards;
+
+  animation-delay: 2.2s;
+
   text-shadow:
 
-    0 0 16px rgba(255,255,255,0.18),
+    0 0 16px rgba(255,255,255,0.14),
 
-    0 2px 14px rgba(0,0,0,0.22);
-
-  max-width: 660px;
+    0 2px 14px rgba(0,0,0,0.20);
 
 }
+
 .faq-hero .hero-title span {
 
   display: inline;
 
 }
 
+/* HERO ANIMATIONS */
+
+@keyframes faqScriptReveal {
+
+  0% {
+
+    opacity: 0;
+
+    transform: translateY(14px);
+
+    filter: blur(3px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    filter: blur(0);
+
+  }
+
+}
+
+@keyframes faqHeroDrop {
+
+  0% {
+
+    opacity: 0;
+
+    transform: translateY(55px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
 /* =========================================================
 
    05. FAQ MAIN CREAM SECTION
@@ -569,33 +635,39 @@ body.faq-page .site-header {
 
   .faq-hero-text {
 
-    width: 55%;
+    width: 56%;
+
+    max-width: 650px;
 
     padding-left: 6%;
 
+    top: 50%;
+
+    transform: translateY(-50%);
+
   }
 
-.faq-hero .script-line {
+  .faq-hero .script-line {
 
-  font-size: 30px;
+    font-size: 52px;
 
-  margin-bottom: 14px;
+    margin-bottom: 18px;
 
-  letter-spacing: 0.02em;
+    letter-spacing: 0.5px;
 
-}
+  }
 
-.faq-hero .hero-title {
+  .faq-hero .hero-title {
 
-  font-size: 34px;
+    font-size: 36px;
 
-  letter-spacing: 0.5px;
+    letter-spacing: 2.2px;
 
-  line-height: 1.18;
+    line-height: 1.22;
 
-  max-width: 610px;
+    max-width: 620px;
 
-}
+  }
 
   .faq-main {
 
@@ -651,33 +723,51 @@ body.faq-page .site-header {
 
   .faq-hero-text {
 
-    width: 63%;
+    width: 76%;
+
+    max-width: 360px;
 
     padding-left: 6%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
 
   }
 
   .faq-hero .script-line {
 
-    margin-bottom: 12px;
+    font-size: 36px;
 
-    font-size: 26px;
+    margin-bottom: 14px;
+
+    letter-spacing: 0.4px;
+
+    word-spacing: 1px;
 
   }
 
   .faq-hero .hero-title {
 
-    font-size: 34px;
+    font-size: 24px;
 
-    letter-spacing: 0.1em;
+    letter-spacing: 1.4px;
 
-    line-height: 1.12;
+    line-height: 1.22;
+
+    max-width: 330px;
 
   }
 
   .faq-main {
 
     padding: 48px 6% 64px;
+
+  }
+
+  .faq-main-script {
+
+    font-size: 32px;
 
   }
 
@@ -756,59 +846,5 @@ body.faq-page .site-header {
     line-height: 1.68;
 
   }
-
-}
-
-
-
-/* TEMP HEADER POLISH */
-
-.header-top {
-
-  align-items: center;
-
-  padding-top: 14px;
-
-  padding-bottom: 14px;
-
-}
-
-.header-contact-stacked {
-
-  flex-direction: column;
-
-  align-items: flex-end;
-
-  gap: 5px;
-
-  text-align: right;
-
-}
-
-.header-contact-stacked span {
-
-  font-size: 11px;
-
-  letter-spacing: 0.09em;
-
-  line-height: 1.25;
-
-}
-
-.header-contact-stacked .header-consultation {
-
-  margin-top: 4px;
-
-  padding: 8px 22px;
-
-}
-
-.header-contact-stacked i {
-
-  font-size: 10px;
-
-  margin-right: 7px;
-
-  color: var(--v2-gold);
 
 }
