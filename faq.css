@@ -35,6 +35,17 @@
    01. FAQ PAGE VARIABLES
 
 ========================================================= */
+@font-face {
+
+  font-family: 'Kingsley Roman';
+
+  src: url('/dental-website-v2/kingsley-roman.ttf') format('truetype');
+
+  font-weight: 400;
+
+  font-style: normal;
+
+}
 
 body.faq-page {
 
