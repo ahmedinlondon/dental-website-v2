@@ -826,7 +826,7 @@ body.menu-open .menu-overlay {
 
 .hero-reveal.animate .script-line {
 
-  animation: scriptWrite 4.8s ease forwards 0.8s;
+  animation: scriptWrite 5.6s cubic-bezier(0.25, 0.05, 0.2, 1) forwards 0.7s;
 
 }
 
@@ -834,41 +834,49 @@ body.menu-open .menu-overlay {
 
 .hero-reveal.animate .hero-title {
 
-  animation: heroFall 4.2s cubic-bezier(0.18, 0.9, 0.22, 1) forwards 3.6s;
+  animation: heroSoftFall 3.8s cubic-bezier(0.18, 0.9, 0.22, 1) forwards 3.4s;
 
 }
 
 .hero-reveal.animate .hero-subtitle {
 
-  animation: heroSoftFall 1s ease forwards 1.08s;
+  animation: heroSoftFall 2.4s cubic-bezier(0.18, 0.9, 0.22, 1) forwards 2.2s;
 
 }
 
 .hero-reveal.animate .hero-copy {
 
-  animation: heroSoftFall 0.95s ease forwards 1.28s;
+  animation: heroSoftFall 2.2s cubic-bezier(0.18, 0.9, 0.22, 1) forwards 2.6s;
 
 }
 
 .hero-reveal.animate .hero-button {
 
-  animation: heroSoftFall 0.95s ease forwards 1.45s;
+  animation: heroSoftFall 2s cubic-bezier(0.18, 0.9, 0.22, 1) forwards 3s;
 
 }
 
 @keyframes scriptWrite {
 
-  from {
+  0% {
 
     opacity: 0;
 
     clip-path: inset(0 100% 0 0);
 
-    transform: translateY(6px);
+    transform: translateY(10px);
+
+    filter: blur(2px);
 
   }
 
-  to {
+  35% {
+
+    opacity: 1;
+
+  }
+
+  100% {
 
     opacity: 1;
 
@@ -876,23 +884,25 @@ body.menu-open .menu-overlay {
 
     transform: translateY(0);
 
+    filter: blur(0);
+
   }
 
 }
 
 @keyframes heroSoftFall {
 
-  from {
+  0% {
 
     opacity: 0;
 
-    transform: translateY(-18px);
+    transform: translateY(-42px);
 
-    filter: blur(3px);
+    filter: blur(4px);
 
   }
 
-  to {
+  100% {
 
     opacity: 1;
 
