@@ -489,7 +489,7 @@ body.faq-page .site-header {
 
 .faq-item {
 
-  margin: 0 0 12px;
+  margin: 0 0 14px;
 
 }
 
@@ -507,17 +507,17 @@ body.faq-page .site-header {
 
   cursor: pointer;
 
-  color: var(--faq-text);
+  color: #2f2a26;
 
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
 
   font-size: 15px;
 
   font-weight: 300;
 
-  line-height: 1.55;
+  line-height: 1.65;
 
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 
   text-align: left;
 
@@ -539,7 +539,7 @@ body.faq-page .site-header {
 
   line-height: 1.4;
 
-  transform: translateY(1px);
+  transform: translateY(3px);
 
   transition: transform 0.32s ease;
 
@@ -553,11 +553,15 @@ body.faq-page .site-header {
 
   opacity: 0;
 
-  color: var(--faq-muted);
+  color: rgba(47,42,38,0.72);
 
-  font-size: 14px;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
 
-  line-height: 1.72;
+  font-size: 14.5px;
+
+  font-weight: 300;
+
+  line-height: 1.9;
 
   letter-spacing: 0.01em;
 
