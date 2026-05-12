@@ -826,7 +826,7 @@ body.menu-open .menu-overlay {
 
 .hero-reveal.animate .script-line {
 
-  animation: scriptWrite 2.2s ease forwards 0.35s;
+  animation: scriptWrite 4.8s ease forwards 0.8s;
 
 }
 
@@ -834,7 +834,7 @@ body.menu-open .menu-overlay {
 
 .hero-reveal.animate .hero-title {
 
-  animation: heroSoftFall 1.6s ease forwards 1.35s;
+  animation: heroFall 4.2s cubic-bezier(0.18, 0.9, 0.22, 1) forwards 3.6s;
 
 }
 
