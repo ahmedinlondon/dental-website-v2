@@ -877,55 +877,57 @@ body.faq-page .site-header {
 
 /* =========================================================
 
-   FAQ MAIN BODY POLISH — CLEAN FINAL PASS
+   FAQ MAIN BODY — FINAL HEADING SYSTEM
 
 ========================================================= */
 
-/* Curious? script accent only */
+/* ===== Curious? Script ===== */
 
 .faq-main-script {
 
-  color: rgba(184, 137, 50, 0.74);
+  margin: 0 0 10px;
+
+  color: #c6a15b;
 
   font-family: 'Kingsley Roman', cursive;
 
   font-size: 40px;
 
-  font-weight: 600;
-
-  letter-spacing: 0.25px;
-
   line-height: 1;
 
-  margin: 0 0 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.2px;
+
+  word-spacing: 1px;
 
   text-shadow:
 
-    0 1px 4px rgba(90,55,24,0.08);
+    0 0 1px rgba(198,161,91,0.18);
 
 }
 
-/* You ask. We answer. */
+/* ===== You ask. We answer. ===== */
 
 .faq-title {
 
+  margin: 0;
+
+  color: #2d2a26;
+
   font-family: 'Montserrat', 'Poppins', sans-serif;
 
-  font-size: clamp(24px, 2.4vw, 36px);
+  font-size: 30px;
 
-  font-weight: 200;
+  line-height: 1.16;
 
-  letter-spacing: 0.04em;
+  font-weight: 300;
 
-  line-height: 1.08;
-
-  color: #2f2a26;
-
-  text-transform: none;
-
-  margin: 0 0 30px;
+  letter-spacing: 0.01em;
 
 }
+
+/* ===== Gold line under title ===== */
 
 .faq-title::after {
 
@@ -933,77 +935,107 @@ body.faq-page .site-header {
 
   display: block;
 
-  width: 46px;
+  width: 62px;
 
-  height: 1px;
+  height: 2px;
 
-  background: rgba(184,137,50,0.7);
+  margin-top: 16px;
 
-  margin-top: 18px;
+  background: rgba(198,161,91,0.62);
 
 }
 
-/* Intro paragraph */
+/* ===== Intro paragraphs ===== */
 
 .faq-intro-copy {
 
+  color: #6d665f;
+
   font-family: 'Montserrat', 'Poppins', sans-serif;
 
-  font-size: 15px;
+  font-size: 14px;
 
-  line-height: 1.95;
+  line-height: 1.82;
 
   font-weight: 300;
 
   letter-spacing: 0.01em;
 
-  color: rgba(47,42,38,0.72);
-
-  max-width: 1180px;
-
 }
 
-.faq-intro-copy p {
-
-  margin: 0 0 22px;
-
-}
-
-/* Category titles */
+/* ===== Category headings ===== */
 
 .faq-category-title {
 
+  margin: 0;
+
+  color: #2d2a26;
+
   font-family: 'Montserrat', 'Poppins', sans-serif;
 
-  font-size: 31px;
+  font-size: 30px;
 
-  font-weight: 200;
+  line-height: 1.14;
 
-  letter-spacing: 0.045em;
+  font-weight: 300;
 
-  line-height: 1.08;
-
-  color: #2f2a26;
+  letter-spacing: 0.01em;
 
   text-transform: none;
 
-  text-shadow: none;
-
 }
+
+/* ===== Gold line under category ===== */
 
 .faq-category-line {
 
-  width: 50px;
+  width: 62px;
 
-  height: 1px;
+  height: 2px;
 
-  margin: 16px 0 26px;
+  margin: 16px 0 22px;
 
-  background: rgba(184,137,50,0.72);
+  background: rgba(198,161,91,0.62);
 
 }
 
-/* Clean arrow heads */
+/* ===== Questions ===== */
+
+.faq-question {
+
+  color: #3a352f;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 14.5px;
+
+  line-height: 1.65;
+
+  font-weight: 300;
+
+  letter-spacing: 0.01em;
+
+}
+
+/* ===== Answers ===== */
+
+.faq-answer {
+
+  color: #746d66;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.78;
+
+  font-weight: 300;
+
+  letter-spacing: 0.01em;
+
+}
+
+/* ===== Clean minimal arrows ===== */
 
 .faq-question span {
 
@@ -1015,7 +1047,7 @@ body.faq-page .site-header {
 
   position: relative;
 
-  transform: translateY(3px);
+  transform: translateY(4px);
 
 }
 
@@ -1029,9 +1061,9 @@ body.faq-page .site-header {
 
   height: 8px;
 
-  border-top: 1.4px solid rgba(184,137,50,0.72);
+  border-top: 1.5px solid rgba(198,161,91,0.72);
 
-  border-right: 1.4px solid rgba(184,137,50,0.72);
+  border-right: 1.5px solid rgba(198,161,91,0.72);
 
   transform: rotate(45deg);
 
