@@ -1437,39 +1437,43 @@ body.menu-open .menu-overlay {
 
   border: 1px solid rgba(198,161,91,0.16);
 
-  opacity: 0.8;
+  opacity: 0.92;
 
 }
+
+/* Main flowing outline */
 
 .site-footer::before {
 
-  width: 620px;
+  width: 980px;
 
-  height: 150px;
+  height: 620px;
 
-  right: -90px;
+  right: -240px;
 
-  top: -46px;
+  top: -40px;
 
   border-radius: 50% !important;
 
-  transform: rotate(14deg);
+  transform: rotate(12deg);
 
 }
 
+/* Secondary softer curve */
+
 .site-footer::after {
 
-  width: 520px;
+  width: 720px;
 
-  height: 130px;
+  height: 420px;
 
-  left: -140px;
+  right: 120px;
 
-  bottom: -48px;
+  top: 40px;
 
   border-radius: 50% !important;
 
-  transform: rotate(24deg);
+  transform: rotate(8deg);
 
 }
 
