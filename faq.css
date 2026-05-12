@@ -635,21 +635,25 @@ body.faq-page .site-header {
 
   }
 
-  .faq-hero-text {
+.faq-hero-text {
 
-    width: 56%;
+  width: 56%;
 
-    max-width: 650px;
+  max-width: 650px;
 
-    padding-left: 6%;
+  padding-left: 6%;
 
-    top: 60%;
+  position: absolute;
 
-    transform: translateY(-50%);
+  top: 72%;
 
-     margin-top: 300px;
+  left: 0;
 
-  }
+  transform: translateY(-50%);
+
+  margin-top: 0;
+
+}
 
   .faq-hero .script-line {
 
