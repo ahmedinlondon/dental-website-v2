@@ -181,19 +181,29 @@ body.faq-page .site-header {
 
 .faq-hero .script-line {
 
-  margin: 0 0 14px;
+  margin: 0 0 18px;
 
-  color: #f1d29a;
+  font-family: 'Kingsley Roman', cursive;
 
-  font-family: "Kingsley Roman", "Poppins", cursive;
+  color: rgba(241,210,154,0.98);
 
-  font-size: 30px;
-
-  font-weight: 300;
-
-  letter-spacing: 0.02em;
+  font-size: 31px;
 
   line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  word-spacing: 2px;
+
+  text-transform: none;
+
+  text-shadow:
+
+    0 0 18px rgba(255,255,255,0.18),
+
+    0 2px 12px rgba(5,31,55,0.28);
 
 }
 
@@ -201,19 +211,50 @@ body.faq-page .site-header {
 
   margin: 0;
 
-  color: #ffffff;
+  color: rgba(255,255,255,0.98);
 
-  font-family: "Poppins", "Montserrat", Arial, sans-serif;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
 
-  font-size: clamp(24px, 3.4vw, 44px);
+  font-size: clamp(28px, 3.2vw, 42px);
 
-  font-weight: 300;
+  line-height: 1.16;
 
-  letter-spacing: 0.035em;
+  font-weight: 200;
 
-  line-height: 1.22;
+  letter-spacing: 5px;
 
-  max-width: 620px;
+  text-transform: none;
+
+  text-shadow:
+
+    0 0 16px rgba(255,255,255,0.18),
+
+     
+.faq-hero .hero-title {
+
+  margin: 0;
+
+  color: rgba(255,255,255,0.98);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: clamp(28px, 3.2vw, 42px);
+
+  line-height: 1.16;
+
+  font-weight: 200;
+
+  letter-spacing: 5px;
+
+  text-transform: none;
+
+  text-shadow:
+
+    0 0 16px rgba(255,255,255,0.18),
+
+    0 2px 14px rgba(0,0,0,0.22);
+
+  max-width: 660px;
 
 }
 
@@ -559,13 +600,13 @@ body.faq-page .site-header {
 
 .faq-hero .hero-title {
 
-  font-size: 38px;
+  font-size: 34px;
 
-  letter-spacing: 0.035em;
+  letter-spacing: 0.5px;
 
-  line-height: 1.22;
+  line-height: 1.18;
 
-  max-width: 560px;
+  max-width: 610px;
 
 }
 
