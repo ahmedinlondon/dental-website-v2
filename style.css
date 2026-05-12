@@ -497,15 +497,17 @@ body.is-scrolled .header-main {
 
   width: 34px;
 
-  height: 1.5px;
+  height: 2px;
 
   background: var(--v2-charcoal);
 
-  transition:
+  border-radius: 0;
 
-    transform 0.45s ease,
+  transform: none;
 
-    opacity 0.3s ease;
+  opacity: 1;
+
+  transition: opacity 0.25s ease;
 
 }
 
@@ -517,19 +519,25 @@ body.is-scrolled .header-main {
 
 body.menu-open .burger-btn span:nth-child(1) {
 
-  transform: translateY(9.5px) rotate(45deg);
+  transform: none;
+
+  opacity: 1;
 
 }
 
 body.menu-open .burger-btn span:nth-child(2) {
 
-  opacity: 0;
+  transform: none;
+
+  opacity: 1;
 
 }
 
 body.menu-open .burger-btn span:nth-child(3) {
 
-  transform: translateY(-9.5px) rotate(-45deg);
+  transform: none;
+
+  opacity: 1;
 
 }
 /* =========================================================
