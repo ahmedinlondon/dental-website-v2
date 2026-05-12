@@ -1572,17 +1572,19 @@ body.menu-open .menu-overlay {
 
   }
 
-  .footer-inner {
+.footer-inner {
 
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.12fr 1fr 1fr;
 
-  }
+  gap: 42px;
 
-  .footer-column:last-child {
+}
 
-    grid-column: span 2;
+.footer-column:last-child {
 
-  }
+  grid-column: auto;
+
+}
 
 }
 
