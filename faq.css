@@ -731,31 +731,37 @@ body.faq-page .site-header {
 
   }
 
-  .faq-hero-text {
+.faq-hero-text {
 
-    width: 76%;
+  width: 72%;
 
-    max-width: 360px;
+  max-width: none;
 
-    padding-left: 6%;
+  padding-left: 4%;
 
-    top: 50%;
+  position: absolute;
 
-    transform: translateY(-50%);
+  top: 56%;
 
-  }
+  left: 0;
 
-  .faq-hero .script-line {
+  transform: translateY(-50%);
 
-    font-size: 36px;
+}
 
-    margin-bottom: 14px;
+ .faq-hero .script-line {
 
-    letter-spacing: 0.4px;
+  margin-bottom: 16px;
 
-    word-spacing: 1px;
+  margin-left: -4px;
 
-  }
+  font-size: 34px;
+
+  font-weight: 800;
+
+  line-height: 0.95;
+
+}
 
   .faq-hero .hero-title {
 
