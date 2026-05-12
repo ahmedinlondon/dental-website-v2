@@ -547,19 +547,27 @@ body.faq-page .site-header {
 
   }
 
-  .faq-hero .script-line {
+.faq-hero .script-line {
 
-    font-size: 30px;
+  font-size: 30px;
 
-  }
+  margin-bottom: 14px;
 
-  .faq-hero .hero-title {
+  letter-spacing: 0.02em;
 
-    font-size: clamp(42px, 6vw, 64px);
+}
 
-    letter-spacing: 0.13em;
+.faq-hero .hero-title {
 
-  }
+  font-size: 38px;
+
+  letter-spacing: 0.035em;
+
+  line-height: 1.22;
+
+  max-width: 560px;
+
+}
 
   .faq-main {
 
