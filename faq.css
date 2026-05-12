@@ -891,7 +891,7 @@ body.faq-page .site-header {
 
   font-family: 'Kingsley Roman', cursive;
 
-  font-size: 40px;
+  font-size: 38px;
 
   line-height: 1;
 
@@ -917,13 +917,13 @@ body.faq-page .site-header {
 
   font-family: 'Montserrat', 'Poppins', sans-serif;
 
-  font-size: 30px;
+  font-size: 29px;
 
   line-height: 1.16;
 
   font-weight: 300;
 
-  letter-spacing: 0.01em;
+  letter-spacing: 0.035em;
 
 }
 
@@ -973,13 +973,13 @@ body.faq-page .site-header {
 
   font-family: 'Montserrat', 'Poppins', sans-serif;
 
-  font-size: 30px;
+  font-size: 29px;
 
   line-height: 1.14;
 
   font-weight: 300;
 
-  letter-spacing: 0.01em;
+  letter-spacing: 0.035em;
 
   text-transform: none;
 
@@ -989,7 +989,7 @@ body.faq-page .site-header {
 
 .faq-category-line {
 
-  width: 62px;
+  width: 68px;
 
   height: 2px;
 
@@ -1003,7 +1003,7 @@ body.faq-page .site-header {
 
 .faq-question {
 
-  color: #3a352f;
+  color: rgba(47,42,38,0.82);
 
   font-family: 'Montserrat', 'Poppins', sans-serif;
 
@@ -1021,7 +1021,7 @@ body.faq-page .site-header {
 
 .faq-answer {
 
-  color: #746d66;
+  color: rgba(47,42,38,0.82);
 
   font-family: 'Montserrat', 'Poppins', sans-serif;
 
