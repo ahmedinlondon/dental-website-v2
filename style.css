@@ -1467,6 +1467,62 @@ body.menu-open .menu-overlay {
 
 }
 
+/* Footer top separator */
+
+.site-footer {
+
+  border-top: 1px solid rgba(198,161,91,0.26);
+
+}
+
+/* Footer arrows — match FAQ clean arrow style */
+
+.footer-map,
+
+.footer-cta {
+
+  text-decoration: none;
+
+}
+
+.footer-map::after,
+
+.footer-cta::after {
+
+  content: "›";
+
+  margin-left: 10px;
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  font-weight: 300;
+
+}
+
+/* Hide typed arrow if still present visually by spacing correction */
+
+.footer-map {
+
+  font-size: 14px;
+
+}
+
+.footer-cta {
+
+  min-width: 250px;
+
+  min-height: 36px;
+
+  height: 36px;
+
+  padding: 0 22px;
+
+  font-size: 11px;
+
+}
+
 /* =========================================================
 
    11. GLOBAL BUTTON SYSTEM
