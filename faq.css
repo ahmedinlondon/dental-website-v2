@@ -1072,3 +1072,29 @@ body.faq-page .site-header {
   top: 4px;
 
 }
+
+@media (max-width: 700px) {
+
+  .footer-logo,
+
+  .footer-brand,
+
+  .footer-left img {
+
+    width: 280px !important;
+
+    max-width: 80% !important;
+
+    margin: 0 auto !important;
+
+    display: block !important;
+
+  }
+
+  .footer-left {
+
+    text-align: center !important;
+
+  }
+
+}
