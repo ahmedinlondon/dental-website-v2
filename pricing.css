@@ -1280,3 +1280,32 @@ body.pricing-page {
   }
 
 }
+
+
+/* FINAL HERO HEIGHT ADJUSTMENT */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .pricing-hero {
+
+    height: 378px !important;
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .pricing-hero {
+
+    height: 345px !important;
+
+  }
+
+  .pricing-hero-content {
+
+    top: 62% !important;
+
+  }
+
+}
