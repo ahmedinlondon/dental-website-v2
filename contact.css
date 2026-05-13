@@ -1331,3 +1331,92 @@ body.contact-page {
   }
 
 }
+
+
+/* =========================================
+
+   CONTACT LOCATIONS — EDITORIAL REFINEMENT
+
+========================================= */
+
+@media (min-width: 701px) {
+
+  .contact-locations-section {
+
+    padding-top: 54px !important;
+
+    padding-bottom: 56px !important;
+
+  }
+
+  .location-card {
+
+    grid-template-columns: 34% 23% 43% !important;
+
+    padding-bottom: 34px !important;
+
+    margin-bottom: 34px !important;
+
+  }
+
+  .location-info h2 {
+
+    font-size: 28px !important;
+
+    line-height: 1.14 !important;
+
+    margin-bottom: 28px !important;
+
+  }
+
+  .location-image {
+
+    height: 150px !important;
+
+    margin-top: 72px !important;
+
+  }
+
+  .location-details {
+
+    padding-top: 10px !important;
+
+  }
+
+  .location-details p {
+
+    font-size: 13px !important;
+
+    line-height: 1.45 !important;
+
+    margin-bottom: 14px !important;
+
+  }
+
+  .location-buttons {
+
+    margin-top: 22px !important;
+
+  }
+
+  .location-btn {
+
+    height: 38px !important;
+
+    font-size: 9.5px !important;
+
+  }
+
+  .location-map {
+
+    padding-top: 10px !important;
+
+  }
+
+  .location-map iframe {
+
+    height: 205px !important;
+
+  }
+
+}
