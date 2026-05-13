@@ -1388,26 +1388,28 @@ body.services-page {
 
 }
 
-/* SMALLER SECTION SCRIPT TITLES */
+/* REDUCE ONLY KINGSLEY SCRIPT HEADINGS */
 
-.services-section-heading p,
+.services-intro-script,
 
-.comparison-title p {
+.comparison-script {
 
-  font-size: 72px !important;
+    font-size: 62px !important;
 
-  line-height: 0.9 !important;
+    line-height: 1 !important;
 
 }
 
 @media (max-width: 700px) {
 
-  .services-section-heading p,
+    
 
-  .comparison-title p {
+    .services-intro-script,
 
-    font-size: 52px !important;
+    .comparison-script {
 
-  }
+        font-size: 42px !important;
+
+    }
 
 }
