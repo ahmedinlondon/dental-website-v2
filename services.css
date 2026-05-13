@@ -1394,30 +1394,36 @@ body.services-page {
 
 .comparison-script {
 
-    font-size: 42px !important;
+  font-size: 38px !important;
 
-    line-height: 1 !important;
+  line-height: 1 !important;
 
-    transform: scale(0.72);
+  transform: scale(0.55);
 
-    transform-origin: left center;
+  transform-origin: left center;
 
-    display: inline-block;
+  display: inline-block;
 
 }
+
+/* MOBILE ONLY */
 
 @media (max-width: 700px) {
 
-    .services-intro-script,
+  .services-intro-script,
 
-    .comparison-script {
+  .comparison-script {
 
-        font-size: 30px !important;
+    font-size: 28px !important;
 
-        transform: scale(0.68);
+    transform: scale(0.52);
 
-    }
+  }
 
-}
+  .services-hero-content {
+
+    top: 66% !important;
+
+  }
 
 }
