@@ -1387,3 +1387,27 @@ body.services-page {
   transition: opacity 1.15s ease 0.28s, transform 1.15s ease 0.28s !important;
 
 }
+
+/* SMALLER SECTION SCRIPT TITLES */
+
+.services-section-heading p,
+
+.comparison-title p {
+
+  font-size: 72px !important;
+
+  line-height: 0.9 !important;
+
+}
+
+@media (max-width: 700px) {
+
+  .services-section-heading p,
+
+  .comparison-title p {
+
+    font-size: 52px !important;
+
+  }
+
+}
