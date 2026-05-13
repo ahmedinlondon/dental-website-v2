@@ -1264,3 +1264,53 @@ body.contact-page {
   }
 
 }
+
+/* =========================================
+
+   FINAL iPAD POLISH — CONTACT PAGE
+
+========================================= */
+
+@media (min-width: 701px) and (max-width: 1400px) {
+
+  /* 1. Reduce gap before Our Locations */
+
+  .contact-locations-section {
+
+    padding-top: 42px !important;
+
+  }
+
+  /* 2. Slightly reduce map height */
+
+  .location-map iframe {
+
+    height: 200px !important;
+
+  }
+
+  /* 3. Move location buttons up slightly */
+
+  .location-buttons {
+
+    transform: translateY(-12px) !important;
+
+  }
+
+  /* 4. Slightly reduce footer logo size on iPad */
+
+  .contact-footer-brand img {
+
+    width: 190px !important;
+
+  }
+
+  /* 5. Add breathing room above footer */
+
+  .contact-footer {
+
+    margin-top: 26px !important;
+
+  }
+
+}
