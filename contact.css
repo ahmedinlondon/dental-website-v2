@@ -1017,3 +1017,131 @@ body.contact-page {
   }
 
 }
+
+/* =========================================
+
+   CONTACT PAGE FIXES AFTER FIRST LIVE TEST
+
+========================================= */
+
+/* 1. Restore global floating buttons as circles */
+
+.contact-page .floating-contact {
+
+  border-radius: 50% !important;
+
+}
+
+/* 2. Remove duplicate copyright from global footer */
+
+.contact-page .site-footer .footer-bottom {
+
+  display: none !important;
+
+}
+
+/* 3. Keep only the final brown strip copyright */
+
+.contact-final-strip {
+
+  display: block;
+
+}
+
+/* 4. Make location cards return to refined side-by-side layout on iPad/desktop */
+
+@media (min-width: 701px) {
+
+  .contact-locations-section {
+
+    padding: 72px 5.5% 78px;
+
+  }
+
+  .location-grid {
+
+    grid-template-columns: repeat(2, 1fr) !important;
+
+    gap: 26px !important;
+
+  }
+
+  .location-card {
+
+    display: grid !important;
+
+    grid-template-columns: 42% 58% !important;
+
+  }
+
+  .location-image-area {
+
+    padding: 20px !important;
+
+  }
+
+  .location-image {
+
+    height: 230px !important;
+
+  }
+
+  .location-info {
+
+    padding: 28px 26px !important;
+
+  }
+
+  .location-map iframe {
+
+    height: 210px !important;
+
+  }
+
+}
+
+/* 5. iPad spacing correction */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .location-grid {
+
+    grid-template-columns: repeat(2, 1fr) !important;
+
+  }
+
+  .location-image {
+
+    height: 190px !important;
+
+  }
+
+  .location-map iframe {
+
+    height: 190px !important;
+
+  }
+
+}
+
+/* 6. Keep PolyDent image focused higher on building / entrance */
+
+.location-card:last-child .location-image img {
+
+  object-position: center 46% !important;
+
+}
+
+/* 7. Slightly reduce huge white gaps around location cards */
+
+.location-info h2 {
+
+  margin-bottom: 18px !important;
+
+}
+
+.location-details {
+
+  margin-bottom: 18px !important;
+
+}
