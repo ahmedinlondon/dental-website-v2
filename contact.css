@@ -1363,3 +1363,61 @@ body.contact-page {
   }
 
 }
+
+/* =========================================
+
+   FINAL ALIGNMENT REFINEMENT
+
+========================================= */
+
+@media (min-width: 701px) {
+
+  .location-card {
+
+    align-items: start !important;
+
+    gap: 28px !important;
+
+    padding: 18px 0 26px !important;
+
+  }
+
+  .location-info h2 {
+
+    margin-bottom: 18px !important;
+
+  }
+
+  .location-image {
+
+    margin-top: 12px !important;
+
+    height: 170px !important;
+
+  }
+
+  .location-details {
+
+    padding-top: 24px !important;
+
+  }
+
+  .location-buttons {
+
+    margin-top: 34px !important;
+
+  }
+
+  .location-map {
+
+    padding-top: 24px !important;
+
+  }
+
+  .location-map iframe {
+
+    height: 210px !important;
+
+  }
+
+}
