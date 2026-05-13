@@ -626,13 +626,17 @@ window.addEventListener("scroll", function () {
 
 });
 
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
 
   const hero = document.querySelector(".pricing-hero");
 
   if (hero) {
 
-    hero.classList.add("animate");
+    setTimeout(function () {
+
+      hero.classList.add("animate");
+
+    }, 350);
 
   }
 
