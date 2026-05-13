@@ -1,1 +1,1063 @@
+/* =========================================================
 
+   PRICING.CSS — V2 PRICING PAGE REDESIGN
+
+========================================================= */
+
+/* ================= FONTS + GLOBAL ================= */
+
+@font-face {
+
+  font-family: 'Kingsley Roman';
+
+  src: url('/dental-website-v2/kingsley-roman.ttf') format('truetype');
+
+  font-weight: 400;
+
+  font-style: normal;
+
+}
+
+body.pricing-page {
+
+  margin: 0;
+
+  padding: 0;
+
+  background: #efe9dc;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  color: #2d2a26;
+
+  overflow-x: hidden;
+
+}
+
+.pricing-page *,
+
+.pricing-page *::before,
+
+.pricing-page *::after {
+
+  box-sizing: border-box;
+
+  border-radius: 0 !important;
+
+}
+
+.pricing-page a {
+
+  text-decoration: none;
+
+}
+
+/* ================= HERO ================= */
+
+.pricing-hero {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 620px;
+
+  overflow: hidden;
+
+  background-image: url('/dental-website-v2/pricinghero.png');
+
+  background-size: cover;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+}
+
+.pricing-hero-content {
+
+  position: absolute;
+
+  left: 5.5%;
+
+  top: 56%;
+
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  max-width: 760px;
+
+}
+
+.pricing-hero-script {
+
+  margin: 0 0 22px;
+
+  color: #f0cf8a;
+
+  font-family: 'Kingsley Roman', cursive;
+
+  font-size: 40px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: 0.2px;
+
+  word-spacing: 2px;
+
+  text-shadow:
+
+    0 0 1px rgba(240,207,138,0.45),
+
+    0 1px 8px rgba(0,0,0,0.10);
+
+}
+
+.pricing-hero .hero-title {
+
+  margin: 0;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 44px;
+
+  line-height: 1.16;
+
+  font-weight: 300;
+
+  letter-spacing: 0.035em;
+
+  max-width: 720px;
+
+}
+
+/* HERO ANIMATION — MATCH SERVICES */
+
+.pricing-hero .pricing-hero-script,
+
+.pricing-hero .hero-title {
+
+  opacity: 0 !important;
+
+  transform: translateY(18px) !important;
+
+  animation: none !important;
+
+}
+
+.pricing-hero.animate .pricing-hero-script {
+
+  opacity: 1 !important;
+
+  transform: translateY(0) !important;
+
+  transition: opacity 1.15s ease, transform 1.15s ease !important;
+
+}
+
+.pricing-hero.animate .hero-title {
+
+  opacity: 1 !important;
+
+  transform: translateY(0) !important;
+
+  transition: opacity 1.15s ease 0.28s, transform 1.15s ease 0.28s !important;
+
+}
+
+/* ================= MAIN BODY ================= */
+
+.pricing-main {
+
+  background: #efe9dc;
+
+  color: #2d2a26;
+
+  padding: 64px 0 78px;
+
+}
+
+/* ================= INTRO / HEADING ================= */
+
+.pricing-intro-section {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 0 5.5% 44px;
+
+}
+
+.pricing-section-heading {
+
+  position: relative;
+
+  margin: 0 0 28px;
+
+  padding-bottom: 26px;
+
+}
+
+.pricing-section-heading::after {
+
+  content: "";
+
+  width: 90px;
+
+  height: 1.5px;
+
+  background: rgba(240, 207, 138, 0.75);
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+}
+
+.pricing-section-heading p {
+
+  margin: 0 0 18px;
+
+  color: #d99a3e;
+
+  font-family: 'Kingsley Roman', cursive;
+
+  font-size: 34px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: 0.2px;
+
+  word-spacing: 2px;
+
+  text-transform: none;
+
+  text-shadow:
+
+    0 0 1px rgba(217,154,62,0.34);
+
+}
+
+.pricing-section-heading h2 {
+
+  margin: 0;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 29px;
+
+  line-height: 1.16;
+
+  font-weight: 300;
+
+  letter-spacing: 0.035em;
+
+}
+
+.pricing-intro-copy {
+
+  max-width: 920px;
+
+}
+
+.pricing-intro-copy p {
+
+  margin: 0;
+
+  color: rgba(45,42,38,0.84);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.82;
+
+  font-weight: 300;
+
+  letter-spacing: 0.01em;
+
+}
+
+/* ================= PRICING CARDS ================= */
+
+.pricing-cards-section {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 0 5.5% 42px;
+
+}
+
+.pricing-cards-row {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+}
+
+.price-card {
+
+  position: relative;
+
+  min-height: 225px;
+
+  padding: 30px 54px 28px 28px;
+
+  border: 1px solid rgba(185,150,87,0.28);
+
+  background: #f8f2e8;
+
+  color: #2d2a26;
+
+  cursor: pointer;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  text-align: left;
+
+  box-shadow: none;
+
+  transition:
+
+    background 0.28s ease,
+
+    border-color 0.28s ease,
+
+    transform 0.28s ease;
+
+}
+
+.price-card:hover {
+
+  background: #fffaf2;
+
+  border-color: rgba(185,150,87,0.46);
+
+  transform: translateY(-2px);
+
+}
+
+.price-card h3 {
+
+  margin: 0;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 23px;
+
+  line-height: 1.2;
+
+  font-weight: 300;
+
+  letter-spacing: 0.025em;
+
+}
+
+.price-box {
+
+  margin-top: 28px;
+
+}
+
+.small-text {
+
+  display: block;
+
+  color: rgba(45,42,38,0.66);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.45;
+
+  font-weight: 300;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+}
+
+.price-box strong {
+
+  display: block;
+
+  margin: 7px 0;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 25px;
+
+  line-height: 1.1;
+
+  font-weight: 300;
+
+  letter-spacing: 0.02em;
+
+}
+
+.card-arrow {
+
+  position: absolute;
+
+  right: 26px;
+
+  top: 50%;
+
+  width: 18px;
+
+  height: 18px;
+
+  transform: translateY(-50%);
+
+}
+
+.card-arrow::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 10px;
+
+  height: 10px;
+
+  border-top: 1.5px solid #d99a3e;
+
+  border-right: 1.5px solid #d99a3e;
+
+  transform: rotate(45deg);
+
+  right: 3px;
+
+  top: 4px;
+
+}
+
+/* ================= PAYMENT STRIP ================= */
+
+.payment-strip {
+
+  width: 100%;
+
+  margin: 14px 0 46px;
+
+  padding: 24px 5.5%;
+
+  background: #607485;
+
+  color: #ffffff;
+
+  display: grid;
+
+  grid-template-columns: 1.8fr 1fr;
+
+  align-items: center;
+
+  gap: 34px;
+
+}
+
+.payment-left,
+
+.payment-right {
+
+  max-width: 1180px;
+
+}
+
+.payment-left h3 {
+
+  margin: 0 0 8px;
+
+  color: rgba(255,255,255,0.94);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 23px;
+
+  line-height: 1.2;
+
+  font-weight: 300;
+
+  letter-spacing: 0.025em;
+
+}
+
+.payment-left p {
+
+  margin: 0;
+
+  max-width: 760px;
+
+  color: rgba(255,255,255,0.82);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  font-weight: 300;
+
+}
+
+.payment-right {
+
+  padding-left: 34px;
+
+  border-left: 1px solid rgba(239,233,220,0.38);
+
+}
+
+.payment-right p {
+
+  margin: 5px 0;
+
+  color: rgba(255,255,255,0.88);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  font-weight: 300;
+
+  letter-spacing: 0.04em;
+
+}
+
+/* ================= SUPPORT CARDS ================= */
+
+.support-section {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 0 5.5%;
+
+}
+
+.support-cards-row {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+}
+
+.support-card {
+
+  min-height: 180px;
+
+  padding: 30px 28px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(185,150,87,0.20);
+
+  box-shadow:
+
+    8px 8px 0 rgba(248,242,232,0.85),
+
+    0 18px 42px rgba(38,35,33,0.06);
+
+  text-align: left;
+
+}
+
+.support-card h3 {
+
+  margin: 0 0 14px;
+
+  color: #0f2f57;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 23px;
+
+  line-height: 1.2;
+
+  font-weight: 300;
+
+  letter-spacing: 0.025em;
+
+}
+
+.support-card p {
+
+  margin: 0;
+
+  color: rgba(45,42,38,0.74);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.68;
+
+  font-weight: 300;
+
+}
+
+/* ================= POPUPS ================= */
+
+.pricing-popup {
+
+  position: fixed;
+
+  inset: 0;
+
+  display: none;
+
+  align-items: center;
+
+  justify-content: center;
+
+  z-index: 20000;
+
+  padding: 24px;
+
+  background: rgba(38,35,33,0.22);
+
+}
+
+.pricing-popup.show {
+
+  display: flex;
+
+}
+
+.pricing-popup-content {
+
+  position: relative;
+
+  width: 92%;
+
+  max-width: 680px;
+
+  max-height: 82vh;
+
+  overflow-y: auto;
+
+  padding: 34px 34px;
+
+  background: rgba(248,242,232,0.98);
+
+  color: rgba(45,42,38,0.86);
+
+  border: 1px solid rgba(185,150,87,0.24);
+
+  box-shadow: 0 24px 58px rgba(5,22,38,0.22);
+
+}
+
+.pricing-popup-content h3 {
+
+  margin: 0 0 18px;
+
+  color: #2d2a26;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 32px;
+
+  line-height: 1.12;
+
+  font-weight: 300;
+
+  letter-spacing: 0.015em;
+
+}
+
+.pricing-popup-content p {
+
+  margin: 0 0 14px;
+
+  color: rgba(47,42,38,0.82);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.78;
+
+  font-weight: 300;
+
+}
+
+.pricing-popup-content button {
+
+  position: absolute;
+
+  top: 10px;
+
+  right: 16px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #2d2a26;
+
+  font-size: 36px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+}
+
+.pricing-popup-content::-webkit-scrollbar {
+
+  width: 7px;
+
+}
+
+.pricing-popup-content::-webkit-scrollbar-thumb {
+
+  background: rgba(189,138,46,0.42);
+
+}
+
+/* ================= iPAD / TABLET ================= */
+
+@media (max-width: 1180px) {
+
+  .pricing-hero {
+
+    height: 520px;
+
+  }
+
+  .pricing-hero-content {
+
+    left: 5%;
+
+    top: 56%;
+
+    max-width: 620px;
+
+  }
+
+  .pricing-hero-script {
+
+    font-size: 36px;
+
+  }
+
+  .pricing-hero .hero-title {
+
+    font-size: 38px;
+
+  }
+
+  .pricing-main {
+
+    padding: 56px 0 68px;
+
+  }
+
+  .pricing-intro-section,
+
+  .pricing-cards-section,
+
+  .support-section {
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+  }
+
+  .pricing-section-heading p {
+
+    font-size: 32px;
+
+  }
+
+  .pricing-section-heading h2 {
+
+    font-size: 27px;
+
+  }
+
+  .pricing-cards-row {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+  }
+
+  .price-card {
+
+    min-height: 190px;
+
+  }
+
+  .price-card h3 {
+
+    font-size: 22px;
+
+  }
+
+  .payment-strip {
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+  }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+  .pricing-hero {
+
+    height: 470px;
+
+    background-position: 67% center;
+
+  }
+
+  .pricing-hero-content {
+
+    left: 6%;
+
+    right: 6%;
+
+    top: 66%;
+
+    max-width: none;
+
+  }
+
+  .pricing-hero-script {
+
+    font-size: 31px;
+
+    margin-bottom: 16px;
+
+  }
+
+  .pricing-hero .hero-title {
+
+    font-size: 29px;
+
+    line-height: 1.22;
+
+    max-width: 340px;
+
+  }
+
+  .pricing-main {
+
+    padding: 48px 0 58px;
+
+  }
+
+  .pricing-intro-section {
+
+    padding: 0 6% 38px;
+
+  }
+
+  .pricing-section-heading {
+
+    padding-bottom: 22px;
+
+    margin-bottom: 24px;
+
+  }
+
+  .pricing-section-heading::after {
+
+    width: 72px;
+
+  }
+
+  .pricing-section-heading p {
+
+    font-size: 29px;
+
+    margin-bottom: 14px;
+
+  }
+
+  .pricing-section-heading h2 {
+
+    font-size: 25px;
+
+    line-height: 1.25;
+
+  }
+
+  .pricing-intro-copy p {
+
+    font-size: 14px;
+
+    line-height: 1.72;
+
+  }
+
+  .pricing-cards-section {
+
+    padding: 0 6% 36px;
+
+  }
+
+  .pricing-cards-row {
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+  }
+
+  .price-card {
+
+    min-height: 128px;
+
+    padding: 24px 54px 22px 22px;
+
+  }
+
+  .price-card h3 {
+
+    font-size: 26px;
+
+  }
+
+  .price-box {
+
+    margin-top: 18px;
+
+  }
+
+  .price-box strong {
+
+    font-size: 24px;
+
+  }
+
+  .card-arrow {
+
+    right: 22px;
+
+  }
+
+  .payment-strip {
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin: 8px 0 38px;
+
+    padding: 24px 6%;
+
+  }
+
+  .payment-left h3 {
+
+    font-size: 23px;
+
+  }
+
+  .payment-right {
+
+    padding-left: 0;
+
+    border-left: none;
+
+    border-top: 1px solid rgba(239,233,220,0.38);
+
+    padding-top: 14px;
+
+  }
+
+  .support-section {
+
+    padding: 0 6%;
+
+  }
+
+  .support-cards-row {
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+  }
+
+  .support-card {
+
+    min-height: 150px;
+
+    padding: 26px 24px;
+
+  }
+
+  .support-card h3 {
+
+    font-size: 25px;
+
+  }
+
+  .pricing-popup-content {
+
+    width: 92%;
+
+    max-height: 82vh;
+
+    padding: 30px 24px;
+
+  }
+
+  .pricing-popup-content h3 {
+
+    font-size: 28px;
+
+  }
+
+  .pricing-popup-content p {
+
+    font-size: 14px;
+
+  }
+
+}
