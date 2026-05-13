@@ -1309,3 +1309,115 @@ body.pricing-page {
   }
 
 }
+
+/* =========================================
+
+   PRICING PAGE REAL PNG LOGO FIX
+
+========================================= */
+
+.site-logo img {
+
+  width: auto !important;
+
+  height: 78px !important;
+
+  max-height: none !important;
+
+  object-fit: contain !important;
+
+}
+
+.footer-logo img {
+
+  width: 320px !important;
+
+  max-width: 100% !important;
+
+  height: auto !important;
+
+  object-fit: contain !important;
+
+}
+
+/* iPAD */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .site-logo img {
+
+    height: 66px !important;
+
+  }
+
+  .footer-logo img {
+
+    width: 300px !important;
+
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .site-logo img {
+
+    height: 54px !important;
+
+  }
+
+  .footer-logo img {
+
+    width: 260px !important;
+
+    max-width: 82% !important;
+
+    margin: 0 auto 20px auto !important;
+
+    display: block !important;
+
+  }
+
+}
+
+/* PRICING HEADER GLOBAL COLOUR + LOGO FIX */
+
+.pricing-page .header-top {
+
+  background: #f5eee3 !important;
+
+}
+
+.pricing-page .site-logo img {
+
+  width: auto !important;
+
+  height: 78px !important;
+
+  max-height: none !important;
+
+  object-fit: contain !important;
+
+}
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .pricing-page .site-logo img {
+
+    height: 66px !important;
+
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .pricing-page .site-logo img {
+
+    height: 54px !important;
+
+  }
+
+}
