@@ -1440,3 +1440,41 @@ body.contact-page {
   }
 
 }
+
+/* =========================================
+
+   TEST — MOVE LOCATION BUTTONS TO MIDDLE COLUMN
+
+========================================= */
+
+@media (min-width: 701px) {
+
+  .location-buttons {
+
+    grid-column: 2 !important;
+
+    grid-row: 2 !important;
+
+    padding: 0 34px !important;
+
+    margin: 18px 0 0 !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 10px !important;
+
+    align-self: start !important;
+
+  }
+
+  .location-btn {
+
+    width: 100% !important;
+
+    height: 40px !important;
+
+  }
+
+}
