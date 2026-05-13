@@ -1335,7 +1335,7 @@ body.contact-page {
 
 /* =========================================
 
-   CONTACT LOCATIONS — EDITORIAL REFINEMENT
+   CONTACT LOCATIONS — EDITORIAL REFINED
 
 ========================================= */
 
@@ -1343,43 +1343,67 @@ body.contact-page {
 
   .contact-locations-section {
 
-    padding-top: 54px !important;
+    padding-top: 58px !important;
 
-    padding-bottom: 56px !important;
+    padding-bottom: 60px !important;
 
   }
 
   .location-card {
 
-    grid-template-columns: 34% 23% 43% !important;
+    grid-template-columns: 35% 25% 40% !important;
 
-    padding-bottom: 34px !important;
+    align-items: center !important;
 
-    margin-bottom: 34px !important;
+    gap: 34px !important;
+
+    padding: 30px 0 !important;
+
+    margin-bottom: 26px !important;
+
+  }
+
+  .location-left {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    justify-content: center !important;
 
   }
 
   .location-info h2 {
 
-    font-size: 28px !important;
+    font-size: 30px !important;
 
     line-height: 1.14 !important;
 
-    margin-bottom: 28px !important;
+    margin-bottom: 26px !important;
 
   }
 
   .location-image {
 
-    height: 150px !important;
+    height: 190px !important;
 
-    margin-top: 72px !important;
+    margin-top: 26px !important;
+
+  }
+
+  .location-image img {
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    object-fit: cover !important;
 
   }
 
   .location-details {
 
-    padding-top: 10px !important;
+    padding-top: 12px !important;
 
   }
 
@@ -1387,15 +1411,17 @@ body.contact-page {
 
     font-size: 13px !important;
 
-    line-height: 1.45 !important;
+    line-height: 1.55 !important;
 
-    margin-bottom: 14px !important;
+    margin-bottom: 15px !important;
 
   }
 
   .location-buttons {
 
-    margin-top: 22px !important;
+    margin-top: 24px !important;
+
+    gap: 10px !important;
 
   }
 
@@ -1403,19 +1429,15 @@ body.contact-page {
 
     height: 38px !important;
 
-    font-size: 9.5px !important;
+    font-size: 10px !important;
 
-  }
-
-  .location-map {
-
-    padding-top: 10px !important;
+    letter-spacing: 2px !important;
 
   }
 
   .location-map iframe {
 
-    height: 205px !important;
+    height: 240px !important;
 
   }
 
