@@ -1388,37 +1388,47 @@ body.services-page {
 
 }
 
-/* REDUCE ONLY KINGSLEY SCRIPT HEADINGS */
+/* REDUCE ONLY "OUR SERVICES" + "YOUR OPTIONS AT A GLANCE" */
 
-.services-intro-script,
+.services-section-heading > p,
 
-.comparison-script {
+.comparison-title > p {
 
-  font-size: 32px !important;
+  font-size: 34px !important;
 
   line-height: 1 !important;
 
-  transform: scale(0.55);
+  transform: none !important;
 
-  transform-origin: left center;
-
-  display: inline-block;
+  display: block !important;
 
 }
 
-/* MOBILE ONLY */
+@media (max-width: 1180px) {
+
+  .services-section-heading > p,
+
+  .comparison-title > p {
+
+    font-size: 32px !important;
+
+  }
+
+}
 
 @media (max-width: 700px) {
 
-  .services-intro-script,
+  .services-section-heading > p,
 
-  .comparison-script {
+  .comparison-title > p {
 
-    font-size: 24px !important;
-
-    transform: scale(0.52);
+    font-size: 29px !important;
 
   }
+
+}
+
+@media (max-width: 700px) {
 
   .services-hero-content {
 
@@ -1427,3 +1437,4 @@ body.services-page {
   }
 
 }
+
