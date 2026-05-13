@@ -1061,3 +1061,222 @@ body.pricing-page {
   }
 
 }
+
+
+/* =========================================================
+
+   PRICING PAGE FINAL REFINEMENTS
+
+========================================================= */
+
+/* EMBRACE TEXT LOGO */
+
+.embrace-logo-text {
+
+  display: inline-flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  line-height: 1;
+
+  color: #0f2f57;
+
+  text-transform: lowercase;
+
+}
+
+.embrace-logo-text span {
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 34px;
+
+  font-weight: 300;
+
+  letter-spacing: 0.16em;
+
+  line-height: 0.9;
+
+}
+
+.embrace-logo-text small {
+
+  margin-top: 8px;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.42em;
+
+  text-transform: uppercase;
+
+  color: #0f2f57;
+
+}
+
+/* HERO HEIGHT REDUCTION */
+
+.pricing-hero {
+
+  height: 500px !important;
+
+}
+
+.pricing-hero-content {
+
+  top: 58% !important;
+
+}
+
+/* STRONGER HERO ANIMATION */
+
+.pricing-hero .pricing-hero-script,
+
+.pricing-hero .hero-title {
+
+  opacity: 0 !important;
+
+  transform: translateY(26px) !important;
+
+  filter: blur(3px);
+
+}
+
+.pricing-hero.animate .pricing-hero-script {
+
+  opacity: 1 !important;
+
+  transform: translateY(0) !important;
+
+  filter: blur(0);
+
+  transition:
+
+    opacity 1.25s ease,
+
+    transform 1.25s ease,
+
+    filter 1.25s ease !important;
+
+}
+
+.pricing-hero.animate .hero-title {
+
+  opacity: 1 !important;
+
+  transform: translateY(0) !important;
+
+  filter: blur(0);
+
+  transition:
+
+    opacity 1.35s ease 0.32s,
+
+    transform 1.35s ease 0.32s,
+
+    filter 1.35s ease 0.32s !important;
+
+}
+
+/* FLOATING BUTTONS */
+
+.pricing-page .floating-contact {
+
+  border-radius: 50% !important;
+
+}
+
+/* FOOTER SOCIAL ICONS — CIRCLE FIX */
+
+.pricing-page .footer-socials .icon {
+
+  width: 42px !important;
+
+  height: 42px !important;
+
+  border-radius: 50% !important;
+
+  overflow: hidden;
+
+}
+
+/* PAYMENT STRIP MOBILE HEIGHT REFINEMENT */
+
+@media (max-width: 700px) {
+
+  .payment-strip {
+
+    padding-top: 20px !important;
+
+    padding-bottom: 20px !important;
+
+  }
+
+}
+
+/* POPUP MOBILE TEXT REFINEMENT */
+
+@media (max-width: 700px) {
+
+  .pricing-popup-content p {
+
+    font-size: 13.4px !important;
+
+    line-height: 1.72 !important;
+
+  }
+
+}
+
+/* iPAD */
+
+@media (max-width: 1180px) {
+
+  .pricing-hero {
+
+    height: 420px !important;
+
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .pricing-hero {
+
+    height: 405px !important;
+
+  }
+
+  .pricing-hero-content {
+
+    top: 64% !important;
+
+  }
+
+  .embrace-logo-text span {
+
+    font-size: 29px;
+
+    letter-spacing: 0.14em;
+
+  }
+
+  .embrace-logo-text small {
+
+    font-size: 7px;
+
+    letter-spacing: 0.34em;
+
+  }
+
+}
