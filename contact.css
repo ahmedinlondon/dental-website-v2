@@ -1020,7 +1020,9 @@ body.contact-page {
 
 /* =========================================
 
-   CONTACT LOCATION SECTION — FINAL OVERRIDE
+   CONTACT LOCATIONS — EDITORIAL ROW LAYOUT
+
+   iPAD / DESKTOP ONLY
 
 ========================================= */
 
@@ -1028,7 +1030,29 @@ body.contact-page {
 
   .contact-locations-section {
 
-    padding: 72px 5.5% 78px !important;
+    background: #f5eee3 !important;
+
+    padding: 58px 5.5% 64px !important;
+
+  }
+
+  .contact-section-heading {
+
+    margin: 0 0 42px !important;
+
+    padding-bottom: 22px !important;
+
+  }
+
+  .contact-section-heading span {
+
+    color: #2d2a26 !important;
+
+    font-size: 34px !important;
+
+    font-weight: 300 !important;
+
+    letter-spacing: 0.14em !important;
 
   }
 
@@ -1036,9 +1060,13 @@ body.contact-page {
 
     display: grid !important;
 
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-columns: 1fr !important;
 
-    gap: 26px !important;
+    gap: 0 !important;
+
+    max-width: 1280px !important;
+
+    margin: 0 auto !important;
 
   }
 
@@ -1046,27 +1074,85 @@ body.contact-page {
 
     display: grid !important;
 
-    grid-template-columns: 36% 64% !important;
+    grid-template-columns: 34% 24% 42% !important;
 
-    min-height: 540px !important;
+    gap: 0 !important;
+
+    min-height: 0 !important;
 
     height: auto !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    border-bottom: 1px solid rgba(185,150,87,0.28) !important;
+
+    padding: 0 0 44px !important;
+
+    margin: 0 0 44px !important;
+
+    overflow: visible !important;
+
+  }
+
+  .location-card:last-child {
+
+    margin-bottom: 0 !important;
 
   }
 
   .location-image-area {
 
-    padding: 20px !important;
+    grid-column: 1 !important;
+
+    padding: 0 34px 0 0 !important;
+
+    background: transparent !important;
 
     display: flex !important;
 
     flex-direction: column !important;
 
+    justify-content: flex-start !important;
+
+  }
+
+  .location-info {
+
+    display: contents !important;
+
+  }
+
+  .location-info h2 {
+
+    grid-column: 1 !important;
+
+    grid-row: 1 !important;
+
+    margin: 0 34px 26px 0 !important;
+
+    color: #2d2a26 !important;
+
+    font-size: 30px !important;
+
+    line-height: 1.15 !important;
+
+    font-weight: 300 !important;
+
+    letter-spacing: 0.02em !important;
+
   }
 
   .location-image {
 
-    height: 220px !important;
+    width: 100% !important;
+
+    height: 170px !important;
+
+    overflow: hidden !important;
+
+    margin-top: 92px !important;
 
   }
 
@@ -1078,29 +1164,91 @@ body.contact-page {
 
     object-fit: cover !important;
 
+    filter: saturate(0.88) brightness(0.92) !important;
+
   }
 
   .location-card:first-child .location-image img {
 
-    object-position: center 18% !important;
+    object-position: center 24% !important;
 
   }
 
   .location-card:last-child .location-image img {
 
-    object-position: center 42% !important;
+    object-position: center 48% !important;
+
+  }
+
+  .location-details {
+
+    grid-column: 2 !important;
+
+    grid-row: 1 / span 2 !important;
+
+    margin: 0 !important;
+
+    padding: 16px 34px 0 !important;
+
+    border-left: 1px solid rgba(185,150,87,0.28) !important;
+
+    border-right: 1px solid rgba(185,150,87,0.28) !important;
+
+  }
+
+  .location-details p {
+
+    margin: 0 0 18px !important;
+
+    display: grid !important;
+
+    grid-template-columns: 22px 1fr !important;
+
+    column-gap: 12px !important;
+
+    align-items: start !important;
+
+    color: rgba(45,42,38,0.82) !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.55 !important;
+
+    font-weight: 300 !important;
+
+  }
+
+  .location-details i {
+
+    color: #b88932 !important;
+
+    margin-top: 4px !important;
+
+  }
+
+  .location-details a {
+
+    color: rgba(45,42,38,0.82) !important;
 
   }
 
   .location-buttons {
 
+    grid-column: 2 !important;
+
+    grid-row: 2 !important;
+
+    padding: 0 34px !important;
+
+    margin: -92px 0 0 !important;
+
     display: flex !important;
 
     flex-direction: column !important;
 
-    gap: 10px !important;
+    gap: 12px !important;
 
-    margin-top: 14px !important;
+    align-self: end !important;
 
   }
 
@@ -1112,165 +1260,59 @@ body.contact-page {
 
     min-width: 0 !important;
 
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    gap: 10px !important;
+
     font-size: 10px !important;
 
     line-height: 1 !important;
 
-    white-space: nowrap !important;
+    font-weight: 400 !important;
 
-  }
+    letter-spacing: 0.16em !important;
 
-  .location-info {
-
-    padding: 32px 28px !important;
-
-    display: flex !important;
-
-    flex-direction: column !important;
-
-  }
-
-  .location-info h2 {
-
-    font-size: 28px !important;
-
-    line-height: 1.15 !important;
-
-    margin: 0 0 20px !important;
-
-  }
-
-  .location-details {
-
-    margin-bottom: 22px !important;
-
-  }
-
-  .location-map {
-
-    margin-top: auto !important;
-
-  }
-
-  .location-map iframe {
-
-    width: 100% !important;
-
-    height: 245px !important;
-
-  }
-
-}
-
-/* iPad portrait refinement */
-
-@media (min-width: 701px) and (max-width: 900px) {
-
-  .location-card {
-
-    grid-template-columns: 34% 66% !important;
-
-  }
-
-  .location-image {
-
-    height: 190px !important;
-
-  }
-
-  .location-map iframe {
-
-    height: 220px !important;
-
-  }
-
-}
-
-/* =========================================
-
-   CONTACT LOCATIONS — IPAD LANDSCAPE FIX
-
-========================================= */
-
-@media (min-width: 701px) and (max-width: 1400px) {
-
-  .location-grid {
-
-    display: grid !important;
-
-    grid-template-columns: 1fr !important;
-
-    gap: 34px !important;
-
-  }
-
-  .location-card {
-
-    width: 100% !important;
-
-    display: grid !important;
-
-    grid-template-columns: 32% 68% !important;
-
-    min-height: 520px !important;
-
-  }
-
-  .location-image-area {
-
-    padding: 24px !important;
-
-    display: flex !important;
-
-    flex-direction: column !important;
-
-  }
-
-  .location-image {
-
-    height: 260px !important;
-
-  }
-
-  .location-buttons {
-
-    display: flex !important;
-
-    flex-direction: column !important;
-
-    gap: 12px !important;
-
-    margin-top: 16px !important;
-
-  }
-
-  .location-btn {
-
-    width: 100% !important;
-
-    height: 44px !important;
-
-    font-size: 11px !important;
+    text-transform: uppercase !important;
 
     white-space: nowrap !important;
 
   }
 
-  .location-info {
+  .location-btn.dark {
 
-    padding: 38px 36px !important;
+    background: #b88932 !important;
 
-    display: flex !important;
+    border: 1px solid #b88932 !important;
 
-    flex-direction: column !important;
+    color: #ffffff !important;
+
+  }
+
+  .location-btn.light {
+
+    background: transparent !important;
+
+    border: 1px solid #b88932 !important;
+
+    color: #b88932 !important;
 
   }
 
   .location-map {
 
-    margin-top: auto !important;
+    grid-column: 3 !important;
+
+    grid-row: 1 / span 2 !important;
 
     width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 16px 0 0 34px !important;
 
   }
 
@@ -1278,7 +1320,13 @@ body.contact-page {
 
     width: 100% !important;
 
-    height: 285px !important;
+    height: 230px !important;
+
+    border: none !important;
+
+    display: block !important;
+
+    filter: saturate(0.82) brightness(0.96) !important;
 
   }
 
