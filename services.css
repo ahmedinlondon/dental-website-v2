@@ -1158,17 +1158,63 @@ body.services-page {
 
 /* =========================================================
 
-   FINAL SERVICES PAGE REFINEMENTS
+   SERVICES FINAL TYPOGRAPHY + ANIMATION REFINEMENT
 
 ========================================================= */
+
+/* FIX HERO DOUBLE FLASH */
+
+.hero-reveal .services-hero-script,
+
+.hero-reveal .hero-title {
+
+  opacity: 0;
+
+  transform: translateY(18px);
+
+  transition:
+
+    opacity 1.15s ease,
+
+    transform 1.15s ease;
+
+}
+
+.hero-reveal .hero-title {
+
+  transition-delay: 0.28s;
+
+}
+
+.hero-reveal.animate .services-hero-script,
+
+.hero-reveal.animate .hero-title {
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+}
+
+/* HERO TITLE STYLE */
+
+.services-hero .hero-title {
+
+  text-transform: none !important;
+
+  font-size: 44px !important;
+
+  line-height: 1.16 !important;
+
+  font-weight: 300 !important;
+
+  letter-spacing: 0.035em !important;
+
+}
 
 /* LIGHTER CHAMPAGNE SCRIPT */
 
 .services-hero-script,
-
-.services-intro-script,
-
-.comparison-script,
 
 .services-section-heading p,
 
@@ -1184,11 +1230,53 @@ body.services-page {
 
 }
 
-/* MOVE HERO TEXT DOWN */
+/* SECTION SUBTITLES */
 
-.services-hero-text,
+.services-section-heading h2,
 
-.hero-text,
+.comparison-title h2 {
+
+  font-size: 29px !important;
+
+  line-height: 1.16 !important;
+
+  font-weight: 300 !important;
+
+  letter-spacing: 0.035em !important;
+
+}
+
+/* SERVICE CARD TITLES */
+
+.service-card h3 {
+
+  font-size: 23px !important;
+
+  line-height: 1.2 !important;
+
+  font-weight: 300 !important;
+
+  letter-spacing: 0.025em !important;
+
+}
+
+/* COMPARISON CARDS */
+
+.mobile-comparison-card h3,
+
+.comparison-card h3 {
+
+  font-size: 29px !important;
+
+  line-height: 1.16 !important;
+
+  font-weight: 300 !important;
+
+  letter-spacing: 0.035em !important;
+
+}
+
+/* HERO POSITION */
 
 .services-hero-content {
 
@@ -1198,11 +1286,35 @@ body.services-page {
 
 }
 
+/* TABLET */
+
 @media (max-width: 1180px) {
 
-  .services-hero-text,
+  .services-hero .hero-title {
 
-  .hero-text,
+    font-size: 38px !important;
+
+  }
+
+  .services-section-heading h2,
+
+  .comparison-title h2 {
+
+    font-size: 27px !important;
+
+  }
+
+  .service-card h3 {
+
+    font-size: 22px !important;
+
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
 
   .services-hero-content {
 
@@ -1210,17 +1322,29 @@ body.services-page {
 
   }
 
-}
+  .services-hero .hero-title {
 
-@media (max-width: 700px) {
+    font-size: 29px !important;
 
-  .services-hero-text,
+    line-height: 1.22 !important;
 
-  .hero-text,
+  }
 
-  .services-hero-content {
+  .services-section-heading h2,
 
-    top: 62% !important;
+  .comparison-title h2 {
+
+    font-size: 25px !important;
+
+  }
+
+  .service-card h3,
+
+  .mobile-comparison-card h3,
+
+  .comparison-card h3 {
+
+    font-size: 26px !important;
 
   }
 
