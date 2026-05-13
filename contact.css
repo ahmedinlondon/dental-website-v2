@@ -1356,3 +1356,37 @@ body.contact-page {
   }
 
 }
+
+/* =========================================
+
+   iPAD — CENTER LOCATION SECTION
+
+========================================= */
+
+@media (min-width: 701px) and (max-width: 1400px) {
+
+  .contact-locations-section {
+
+    padding-left: 7% !important;
+
+    padding-right: 7% !important;
+
+  }
+
+  .location-grid {
+
+    max-width: 1180px !important;
+
+    margin: 0 auto !important;
+
+  }
+
+  .location-card {
+
+    grid-template-columns: 31% 29% 40% !important;
+
+    column-gap: 24px !important;
+
+  }
+
+}
