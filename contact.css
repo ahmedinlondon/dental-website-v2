@@ -1020,128 +1020,122 @@ body.contact-page {
 
 /* =========================================
 
-   CONTACT PAGE FIXES AFTER FIRST LIVE TEST
+   CONTACT LOCATION CARD FINAL LAYOUT FIX
 
 ========================================= */
 
-/* 1. Restore global floating buttons as circles */
-
-.contact-page .floating-contact {
-
-  border-radius: 50% !important;
-
-}
-
-/* 2. Remove duplicate copyright from global footer */
-
-.contact-page .site-footer .footer-bottom {
-
-  display: none !important;
-
-}
-
-/* 3. Keep only the final brown strip copyright */
-
-.contact-final-strip {
-
-  display: block;
-
-}
-
-/* 4. Make location cards return to refined side-by-side layout on iPad/desktop */
-
 @media (min-width: 701px) {
-
-  .contact-locations-section {
-
-    padding: 72px 5.5% 78px;
-
-  }
-
-  .location-grid {
-
-    grid-template-columns: repeat(2, 1fr) !important;
-
-    gap: 26px !important;
-
-  }
 
   .location-card {
 
     display: grid !important;
 
-    grid-template-columns: 42% 58% !important;
+    grid-template-columns: 34% 66% !important;
+
+    min-height: 520px !important;
+
+    align-items: stretch !important;
 
   }
 
   .location-image-area {
 
-    padding: 20px !important;
+    padding: 22px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
 
   }
 
   .location-image {
 
-    height: 230px !important;
+    width: 100% !important;
+
+    height: 210px !important;
+
+    flex-shrink: 0 !important;
+
+  }
+
+  .location-buttons {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 10px !important;
+
+    margin-top: 14px !important;
+
+  }
+
+  .location-btn {
+
+    width: 100% !important;
+
+    height: 42px !important;
+
+    min-width: 0 !important;
+
+    font-size: 10px !important;
+
+    line-height: 1.2 !important;
+
+    white-space: nowrap !important;
 
   }
 
   .location-info {
 
-    padding: 28px 26px !important;
+    padding: 34px 30px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+  }
+
+  .location-info h2 {
+
+    font-size: 30px !important;
+
+    line-height: 1.15 !important;
+
+    margin: 0 0 22px !important;
+
+  }
+
+  .location-details {
+
+    margin-bottom: 24px !important;
+
+  }
+
+  .location-map {
+
+    margin-top: auto !important;
 
   }
 
   .location-map iframe {
 
-    height: 210px !important;
+    width: 100% !important;
+
+    height: 250px !important;
 
   }
 
-}
+  .location-card:first-child .location-image img {
 
-/* 5. iPad spacing correction */
-
-@media (min-width: 701px) and (max-width: 1180px) {
-
-  .location-grid {
-
-    grid-template-columns: repeat(2, 1fr) !important;
+    object-position: center 18% !important;
 
   }
 
-  .location-image {
+  .location-card:last-child .location-image img {
 
-    height: 190px !important;
-
-  }
-
-  .location-map iframe {
-
-    height: 190px !important;
+    object-position: center 42% !important;
 
   }
-
-}
-
-/* 6. Keep PolyDent image focused higher on building / entrance */
-
-.location-card:last-child .location-image img {
-
-  object-position: center 46% !important;
-
-}
-
-/* 7. Slightly reduce huge white gaps around location cards */
-
-.location-info h2 {
-
-  margin-bottom: 18px !important;
-
-}
-
-.location-details {
-
-  margin-bottom: 18px !important;
 
 }
