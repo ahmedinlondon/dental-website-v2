@@ -1,1 +1,1019 @@
+/* =========================================================
 
+   CONTACT.CSS — FINAL LOCKED CONTACT PAGE
+
+=========================================================
+
+01. PAGE FOUNDATION
+
+02. HERO SECTION
+
+03. SUPPORT SECTION
+
+04. FORM CARD
+
+05. HELP CARD
+
+06. LOCATION SECTION
+
+07. LOCATION CARDS
+
+08. LOCATION BUTTONS
+
+09. MAP SYSTEM
+
+10. FINAL BOTTOM STRIP
+
+11. iPAD / TABLET
+
+12. MOBILE
+
+========================================================= */
+
+/* =========================================================
+
+   01. PAGE FOUNDATION
+
+========================================================= */
+
+body.contact-page {
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow-x: hidden;
+
+  background: #f5eee3;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  color: #2d2a26;
+
+}
+
+.contact-page * {
+
+  box-sizing: border-box;
+
+  border-radius: 0 !important;
+
+}
+
+/* =========================================================
+
+   02. HERO SECTION
+
+========================================================= */
+
+.contact-hero {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 240px;
+
+  overflow: hidden;
+
+  background-image:
+
+  linear-gradient(
+
+    rgba(7,22,38,0.32),
+
+    rgba(7,22,38,0.38)
+
+  ),
+
+  url('contact-hero-panorama.png');
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+  background-position: center 42%;
+
+}
+
+.contact-hero-overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding-top: 8px;
+
+}
+
+.contact-hero-overlay h1 {
+
+  margin: 0;
+
+  color: rgba(255,255,255,0.96);
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 44px;
+
+  line-height: 1;
+
+  font-weight: 200;
+
+  letter-spacing: 0.26em;
+
+  text-transform: uppercase;
+
+  text-shadow:
+
+    0 2px 18px rgba(0,0,0,0.36),
+
+    0 0 16px rgba(255,255,255,0.08);
+
+}
+
+/* =========================================================
+
+   03. SUPPORT SECTION
+
+========================================================= */
+
+.contact-support-section {
+
+  width: 100%;
+
+  background: #607485;
+
+  padding: 72px 5.5% 66px;
+
+  display: grid;
+
+  grid-template-columns: 1.04fr 0.96fr;
+
+  gap: 28px;
+
+}
+
+.contact-form-card,
+
+.contact-help-card {
+
+  min-height: 100%;
+
+  padding: 42px;
+
+  border: 1px solid rgba(255,255,255,0.16);
+
+}
+
+/* =========================================================
+
+   04. FORM CARD
+
+========================================================= */
+
+.contact-form-card {
+
+  background: rgba(245,238,227,0.98);
+
+  color: #2d2a26;
+
+}
+
+.contact-form-card h2 {
+
+  margin: 0;
+
+  color: #2d2a26;
+
+  font-size: 34px;
+
+  line-height: 1.14;
+
+  font-weight: 300;
+
+  letter-spacing: 0.02em;
+
+}
+
+.small-line {
+
+  width: 58px;
+
+  height: 1px;
+
+  margin: 18px 0 28px;
+
+  background: rgba(185,150,87,0.78);
+
+}
+
+.form-row {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+
+}
+
+.contact-form-card input,
+
+.contact-form-card textarea {
+
+  width: 100%;
+
+  padding: 16px;
+
+  border: 1px solid rgba(45,42,38,0.14);
+
+  background: rgba(255,255,255,0.78);
+
+  color: #2d2a26;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+
+  font-weight: 300;
+
+  margin-bottom: 16px;
+
+  outline: none;
+
+}
+
+.contact-form-card textarea {
+
+  min-height: 150px;
+
+  resize: vertical;
+
+}
+
+.contact-form-card input:focus,
+
+.contact-form-card textarea:focus {
+
+  border-color: rgba(185,150,87,0.52);
+
+}
+
+.contact-form-card button {
+
+  width: 100%;
+
+  height: 52px;
+
+  border: 1px solid #b88932;
+
+  background: #b88932;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: all 0.28s ease;
+
+}
+
+.contact-form-card button:hover {
+
+  background: transparent;
+
+  color: #b88932;
+
+}
+
+.privacy-note {
+
+  margin: 18px 0 0;
+
+  color: rgba(45,42,38,0.72);
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  font-weight: 300;
+
+}
+
+.privacy-note i {
+
+  color: #b88932;
+
+  margin-right: 7px;
+
+}
+
+/* =========================================================
+
+   05. HELP CARD
+
+========================================================= */
+
+.contact-help-card {
+
+  background: rgba(83,101,116,0.92);
+
+  color: #ffffff;
+
+}
+
+.contact-help-card h2 {
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 34px;
+
+  line-height: 1.14;
+
+  font-weight: 300;
+
+  letter-spacing: 0.02em;
+
+}
+
+.help-intro {
+
+  margin: 0 0 30px;
+
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid rgba(185,150,87,0.44);
+
+  color: rgba(255,255,255,0.88);
+
+  font-size: 14px;
+
+  line-height: 1.82;
+
+  font-weight: 300;
+
+}
+
+.help-item {
+
+  display: flex;
+
+  gap: 18px;
+
+  margin-bottom: 26px;
+
+}
+
+.help-item i {
+
+  width: 34px;
+
+  color: #d6b06c;
+
+  font-size: 26px;
+
+  margin-top: 2px;
+
+}
+
+.help-item strong {
+
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.02em;
+
+}
+
+.help-item span {
+
+  color: rgba(255,255,255,0.82);
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  font-weight: 300;
+
+}
+
+/* =========================================================
+
+   06. LOCATION SECTION
+
+========================================================= */
+
+.contact-locations-section {
+
+  background: #f5eee3;
+
+  padding: 78px 5.5% 84px;
+
+}
+
+.contact-section-heading {
+
+  margin: 0 0 40px;
+
+  position: relative;
+
+  padding-bottom: 24px;
+
+}
+
+.contact-section-heading span {
+
+  color: #2d2a26;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 30px;
+
+  line-height: 1.12;
+
+  font-weight: 300;
+
+  letter-spacing: 0.04em;
+
+}
+
+.contact-section-heading::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+  width: 90px;
+
+  height: 1px;
+
+  background: rgba(185,150,87,0.74);
+
+}
+
+.location-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 26px;
+
+}
+
+/* =========================================================
+
+   07. LOCATION CARDS
+
+========================================================= */
+
+.location-card {
+
+  background: rgba(255,250,242,0.95);
+
+  border: 1px solid rgba(185,150,87,0.18);
+
+  overflow: hidden;
+
+}
+
+.location-image-area {
+
+  background: rgba(255,255,255,0.44);
+
+  padding: 22px 22px 18px;
+
+}
+
+.location-image {
+
+  width: 100%;
+
+  height: 180px;
+
+  overflow: hidden;
+
+}
+
+.location-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  filter:
+
+    saturate(0.92)
+
+    brightness(0.94);
+
+}
+
+.location-card:first-child .location-image img {
+
+  object-position: center 18%;
+
+}
+
+.location-card:last-child .location-image img {
+
+  object-position: center 56%;
+
+}
+
+.location-info {
+
+  padding: 30px 28px 34px;
+
+}
+
+.location-info h2 {
+
+  margin: 0 0 22px;
+
+  color: #2d2a26;
+
+  font-size: 30px;
+
+  line-height: 1.14;
+
+  font-weight: 300;
+
+  letter-spacing: 0.01em;
+
+}
+
+.location-details {
+
+  margin-bottom: 24px;
+
+}
+
+.location-details p {
+
+  margin: 0 0 10px;
+
+  display: grid;
+
+  grid-template-columns: 20px 1fr;
+
+  column-gap: 10px;
+
+  align-items: start;
+
+  color: rgba(45,42,38,0.84);
+
+  font-size: 14px;
+
+  line-height: 1.62;
+
+  font-weight: 300;
+
+}
+
+.location-details i {
+
+  color: #b88932;
+
+  margin-top: 4px;
+
+}
+
+.location-details a {
+
+  color: rgba(45,42,38,0.84);
+
+  text-decoration: none;
+
+}
+
+/* =========================================================
+
+   08. LOCATION BUTTONS
+
+========================================================= */
+
+.location-buttons {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 14px;
+
+}
+
+.location-btn {
+
+  flex: 1;
+
+  height: 42px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  transition: all 0.28s ease;
+
+}
+
+.location-btn.dark {
+
+  background: #b88932;
+
+  border: 1px solid #b88932;
+
+  color: #ffffff;
+
+}
+
+.location-btn.dark:hover {
+
+  background: transparent;
+
+  color: #b88932;
+
+}
+
+.location-btn.light {
+
+  background: transparent;
+
+  border: 1px solid #b88932;
+
+  color: #b88932;
+
+}
+
+.location-btn.light:hover {
+
+  background: #b88932;
+
+  color: #ffffff;
+
+}
+
+/* =========================================================
+
+   09. MAP SYSTEM
+
+========================================================= */
+
+.location-map iframe {
+
+  width: 100%;
+
+  height: 240px;
+
+  border: none;
+
+  display: block;
+
+  filter:
+
+    saturate(0.82)
+
+    brightness(0.96);
+
+}
+
+/* =========================================================
+
+   10. FINAL BOTTOM STRIP
+
+========================================================= */
+
+.contact-final-strip {
+
+  width: 100%;
+
+  padding: 14px 5%;
+
+  background: #c8b49d;
+
+  color: rgba(45,42,38,0.78);
+
+  text-align: center;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+
+}
+
+/* =========================================================
+
+   11. iPAD / TABLET
+
+========================================================= */
+
+@media (max-width: 1180px) {
+
+  .contact-hero {
+
+    height: 190px;
+
+    background-position: center 40%;
+
+  }
+
+  .contact-hero-overlay h1 {
+
+    font-size: 34px;
+
+    letter-spacing: 0.22em;
+
+  }
+
+  .contact-support-section {
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+
+    padding: 60px 5%;
+
+  }
+
+  .contact-form-card,
+
+  .contact-help-card {
+
+    padding: 34px;
+
+  }
+
+  .contact-form-card h2,
+
+  .contact-help-card h2 {
+
+    font-size: 29px;
+
+  }
+
+  .location-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 26px;
+
+  }
+
+  .location-image {
+
+    height: 165px;
+
+  }
+
+  .location-map iframe {
+
+    height: 260px;
+
+  }
+
+}
+
+/* =========================================================
+
+   12. MOBILE
+
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .contact-hero {
+
+    height: 150px;
+
+    background-position: center 44%;
+
+  }
+
+  .contact-hero-overlay {
+
+    padding-top: 2px;
+
+  }
+
+  .contact-hero-overlay h1 {
+
+    font-size: 24px;
+
+    line-height: 1.1;
+
+    letter-spacing: 0.18em;
+
+  }
+
+  .contact-support-section {
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    padding: 42px 5%;
+
+  }
+
+  .contact-form-card,
+
+  .contact-help-card {
+
+    padding: 28px 22px;
+
+  }
+
+  .contact-form-card h2,
+
+  .contact-help-card h2 {
+
+    font-size: 24px;
+
+  }
+
+  .small-line {
+
+    margin: 14px 0 20px;
+
+  }
+
+  .form-row {
+
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+  }
+
+  .contact-form-card textarea {
+
+    min-height: 120px;
+
+  }
+
+  .contact-locations-section {
+
+    padding: 52px 5% 58px;
+
+  }
+
+  .contact-section-heading {
+
+    margin-bottom: 28px;
+
+    padding-bottom: 18px;
+
+  }
+
+  .contact-section-heading span {
+
+    font-size: 24px;
+
+  }
+
+  .contact-section-heading::after {
+
+    width: 72px;
+
+  }
+
+  .location-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+  }
+
+  .location-image-area {
+
+    padding: 16px 16px 14px;
+
+  }
+
+  .location-image {
+
+    height: 120px;
+
+  }
+
+  .location-buttons {
+
+    flex-direction: column;
+
+    gap: 10px;
+
+  }
+
+  .location-btn {
+
+    width: 100%;
+
+    height: 40px;
+
+  }
+
+  .location-info {
+
+    padding: 22px 18px 24px;
+
+  }
+
+  .location-info h2 {
+
+    font-size: 24px;
+
+    margin-bottom: 18px;
+
+  }
+
+  .location-details p {
+
+    font-size: 12.5px;
+
+    line-height: 1.58;
+
+  }
+
+  .location-map iframe {
+
+    height: 210px;
+
+  }
+
+  .contact-final-strip {
+
+    padding: 12px 5%;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+  }
+
+}
