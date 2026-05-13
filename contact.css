@@ -1185,3 +1185,101 @@ body.contact-page {
   }
 
 }
+
+/* =========================================
+
+   CONTACT LOCATIONS — IPAD LANDSCAPE FIX
+
+========================================= */
+
+@media (min-width: 701px) and (max-width: 1400px) {
+
+  .location-grid {
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 34px !important;
+
+  }
+
+  .location-card {
+
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns: 32% 68% !important;
+
+    min-height: 520px !important;
+
+  }
+
+  .location-image-area {
+
+    padding: 24px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+  }
+
+  .location-image {
+
+    height: 260px !important;
+
+  }
+
+  .location-buttons {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 12px !important;
+
+    margin-top: 16px !important;
+
+  }
+
+  .location-btn {
+
+    width: 100% !important;
+
+    height: 44px !important;
+
+    font-size: 11px !important;
+
+    white-space: nowrap !important;
+
+  }
+
+  .location-info {
+
+    padding: 38px 36px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+  }
+
+  .location-map {
+
+    margin-top: auto !important;
+
+    width: 100% !important;
+
+  }
+
+  .location-map iframe {
+
+    width: 100% !important;
+
+    height: 285px !important;
+
+  }
+
+}
