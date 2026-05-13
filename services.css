@@ -1349,3 +1349,41 @@ body.services-page {
   }
 
 }
+
+/* =========================================================
+
+   FIX HERO DOUBLE FLASH
+
+========================================================= */
+
+.services-hero .services-hero-script,
+
+.services-hero .hero-title {
+
+  opacity: 0 !important;
+
+  transform: translateY(18px) !important;
+
+  animation: none !important;
+
+}
+
+.services-hero.animate .services-hero-script {
+
+  opacity: 1 !important;
+
+  transform: translateY(0) !important;
+
+  transition: opacity 1.15s ease, transform 1.15s ease !important;
+
+}
+
+.services-hero.animate .hero-title {
+
+  opacity: 1 !important;
+
+  transform: translateY(0) !important;
+
+  transition: opacity 1.15s ease 0.28s, transform 1.15s ease 0.28s !important;
+
+}
