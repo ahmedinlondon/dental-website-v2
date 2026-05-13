@@ -1314,3 +1314,45 @@ body.contact-page {
   }
 
 }
+
+/* =========================================
+
+   FINAL iPAD ALIGNMENT — TOP EDGES ONLY
+
+========================================= */
+
+@media (min-width: 701px) and (max-width: 1400px) {
+
+  /* 1. Keep title at top, push photo down */
+
+  .location-info h2 {
+
+    align-self: start !important;
+
+    margin-bottom: 56px !important;
+
+  }
+
+  .location-image {
+
+    margin-top: 0 !important;
+
+  }
+
+  /* 2. Extend maps upward only */
+
+  .location-map {
+
+    padding-top: 0 !important;
+
+    transform: translateY(-42px) !important;
+
+  }
+
+  .location-map iframe {
+
+    height: 242px !important;
+
+  }
+
+}
