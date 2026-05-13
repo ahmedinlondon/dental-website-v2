@@ -514,13 +514,13 @@ body.contact-page {
 
   grid-row: 1;
 
-  margin: 0 0 28px;
+  margin: 0 0 8px;
 
   color: #2d2a26;
 
-  font-size: 30px;
+  font-size: 25px;
 
-  line-height: 1.14;
+  line-height: 1.12;
 
   font-weight: 300;
 
@@ -536,11 +536,11 @@ body.contact-page {
 
   width: 100%;
 
-  height: 180px;
+  height: 170px;
 
   overflow: hidden;
 
-   margin-top: -18px;
+  margin-top: -34px;
 
 }
 
