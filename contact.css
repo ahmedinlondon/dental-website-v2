@@ -1020,27 +1020,43 @@ body.contact-page {
 
 /* =========================================
 
-   CONTACT LOCATION CARD FINAL LAYOUT FIX
+   CONTACT LOCATION SECTION — FINAL OVERRIDE
 
 ========================================= */
 
 @media (min-width: 701px) {
 
+  .contact-locations-section {
+
+    padding: 72px 5.5% 78px !important;
+
+  }
+
+  .location-grid {
+
+    display: grid !important;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 26px !important;
+
+  }
+
   .location-card {
 
     display: grid !important;
 
-    grid-template-columns: 34% 66% !important;
+    grid-template-columns: 36% 64% !important;
 
-    min-height: 520px !important;
+    min-height: 540px !important;
 
-    align-items: stretch !important;
+    height: auto !important;
 
   }
 
   .location-image-area {
 
-    padding: 22px !important;
+    padding: 20px !important;
 
     display: flex !important;
 
@@ -1050,11 +1066,29 @@ body.contact-page {
 
   .location-image {
 
+    height: 220px !important;
+
+  }
+
+  .location-image img {
+
     width: 100% !important;
 
-    height: 210px !important;
+    height: 100% !important;
 
-    flex-shrink: 0 !important;
+    object-fit: cover !important;
+
+  }
+
+  .location-card:first-child .location-image img {
+
+    object-position: center 18% !important;
+
+  }
+
+  .location-card:last-child .location-image img {
+
+    object-position: center 42% !important;
 
   }
 
@@ -1080,7 +1114,7 @@ body.contact-page {
 
     font-size: 10px !important;
 
-    line-height: 1.2 !important;
+    line-height: 1 !important;
 
     white-space: nowrap !important;
 
@@ -1088,7 +1122,7 @@ body.contact-page {
 
   .location-info {
 
-    padding: 34px 30px !important;
+    padding: 32px 28px !important;
 
     display: flex !important;
 
@@ -1098,17 +1132,17 @@ body.contact-page {
 
   .location-info h2 {
 
-    font-size: 30px !important;
+    font-size: 28px !important;
 
     line-height: 1.15 !important;
 
-    margin: 0 0 22px !important;
+    margin: 0 0 20px !important;
 
   }
 
   .location-details {
 
-    margin-bottom: 24px !important;
+    margin-bottom: 22px !important;
 
   }
 
@@ -1122,19 +1156,31 @@ body.contact-page {
 
     width: 100% !important;
 
-    height: 250px !important;
+    height: 245px !important;
 
   }
 
-  .location-card:first-child .location-image img {
+}
 
-    object-position: center 18% !important;
+/* iPad portrait refinement */
+
+@media (min-width: 701px) and (max-width: 900px) {
+
+  .location-card {
+
+    grid-template-columns: 34% 66% !important;
 
   }
 
-  .location-card:last-child .location-image img {
+  .location-image {
 
-    object-position: center 42% !important;
+    height: 190px !important;
+
+  }
+
+  .location-map iframe {
+
+    height: 220px !important;
 
   }
 
