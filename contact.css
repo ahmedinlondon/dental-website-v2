@@ -1197,3 +1197,70 @@ body.contact-page {
   }
 
 }
+
+
+/* =========================================
+
+   OVERRIDE — ALIGN LOCATION COLUMNS BOTTOM
+
+========================================= */
+
+@media (min-width: 701px) {
+
+  .location-card {
+
+    align-items: end !important;
+
+  }
+
+  .location-info h2 {
+
+    font-size: 25px !important;
+
+    line-height: 1.12 !important;
+
+    margin: 0 0 18px !important;
+
+  }
+
+  .location-image {
+
+    align-self: end !important;
+
+    margin-top: 0 !important;
+
+    height: 170px !important;
+
+  }
+
+  .location-details {
+
+    align-self: end !important;
+
+    padding-top: 0 !important;
+
+  }
+
+  .location-buttons {
+
+    align-self: end !important;
+
+    margin-top: 18px !important;
+
+  }
+
+  .location-map {
+
+    align-self: end !important;
+
+    padding-top: 0 !important;
+
+  }
+
+  .location-map iframe {
+
+    height: 210px !important;
+
+  }
+
+}
