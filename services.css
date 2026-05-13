@@ -1394,7 +1394,7 @@ body.services-page {
 
 .comparison-script {
 
-  font-size: 38px !important;
+  font-size: 32px !important;
 
   line-height: 1 !important;
 
@@ -1414,7 +1414,7 @@ body.services-page {
 
   .comparison-script {
 
-    font-size: 28px !important;
+    font-size: 24px !important;
 
     transform: scale(0.52);
 
@@ -1422,7 +1422,7 @@ body.services-page {
 
   .services-hero-content {
 
-    top: 66% !important;
+    top: 75% !important;
 
   }
 
