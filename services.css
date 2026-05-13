@@ -1464,3 +1464,62 @@ body.services-page {
 
 }
 
+
+/* =========================================
+
+   SERVICES SECTION UNDERLINES
+
+========================================= */
+
+.services-section-heading,
+
+.comparison-title {
+
+  position: relative;
+
+  padding-bottom: 26px;
+
+}
+
+.services-section-heading::after,
+
+.comparison-title::after {
+
+  content: "";
+
+  width: 90px;
+
+  height: 1.5px;
+
+  background: rgba(240, 207, 138, 0.75);
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .services-section-heading,
+
+  .comparison-title {
+
+    padding-bottom: 22px;
+
+  }
+
+  .services-section-heading::after,
+
+  .comparison-title::after {
+
+    width: 72px;
+
+  }
+
+}
+
