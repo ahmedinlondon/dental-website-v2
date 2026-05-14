@@ -1160,3 +1160,112 @@ body.about-page {
   }
 
 }
+
+
+/* =========================================================
+
+   ABOUT PAGE THIRD POLISH — iPAD CTA CARD + FINAL CTA + FOOTER LOGO
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  /* Doctor CTA card: slightly wider, slightly higher, still smaller than portrait */
+
+  .about-consult-box {
+
+    max-width: 550px !important;
+
+    width: 100% !important;
+
+    padding: 40px 42px !important;
+
+    transform: translateY(-26px) !important;
+
+  }
+
+  /* Final CTA: lower height and horizontal composition */
+
+  .about-final-cta {
+
+    padding-top: 34px !important;
+
+    padding-bottom: 36px !important;
+
+    text-align: left !important;
+
+  }
+
+  .about-final-cta-inner {
+
+    max-width: 1180px !important;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr auto !important;
+
+    align-items: center !important;
+
+    column-gap: 46px !important;
+
+  }
+
+  .about-final-cta h2 {
+
+    margin: 0 0 10px !important;
+
+    font-size: 31px !important;
+
+  }
+
+  .about-final-cta p {
+
+    margin: 0 !important;
+
+    font-size: 14px !important;
+
+  }
+
+  .about-final-btn {
+
+    min-width: 300px !important;
+
+    margin: 0 !important;
+
+  }
+
+  /* iPad footer logo: smaller and centred in first column */
+
+  .site-footer .footer-brand {
+
+    text-align: center !important;
+
+  }
+
+  .site-footer .footer-logo img {
+
+    width: 260px !important;
+
+    max-width: 82% !important;
+
+    margin: 0 auto 26px auto !important;
+
+  }
+
+  .site-footer .footer-brand p,
+
+  .site-footer .footer-brand .footer-question {
+
+    text-align: left !important;
+
+  }
+
+  .site-footer .footer-brand .footer-cta {
+
+    margin-left: auto !important;
+
+    margin-right: auto !important;
+
+  }
+
+}
