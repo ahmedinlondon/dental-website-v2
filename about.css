@@ -869,3 +869,130 @@ body.about-page {
   }
 
 }
+
+
+/* =========================================================
+
+   ABOUT PAGE FIRST POLISH — iPAD + SECTION HEIGHT REFINEMENT
+
+========================================================= */
+
+/* Reduce overall section height */
+
+.about-hero {
+
+  height: 590px;
+
+}
+
+.about-main-white {
+
+  padding-top: 58px;
+
+  padding-bottom: 70px;
+
+}
+
+.about-philosophy-panel {
+
+  padding-top: 54px;
+
+  padding-bottom: 58px;
+
+  margin-bottom: 64px;
+
+}
+
+.about-refined-section {
+
+  padding-top: 62px;
+
+  padding-bottom: 66px;
+
+}
+
+.about-final-cta {
+
+  background: #ffffff;
+
+  padding-top: 58px;
+
+  padding-bottom: 64px;
+
+}
+
+/* iPad: keep doctor portrait and CTA side by side */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .about-hero {
+
+    height: 500px;
+
+  }
+
+  .about-main-white {
+
+    padding-top: 52px;
+
+    padding-bottom: 64px;
+
+  }
+
+  .about-philosophy-panel {
+
+    padding-top: 48px;
+
+    padding-bottom: 52px;
+
+    margin-bottom: 58px;
+
+  }
+
+  .about-doctor-section {
+
+    grid-template-columns: 0.82fr 1fr;
+
+    gap: 46px;
+
+    align-items: center;
+
+  }
+
+  .about-doctor-card {
+
+    max-width: 360px;
+
+  }
+
+  .about-consult-box {
+
+    padding: 42px 40px;
+
+  }
+
+  .about-consult-box h3 {
+
+    font-size: 27px;
+
+  }
+
+  .about-refined-section {
+
+    padding-top: 56px;
+
+    padding-bottom: 60px;
+
+  }
+
+  .about-final-cta {
+
+    background: #ffffff;
+
+    padding-top: 48px;
+
+    padding-bottom: 54px;
+
+  }
+
+}
