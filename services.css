@@ -364,6 +364,48 @@ body.services-page {
 
 }
 
+/* ===== OUR APPROACH REFINEMENT ONLY ===== */
+
+.services-approach-section .services-approach-script {
+
+  color: #d99a3e !important;
+
+  margin-bottom: 8px !important;
+
+  text-shadow:
+
+    0 0 1px rgba(217,154,62,0.38),
+
+    0 1px 6px rgba(0,0,0,0.04);
+
+}
+
+.services-approach-section .services-approach-text {
+
+  color: rgba(47,42,38,0.92) !important;
+
+}
+
+@media (max-width: 700px) {
+
+  .services-approach-section .services-approach-script {
+
+    color: #d99a3e !important;
+
+    margin-bottom: 6px !important;
+
+  }
+
+  .services-approach-section .services-approach-text {
+
+    color: rgba(47,42,38,0.92) !important;
+
+  }
+
+}
+
+
+
 /* ================= 04. MAIN STEEL SECTION ================= */
 
 .services-main {
