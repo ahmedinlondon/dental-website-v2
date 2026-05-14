@@ -10,19 +10,21 @@ SERVICES.CSS — LOCKED SERVICES PAGE DESIGN
 
 02. Hero
 
-03. Main Steel Section
+03. Our Approach
 
-04. Services Cards
+04. Main Steel Section
 
-05. Service Popup
+05. Services Cards
 
-06. Comparison Section
+06. Service Popup
 
-07. Comparison Popup
+07. Comparison Section
 
-08. iPad / Tablet
+08. Comparison Popup
 
-09. Mobile
+09. iPad / Tablet
+
+10. Mobile
 
 =========================================================
 
@@ -362,7 +364,7 @@ body.services-page {
 
 }
 
-/* ================= 03. MAIN STEEL SECTION ================= */
+/* ================= 04. MAIN STEEL SECTION ================= */
 
 .services-main {
 
@@ -436,7 +438,7 @@ body.services-page {
 
 }
 
-/* ================= 04. SERVICES CARDS ================= */
+/* ================= 05. SERVICES CARDS ================= */
 
 .services-interactive {
 
@@ -562,7 +564,7 @@ body.services-page {
 
 }
 
-/* ================= 05. SERVICE POPUP ================= */
+/* ================= 06. SERVICE POPUP ================= */
 
 .services-interactive.panel-open .services-grid {
 
@@ -742,7 +744,7 @@ body.services-page {
 
 }
 
-/* ================= 06. COMPARISON SECTION ================= */
+/* ================= 07. COMPARISON SECTION ================= */
 
 .comparison-section {
 
@@ -980,7 +982,7 @@ body.services-page {
 
 }
 
-/* ================= 08. iPAD / TABLET ================= */
+/* ================= 09. iPAD / TABLET ================= */
 
 @media (max-width: 1180px) {
 
@@ -1100,7 +1102,7 @@ body.services-page {
 
 }
 
-/* ================= 09. MOBILE ================= */
+/* ================= 10. MOBILE ================= */
 
 @media (max-width: 700px) {
 
