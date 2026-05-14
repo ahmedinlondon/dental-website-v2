@@ -1186,3 +1186,79 @@ body.about-page {
   }
 
 }
+
+/* =========================================================
+
+   ABOUT PAGE FINAL MICRO POLISH — MOBILE CTA + BUTTON ARROWS + FOOTER LOGO
+
+========================================================= */
+
+/* Add consistent thin site arrows to About CTA buttons */
+
+.about-consult-btn::after,
+
+.about-final-btn::after {
+
+  content: "›";
+
+  margin-left: 12px;
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  font-weight: 300;
+
+}
+
+/* Slightly smaller footer logo globally for About page */
+
+.about-page .site-footer .footer-logo img {
+
+  width: 200px !important;
+
+  max-width: 72% !important;
+
+}
+
+/* Mobile final CTA refinement only */
+
+@media (max-width: 700px) {
+
+  .about-final-cta {
+
+    background: #ffffff !important;
+
+    padding-top: 42px !important;
+
+    padding-bottom: 46px !important;
+
+  }
+
+  .about-final-cta h2 {
+
+    font-size: 27px !important;
+
+    line-height: 1.25 !important;
+
+    margin-bottom: 14px !important;
+
+  }
+
+  .about-final-cta p {
+
+    font-size: 14px !important;
+
+    line-height: 1.7 !important;
+
+    margin-bottom: 24px !important;
+
+  }
+
+  .about-final-btn {
+
+    height: 42px !important;
+
+  }
+
+}
