@@ -1446,13 +1446,31 @@ body.home-page {
 
   }
 
-  /* GOLD SCRIPT */
+  .home-hero-content {
 
-  .home-hero-script {
+    left: 7% !important;
+
+  }
+
+  .home-hero .home-hero-script,
+
+  .home-hero .home-hero-brand,
+
+  .home-hero .home-hero-subtitle {
+
+    animation: none !important;
+
+    transition: opacity 1.45s ease, transform 1.45s ease !important;
+
+    opacity: 0 !important;
+
+  }
+
+  .home-hero .home-hero-script {
 
     font-size: 44px !important;
 
-    transform: translateY(-78px) !important;
+    transform: translateY(-58px) !important;
 
     color: #ddb46a !important;
 
@@ -1462,17 +1480,9 @@ body.home-page {
 
       0 1px 10px rgba(0,0,0,0.22) !important;
 
-    opacity: 0;
-
-    animation: heroFade 1.4s ease forwards;
-
-    animation-delay: 0.3s;
-
   }
 
-  /* WHITE TITLE */
-
-  .home-hero-brand {
+  .home-hero .home-hero-brand {
 
     font-size: 92px !important;
 
@@ -1482,23 +1492,17 @@ body.home-page {
 
     line-height: 0.9 !important;
 
-    margin-left: 70px !important;
+    margin-left: 0 !important;
 
-    margin-top: -35px !important;
+    margin-top: -12px !important;
 
     text-align: left !important;
 
-    opacity: 0;
-
-    animation: heroFade 1.4s ease forwards;
-
-    animation-delay: 0.3s;
+    transform: translateY(-58px) !important;
 
   }
 
-  /* WHITE SUBTITLE */
-
-  .home-hero-subtitle {
+  .home-hero .home-hero-subtitle {
 
     font-size: 52px !important;
 
@@ -1508,23 +1512,17 @@ body.home-page {
 
     text-transform: none !important;
 
-    margin-left: 70px !important;
+    margin-left: 0 !important;
 
     margin-top: 8px !important;
 
     text-align: left !important;
 
-    opacity: 0;
-
-    animation: heroFade 1.4s ease forwards;
-
-    animation-delay: 0.3s;
+    transform: translateY(-58px) !important;
 
   }
 
-  /* GOLD LINE */
-
-  .home-hero-subtitle::after {
+  .home-hero .home-hero-subtitle::after {
 
     content: "";
 
@@ -1536,29 +1534,19 @@ body.home-page {
 
     background: #ddb46a;
 
-    margin-top: 32px;
+    margin-top: 28px;
 
   }
 
-}
+  .home-hero.animate .home-hero-script,
 
-/* SHARED HERO FADE */
+  .home-hero.animate .home-hero-brand,
 
-@keyframes heroFade {
+  .home-hero.animate .home-hero-subtitle {
 
-  from {
+    opacity: 1 !important;
 
-    opacity: 0;
-
-    transform: translateY(18px);
-
-  }
-
-  to {
-
-    opacity: 1;
-
-    transform: translateY(0);
+    transform: translateY(-58px) !important;
 
   }
 
