@@ -1283,3 +1283,151 @@ body.home-page {
   }
 
 }
+
+/* =========================================================
+
+   HOME HERO FIRST REFINEMENT — iPAD + MOBILE
+
+========================================================= */
+
+/* Thicken script slightly without changing size */
+
+.home-hero-script {
+
+  font-weight: 700 !important;
+
+  text-shadow:
+
+    0 0 1px rgba(216,176,107,0.68),
+
+    0 2px 16px rgba(0,0,0,0.24) !important;
+
+}
+
+/* Keep subtitle centred under embrace */
+
+.home-hero-subtitle {
+
+  text-align: center !important;
+
+  width: fit-content !important;
+
+  min-width: 390px !important;
+
+  margin-left: 4px !important;
+
+}
+
+/* iPad / tablet hero refinement */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-hero {
+
+    height: 445px !important;
+
+    background-size: 97% auto !important;
+
+    background-position: center center !important;
+
+    background-color: #000000 !important;
+
+  }
+
+  .home-hero-content {
+
+    left: 7% !important;
+
+    top: 56% !important;
+
+    max-width: 650px !important;
+
+  }
+
+  .home-hero-script {
+
+    font-size: 48px !important;
+
+    margin-bottom: 32px !important;
+
+  }
+
+  .home-hero-brand {
+
+    font-size: 58px !important;
+
+    line-height: 0.95 !important;
+
+  }
+
+  .home-hero-subtitle {
+
+    font-size: 14px !important;
+
+    letter-spacing: 0.34em !important;
+
+    margin-top: 18px !important;
+
+    min-width: 370px !important;
+
+  }
+
+}
+
+/* Mobile hero refinement */
+
+@media (max-width: 700px) {
+
+  .home-hero {
+
+    height: 430px !important;
+
+    background-size: 104% auto !important;
+
+    background-position: center center !important;
+
+    background-color: #000000 !important;
+
+  }
+
+  .home-hero-content {
+
+    left: 7% !important;
+
+    right: 7% !important;
+
+    top: 66% !important;
+
+  }
+
+  .home-hero-script {
+
+    font-size: 42px !important;
+
+    margin-bottom: 16px !important;
+
+  }
+
+  .home-hero-brand {
+
+    font-size: 44px !important;
+
+    line-height: 0.95 !important;
+
+  }
+
+  .home-hero-subtitle {
+
+    font-size: 11px !important;
+
+    letter-spacing: 0.22em !important;
+
+    margin-top: 14px !important;
+
+    margin-left: 2px !important;
+
+    min-width: 255px !important;
+
+  }
+
+}
