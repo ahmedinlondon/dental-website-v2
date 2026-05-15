@@ -1434,17 +1434,25 @@ body.home-page {
 
 /* =========================================================
 
-   HOME HERO — iPAD NEW TYPOGRAPHIC DIRECTION
+   HOME HERO — iPAD EDITORIAL TYPOGRAPHY VERSION
 
 ========================================================= */
 
 @media (min-width: 701px) and (max-width: 1180px) {
 
+  .home-hero {
+
+    background-position: center 51% !important;
+
+  }
+
+  /* GOLD SCRIPT */
+
   .home-hero-script {
 
     font-size: 44px !important;
 
-    transform: translateY(-122px) !important;
+    transform: translateY(-78px) !important;
 
     color: #ddb46a !important;
 
@@ -1454,7 +1462,15 @@ body.home-page {
 
       0 1px 10px rgba(0,0,0,0.22) !important;
 
+    opacity: 0;
+
+    animation: heroFade 1.4s ease forwards;
+
+    animation-delay: 0.3s;
+
   }
+
+  /* WHITE TITLE */
 
   .home-hero-brand {
 
@@ -1464,13 +1480,23 @@ body.home-page {
 
     letter-spacing: 1px !important;
 
-    margin-left: 52px !important;
+    line-height: 0.9 !important;
 
-    line-height: 0.95 !important;
+    margin-left: 70px !important;
 
-    transform: none !important;
+    margin-top: -35px !important;
+
+    text-align: left !important;
+
+    opacity: 0;
+
+    animation: heroFade 1.4s ease forwards;
+
+    animation-delay: 0.3s;
 
   }
+
+  /* WHITE SUBTITLE */
 
   .home-hero-subtitle {
 
@@ -1482,17 +1508,57 @@ body.home-page {
 
     text-transform: none !important;
 
-    margin-left: 52px !important;
+    margin-left: 70px !important;
 
-    margin-top: 12px !important;
+    margin-top: 8px !important;
 
-    transform: none !important;
+    text-align: left !important;
+
+    opacity: 0;
+
+    animation: heroFade 1.4s ease forwards;
+
+    animation-delay: 0.3s;
 
   }
 
-  .home-hero {
+  /* GOLD LINE */
 
-    background-position: center 51% !important;
+  .home-hero-subtitle::after {
+
+    content: "";
+
+    display: block;
+
+    width: 120px;
+
+    height: 1px;
+
+    background: #ddb46a;
+
+    margin-top: 32px;
+
+  }
+
+}
+
+/* SHARED HERO FADE */
+
+@keyframes heroFade {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(18px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
 
   }
 
