@@ -1456,19 +1456,23 @@ body.home-page {
 
   }
 
-  .home-hero-brand {
+.home-hero-brand {
 
-    font-size: 62px !important;
+  font-size: 62px !important;
 
-    margin-left: 48px !important;
+  margin-left: 48px !important;
 
-  }
+  transform: translateY(-42px) !important;
 
-  .home-hero-subtitle {
+}
 
-    font-size: 16px !important;
+.home-hero-subtitle {
 
-  }
+  font-size: 16px !important;
+
+  transform: translateY(-42px) !important;
+
+}
 
   .home-hero {
 
