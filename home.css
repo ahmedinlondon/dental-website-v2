@@ -1476,15 +1476,17 @@ body.home-page {
 
 /* =========================================================
 
-   HOME HERO MOBILE REFINEMENT 01
+   HOME HERO MOBILE REFINEMENT 02
 
 ========================================================= */
 
 @media (max-width: 700px) {
 
+  /* Trim lower canvas only */
+
   .home-hero {
 
-    height: 382px !important;
+    height: 345px !important;
 
     background-size: 104% auto !important;
 
@@ -1494,7 +1496,7 @@ body.home-page {
 
   }
 
-  /* Big jump upward for the whole headline group */
+  /* Keep white title block EXACTLY where it is */
 
   .home-hero-content {
 
@@ -1502,7 +1504,7 @@ body.home-page {
 
   }
 
-  /* Script size is correct */
+  /* Move ONLY the script upward into black canvas */
 
   .home-hero-script {
 
@@ -1510,19 +1512,21 @@ body.home-page {
 
     margin-bottom: 16px !important;
 
+    transform: translateY(-38px) !important;
+
   }
 
-  /* Keep embrace size, but align better over subtitle */
+  /* Shift embrace slightly right only */
 
   .home-hero-brand {
 
     font-size: 44px !important;
 
-    margin-left: 14px !important;
+    margin-left: 24px !important;
 
   }
 
-  /* Subtitle size correct, make it stronger than locations */
+  /* Keep subtitle stronger */
 
   .home-hero-subtitle {
 
