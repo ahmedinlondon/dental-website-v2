@@ -1572,17 +1572,15 @@ body.home-page {
 
   .home-hero {
 
-    height: 370px !important;
+    height: 520px !important;
 
-    background-size: 104% auto !important;
+    background-position: center 34% !important;
 
-    background-position: center top !important;
-
-    background-color: #000000 !important;
-
-    overflow: hidden !important;
+    background-size: cover !important;
 
   }
+
+}
 
   .home-hero-content {
 
