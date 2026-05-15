@@ -1431,3 +1431,37 @@ body.home-page {
   }
 
 }
+
+/* =========================================================
+
+   HOME HERO iPAD REFINEMENT 02
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  /* Move script slightly upward only */
+
+  .home-hero-script {
+
+    transform: translateY(-18px) !important;
+
+  }
+
+  /* Move only "embrace" slightly right */
+
+  .home-hero-brand {
+
+    margin-left: 26px !important;
+
+  }
+
+  /* Very slightly tighten black gap before locations */
+
+  .home-hero {
+
+    background-position: center 48% !important;
+
+  }
+
+}
