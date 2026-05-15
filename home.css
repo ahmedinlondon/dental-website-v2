@@ -1460,7 +1460,7 @@ body.home-page {
 
     animation: none !important;
 
-    transition: opacity 1.45s ease, transform 1.45s ease !important;
+    transition: opacity 2.8s ease, transform 2.8s ease !important;
 
     opacity: 0 !important;
 
@@ -1494,11 +1494,11 @@ body.home-page {
 
     margin-left: 0 !important;
 
-    margin-top: -12px !important;
+    margin-top: 8px !important;
 
     text-align: left !important;
 
-    transform: translateY(-58px) !important;
+    transform: translateY(-28px) !important;
 
   }
 
@@ -1518,7 +1518,7 @@ body.home-page {
 
     text-align: left !important;
 
-    transform: translateY(-58px) !important;
+    transform: translateY(-28px) !important;
 
   }
 
@@ -1538,7 +1538,15 @@ body.home-page {
 
   }
 
-  .home-hero.animate .home-hero-script,
+  .home-hero.animate .home-hero-script {
+
+    opacity: 1 !important;
+
+    transform: translateY(-58px) !important;
+
+    transition-delay: 3.5s !important;
+
+  }
 
   .home-hero.animate .home-hero-brand,
 
@@ -1546,7 +1554,9 @@ body.home-page {
 
     opacity: 1 !important;
 
-    transform: translateY(-58px) !important;
+    transform: translateY(-28px) !important;
+
+    transition-delay: 3.5s !important;
 
   }
 
