@@ -1,1 +1,1285 @@
+/*
 
+=========================================================
+
+HOME.CSS — LOCKED HOMEPAGE DESIGN
+
+=========================================================
+
+01. GLOBAL RULES
+
+02. HERO
+
+03. SHARED SECTION STYLES
+
+04. INTRODUCTION SECTION
+
+05. TREATMENT SECTION
+
+06. MEET DR YASMINE
+
+07. QUESTIONS SECTION
+
+08. EXPERIENCE SECTION
+
+09. FINAL CTA
+
+10. HOMEPAGE FOOTER
+
+11. TABLET
+
+12. MOBILE
+
+=========================================================
+
+*/
+
+/* =========================================================
+
+   01. GLOBAL RULES
+
+========================================================= */
+
+@font-face {
+
+  font-family: 'Kingsley Roman';
+
+  src: url('/dental-website-v2/kingsley-roman.ttf') format('truetype');
+
+  font-weight: 400;
+
+  font-style: normal;
+
+}
+
+body.home-page {
+
+  margin: 0;
+
+  padding: 0;
+
+  background: #f8f2e8;
+
+  color: #2d2a26;
+
+  overflow-x: hidden;
+
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+
+}
+
+.home-page *,
+
+.home-page *::before,
+
+.home-page *::after {
+
+  box-sizing: border-box;
+
+  border-radius: 0 !important;
+
+}
+
+.home-page img {
+
+  max-width: 100%;
+
+  display: block;
+
+}
+
+.home-page a {
+
+  text-decoration: none;
+
+}
+
+/* =========================================================
+
+   02. HERO
+
+========================================================= */
+
+.home-hero {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 540px;
+
+  overflow: hidden;
+
+  background-image: url('/dental-website-v2/homehero.png');
+
+  background-size: cover;
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+}
+
+.home-hero::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+
+    linear-gradient(
+
+      to bottom,
+
+      rgba(0,0,0,0.12),
+
+      rgba(0,0,0,0.16)
+
+    );
+
+}
+
+.home-hero-content {
+
+  position: absolute;
+
+  left: 7%;
+
+  top: 61%;
+
+  transform: translateY(-50%);
+
+  z-index: 3;
+
+  max-width: 720px;
+
+}
+
+.home-hero-script {
+
+  margin: 0 0 22px;
+
+  color: #d8b06b;
+
+  font-family: 'Kingsley Roman', cursive;
+
+  font-size: 58px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: 0.01em;
+
+  text-shadow:
+
+    0 0 1px rgba(216,176,107,0.42),
+
+    0 2px 16px rgba(0,0,0,0.22);
+
+}
+
+.home-hero-brand {
+
+  margin: 0;
+
+  color: rgba(255,255,255,0.97);
+
+  font-size: 72px;
+
+  line-height: 0.95;
+
+  font-weight: 300;
+
+  letter-spacing: 0.03em;
+
+  text-transform: lowercase;
+
+  text-shadow:
+
+    0 2px 18px rgba(0,0,0,0.32);
+
+}
+
+.home-hero-subtitle {
+
+  margin: 18px 0 0 8px;
+
+  color: rgba(255,255,255,0.95);
+
+  font-size: 15px;
+
+  line-height: 1.2;
+
+  font-weight: 300;
+
+  letter-spacing: 0.34em;
+
+  text-transform: uppercase;
+
+}
+
+.hero-reveal .script-line,
+
+.hero-reveal .hero-title,
+
+.hero-reveal .hero-subtitle {
+
+  opacity: 0;
+
+}
+
+.hero-reveal.animate .script-line {
+
+  animation: homeScriptReveal 4.8s cubic-bezier(0.25,0.05,0.2,1) forwards 0.4s;
+
+}
+
+.hero-reveal.animate .hero-title {
+
+  animation: homeTitleReveal 2.8s cubic-bezier(0.18,0.9,0.22,1) forwards 2.6s;
+
+}
+
+.hero-reveal.animate .hero-subtitle {
+
+  animation: homeTitleReveal 2.2s cubic-bezier(0.18,0.9,0.22,1) forwards 3s;
+
+}
+
+@keyframes homeScriptReveal {
+
+  0% {
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    filter: blur(3px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    filter: blur(0);
+
+  }
+
+}
+
+@keyframes homeTitleReveal {
+
+  0% {
+
+    opacity: 0;
+
+    transform: translateY(-38px);
+
+    filter: blur(4px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    filter: blur(0);
+
+  }
+
+}
+
+/* =========================================================
+
+   03. SHARED SECTION STYLES
+
+========================================================= */
+
+.home-script-heading {
+
+  margin: 0 0 12px;
+
+  color: #d99a3e;
+
+  font-family: 'Kingsley Roman', cursive;
+
+  font-size: 42px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+}
+
+.home-gold-line {
+
+  display: block;
+
+  width: 84px;
+
+  height: 1.5px;
+
+  background: rgba(217,154,62,0.78);
+
+  margin: 28px 0 36px;
+
+}
+
+.home-section-heading {
+
+  max-width: 1120px;
+
+  margin: 0 auto 48px;
+
+}
+
+.home-section-heading h2 {
+
+  margin: 0;
+
+  color: #2d2a26;
+
+  font-size: 33px;
+
+  line-height: 1.18;
+
+  font-weight: 300;
+
+  letter-spacing: 0.02em;
+
+}
+
+.home-arrow-link {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #b88932;
+
+  font-size: 11px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+}
+
+.home-arrow-link::after {
+
+  content: "›";
+
+  font-size: 20px;
+
+  line-height: 1;
+
+}
+
+/* =========================================================
+
+   04. INTRODUCTION SECTION
+
+========================================================= */
+
+.home-intro-section {
+
+  background: #f5eee3;
+
+  padding: 96px 7% 104px;
+
+}
+
+.home-intro-inner {
+
+  max-width: 980px;
+
+}
+
+.home-intro-inner h2 {
+
+  margin: 0;
+
+  color: #607485;
+
+  font-size: 32px;
+
+  line-height: 1.15;
+
+  font-weight: 300;
+
+  letter-spacing: 0.03em;
+
+}
+
+.home-intro-copy p {
+
+  margin: 0 0 26px;
+
+  color: rgba(47,42,38,0.90);
+
+  font-size: 15px;
+
+  line-height: 1.95;
+
+  font-weight: 300;
+
+}
+
+/* =========================================================
+
+   05. TREATMENT SECTION
+
+========================================================= */
+
+.home-treatment-section {
+
+  background: #ffffff;
+
+  padding: 94px 7% 90px;
+
+}
+
+.home-treatment-list {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 44px;
+
+}
+
+.home-treatment-panel {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(185,150,87,0.14);
+
+  overflow: hidden;
+
+}
+
+.home-treatment-panel.reverse .home-treatment-image {
+
+  order: 2;
+
+}
+
+.home-treatment-panel.reverse .home-treatment-content {
+
+  order: 1;
+
+}
+
+.home-treatment-image img {
+
+  width: 100%;
+
+  height: 440px;
+
+  object-fit: cover;
+
+}
+
+.home-treatment-content {
+
+  padding: 62px 64px;
+
+}
+
+.home-treatment-content h3 {
+
+  margin: 0 0 22px;
+
+  color: #2d2a26;
+
+  font-size: 34px;
+
+  line-height: 1.1;
+
+  font-weight: 300;
+
+}
+
+.home-treatment-content p {
+
+  margin: 0 0 28px;
+
+  color: rgba(47,42,38,0.86);
+
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  font-weight: 300;
+
+}
+
+/* =========================================================
+
+   06. MEET DR YASMINE
+
+========================================================= */
+
+.home-doctor-section {
+
+  background: #f5eee3;
+
+  padding: 98px 7% 104px;
+
+}
+
+.home-doctor-inner {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.95fr 1fr;
+
+  gap: 72px;
+
+  align-items: center;
+
+}
+
+.home-doctor-image img {
+
+  width: 100%;
+
+  height: 760px;
+
+  object-fit: cover;
+
+}
+
+.home-doctor-content h2 {
+
+  margin: 0;
+
+  color: #607485;
+
+  font-size: 36px;
+
+  line-height: 1.1;
+
+  font-weight: 300;
+
+}
+
+.home-doctor-content p {
+
+  margin: 0 0 24px;
+
+  color: rgba(47,42,38,0.90);
+
+  font-size: 15px;
+
+  line-height: 1.95;
+
+  font-weight: 300;
+
+}
+
+/* =========================================================
+
+   07. QUESTIONS SECTION
+
+========================================================= */
+
+.home-questions-section {
+
+  background: #f8f2e8;
+
+  padding: 96px 7% 102px;
+
+}
+
+.home-question-grid {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+
+}
+
+.home-question-card {
+
+  position: relative;
+
+  background: #ffffff;
+
+  padding: 38px 36px 40px;
+
+  box-shadow: 0 18px 48px rgba(0,0,0,0.05);
+
+  border: 1px solid rgba(185,150,87,0.10);
+
+  transition:
+
+    transform 0.3s ease,
+
+    box-shadow 0.3s ease;
+
+}
+
+.home-question-card:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 24px 56px rgba(0,0,0,0.08);
+
+}
+
+.home-question-card i {
+
+  color: #d99a3e;
+
+  font-size: 20px;
+
+  margin-bottom: 22px;
+
+}
+
+.home-question-card h3 {
+
+  margin: 0 0 18px;
+
+  color: #2d2a26;
+
+  font-size: 25px;
+
+  line-height: 1.15;
+
+  font-weight: 300;
+
+}
+
+.home-question-card p {
+
+  margin: 0 0 28px;
+
+  color: rgba(47,42,38,0.84);
+
+  font-size: 14px;
+
+  line-height: 1.85;
+
+  font-weight: 300;
+
+}
+
+.home-question-card span {
+
+  color: #b88932;
+
+  font-size: 11px;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+}
+
+.home-question-card span::after {
+
+  content: " ›";
+
+  font-size: 18px;
+
+}
+
+/* =========================================================
+
+   08. EXPERIENCE SECTION
+
+========================================================= */
+
+.home-experience-section {
+
+  background: #ffffff;
+
+  padding: 92px 7% 96px;
+
+}
+
+.home-experience-grid {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 34px;
+
+}
+
+.home-experience-item {
+
+  padding-top: 12px;
+
+}
+
+.home-experience-item h3 {
+
+  margin: 0 0 18px;
+
+  color: #2d2a26;
+
+  font-size: 28px;
+
+  line-height: 1.1;
+
+  font-weight: 300;
+
+}
+
+.home-experience-item p {
+
+  margin: 0;
+
+  color: rgba(47,42,38,0.84);
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+  font-weight: 300;
+
+}
+
+/* =========================================================
+
+   09. FINAL CTA
+
+========================================================= */
+
+.home-final-cta {
+
+  background: #ffffff;
+
+  padding: 26px 7% 42px;
+
+}
+
+.home-final-cta-inner {
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+}
+
+.home-final-cta-inner h2 {
+
+  margin: 0 0 30px;
+
+  color: #2d2a26;
+
+  font-size: 34px;
+
+  line-height: 1.1;
+
+  font-weight: 300;
+
+}
+
+.home-final-btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 290px;
+
+  height: 42px;
+
+  border: 1px solid #b88932;
+
+  background: transparent;
+
+  color: #b88932;
+
+  font-size: 11px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  transition:
+
+    background 0.28s ease,
+
+    color 0.28s ease;
+
+}
+
+.home-final-btn:hover {
+
+  background: #b88932;
+
+  color: #ffffff;
+
+}
+
+/* =========================================================
+
+   10. HOMEPAGE FOOTER
+
+========================================================= */
+
+.home-footer {
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #607485;
+
+  color: #ffffff;
+
+  padding: 64px 7% 34px;
+
+}
+
+.home-footer-inner {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 1fr 1fr 1fr;
+
+  gap: 48px;
+
+}
+
+.home-footer-column h3 {
+
+  margin: 0 0 28px;
+
+  color: #d99a3e;
+
+  font-size: 12px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+
+}
+
+.home-footer-column p,
+
+.home-footer-column a {
+
+  display: block;
+
+  margin: 0 0 16px;
+
+  color: rgba(255,255,255,0.88);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  font-weight: 300;
+
+}
+
+.home-footer-logo img {
+
+  width: 280px;
+
+  max-width: 100%;
+
+  margin-bottom: 24px;
+
+}
+
+.home-footer-brand p {
+
+  margin-bottom: 28px;
+
+}
+
+.home-footer-cta {
+
+  display: inline-flex !important;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 250px;
+
+  height: 40px;
+
+  border: 1px solid #d99a3e;
+
+  color: #ffffff !important;
+
+  font-size: 11px !important;
+
+  line-height: 1 !important;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+}
+
+.home-footer-link::after,
+
+.home-footer-cta::after {
+
+  content: " ›";
+
+  font-size: 18px;
+
+}
+
+.home-footer-socials {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 24px;
+
+}
+
+.home-final-strip {
+
+  background: #4e6070;
+
+  padding: 16px 7%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: rgba(255,255,255,0.72);
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+}
+
+/* =========================================================
+
+   11. TABLET
+
+========================================================= */
+
+@media (max-width: 1180px) {
+
+  .home-hero {
+
+    height: 470px;
+
+  }
+
+  .home-hero-script {
+
+    font-size: 48px;
+
+  }
+
+  .home-hero-brand {
+
+    font-size: 58px;
+
+  }
+
+  .home-treatment-panel,
+
+  .home-doctor-inner {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .home-treatment-panel.reverse .home-treatment-image,
+
+  .home-treatment-panel.reverse .home-treatment-content {
+
+    order: unset;
+
+  }
+
+  .home-treatment-image img {
+
+    height: 340px;
+
+  }
+
+  .home-doctor-image img {
+
+    height: 580px;
+
+  }
+
+  .home-question-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .home-experience-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 42px;
+
+  }
+
+  .home-footer-inner {
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 44px;
+
+  }
+
+}
+
+/* =========================================================
+
+   12. MOBILE
+
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .home-hero {
+
+    height: 430px;
+
+    background-position: 58% center;
+
+  }
+
+  .home-hero-content {
+
+    left: 7%;
+
+    right: 7%;
+
+    top: 71%;
+
+  }
+
+  .home-hero-script {
+
+    font-size: 42px;
+
+    margin-bottom: 16px;
+
+  }
+
+  .home-hero-brand {
+
+    font-size: 44px;
+
+  }
+
+  .home-hero-subtitle {
+
+    font-size: 11px;
+
+    letter-spacing: 0.22em;
+
+    margin-top: 14px;
+
+  }
+
+  .home-script-heading {
+
+    font-size: 31px;
+
+  }
+
+  .home-section-heading h2,
+
+  .home-intro-inner h2,
+
+  .home-doctor-content h2,
+
+  .home-final-cta-inner h2 {
+
+    font-size: 26px;
+
+    line-height: 1.22;
+
+  }
+
+  .home-intro-section,
+
+  .home-treatment-section,
+
+  .home-doctor-section,
+
+  .home-questions-section,
+
+  .home-experience-section {
+
+    padding-top: 62px;
+
+    padding-bottom: 66px;
+
+  }
+
+  .home-treatment-content {
+
+    padding: 38px 26px;
+
+  }
+
+  .home-treatment-content h3 {
+
+    font-size: 28px;
+
+  }
+
+  .home-treatment-image img {
+
+    height: 260px;
+
+  }
+
+  .home-doctor-inner {
+
+    gap: 38px;
+
+  }
+
+  .home-doctor-image img {
+
+    height: auto;
+
+  }
+
+  .home-question-card {
+
+    padding: 32px 26px;
+
+  }
+
+  .home-question-card h3 {
+
+    font-size: 22px;
+
+  }
+
+  .home-final-btn {
+
+    width: 100%;
+
+    min-width: 0;
+
+  }
+
+  .home-footer {
+
+    padding-top: 54px;
+
+  }
+
+  .home-footer-inner {
+
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+
+  }
+
+  .home-footer-logo img {
+
+    width: 250px;
+
+  }
+
+  .home-footer-cta {
+
+    width: 100%;
+
+    min-width: 0;
+
+  }
+
+  .home-final-strip {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+  }
+
+}
