@@ -1564,69 +1564,141 @@ body.home-page {
 
 /* =========================================================
 
-   HOME HERO MOBILE FINAL REFINEMENT
+   HOME HERO — MOBILE EDITORIAL TYPOGRAPHY VERSION
 
 ========================================================= */
 
 @media (max-width: 700px) {
 
-  /* Stronger bottom trim only */
-
   .home-hero {
 
-    height: 315px !important;
+    height: 370px !important;
 
     background-size: 104% auto !important;
 
-    background-position: center center !important;
+    background-position: center top !important;
 
     background-color: #000000 !important;
 
-  }
+    overflow: hidden !important;
 
-  /* Keep overall title vertical position */
+  }
 
   .home-hero-content {
 
-    top: 45% !important;
+    left: 7% !important;
+
+    right: 7% !important;
+
+    top: 58% !important;
 
   }
 
-  /* Slightly smaller script */
+  .home-hero .home-hero-script,
 
-  .home-hero-script {
+  .home-hero .home-hero-brand,
 
-    font-size: 35px !important;
+  .home-hero .home-hero-subtitle {
 
-    margin-bottom: 16px !important;
+    animation: none !important;
 
-    transform: translateY(-38px) !important;
+    transition: opacity 2.4s ease, transform 2.4s ease !important;
+
+    opacity: 0 !important;
 
   }
 
-  /* Move whole white block slightly left */
+  .home-hero .home-hero-script {
 
-  .home-hero-brand {
+    font-size: 32px !important;
+
+    transform: translateY(-88px) !important;
+
+    color: #ddb46a !important;
+
+    margin-bottom: 0 !important;
+
+  }
+
+  .home-hero .home-hero-brand {
 
     font-size: 44px !important;
 
-    margin-left: 8px !important;
+    font-weight: 300 !important;
+
+    line-height: 0.95 !important;
+
+    letter-spacing: 0.04em !important;
+
+    margin-left: 0 !important;
+
+    margin-top: 0 !important;
+
+    text-align: left !important;
+
+    transform: translateY(-42px) !important;
 
   }
 
-  /* Keep relationship between title + subtitle */
+  .home-hero .home-hero-subtitle {
 
-  .home-hero-subtitle {
+    font-size: 24px !important;
 
-    font-size: 12px !important;
+    font-weight: 300 !important;
 
-    font-weight: 500 !important;
+    line-height: 1.1 !important;
 
-    letter-spacing: 0.23em !important;
+    letter-spacing: 0.03em !important;
 
-    margin-top: 14px !important;
+    text-transform: none !important;
 
-    min-width: 275px !important;
+    margin-left: 0 !important;
+
+    margin-top: 8px !important;
+
+    text-align: left !important;
+
+    min-width: 0 !important;
+
+    transform: translateY(-42px) !important;
+
+  }
+
+  .home-hero .home-hero-subtitle::after {
+
+    content: "";
+
+    display: block;
+
+    width: 82px;
+
+    height: 1px;
+
+    background: #ddb46a;
+
+    margin-top: 20px;
+
+  }
+
+  .home-hero.animate .home-hero-script {
+
+    opacity: 1 !important;
+
+    transform: translateY(-88px) !important;
+
+    transition-delay: 2.5s !important;
+
+  }
+
+  .home-hero.animate .home-hero-brand,
+
+  .home-hero.animate .home-hero-subtitle {
+
+    opacity: 1 !important;
+
+    transform: translateY(-42px) !important;
+
+    transition-delay: 2.5s !important;
 
   }
 
