@@ -1436,13 +1436,13 @@ body.home-page {
 
   .home-hero {
 
-    background-image: url('homehero-mobile.png') !important;
+    background-image: url('/dental-website-v2/homehero-mobile.png') !important;
 
-    height: 405px !important;
+    height: 390px !important;
 
-    background-size: cover !important;
+    background-size: 100% auto !important;
 
-    background-position: center center !important;
+    background-position: center top !important;
 
     background-repeat: no-repeat !important;
 
@@ -1451,6 +1451,8 @@ body.home-page {
     overflow: hidden !important;
 
   }
+
+}
 
   .home-hero-content {
 
