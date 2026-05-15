@@ -1440,27 +1440,27 @@ body.home-page {
 
 @media (min-width: 701px) and (max-width: 1180px) {
 
-  /* Move script slightly upward only */
+  /* Move script further upward */
 
   .home-hero-script {
 
-    transform: translateY(-18px) !important;
+    transform: translateY(-42px) !important;
 
   }
 
-  /* Move only "embrace" slightly right */
+  /* Shift only "embrace" more to the right */
 
   .home-hero-brand {
 
-    margin-left: 26px !important;
+    margin-left: 52px !important;
 
   }
 
-  /* Very slightly tighten black gap before locations */
+  /* Slightly tighten black gap before locations */
 
   .home-hero {
 
-    background-position: center 48% !important;
+    background-position: center 46% !important;
 
   }
 
