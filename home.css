@@ -1568,25 +1568,21 @@ body.home-page {
 
 ========================================================= */
 
-
-
-@media (max-width: 700px) {
-
 @media (max-width: 700px) {
 
   .home-hero {
 
-    height: 560px !important;
+    background-image: url('homehero-mobile.png') !important;
 
-    background-size: 104% auto !important;
+    height: 520px !important;
 
-    background-position: center 26% !important;
+    background-size: cover !important;
+
+    background-position: center center !important;
 
     background-repeat: no-repeat !important;
 
-    background-color: #000000 !important;
-
-    overflow: hidden !important;
+    background-color: #000 !important;
 
   }
 
