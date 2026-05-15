@@ -1438,11 +1438,11 @@ body.home-page {
 
     background-image: url('/dental-website-v2/homehero-mobile.png') !important;
 
-    height: 285px !important;
+    height: 320px !important;
 
-    background-size: contain !important;
+    background-size: cover !important;
 
-    background-position: center top !important;
+    background-position: center center !important;
 
     background-repeat: no-repeat !important;
 
