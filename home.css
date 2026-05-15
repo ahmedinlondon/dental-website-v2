@@ -1482,8 +1482,6 @@ body.home-page {
 
 @media (max-width: 700px) {
 
-  /* Keep image zoom/crop unchanged, but trim lower canvas */
-
   .home-hero {
 
     height: 382px !important;
@@ -1496,15 +1494,15 @@ body.home-page {
 
   }
 
-  /* Move whole headline group upward together */
+  /* Big jump upward for the whole headline group */
 
   .home-hero-content {
 
-    top: 58% !important;
+    top: 45% !important;
 
   }
 
-  /* Slightly reduce script only */
+  /* Script size is correct */
 
   .home-hero-script {
 
@@ -1514,21 +1512,23 @@ body.home-page {
 
   }
 
-  /* Keep embrace size, centre it optically over subtitle */
+  /* Keep embrace size, but align better over subtitle */
 
   .home-hero-brand {
 
     font-size: 44px !important;
 
-    margin-left: 20px !important;
+    margin-left: 14px !important;
 
   }
 
-  /* Make subtitle slightly stronger/larger */
+  /* Subtitle size correct, make it stronger than locations */
 
   .home-hero-subtitle {
 
     font-size: 12px !important;
+
+    font-weight: 500 !important;
 
     letter-spacing: 0.23em !important;
 
