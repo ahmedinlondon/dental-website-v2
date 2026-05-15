@@ -1440,7 +1440,7 @@ body.home-page {
 
     height: 390px !important;
 
-    background-size: 100% auto !important;
+    background-size: contain !important;
 
     background-position: center top !important;
 
