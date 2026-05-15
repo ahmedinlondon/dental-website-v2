@@ -1572,13 +1572,15 @@ body.home-page {
 
 @media (max-width: 700px) {
 
+@media (max-width: 700px) {
+
   .home-hero {
 
-    height: 390px !important;
+    height: 560px !important;
 
     background-size: 104% auto !important;
 
-    background-position: center 18px !important;
+    background-position: center 26% !important;
 
     background-repeat: no-repeat !important;
 
