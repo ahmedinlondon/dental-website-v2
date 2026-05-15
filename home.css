@@ -1440,11 +1440,11 @@ body.home-page {
 
 @media (min-width: 701px) and (max-width: 1180px) {
 
-  /* Move script further upward + restore softer metallic gold */
+  /* Move script slightly higher again */
 
   .home-hero-script {
 
-    transform: translateY(-92px) !important;
+    transform: translateY(-138px) !important;
 
     color: #ddb46a !important;
 
@@ -1456,7 +1456,7 @@ body.home-page {
 
   }
 
-  /* Move embrace slightly right again */
+  /* Keep embrace correctly aligned */
 
   .home-hero-brand {
 
@@ -1464,11 +1464,11 @@ body.home-page {
 
   }
 
-  /* Restore previous lower canvas spacing */
+  /* Add a little more lower canvas spacing */
 
   .home-hero {
 
-    background-position: center 48% !important;
+    background-position: center 51% !important;
 
   }
 
