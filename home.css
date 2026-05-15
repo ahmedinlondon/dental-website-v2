@@ -1434,17 +1434,17 @@ body.home-page {
 
 /* =========================================================
 
-   HOME HERO iPAD REFINEMENT 02
+   HOME HERO iPAD FINAL REFINEMENT
 
 ========================================================= */
 
 @media (min-width: 701px) and (max-width: 1180px) {
 
-  /* Move script slightly higher again */
-
   .home-hero-script {
 
-    transform: translateY(-138px) !important;
+    font-size: 44px !important;
+
+    transform: translateY(-122px) !important;
 
     color: #ddb46a !important;
 
@@ -1456,15 +1456,19 @@ body.home-page {
 
   }
 
-  /* Keep embrace correctly aligned */
-
   .home-hero-brand {
+
+    font-size: 62px !important;
 
     margin-left: 48px !important;
 
   }
 
-  /* Add a little more lower canvas spacing */
+  .home-hero-subtitle {
+
+    font-size: 16px !important;
+
+  }
 
   .home-hero {
 
