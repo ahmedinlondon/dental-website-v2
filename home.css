@@ -1473,3 +1473,69 @@ body.home-page {
   }
 
 }
+
+/* =========================================================
+
+   HOME HERO MOBILE REFINEMENT 01
+
+========================================================= */
+
+@media (max-width: 700px) {
+
+  /* Keep image zoom/crop unchanged, but trim lower canvas */
+
+  .home-hero {
+
+    height: 382px !important;
+
+    background-size: 104% auto !important;
+
+    background-position: center center !important;
+
+    background-color: #000000 !important;
+
+  }
+
+  /* Move whole headline group upward together */
+
+  .home-hero-content {
+
+    top: 58% !important;
+
+  }
+
+  /* Slightly reduce script only */
+
+  .home-hero-script {
+
+    font-size: 39px !important;
+
+    margin-bottom: 16px !important;
+
+  }
+
+  /* Keep embrace size, centre it optically over subtitle */
+
+  .home-hero-brand {
+
+    font-size: 44px !important;
+
+    margin-left: 20px !important;
+
+  }
+
+  /* Make subtitle slightly stronger/larger */
+
+  .home-hero-subtitle {
+
+    font-size: 12px !important;
+
+    letter-spacing: 0.23em !important;
+
+    margin-top: 14px !important;
+
+    min-width: 275px !important;
+
+  }
+
+}
