@@ -1440,37 +1440,35 @@ body.home-page {
 
 @media (min-width: 701px) and (max-width: 1180px) {
 
-  /* Move script higher + brighter luxury gold */
+  /* Move script further upward + restore softer metallic gold */
 
   .home-hero-script {
 
-    transform: translateY(-62px) !important;
+    transform: translateY(-92px) !important;
 
-    color: #f0c978 !important;
+    color: #ddb46a !important;
 
     text-shadow:
 
-      0 0 1px rgba(240,201,120,0.88),
+      0 0 1px rgba(221,180,106,0.52),
 
-      0 0 12px rgba(240,201,120,0.18),
-
-      0 2px 14px rgba(0,0,0,0.32) !important;
+      0 1px 10px rgba(0,0,0,0.22) !important;
 
   }
 
-  /* Pull embrace slightly back left */
+  /* Move embrace slightly right again */
 
   .home-hero-brand {
 
-    margin-left: 42px !important;
+    margin-left: 48px !important;
 
   }
 
-  /* Keep tighter lower black gap */
+  /* Restore previous lower canvas spacing */
 
   .home-hero {
 
-    background-position: center 46% !important;
+    background-position: center 48% !important;
 
   }
 
