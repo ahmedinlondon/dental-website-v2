@@ -1573,6 +1573,48 @@ body.home-page {
 
   }
 
+   .whatsapp-float,
+
+  .floating-whatsapp,
+
+  .floating-contact .whatsapp {
+
+    bottom: 118px !important;
+
+  }
+
 }
 
+
+/* Center social media icons perfectly */
+
+.home-footer-socials a {
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50% !important;
+
+  overflow: hidden;
+
+}
+
+.home-footer-socials a i {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  line-height: 1;
+
+}
 
