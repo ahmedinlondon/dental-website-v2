@@ -3110,6 +3110,93 @@ body.home-page {
 }
 
 
+/* =========================================================
+
+   FOOTER SOCIAL ICONS + MOBILE LEGAL BAR FINAL FIX
+
+========================================================= */
+
+/* restore normal circular social icons */
+
+.home-footer-socials a {
+
+  width: 42px !important;
+
+  height: 42px !important;
+
+  border-radius: 50% !important;
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  transform: none !important;
+
+}
+
+.home-footer-socials a i {
+
+  font-size: 15px !important;
+
+  color: #ffffff !important;
+
+}
+
+/* mobile compact legal bar */
+
+@media (max-width: 700px) {
+
+  .home-footer-bottom {
+
+    margin-top: 28px !important;
+
+    padding: 18px 6% 20px !important;
+
+    background: #526675 !important;
+
+  }
+
+  .home-footer-bottom p {
+
+    font-size: 9px !important;
+
+    line-height: 1.55 !important;
+
+    letter-spacing: 0.11em !important;
+
+    margin: 0 0 10px !important;
+
+  }
+
+  .home-footer-legal {
+
+    display: flex !important;
+
+    flex-wrap: nowrap !important;
+
+    gap: 14px !important;
+
+  }
+
+  .home-footer-legal a {
+
+    font-size: 9px !important;
+
+    line-height: 1.4 !important;
+
+    letter-spacing: 0.11em !important;
+
+    white-space: nowrap !important;
+
+  }
+
+}
+
+
+
+
 
 
 
