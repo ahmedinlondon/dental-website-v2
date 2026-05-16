@@ -2126,6 +2126,124 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   HOME DOCTOR SECTION — MOBILE ORDER + SPACING
+
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .home-doctor-section {
+
+    padding: 66px 7% 72px !important;
+
+  }
+
+  .home-doctor-inner {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 0 !important;
+
+  }
+
+  .home-doctor-content {
+
+    display: contents !important;
+
+  }
+
+  .home-doctor-content .home-script-heading {
+
+    order: 1 !important;
+
+    font-size: 34px !important;
+
+    line-height: 1 !important;
+
+    margin: 0 0 14px !important;
+
+    color: #c9a15d !important;
+
+    font-weight: 600 !important;
+
+  }
+
+  .home-doctor-content h2 {
+
+    order: 2 !important;
+
+    font-size: 29px !important;
+
+    line-height: 1.16 !important;
+
+    margin: 0 0 22px !important;
+
+  }
+
+  .home-doctor-content .home-gold-line {
+
+    order: 3 !important;
+
+    width: 76px !important;
+
+    margin: 0 0 34px !important;
+
+  }
+
+  .home-doctor-image {
+
+    order: 4 !important;
+
+    margin-bottom: 34px !important;
+
+  }
+
+  .home-doctor-image img {
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    object-fit: cover !important;
+
+  }
+
+  .home-doctor-credentials {
+
+    margin-top: 18px !important;
+
+    font-size: 10.5px !important;
+
+    line-height: 1.8 !important;
+
+  }
+
+  .home-doctor-content p:not(.home-script-heading) {
+
+    order: 5 !important;
+
+    font-size: 14.5px !important;
+
+    line-height: 1.78 !important;
+
+    margin-bottom: 24px !important;
+
+  }
+
+  .home-doctor-content .home-arrow-link {
+
+    order: 6 !important;
+
+    margin-top: 2px !important;
+
+  }
+
+}
+
 
 
 
