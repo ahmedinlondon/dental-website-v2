@@ -1609,3 +1609,13 @@ body.home-page {
 
 }
 
+@media (max-width: 700px) {
+
+  body.home-page .whatsapp-float {
+
+    bottom: 92px !important;
+
+  }
+
+}
+
