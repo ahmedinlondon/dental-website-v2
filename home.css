@@ -2414,6 +2414,150 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   FAQ CARDS — FINAL POLISH
+
+========================================================= */
+
+.home-question-grid {
+
+  align-items: stretch;
+
+}
+
+.home-question-card {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  min-height: 320px;
+
+  padding: 42px 38px 34px;
+
+  border: 1px solid rgba(201, 161, 93, 0.18);
+
+  background: #ffffff;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+
+}
+
+.home-question-card h3 {
+
+  font-size: 26px;
+
+  line-height: 1.2;
+
+  margin: 18px 0 20px;
+
+  font-weight: 300;
+
+  color: #2d2d2d;
+
+}
+
+.home-question-card p {
+
+  flex-grow: 1;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: #6e6a66;
+
+}
+
+.home-question-link {
+
+  margin-top: 30px;
+
+  letter-spacing: 3px;
+
+  font-size: 12px;
+
+}
+
+.home-question-icon {
+
+  width: 54px;
+
+  height: 54px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(201, 161, 93, 0.18);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #c9a15d;
+
+  background: rgba(201, 161, 93, 0.05);
+
+}
+
+.home-question-icon i {
+
+  font-size: 20px;
+
+  font-weight: 300;
+
+}
+
+/* Slightly wider lower row */
+
+.home-question-card:nth-child(4),
+
+.home-question-card:nth-child(5) {
+
+  min-height: 330px;
+
+}
+
+/* Tablet refinement */
+
+@media (max-width: 1180px) {
+
+  .home-question-card {
+
+    min-height: 300px;
+
+    padding: 36px 30px 30px;
+
+  }
+
+}
+
+/* Mobile refinement */
+
+@media (max-width: 700px) {
+
+  .home-question-card {
+
+    min-height: auto;
+
+    padding: 34px 28px 28px;
+
+  }
+
+  .home-question-card h3 {
+
+    font-size: 22px;
+
+  }
+
+}
+
+
+
 
 
 
