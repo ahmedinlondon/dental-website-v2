@@ -1079,7 +1079,23 @@ body.home-page {
 
   .home-doctor-image img {
 
-    height: 580px;
+    height: 540px;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+  }
+
+  .home-doctor-content .home-script-heading {
+
+    color: #c9a15d;
+
+    font-size: 44px;
+
+    font-weight: 600;
+
+    opacity: 0.95;
 
   }
 
