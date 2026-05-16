@@ -1577,3 +1577,27 @@ body.home-page {
   }
 
 }
+
+/* Home page: restore circular floating buttons and footer social icons */
+
+body.home-page .floating-contact a,
+
+body.home-page .whatsapp-float,
+
+body.home-page .phone-float,
+
+body.home-page .footer-socials a,
+
+body.home-page .social-icons a {
+
+  width: 46px;
+
+  height: 46px;
+
+  border-radius: 50% !important;
+
+  aspect-ratio: 1 / 1;
+
+  overflow: hidden;
+
+}
