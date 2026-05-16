@@ -2540,6 +2540,119 @@ body.home-page {
 
 
 
+/* =========================================================
+
+   HOME EXPERIENCE + CTA — iPAD REFINEMENT
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-experience-section {
+
+    padding: 66px 7% 52px !important;
+
+  }
+
+  .home-experience-section .home-section-heading {
+
+    margin-bottom: 42px !important;
+
+  }
+
+  .home-experience-section .home-script-heading {
+
+    font-size: 44px !important;
+
+    line-height: 1 !important;
+
+    margin-bottom: 10px !important;
+
+    color: #c9a15d !important;
+
+    font-weight: 600 !important;
+
+  }
+
+  .home-experience-section .home-section-heading h2 {
+
+    font-size: 32px !important;
+
+    line-height: 1.14 !important;
+
+  }
+
+  .home-experience-section .home-gold-line {
+
+    width: 86px !important;
+
+    margin: 24px 0 0 !important;
+
+  }
+
+  .home-experience-grid {
+
+    display: grid !important;
+
+    grid-template-columns: repeat(3, 1fr) !important;
+
+    gap: 34px !important;
+
+    max-width: 1180px !important;
+
+    margin: 0 auto !important;
+
+  }
+
+  .home-experience-item h3 {
+
+    font-size: 26px !important;
+
+    margin-bottom: 16px !important;
+
+  }
+
+  .home-experience-item p {
+
+    font-size: 13.6px !important;
+
+    line-height: 1.72 !important;
+
+  }
+
+  .home-final-cta {
+
+    padding: 42px 7% 54px !important;
+
+  }
+
+  .home-final-cta-inner h2 {
+
+    font-size: 32px !important;
+
+    margin-bottom: 26px !important;
+
+  }
+
+  .home-final-cta .home-script-heading {
+
+    font-size: 46px !important;
+
+    line-height: 1 !important;
+
+    margin-bottom: 8px !important;
+
+    color: #c9a15d !important;
+
+    font-weight: 600 !important;
+
+  }
+
+}
+
+
+
+
 
 
 
