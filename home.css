@@ -1930,4 +1930,68 @@ body.home-page {
 
 }
 
+/* HOME TREATMENT SECTION — iPAD COMPACT POLISH */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-treatment-section {
+
+    padding-top: 56px !important;
+
+    padding-bottom: 58px !important;
+
+  }
+
+  .home-section-heading {
+
+    margin-bottom: 34px !important;
+
+  }
+
+  .home-treatment-list {
+
+    gap: 24px !important;
+
+  }
+
+  .home-treatment-panel {
+
+    min-height: 330px !important;
+
+  }
+
+  .home-treatment-image img {
+
+    height: 330px !important;
+
+  }
+
+  .home-treatment-content {
+
+    padding: 38px 46px !important;
+
+  }
+
+  .home-treatment-content h3 {
+
+    font-size: 27px !important;
+
+    margin-bottom: 16px !important;
+
+  }
+
+  .home-treatment-content p {
+
+    font-size: 13.8px !important;
+
+    line-height: 1.72 !important;
+
+    margin-bottom: 22px !important;
+
+  }
+
+}
+
+
+
 
