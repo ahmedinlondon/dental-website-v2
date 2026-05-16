@@ -1536,21 +1536,23 @@ body.home-page {
 
   }
 
-  .home-hero .home-hero-subtitle::after {
+ .home-hero .home-hero-subtitle::after {
 
-    content: "";
+  content: "";
 
-    display: block;
+  display: block;
 
-    width: 82px;
+  width: 82px;
 
-    height: 1px;
+  height: 2px;
 
-    background: #ddb46a;
+  background: rgba(221,180,106,0.95);
 
-    margin-top: 20px;
+  margin-top: 20px;
 
-  }
+  transform: translateY(-6px);
+
+}
 
   .home-hero.animate .home-hero-script {
 
