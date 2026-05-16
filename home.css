@@ -1852,5 +1852,30 @@ body.home-page {
 
 }
 
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-treatment-section {
+
+    padding-left: 4% !important;
+
+    padding-right: 4% !important;
+
+  }
+
+  .home-treatment-list {
+
+    max-width: none !important;
+
+    width: 100% !important;
+
+  }
+
+  .home-treatment-panel {
+
+    width: 100% !important;
+
+  }
+
+}
 
 
