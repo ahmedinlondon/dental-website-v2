@@ -2262,11 +2262,139 @@ body.home-page {
 
 /* =========================================================
 
-   HOME FAQ LINKS SECTION — FINAL iPAD 3 + 2 CARD LAYOUT
+   HOME FAQ LINKS SECTION — FINAL 3 COLUMN LAYOUT
 
 ========================================================= */
 
-@media (min-width: 701px) and (max-width: 1180px) {
+.home-question-grid {
+
+  align-items: stretch !important;
+
+}
+
+.home-question-card {
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  justify-content: flex-start !important;
+
+  background: rgba(255,255,255,0.82) !important;
+
+  border: 1px solid rgba(201,161,93,0.30) !important;
+
+  box-shadow: 0 14px 34px rgba(38,35,33,0.045) !important;
+
+}
+
+.home-question-card i {
+
+  width: 46px !important;
+
+  height: 46px !important;
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  margin-bottom: 20px !important;
+
+  color: #c9a15d !important;
+
+  font-size: 19px !important;
+
+  font-weight: 300 !important;
+
+  border: 1px solid rgba(201,161,93,0.24) !important;
+
+  border-radius: 50% !important;
+
+  background: rgba(201,161,93,0.045) !important;
+
+}
+
+.home-question-card h3 {
+
+  color: #2d2d2d !important;
+
+  font-weight: 300 !important;
+
+}
+
+.home-question-card p {
+
+  flex-grow: 1 !important;
+
+  color: #6e6a66 !important;
+
+}
+
+.home-question-card span {
+
+  margin-top: auto !important;
+
+  color: #b88932 !important;
+
+}
+
+.home-question-note {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-height: 250px;
+
+  padding: 34px 30px;
+
+  border: 1px solid rgba(201,161,93,0.22);
+
+  background: transparent;
+
+  color: #2d2a26;
+
+}
+
+.home-question-note strong {
+
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: #b88932;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+
+}
+
+.home-question-note p {
+
+  margin: 0;
+
+  color: rgba(47,42,38,0.78);
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+  font-weight: 300;
+
+}
+
+/* Desktop + iPad: 3 columns, 2 cards + note on second row */
+
+@media (min-width: 701px) {
 
   .home-questions-section {
 
@@ -2328,7 +2456,7 @@ body.home-page {
 
     display: grid !important;
 
-    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
 
     gap: 18px !important;
 
@@ -2336,49 +2464,9 @@ body.home-page {
 
   .home-question-card {
 
-    min-height: 230px !important;
+    min-height: 250px !important;
 
-    padding: 28px 26px 30px !important;
-
-    background: rgba(255,255,255,0.78) !important;
-
-    border: 1px solid rgba(201,161,93,0.34) !important;
-
-    box-shadow: 0 14px 34px rgba(38,35,33,0.045) !important;
-
-  }
-
-  .home-question-card:nth-child(1),
-
-  .home-question-card:nth-child(2),
-
-  .home-question-card:nth-child(3) {
-
-    grid-column: span 2 !important;
-
-  }
-
-  .home-question-card:nth-child(4) {
-
-    grid-column: 2 / span 2 !important;
-
-  }
-
-  .home-question-card:nth-child(5) {
-
-    grid-column: 4 / span 2 !important;
-
-  }
-
-  .home-question-card i {
-
-    font-size: 18px !important;
-
-    margin-bottom: 18px !important;
-
-    color: #c9a15d !important;
-
-    opacity: 0.9 !important;
+    padding: 30px 28px 30px !important;
 
   }
 
@@ -2388,9 +2476,7 @@ body.home-page {
 
     line-height: 1.16 !important;
 
-    font-weight: 300 !important;
-
-    margin-bottom: 14px !important;
+    margin: 0 0 14px !important;
 
   }
 
@@ -2400,7 +2486,7 @@ body.home-page {
 
     line-height: 1.62 !important;
 
-    margin-bottom: 22px !important;
+    margin: 0 0 22px !important;
 
   }
 
@@ -2414,143 +2500,39 @@ body.home-page {
 
 }
 
-/* =========================================================
-
-   FAQ CARDS — FINAL POLISH
-
-========================================================= */
-
-.home-question-grid {
-
-  align-items: stretch;
-
-}
-
-.home-question-card {
-
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: space-between;
-
-  min-height: 320px;
-
-  padding: 42px 38px 34px;
-
-  border: 1px solid rgba(201, 161, 93, 0.18);
-
-  background: #ffffff;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-
-}
-
-.home-question-card h3 {
-
-  font-size: 26px;
-
-  line-height: 1.2;
-
-  margin: 18px 0 20px;
-
-  font-weight: 300;
-
-  color: #2d2d2d;
-
-}
-
-.home-question-card p {
-
-  flex-grow: 1;
-
-  font-size: 16px;
-
-  line-height: 1.8;
-
-  color: #6e6a66;
-
-}
-
-.home-question-link {
-
-  margin-top: 30px;
-
-  letter-spacing: 3px;
-
-  font-size: 12px;
-
-}
-
-.home-question-icon {
-
-  width: 54px;
-
-  height: 54px;
-
-  border-radius: 50%;
-
-  border: 1px solid rgba(201, 161, 93, 0.18);
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  color: #c9a15d;
-
-  background: rgba(201, 161, 93, 0.05);
-
-}
-
-.home-question-icon i {
-
-  font-size: 20px;
-
-  font-weight: 300;
-
-}
-
-/* Slightly wider lower row */
-
-.home-question-card:nth-child(4),
-
-.home-question-card:nth-child(5) {
-
-  min-height: 330px;
-
-}
-
-/* Tablet refinement */
-
-@media (max-width: 1180px) {
-
-  .home-question-card {
-
-    min-height: 300px;
-
-    padding: 36px 30px 30px;
-
-  }
-
-}
-
-/* Mobile refinement */
+/* Mobile: stacked cards, note underneath */
 
 @media (max-width: 700px) {
 
+  .home-question-grid {
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 16px !important;
+
+  }
+
   .home-question-card {
 
-    min-height: auto;
+    min-height: auto !important;
 
-    padding: 34px 28px 28px;
+    padding: 34px 28px 28px !important;
 
   }
 
   .home-question-card h3 {
 
-    font-size: 22px;
+    font-size: 22px !important;
+
+  }
+
+  .home-question-note {
+
+    min-height: auto;
+
+    padding: 30px 26px;
 
   }
 
