@@ -2835,6 +2835,147 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   HOME FOOTER — iPAD FINAL MICRO POLISH
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-footer-logo img {
+
+    width: 205px !important;
+
+  }
+
+  .home-footer-column h3 {
+
+    color: #e4bc64 !important;
+
+  }
+
+  .home-footer-column a,
+
+  .home-footer-column p {
+
+    line-height: 1.55 !important;
+
+    margin-bottom: 11px !important;
+
+  }
+
+  .home-footer-socials a {
+
+    transform: scale(0.92);
+
+  }
+
+}
+
+
+
+/* =========================================================
+
+   HOME FOOTER — MOBILE FINAL POLISH
+
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .home-footer {
+
+    padding: 48px 7% 34px !important;
+
+    background: #607485 !important;
+
+  }
+
+  .home-footer-inner {
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 38px !important;
+
+  }
+
+  .home-footer-brand {
+
+    text-align: center !important;
+
+  }
+
+  .home-footer-logo img {
+
+    width: 235px !important;
+
+    margin: 0 auto 24px !important;
+
+  }
+
+  .home-footer-column h3 {
+
+    color: #e4bc64 !important;
+
+    font-size: 12px !important;
+
+    letter-spacing: 0.24em !important;
+
+    margin-bottom: 22px !important;
+
+  }
+
+  .home-footer-column a,
+
+  .home-footer-column p {
+
+    font-size: 15px !important;
+
+    line-height: 1.55 !important;
+
+    margin-bottom: 14px !important;
+
+  }
+
+  .home-footer-cta {
+
+    width: 100% !important;
+
+    height: 44px !important;
+
+    border-color: #e4bc64 !important;
+
+    color: #ffffff !important;
+
+  }
+
+  .home-footer-socials {
+
+    gap: 13px !important;
+
+    margin-top: 22px !important;
+
+  }
+
+  .home-footer-socials a {
+
+    transform: scale(0.9);
+
+  }
+
+  .home-final-strip,
+
+  .home-footer-bottom {
+
+    padding: 20px 7% 24px !important;
+
+    text-align: left !important;
+
+  }
+
+}
 
 
 
