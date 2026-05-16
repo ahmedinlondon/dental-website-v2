@@ -2670,6 +2670,38 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   FINAL iPAD EXPERIENCE SECTION MICRO POLISH
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-experience-section {
+
+    padding-bottom: 18px !important;
+
+  }
+
+  .home-final-cta {
+
+    padding-top: 12px !important;
+
+    padding-bottom: 34px !important;
+
+  }
+
+  .home-final-cta-inner {
+
+    align-items: center !important;
+
+  }
+
+}
+
+
+
 
 
 
