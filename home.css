@@ -3105,6 +3105,62 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   MOBILE LEGAL BAR — CENTER ALIGN FINAL FIX
+
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .home-footer-bottom {
+
+    text-align: center !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    padding: 18px 6% 20px !important;
+
+  }
+
+  .home-footer-bottom p {
+
+    text-align: center !important;
+
+    margin: 0 0 12px !important;
+
+  }
+
+  .home-footer-legal {
+
+    width: 100% !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    gap: 14px !important;
+
+    flex-wrap: nowrap !important;
+
+  }
+
+  .home-footer-legal a {
+
+    text-align: center !important;
+
+  }
+
+}
+
 
 
 
