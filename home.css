@@ -1878,4 +1878,56 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   HOME TREATMENT SECTION — iPAD TWO-COLUMN FIX
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-treatment-panel {
+
+    grid-template-columns: 0.95fr 1.05fr !important;
+
+    align-items: stretch !important;
+
+  }
+
+  .home-treatment-panel.reverse .home-treatment-image {
+
+    order: 2 !important;
+
+  }
+
+  .home-treatment-panel.reverse .home-treatment-content {
+
+    order: 1 !important;
+
+  }
+
+  .home-treatment-image img {
+
+    height: 100% !important;
+
+    min-height: 300px !important;
+
+    object-fit: cover !important;
+
+  }
+
+  .home-treatment-content {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    justify-content: center !important;
+
+    padding: 48px 52px !important;
+
+  }
+
+}
+
 
