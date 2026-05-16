@@ -1746,5 +1746,111 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   HOME TREATMENT SECTION — iPAD REFINEMENT
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-treatment-section {
+
+    padding: 74px 7% 76px !important;
+
+  }
+
+  .home-section-heading {
+
+    margin-bottom: 42px !important;
+
+  }
+
+  .home-script-heading {
+
+    font-size: 56px !important;
+
+    line-height: 0.95 !important;
+
+    margin-bottom: 10px !important;
+
+  }
+
+  .home-section-heading h2 {
+
+    font-size: 34px !important;
+
+    line-height: 1.12 !important;
+
+    letter-spacing: 0.01em !important;
+
+  }
+
+  .home-gold-line {
+
+    width: 108px !important;
+
+    margin: 24px 0 0 !important;
+
+  }
+
+  .home-treatment-list {
+
+    gap: 34px !important;
+
+  }
+
+  .home-treatment-panel {
+
+    border: 1px solid rgba(185,150,87,0.10) !important;
+
+  }
+
+  .home-treatment-image img {
+
+    height: 300px !important;
+
+    object-fit: cover !important;
+
+  }
+
+  .home-treatment-content {
+
+    padding: 52px 56px !important;
+
+  }
+
+  .home-treatment-content h3 {
+
+    font-size: 28px !important;
+
+    line-height: 1.08 !important;
+
+    margin-bottom: 18px !important;
+
+  }
+
+  .home-treatment-content p {
+
+    font-size: 14px !important;
+
+    line-height: 1.8 !important;
+
+    max-width: 760px !important;
+
+    margin-bottom: 26px !important;
+
+  }
+
+  .home-arrow-link {
+
+    font-size: 10px !important;
+
+    letter-spacing: 0.18em !important;
+
+  }
+
+}
+
 
 
