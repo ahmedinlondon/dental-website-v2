@@ -76,7 +76,6 @@ body.home-page {
 
   box-sizing: border-box;
 
-  border-radius: 0 !important;
 
 }
 
@@ -1449,8 +1448,6 @@ body.home-page {
     background-color: #000000 !important;
 
     overflow: hidden !important;
-
-  }
 
 }
 
