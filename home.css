@@ -1632,5 +1632,67 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   HOME INTRO SECTION — iPAD REFINEMENT
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-intro-section {
+
+    padding: 82px 9% 92px !important;
+
+  }
+
+  .home-intro-inner {
+
+    max-width: 980px !important;
+
+  }
+
+  .home-intro-section .home-script-heading {
+
+    font-size: 38px !important;
+
+    margin-bottom: 10px !important;
+
+  }
+
+  .home-intro-inner h2 {
+
+    font-size: 30px !important;
+
+    line-height: 1.18 !important;
+
+  }
+
+  .home-intro-section .home-gold-line {
+
+    width: 76px !important;
+
+    margin: 24px 0 34px !important;
+
+  }
+
+  .home-intro-copy {
+
+    max-width: 920px !important;
+
+  }
+
+  .home-intro-copy p {
+
+    font-size: 14.5px !important;
+
+    line-height: 1.82 !important;
+
+    margin-bottom: 24px !important;
+
+  }
+
+}
+
 
 
