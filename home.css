@@ -2542,7 +2542,7 @@ body.home-page {
 
 /* =========================================================
 
-   HOME EXPERIENCE + CTA — iPAD REFINEMENT
+   HOME EXPERIENCE + CTA — iPAD FINAL REFINEMENT
 
 ========================================================= */
 
@@ -2550,13 +2550,13 @@ body.home-page {
 
   .home-experience-section {
 
-    padding: 66px 7% 52px !important;
+    padding: 54px 7% 34px !important;
 
   }
 
   .home-experience-section .home-section-heading {
 
-    margin-bottom: 42px !important;
+    margin-bottom: 34px !important;
 
   }
 
@@ -2566,7 +2566,7 @@ body.home-page {
 
     line-height: 1 !important;
 
-    margin-bottom: 10px !important;
+    margin-bottom: 8px !important;
 
     color: #c9a15d !important;
 
@@ -2576,17 +2576,17 @@ body.home-page {
 
   .home-experience-section .home-section-heading h2 {
 
-    font-size: 32px !important;
+    font-size: 31px !important;
 
-    line-height: 1.14 !important;
+    line-height: 1.12 !important;
 
   }
 
   .home-experience-section .home-gold-line {
 
-    width: 86px !important;
+    width: 112px !important;
 
-    margin: 24px 0 0 !important;
+    margin: 22px 0 0 !important;
 
   }
 
@@ -2596,9 +2596,9 @@ body.home-page {
 
     grid-template-columns: repeat(3, 1fr) !important;
 
-    gap: 34px !important;
+    gap: 28px !important;
 
-    max-width: 1180px !important;
+    max-width: 1080px !important;
 
     margin: 0 auto !important;
 
@@ -2606,45 +2606,65 @@ body.home-page {
 
   .home-experience-item h3 {
 
-    font-size: 26px !important;
+    font-size: 25px !important;
 
-    margin-bottom: 16px !important;
+    margin-bottom: 12px !important;
 
   }
 
   .home-experience-item p {
 
-    font-size: 13.6px !important;
+    font-size: 13.4px !important;
 
-    line-height: 1.72 !important;
+    line-height: 1.62 !important;
 
   }
 
   .home-final-cta {
 
-    padding: 42px 7% 54px !important;
+    padding: 28px 7% 42px !important;
 
   }
 
-  .home-final-cta-inner h2 {
+  .home-final-cta-inner {
 
-    font-size: 32px !important;
+    max-width: 1080px !important;
 
-    margin-bottom: 26px !important;
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    gap: 40px !important;
+
+    text-align: left !important;
 
   }
 
   .home-final-cta .home-script-heading {
 
-    font-size: 46px !important;
+    display: none !important;
 
-    line-height: 1 !important;
+  }
 
-    margin-bottom: 8px !important;
+  .home-final-cta-inner h2 {
 
-    color: #c9a15d !important;
+    font-size: 31px !important;
 
-    font-weight: 600 !important;
+    line-height: 1.12 !important;
+
+    margin: 0 !important;
+
+    text-align: left !important;
+
+  }
+
+  .home-final-btn {
+
+    min-width: 300px !important;
+
+    flex-shrink: 0 !important;
 
   }
 
