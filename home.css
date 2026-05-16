@@ -2260,6 +2260,160 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   HOME FAQ LINKS SECTION — FINAL iPAD 3 + 2 CARD LAYOUT
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-questions-section {
+
+    padding: 64px 6% 72px !important;
+
+  }
+
+  .home-questions-section .home-section-heading {
+
+    max-width: 1180px !important;
+
+    margin: 0 auto 34px !important;
+
+  }
+
+  .home-questions-section .home-script-heading {
+
+    font-size: 42px !important;
+
+    line-height: 1 !important;
+
+    margin-bottom: 10px !important;
+
+    color: #c9a15d !important;
+
+    font-weight: 600 !important;
+
+  }
+
+  .home-questions-section .home-section-heading h2 {
+
+    font-size: 31px !important;
+
+    line-height: 1.15 !important;
+
+    font-weight: 300 !important;
+
+    letter-spacing: 0.02em !important;
+
+  }
+
+  .home-questions-section .home-gold-line {
+
+    width: 86px !important;
+
+    height: 1.5px !important;
+
+    margin: 24px 0 0 !important;
+
+    background: rgba(201,161,93,0.85) !important;
+
+  }
+
+  .home-question-grid {
+
+    max-width: 1180px !important;
+
+    margin: 0 auto !important;
+
+    display: grid !important;
+
+    grid-template-columns: repeat(6, 1fr) !important;
+
+    gap: 18px !important;
+
+  }
+
+  .home-question-card {
+
+    min-height: 230px !important;
+
+    padding: 28px 26px 30px !important;
+
+    background: rgba(255,255,255,0.78) !important;
+
+    border: 1px solid rgba(201,161,93,0.34) !important;
+
+    box-shadow: 0 14px 34px rgba(38,35,33,0.045) !important;
+
+  }
+
+  .home-question-card:nth-child(1),
+
+  .home-question-card:nth-child(2),
+
+  .home-question-card:nth-child(3) {
+
+    grid-column: span 2 !important;
+
+  }
+
+  .home-question-card:nth-child(4) {
+
+    grid-column: 2 / span 2 !important;
+
+  }
+
+  .home-question-card:nth-child(5) {
+
+    grid-column: 4 / span 2 !important;
+
+  }
+
+  .home-question-card i {
+
+    font-size: 18px !important;
+
+    margin-bottom: 18px !important;
+
+    color: #c9a15d !important;
+
+    opacity: 0.9 !important;
+
+  }
+
+  .home-question-card h3 {
+
+    font-size: 23px !important;
+
+    line-height: 1.16 !important;
+
+    font-weight: 300 !important;
+
+    margin-bottom: 14px !important;
+
+  }
+
+  .home-question-card p {
+
+    font-size: 13.4px !important;
+
+    line-height: 1.62 !important;
+
+    margin-bottom: 22px !important;
+
+  }
+
+  .home-question-card span {
+
+    font-size: 10px !important;
+
+    letter-spacing: 0.17em !important;
+
+  }
+
+}
+
 
 
 
