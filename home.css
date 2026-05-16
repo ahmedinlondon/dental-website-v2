@@ -1992,6 +1992,106 @@ body.home-page {
 
 }
 
+/* =========================================================
+
+   HOME DOCTOR SECTION — iPAD EDITORIAL PROFILE LAYOUT
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-doctor-section {
+
+    padding: 76px 7% 84px !important;
+
+  }
+
+  .home-doctor-inner {
+
+    max-width: 1180px !important;
+
+    margin: 0 auto !important;
+
+    display: grid !important;
+
+    grid-template-columns: 0.36fr 0.64fr !important;
+
+    gap: 58px !important;
+
+    align-items: center !important;
+
+  }
+
+  .home-doctor-content {
+
+    order: 2 !important;
+
+  }
+
+  .home-doctor-image {
+
+    order: 1 !important;
+
+  }
+
+  .home-doctor-image img {
+
+    width: 100% !important;
+
+    height: 520px !important;
+
+    object-fit: cover !important;
+
+    object-position: center top !important;
+
+  }
+
+  .home-doctor-content .home-script-heading {
+
+    font-size: 44px !important;
+
+    line-height: 1 !important;
+
+    margin-bottom: 10px !important;
+
+  }
+
+  .home-doctor-content h2 {
+
+    font-size: 34px !important;
+
+    line-height: 1.12 !important;
+
+    margin-bottom: 22px !important;
+
+  }
+
+  .home-doctor-content .home-gold-line {
+
+    width: 86px !important;
+
+    margin: 0 0 30px !important;
+
+  }
+
+  .home-doctor-content p {
+
+    font-size: 14.5px !important;
+
+    line-height: 1.82 !important;
+
+    margin-bottom: 22px !important;
+
+  }
+
+  .home-doctor-content .home-arrow-link {
+
+    margin-top: 6px !important;
+
+  }
+
+}
+
 
 
 
