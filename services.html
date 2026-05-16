@@ -704,6 +704,35 @@ document.addEventListener("click", function(e) {
 
 });
 
+function openServiceFromHash() {
+
+  const hash = window.location.hash.replace("#", "");
+
+  const hashMap = {
+
+    "smile-planning": "smiledesign",
+
+    "fixed-braces": "metal",
+
+    "clear-aligners": "aligners"
+
+  };
+
+  if (!hash || !hashMap[hash]) {
+
+    return;
+
+  }
+
+  setTimeout(function() {
+
+    openService(hashMap[hash]);
+
+  }, 500);
+
+}
+
+window.addEventListener("load", openServiceFromHash);
  
 <!-- ================= 09. MOBILE COMPARISON POPUP DATA + FUNCTIONS ================= -->
 
