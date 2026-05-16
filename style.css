@@ -1979,3 +1979,21 @@ body.is-scrolled .site-logo img {
   }
 
 }
+
+/* Restore round floating contact buttons and footer social icons */
+
+.floating-contact a,
+
+.float-contact a,
+
+.whatsapp-float,
+
+.phone-float,
+
+.footer-socials a,
+
+.social-icons a {
+
+  border-radius: 50% !important;
+
+}
