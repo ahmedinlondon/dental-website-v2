@@ -2755,6 +2755,88 @@ body.home-page {
 }
 
 
+/* =========================================================
+
+   HOME FOOTER — iPAD POLISH
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .home-footer {
+
+    background: #607485 !important;
+
+    padding: 58px 7% 34px !important;
+
+  }
+
+  .home-footer-inner {
+
+    grid-template-columns: 1.05fr 0.9fr 1.05fr 1.05fr !important;
+
+    gap: 42px !important;
+
+    align-items: start !important;
+
+  }
+
+  .home-footer-logo img {
+
+    width: 220px !important;
+
+    margin: 0 auto 24px !important;
+
+  }
+
+  .home-footer-brand {
+
+    text-align: center !important;
+
+  }
+
+  .home-footer-column h3 {
+
+    color: #e1b85f !important;
+
+    font-size: 11px !important;
+
+    letter-spacing: 0.24em !important;
+
+    margin-bottom: 24px !important;
+
+  }
+
+  .home-footer-column a,
+
+  .home-footer-column p {
+
+    font-size: 13px !important;
+
+    line-height: 1.65 !important;
+
+    margin-bottom: 13px !important;
+
+  }
+
+  .home-footer-cta {
+
+    border-color: #e1b85f !important;
+
+    color: #ffffff !important;
+
+  }
+
+  .home-final-strip {
+
+    background: #526675 !important;
+
+  }
+
+}
+
+
+
 
 
 
