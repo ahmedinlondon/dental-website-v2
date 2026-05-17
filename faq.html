@@ -601,13 +601,13 @@
 
 ========================================================= -->
 
-<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" target="_blank" aria-label="WhatsApp">
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" target="_blank" aria-label="WhatsApp" data-site-whatsapp-link>
 
   <i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
-<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call clinic">
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call clinic" data-site-phone-link>
 
   <i class="fa-solid fa-phone"></i>
 
@@ -673,11 +673,11 @@
 
       <h3>Contact</h3>
 
-      <p>+20 128 000 4688</p>
+      <p data-site-phone>+20 128 000 4688</p>
 
-      <p>info@embraceorthodontic.com</p>
+      <p data-site-email>info@embraceorthodontic.com</p>
 
-      <p>embraceorthodontic.com</p>
+      <p data-site-domain>embraceorthodontic.com</p>
 
       <div class="footer-socials">
 
@@ -697,7 +697,7 @@
 
   <div class="footer-bottom">
 
-    © 2026 Embrace Bespoke Orthodontic. All rights reserved.
+    <span data-site-footer>© 2026 Embrace Bespoke Orthodontic. All rights reserved.</span>
 
   </div>
 
@@ -708,6 +708,8 @@
    11. PAGE SCRIPTS
 
 ========================================================= -->
+
+<script src="site-data.js?v=4"></script>
 
 <script>
 
@@ -721,7 +723,11 @@ function toggleMenu() {
 
   const isOpen = body.classList.contains("menu-open");
 
-  burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  if (burger) {
+
+    burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+  }
 
 }
 
@@ -764,6 +770,60 @@ faqQuestions.forEach(function(question) {
     const item = question.closest(".faq-item");
 
     item.classList.toggle("open");
+
+  });
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-email]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.email;
+
+    if (el.tagName.toLowerCase() === "a") {
+
+      el.href = "mailto:" + SITE_DATA.contact.email;
+
+    }
+
+  });
+
+  document.querySelectorAll("[data-site-phone]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.phoneDisplay;
+
+  });
+
+  document.querySelectorAll("[data-site-phone-link]").forEach(function (el) {
+
+    el.href = "tel:" + SITE_DATA.contact.phoneRaw;
+
+  });
+
+  document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
+
+    el.href = SITE_DATA.contact.whatsappUrl;
+
+  });
+
+  document.querySelectorAll("[data-site-domain]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.website.domain;
+
+  });
+
+  document.querySelectorAll("[data-site-address]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.location.fullAddress;
+
+  });
+
+  document.querySelectorAll("[data-site-footer]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.footer.copyrightText;
 
   });
 
