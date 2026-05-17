@@ -356,11 +356,11 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
       <h3>Contact</h3>
 
-      <p>+20 128 000 4688</p>
+      <p data-site-phone>+20 128 000 4688</p>
 
-      <p>info@embraceorthodontic.com</p>
+      <p data-site-email>info@embraceorthodontic.com</p>
 
-      <p>embraceorthodontic.com</p>
+      <p data-site-domain>embraceorthodontic.com</p>
 
       <div class="footer-socials">
 
@@ -380,7 +380,7 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
   <div class="footer-bottom">
 
-    © 2026 Embrace Bespoke Orthodontic. All rights reserved.
+   <span data-site-footer>© 2026 Embrace Bespoke Orthodontic. All rights reserved.</span>
 
   </div>
 
@@ -889,6 +889,55 @@ window.addEventListener("load", function() {
 
 </script>
 
+
+<script src="site-data.js?v=3"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-email]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.email;
+
+    if (el.tagName.toLowerCase() === "a") {
+
+      el.href = "mailto:" + SITE_DATA.contact.email;
+
+    }
+
+  });
+
+  document.querySelectorAll("[data-site-phone]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.phoneDisplay;
+
+  });
+
+  document.querySelectorAll("[data-site-phone-link]").forEach(function (el) {
+
+    el.href = "tel:" + SITE_DATA.contact.phoneRaw;
+
+  });
+
+  document.querySelectorAll("[data-site-domain]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.website.domain;
+
+  });
+
+  document.querySelectorAll("[data-site-footer]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.footer.copyrightText;
+
+  });
+
+});
+
+</script>
+  
 </body>
 
 </html>
