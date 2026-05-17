@@ -679,7 +679,7 @@ body.menu-open .menu-overlay {
 
 .menu-nav a::after {
 
-  content: "→";
+  content: "›";
 
   color: var(--v2-gold);
 
