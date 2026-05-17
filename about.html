@@ -27,7 +27,6 @@ ABOUT.HTML — LOCKED ABOUT PAGE DESIGN
 =========================================================
 
 -->
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -40,9 +39,11 @@ ABOUT.HTML — LOCKED ABOUT PAGE DESIGN
 
   <title>About | Dr. Yasmine Soliman</title>
 
+  <link rel="stylesheet" href="design-system.css?v=4" />
+
   <link rel="stylesheet" href="about.css?v=7" />
 
-  <link rel="stylesheet" href="style.css?v=110" />
+  <link rel="stylesheet" href="style.css?v=111" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -66,9 +67,15 @@ ABOUT.HTML — LOCKED ABOUT PAGE DESIGN
 
     <div class="header-contact header-contact-stacked">
 
-      <span><i class="fa-solid fa-phone"></i> +20 128 000 4688</span>
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
 
-      <span>WWW.EMBRACEORTHODONTIC.COM</span>
+        <i class="fa-solid fa-phone"></i>
+
+        <span data-site-phone>+20 128 000 4688</span>
+
+      </a>
+
+      <span data-site-domain>WWW.EMBRACEORTHODONTIC.COM</span>
 
       <a href="contact.html?v=3" class="header-consultation">BOOK YOUR CONSULTATION</a>
 
@@ -126,11 +133,11 @@ ABOUT.HTML — LOCKED ABOUT PAGE DESIGN
 
     <div class="menu-bottom">
 
-      <p>+20 128 000 4688</p>
+      <p data-site-phone>+20 128 000 4688</p>
 
-      <p>info@embraceorthodontic.com</p>
+      <p data-site-email>info@embraceorthodontic.com</p>
 
-      <p>embraceorthodontic.com</p>
+      <p data-site-domain>embraceorthodontic.com</p>
 
     </div>
 
@@ -140,19 +147,17 @@ ABOUT.HTML — LOCKED ABOUT PAGE DESIGN
 
 <!-- ================= 03. FLOATING CONTACT BUTTONS ================= -->
 
-<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp">
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp" data-site-whatsapp-link>
 
   <i class="fab fa-whatsapp"></i>
 
 </a>
 
-<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call">
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call" data-site-phone-link>
 
   <i class="fa-solid fa-phone"></i>
 
-</a>
-
-<!-- ================= 04. HERO SECTION ================= -->
+</a><!-- ================= 04. HERO SECTION ================= -->
 
 <section class="about-hero hero-reveal">
 
