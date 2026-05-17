@@ -148,6 +148,20 @@ SERVICES.HTML — LOCKED GLOBAL DESIGN
 
 </div>
 
+  <!-- ================= FLOATING CONTACT BUTTONS ================= -->
+
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp" data-site-whatsapp-link>
+
+  <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call" data-site-phone-link>
+
+  <i class="fa-solid fa-phone"></i>
+
+</a>
+
 <!-- ================= 03. HERO SECTION ================= -->
 
 <section class="services-hero hero-reveal">
@@ -921,6 +935,12 @@ document.addEventListener("DOMContentLoaded", function () {
     el.href = "tel:" + SITE_DATA.contact.phoneRaw;
 
   });
+
+  document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
+
+  el.href = SITE_DATA.contact.whatsappUrl;
+
+ });
 
   document.querySelectorAll("[data-site-domain]").forEach(function (el) {
 
