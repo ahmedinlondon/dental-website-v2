@@ -574,25 +574,41 @@
 
 <!-- ================= FLOATING CONTACT BUTTONS ================= -->
 
-<a href="#" class="floating-contact float-whatsapp" aria-label="WhatsApp">
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp" data-site-whatsapp-link>
 
   <i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
-<a href="contact.html?v=3" class="floating-contact float-call" aria-label="Call">
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call" data-site-phone-link>
 
   <i class="fa-solid fa-phone"></i>
 
 </a>
+
   
+
 <!-- ================= SCRIPTS ================= -->
+
+<script src="site-data.js?v=6"></script>
 
 <script>
 
 function toggleMenu() {
 
-  document.body.classList.toggle("menu-open");
+  const body = document.body;
+
+  const burger = document.querySelector(".burger-btn");
+
+  body.classList.toggle("menu-open");
+
+  const isOpen = body.classList.contains("menu-open");
+
+  if (burger) {
+
+    burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+  }
 
 }
 
@@ -635,6 +651,60 @@ window.addEventListener("DOMContentLoaded", function () {
     }, 350);
 
   }
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-email]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.email;
+
+    if (el.tagName.toLowerCase() === "a") {
+
+      el.href = "mailto:" + SITE_DATA.contact.email;
+
+    }
+
+  });
+
+  document.querySelectorAll("[data-site-phone]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.phoneDisplay;
+
+  });
+
+  document.querySelectorAll("[data-site-phone-link]").forEach(function (el) {
+
+    el.href = "tel:" + SITE_DATA.contact.phoneRaw;
+
+  });
+
+  document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
+
+    el.href = SITE_DATA.contact.whatsappUrl;
+
+  });
+
+  document.querySelectorAll("[data-site-domain]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.website.domain;
+
+  });
+
+  document.querySelectorAll("[data-site-address]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.location.fullAddress;
+
+  });
+
+  document.querySelectorAll("[data-site-footer]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.footer.copyrightText;
+
+  });
 
 });
 
