@@ -14,7 +14,9 @@
 
   <!-- 02. GLOBAL + PAGE CSS -->
 
-  <link rel="stylesheet" href="style.css?v=85">
+  <link rel="stylesheet" href="design-system.css?v=4">
+
+  <link rel="stylesheet" href="style.css?v=86">
 
   <link rel="stylesheet" href="faq.css?v=149">
 
@@ -72,28 +74,34 @@
 
 <header class="site-header">
 
-<div class="header-top">
+  <div class="header-top">
 
-  <div class="header-doctor-name">Dr. Yasmine Soliman</div>
+    <div class="header-doctor-name">Dr. Yasmine Soliman</div>
 
-  <div class="header-contact header-contact-stacked">
+    <div class="header-contact header-contact-stacked">
 
-    <span><i class="fa-solid fa-phone"></i> +20 128 000 4688</span>
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
 
-    <span>www.embraceorthodontic.com</span>
+        <i class="fa-solid fa-phone"></i>
 
-    <a href="contact.html?v=3" class="header-consultation">Book Your Consultation</a>
+        <span data-site-phone>+20 128 000 4688</span>
+
+      </a>
+
+      <span data-site-domain>www.embraceorthodontic.com</span>
+
+      <a href="contact.html?v=3" class="header-consultation">Book Your Consultation</a>
+
+    </div>
 
   </div>
-
-</div>
 
   <div class="header-main">
 
     <a href="index.html?v=3" class="site-logo" aria-label="Embrace Bespoke Orthodontic Home">
 
-   <img src="embrace-clear.png?v=2" alt="Embrace Bespoke Orthodontic">
-      
+      <img src="embrace-clear.png?v=2" alt="Embrace Bespoke Orthodontic">
+
     </a>
 
     <button class="burger-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
@@ -154,11 +162,11 @@
 
         <strong>Contact</strong>
 
-        <p>012 8000 4688</p>
+        <p data-site-phone>+20 128 000 4688</p>
 
-        <p>yasminsoliman@hotmail.co.uk</p>
+        <p data-site-email>info@embraceorthodontic.com</p>
 
-        <p>embraceorthodontic.com</p>
+        <p data-site-domain>embraceorthodontic.com</p>
 
       </div>
 
@@ -166,7 +174,7 @@
 
         <strong>Clinics</strong>
 
-        <p>Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
+        <p data-site-address>Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
 
         <p>Polydent, Sheikh Zayed City, Cairo, Egypt</p>
 
