@@ -46,9 +46,11 @@ INDEX.HTML — LOCKED HOMEPAGE DESIGN
 
   <title>Embrace Bespoke Orthodontic | Dr. Yasmine Soliman</title>
 
-<link rel="stylesheet" href="style.css?v=110" />
+  <link rel="stylesheet" href="design-system.css?v=4" />
 
-<link rel="stylesheet" href="home.css?v=78" />
+  <link rel="stylesheet" href="style.css?v=111" />
+
+  <link rel="stylesheet" href="home.css?v=78" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -72,9 +74,15 @@ INDEX.HTML — LOCKED HOMEPAGE DESIGN
 
     <div class="header-contact header-contact-stacked">
 
-      <span><i class="fa-solid fa-phone"></i> +20 128 000 4688</span>
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
 
-      <span>WWW.EMBRACEORTHODONTIC.COM</span>
+        <i class="fa-solid fa-phone"></i>
+
+        <span data-site-phone>+20 128 000 4688</span>
+
+      </a>
+
+      <span data-site-domain>WWW.EMBRACEORTHODONTIC.COM</span>
 
       <a href="contact.html?v=3" class="header-consultation">BOOK YOUR CONSULTATION</a>
 
@@ -132,11 +140,11 @@ INDEX.HTML — LOCKED HOMEPAGE DESIGN
 
     <div class="menu-bottom">
 
-      <p>+20 128 000 4688</p>
+      <p data-site-phone>+20 128 000 4688</p>
 
-      <p>info@embraceorthodontic.com</p>
+      <p data-site-email>info@embraceorthodontic.com</p>
 
-      <p>embraceorthodontic.com</p>
+      <p data-site-domain>embraceorthodontic.com</p>
 
     </div>
 
@@ -146,13 +154,13 @@ INDEX.HTML — LOCKED HOMEPAGE DESIGN
 
 <!-- ================= 03. FLOATING CONTACT BUTTONS ================= -->
 
-<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp">
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" aria-label="WhatsApp" data-site-whatsapp-link>
 
   <i class="fab fa-whatsapp"></i>
 
 </a>
 
-<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call">
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call" data-site-phone-link>
 
   <i class="fa-solid fa-phone"></i>
 
