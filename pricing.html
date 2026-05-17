@@ -12,7 +12,9 @@
 
   <!-- Global CSS -->
 
-  <link rel="stylesheet" href="style.css?v=132">
+  <link rel="stylesheet" href="design-system.css?v=4">
+
+  <link rel="stylesheet" href="style.css?v=133">
 
   <!-- Page CSS -->
 
@@ -40,9 +42,15 @@
 
     <div class="header-contact">
 
-      <span><i class="fa-solid fa-phone"></i> +20 123 456 7890</span>
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
 
-      <span><i class="fa-solid fa-envelope"></i> info@embraceorthodontic.com</span>
+        <i class="fa-solid fa-phone"></i>
+
+        <span data-site-phone>+20 128 000 4688</span>
+
+      </a>
+
+      <span><i class="fa-solid fa-envelope"></i> <span data-site-email>info@embraceorthodontic.com</span></span>
 
       <a href="contact.html?v=3" class="header-consultation">Book a Consultation</a>
 
@@ -58,7 +66,7 @@
 
     </a>
 
-    <button class="burger-btn" aria-label="Open menu" onclick="toggleMenu()">
+    <button class="burger-btn" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
 
       <span></span>
 
@@ -112,7 +120,9 @@
 
         <strong>Contact</strong>
 
-        <p>info@embraceorthodontic.com</p>
+        <p data-site-email>info@embraceorthodontic.com</p>
+
+        <p data-site-phone>+20 128 000 4688</p>
 
       </div>
 
@@ -120,7 +130,7 @@
 
         <strong>Location</strong>
 
-        <p>Sheikh Zayed City, Cairo</p>
+        <p data-site-address>Sheikh Zayed City, Cairo</p>
 
       </div>
 
@@ -128,9 +138,7 @@
 
   </div>
 
-</div>
-
-<!-- ================= HERO ================= -->
+</div><!-- ================= HERO ================= -->
 
 <section class="pricing-hero hero-reveal">
 
