@@ -26,7 +26,7 @@ const SITE_DATA = {
 
     email: "info@embraceorthodontic.com",
 
-    phoneDisplay: "+20 128 000 4688",
+    phoneDisplay: "GLOBAL TEST",
 
     phoneRaw: "+201280004688",
 
