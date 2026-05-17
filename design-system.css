@@ -26,4 +26,34 @@
 
 }
 
+/* =========================================================
+
+   MOBILE HEADER CONTACT VISIBILITY FIX
+
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .header-contact .header-phone-link {
+
+    display: inline-flex !important;
+
+    align-items: center;
+
+    gap: 6px;
+
+  }
+
+  .header-contact .header-phone-link span {
+
+    display: inline !important;
+
+    visibility: visible !important;
+
+    opacity: 1 !important;
+
+  }
+
+}
+
 
