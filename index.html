@@ -616,21 +616,21 @@ INDEX.HTML — LOCKED HOMEPAGE DESIGN
 
       <h3>Contact</h3>
 
-      <a href="tel:+201280004688">
+      <a href="tel:+201280004688" data-site-phone-link>
 
-        +20 128 000 4688
+        <span data-site-phone>+20 128 000 4688</span>
 
       </a>
 
-      <a href="mailto:info@embraceorthodontic.com">
+      <a href="mailto:info@embraceorthodontic.com" data-site-email>
 
         info@embraceorthodontic.com
 
       </a>
 
-      <a href="https://embraceorthodontic.com">
+      <a href="https://embraceorthodontic.com" data-site-domain-link>
 
-        embraceorthodontic.com
+        <span data-site-domain>embraceorthodontic.com</span>
 
       </a>
 
@@ -654,7 +654,7 @@ INDEX.HTML — LOCKED HOMEPAGE DESIGN
 
   <div class="home-footer-bottom">
 
-    <p>
+    <p data-site-footer>
 
       © 2026 EMBRACE ORTHODONTIC. ALL RIGHTS RESERVED.
 
@@ -673,6 +673,8 @@ INDEX.HTML — LOCKED HOMEPAGE DESIGN
 </footer>
 
 <!-- ================= 12. PAGE SCRIPTS ================= -->
+
+<script src="site-data.js?v=6"></script>
 
 <script>
 
@@ -721,6 +723,60 @@ window.addEventListener("load", function() {
     }, 300);
 
   }
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (typeof SITE_DATA === "undefined") return;
+
+  document.querySelectorAll("[data-site-email]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.email;
+
+    if (el.tagName.toLowerCase() === "a") {
+
+      el.href = "mailto:" + SITE_DATA.contact.email;
+
+    }
+
+  });
+
+  document.querySelectorAll("[data-site-phone]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.contact.phoneDisplay;
+
+  });
+
+  document.querySelectorAll("[data-site-phone-link]").forEach(function (el) {
+
+    el.href = "tel:" + SITE_DATA.contact.phoneRaw;
+
+  });
+
+  document.querySelectorAll("[data-site-whatsapp-link]").forEach(function (el) {
+
+    el.href = SITE_DATA.contact.whatsappUrl;
+
+  });
+
+  document.querySelectorAll("[data-site-domain]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.website.domain;
+
+  });
+
+  document.querySelectorAll("[data-site-domain-link]").forEach(function (el) {
+
+    el.href = SITE_DATA.website.liveUrl;
+
+  });
+
+  document.querySelectorAll("[data-site-footer]").forEach(function (el) {
+
+    el.textContent = SITE_DATA.footer.copyrightText;
+
+  });
 
 });
 
