@@ -617,7 +617,7 @@ body.menu-open .menu-overlay {
 
   min-height: 100%;
 
-  padding: 82px 7% 56px;
+  padding: 58px 7% 34px;
 
   display: flex;
 
@@ -629,11 +629,11 @@ body.menu-open .menu-overlay {
 
 .menu-logo img {
 
-  max-height: 68px;
+  max-height: 44px;
 
   width: auto;
 
-  margin-bottom: 58px;
+  margin-bottom:36px;
 
 }
 
@@ -659,7 +659,7 @@ body.menu-open .menu-overlay {
 
   justify-content: space-between;
 
-  padding: 15px 0;
+  padding: 11px 0;
 
   color: var(--v2-charcoal);
 
@@ -703,9 +703,9 @@ body.menu-open .menu-overlay {
 
   grid-template-columns: 1fr 1fr;
 
-  gap: 28px 52px;
+  gap: 18px;
 
-  margin-top: 58px;
+  margin-top: 34px;
 
   max-width: 760px;
 
