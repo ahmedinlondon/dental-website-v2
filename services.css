@@ -106,9 +106,11 @@ body.services-page {
 
   left: 5.5%;
 
-  top: 60%;
+  top: 50%;
 
   transform: translateY(-50%);
+
+  margin-top: 55px;
 
   z-index: 2;
 
