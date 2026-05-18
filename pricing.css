@@ -67,13 +67,17 @@ body.pricing-page {
 
   linear-gradient(
 
-    to right,
+  to right,
 
-    rgba(15,47,87,0.10),
+  rgba(15,47,87,0.18) 0%,
 
-    rgba(15,47,87,0.03)
+  rgba(15,47,87,0.10) 38%,
 
-  ),
+  rgba(15,47,87,0.02) 58%,
+
+  rgba(15,47,87,0.00) 72%
+
+),
 
   url('/dental-website-v2/pricinghero.png');
 
