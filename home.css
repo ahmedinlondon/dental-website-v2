@@ -290,6 +290,15 @@ body.home-page {
 
 }
 
+/* HOME HERO LINE POSITION FIX */
+
+.home-hero-brand.hero-title-line::after {
+
+  margin-top: 16px;
+
+  margin-left: 0;
+
+}
 /* =========================================================
 
    03. SHARED SECTION STYLES
