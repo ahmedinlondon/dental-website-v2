@@ -1291,6 +1291,12 @@ body.home-page {
 
   }
 
+   .home-hero .home-hero-brand.hero-title-line::after {
+
+  margin-top: 26px;
+
+}
+
   .home-hero .home-hero-subtitle {
 
     font-size: 52px;
