@@ -1304,21 +1304,7 @@ body.home-page {
 
   }
 
-  .home-hero .home-hero-subtitle::after {
 
-    content: "";
-
-    display: block;
-
-    width: 120px;
-
-    height: 1px;
-
-    background: #ddb46a;
-
-    margin-top: 28px;
-
-  }
 
   .home-hero.animate .home-hero-script {
 
@@ -1938,23 +1924,6 @@ body.home-page {
 
   }
 
-  .home-hero .home-hero-subtitle::after {
-
-    content: "";
-
-    display: block;
-
-    width: 82px;
-
-    height: 2px;
-
-    background: rgba(221,180,106,0.95);
-
-    margin-top: 20px;
-
-    transform: translateY(-6px);
-
-  }
 
   .home-hero.animate .home-hero-script {
 
