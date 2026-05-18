@@ -53,7 +53,6 @@ body.pricing-page {
 }
 
 /* ================= HERO ================= */
-
 .pricing-hero {
 
   position: relative;
@@ -64,7 +63,19 @@ body.pricing-page {
 
   overflow: hidden;
 
-  background-image: url('/dental-website-v2/pricinghero.png');
+  background-image:
+
+  linear-gradient(
+
+    to right,
+
+    rgba(15,47,87,0.10),
+
+    rgba(15,47,87,0.03)
+
+  ),
+
+  url('/dental-website-v2/pricinghero.png');
 
   background-size: cover;
 
