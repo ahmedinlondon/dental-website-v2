@@ -23,6 +23,7 @@
     08A. SCRIPT WRITING EFFECT
     08B. HERO FALL / SOFT REVEAL
     08C. REDUCED MOTION ACCESSIBILITY
+    08D. HERO SUBTITLE LINE 
 09. FLOATING CONTACT BUTTONS
     09A. WHATSAPP BUTTON
     09B. CALL BUTTON
@@ -1009,7 +1010,7 @@ body.menu-open .menu-overlay {
 
   width: 72px;
 
-  height: 2px;
+  height: 3px;
 
   background: #ddb46a;
 
