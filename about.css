@@ -970,12 +970,21 @@ body.about-page {
 
   }
 
-  .about-hero-content {
+.about-hero-content {
 
-    top: 62% !important;
+  position: absolute;
 
-  }
+  left: 5.5%;
 
+  top: 64%;
+
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  max-width: 760px;
+
+}
   .about-hero-script {
 
     margin-bottom: 22px !important;
