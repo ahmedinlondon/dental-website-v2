@@ -997,6 +997,30 @@ body.menu-open .menu-overlay {
 
 /* =========================================================
 
+   GLOBAL HERO TITLE GOLD LINE
+
+========================================================= */
+
+.hero-title-line::after {
+
+  content: "";
+
+  display: block;
+
+  width: 72px;
+
+  height: 2px;
+
+  background: #ddb46a;
+
+  margin-top: 22px;
+
+}
+
+
+
+/* =========================================================
+
    09. FLOATING CONTACT BUTTONS
 
 ========================================================= */
