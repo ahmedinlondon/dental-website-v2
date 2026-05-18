@@ -123,6 +123,18 @@ body {
    03. BODY / BASE TYPOGRAPHY
 
 ========================================================= */
+@font-face {
+
+  font-family: 'PaintBrushScript';
+
+  src: url('/dental-website-v2/paint-brush-script.otf') format('opentype');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
+
 
 @font-face {
 
@@ -135,6 +147,8 @@ body {
   font-style: normal;
 
 }
+
+
 
 body {
 
