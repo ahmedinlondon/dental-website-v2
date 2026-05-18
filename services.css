@@ -1779,18 +1779,22 @@ body.services-page {
 
 .services-page .services-hero-script {
 
-  font-size: 72px !important;
+  font-size: 70px !important;
 
-  letter-spacing: 0.07em !important;
+  letter-spacing: -0.015em !important;
 
-  opacity: 0.92 !important;
+  word-spacing: -0.12em !important;
+
+  line-height: 1 !important;
+
+  opacity: 0.88 !important;
 
   transform:
 
-    scaleY(1.28)
+    scaleY(1.42)
 
-    scaleX(1.02)
+    scaleX(0.96)
 
-    skewX(-9deg) !important;
+    skewX(-14deg) !important;
 
 }
