@@ -124,6 +124,18 @@ body {
 
 ========================================================= */
 
+@font-face {
+
+  font-family: 'RoyaltyFree';
+
+  src: url('/dental-website-v2/royalty-free.otf') format('opentype');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
+
 body {
 
   font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
