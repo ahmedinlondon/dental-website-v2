@@ -1276,3 +1276,51 @@ body.about-page {
   }
 
 }
+
+/* =========================================================
+
+   ABOUT INTRO FULL-WIDTH CREAM SECTION
+
+========================================================= */
+
+.about-intro-section {
+
+  background: #f6efe4;
+
+  padding: 58px 0 66px;
+
+  margin: 0;
+
+}
+
+.about-intro-inner {
+
+  width: 100%;
+
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 0 5.5%;
+
+  background: transparent;
+
+  box-shadow: none;
+
+  border: none;
+
+}
+
+.about-intro-panel {
+
+  background: transparent;
+
+  padding: 0;
+
+  margin: 0;
+
+  border: none;
+
+  box-shadow: none;
+
+}
