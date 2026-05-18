@@ -2416,6 +2416,14 @@ body.home-page {
 
 }
 
+/* HOME HERO LINE POSITION FINAL OVERRIDE */
+
+.home-page .home-hero .home-hero-brand.hero-title-line::after {
+
+  margin-top: 34px !important;
+
+}
+
 
 
 
