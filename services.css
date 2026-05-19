@@ -82,7 +82,7 @@ body.services-page {
   font-weight: 400;
   letter-spacing: 0.018em;
   word-spacing: 0.03em;
-  opacity: 0.94;
+  opacity: 0;
   text-shadow:
     0 0 1px rgba(198,144,51,0.40),
     0 2px 12px rgba(0,0,0,0.25);
@@ -116,13 +116,11 @@ body.services-page {
 .services-hero.animate .services-hero-script {
   opacity: 1;
   transform:
-    translateY(0)
     scaleY(1.18)
     scaleX(1.01)
     skewX(-14deg)
     rotate(0.6deg);
 }
-
 .services-hero.animate .hero-title {
   opacity: 1;
   transform: translateY(0);
