@@ -1340,3 +1340,19 @@ body.faq-page .site-header {
   }
 
 }
+
+@media (max-width: 700px) {
+
+  .faq-hero {
+
+    min-height: 500px !important;
+
+    background-size: cover !important;
+
+    background-position: 63% center !important;
+
+  }
+
+}
+
+
