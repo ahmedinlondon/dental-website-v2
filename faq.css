@@ -1162,9 +1162,11 @@ body.faq-page .site-header {
 
 /* =========================================================
 
-   FAQ HERO SCRIPT FONT TEST — FAS-THIN
+   FAQ HERO + SCRIPT FINAL SYSTEM
 
 ========================================================= */
+
+/* ===== HERO SCRIPT ===== */
 
 .faq-page .faq-hero .script-line {
 
@@ -1180,25 +1182,21 @@ body.faq-page .site-header {
 
   line-height: 0.95 !important;
 
+  color: rgba(241,210,154,0.98) !important;
+
   opacity: 0;
 
-  transform:
+  text-shadow:
 
-    scaleY(1.18)
+    0 0 18px rgba(255,255,255,0.18),
 
-    scaleX(1.01)
+    0 2px 12px rgba(5,31,55,0.28);
 
-    skewX(-14deg)
-
-    rotate(0.6deg);
+  animation: faqScriptReveal 3.8s ease forwards !important;
 
 }
 
-/* =========================================================
-
-   FAQ MAIN SCRIPT — FAS-THIN MATCH
-
-========================================================= */
+/* ===== INTRO SCRIPT ===== */
 
 .faq-main-script {
 
@@ -1236,38 +1234,7 @@ body.faq-page .site-header {
 
 }
 
-.faq-page .faq-hero .script-line {
-
-  font-family: 'FasthinScript', cursive !important;
-
-  font-size: 56px !important;
-
-  font-weight: 400 !important;
-
-  letter-spacing: 0.018em !important;
-
-  word-spacing: 0.03em !important;
-
-  line-height: 0.95 !important;
-
-  transform:
-
-    scaleY(1.18)
-
-    scaleX(1.01)
-
-    skewX(-14deg)
-
-    rotate(0.6deg) !important;
-
-}
-
-
-/* =========================================================
-
-   FAQ HERO SCRIPT ANIMATION LOCK — FAS-THIN
-
-========================================================= */
+/* ===== FAQ SCRIPT ANIMATION ===== */
 
 @keyframes faqScriptReveal {
 
@@ -1312,45 +1279,3 @@ body.faq-page .site-header {
   }
 
 }
-
-/* =========================================================
-
-   FAQ HERO SCRIPT FINAL STATE LOCK
-
-========================================================= */
-
-.faq-page .faq-hero .script-line,
-
-.faq-page .faq-hero .script-line[style] {
-
-  font-family: 'FasthinScript', cursive !important;
-
-  font-size: 56px !important;
-
-  font-weight: 400 !important;
-
-  letter-spacing: 0.018em !important;
-
-  word-spacing: 0.03em !important;
-
-  line-height: 0.95 !important;
-
-  transform:
-
-    scaleY(1.18)
-
-    scaleX(1.01)
-
-    skewX(-14deg)
-
-    rotate(0.6deg) !important;
-
-  animation-fill-mode: forwards !important;
-
-}
-
-
-
-
-
-
