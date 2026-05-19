@@ -1983,5 +1983,53 @@ body.services-page {
 
 }
 
+/* =========================================================
+
+   REMOVE OLD AUTO UNDERLINES — FINAL
+
+========================================================= */
+
+.services-section-heading::after,
+
+.services-section-heading > p::after,
+
+.services-section-heading h2::after,
+
+.comparison-title::after,
+
+.comparison-title > p::after,
+
+.comparison-title h2::after {
+
+  display: none !important;
+
+  content: none !important;
+
+}
+
+/* =========================================================
+
+   NEW FIXED UNDERLINES
+
+========================================================= */
+
+.services-heading-line,
+
+.comparison-heading-line {
+
+  display: block;
+
+  width: 72px;
+
+  height: 3px;
+
+  background: #ddb46a;
+
+  margin-top: 22px;
+
+}
+
+
+
 
 
