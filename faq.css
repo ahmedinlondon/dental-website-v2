@@ -1292,9 +1292,14 @@ body.faq-page .site-header {
 
   .faq-hero {
 
-    min-height: 400px !important;
+    min-height: 440px !important;
+
+    background-size: 135% auto !important;
+
+    background-position: 58% center !important;
 
   }
+
 
   /* 2. Move whole hero text slightly up */
 
