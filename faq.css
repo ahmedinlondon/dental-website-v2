@@ -989,9 +989,9 @@ body.faq-page .site-header {
 
 .faq-category-line {
 
-  width: 68px;
+  width: 72px;
 
-  height: 2px;
+  height: 3px;
 
   margin: 16px 0 22px;
 
@@ -1183,7 +1183,7 @@ body.faq-page .site-header {
 
   font-family: 'FasthinScript', cursive !important;
 
-  font-size: 52px !important;
+  font-size: 50px !important;
 
   font-weight: 400 !important;
 
@@ -1219,7 +1219,7 @@ body.faq-page .site-header {
 
   font-family: 'FasthinScript', cursive !important;
 
-  font-size: 64px !important;
+  font-size: 56px !important;
 
   font-weight: 400 !important;
 
