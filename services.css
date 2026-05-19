@@ -1795,13 +1795,13 @@ body.services-page {
 
     translateY(18px)
 
-    scaleY(1.32)
+    scaleY(1.22)
 
-    scaleX(1.02)
+    scaleX(1.01)
 
-    skewX(-20deg)
+    skewX(-14deg)
 
-    rotate(-2.5deg) !important;
+    rotate(0.6deg) !important;
 
 }
 
@@ -1811,13 +1811,13 @@ body.services-page {
 
     translateY(0)
 
-    scaleY(1.32)
+    scaleY(1.22)
 
-    scaleX(1.02)
+    scaleX(1.01)
 
-    skewX(-20deg)
+    skewX(-14deg)
 
-    rotate(-2.5deg) !important;
+    rotate(0.6deg) !important;
 
 }
 
