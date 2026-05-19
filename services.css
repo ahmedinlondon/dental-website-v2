@@ -1781,21 +1781,25 @@ body.services-page {
 
   font-size: 58px !important;
 
-  letter-spacing: 0.025em !important;
+  font-weight: 400 !important;
+
+  letter-spacing: 0.02em !important;
 
   word-spacing: 0.02em !important;
 
   line-height: 0.95 !important;
 
+  opacity: 0.92 !important;
+
   transform:
 
-    scaleY(1.22)
+    scaleY(1.26)
 
-    scaleX(1.04)
+    scaleX(1.02)
 
-    skewX(-8deg)
+    skewX(-14deg)
 
-    rotate(-1.5deg) !important;
+    rotate(-3deg) !important;
 
 }
 
