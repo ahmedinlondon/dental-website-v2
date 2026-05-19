@@ -1843,3 +1843,41 @@ body.services-page {
 
 }
 
+/* =========================================================
+
+   SERVICES PAGE SCRIPT HEADINGS — FAS-THIN MATCH
+
+========================================================= */
+
+.services-page .services-section-heading > p,
+
+.services-page .comparison-title > p,
+
+.services-page .approach-heading > p {
+
+  font-family: 'FasthinScript', cursive !important;
+
+  font-size: 56px !important;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 0.018em !important;
+
+  word-spacing: 0.03em !important;
+
+  line-height: 0.95 !important;
+
+  opacity: 0.94 !important;
+
+  transform:
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg) !important;
+
+}
+
