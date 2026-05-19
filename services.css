@@ -672,25 +672,41 @@ body.services-page {
     max-width: none;
   }
 
-  .services-hero-script {
-    font-size: 42px;
-    margin-bottom: 58px;
-    transform:
-      translateY(-52px)
-      scaleY(1.18)
-      scaleX(1.01)
-      skewX(-14deg)
-      rotate(0.6deg);
-  }
+.services-hero-script {
 
-  .services-hero.animate .services-hero-script {
-    transform:
-      translateY(-28px)
-      scaleY(1.18)
-      scaleX(1.01)
-      skewX(-14deg)
-      rotate(0.6deg);
-  }
+  font-size: 42px;
+
+  margin-bottom: 72px;
+
+  position: relative;
+
+  top: -52px;
+
+  transform:
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg);
+
+}
+
+.services-hero.animate .services-hero-script {
+
+  transform:
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg);
+
+}
 
   .services-hero .hero-title {
     font-size: 29px;
