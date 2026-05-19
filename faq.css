@@ -1288,28 +1288,25 @@ body.faq-page .site-header {
 
 @media (max-width: 700px) {
 
-  /* 1. Increase mobile hero banner height */
-
   .faq-hero {
 
-    min-height: 440px !important;
+    min-height: 500px !important;
 
-    background-size: 135% auto !important;
+    background-image: url('/dental-website-v2/faq-hero-mobile.png') !important;
 
-    background-position: 58% bottom !important;
+    background-size: cover !important;
+
+    background-position: center center !important;
 
   }
-
-
-  /* 2. Move whole hero text slightly up */
 
   .faq-hero-text {
 
-    top: 62% !important;
+    top: 56% !important;
+
+    left: 7% !important;
 
   }
-
-  /* 3. Match Services mobile script size */
 
   .faq-page .faq-hero .script-line {
 
@@ -1317,59 +1314,11 @@ body.faq-page .site-header {
 
   }
 
-  /* 4. Match Services mobile title size */
-
-  .faq-hero .hero-title {
+  .faq-page .faq-hero h1 {
 
     font-size: 42px !important;
 
-    line-height: 1.12 !important;
-
-    letter-spacing: 1.2px !important;
-
-    max-width: 360px !important;
-
-  }
-
-  /* 5. Intro script only — match Services feel */
-
-  .faq-main-script {
-
-    font-size: 46px !important;
-
-  }
-
-}
-
-@media (max-width: 700px) {
-
-  .faq-hero {
-
-    min-height: 500px !important;
-
-    background-size: cover !important;
-
-    background-position: 63% center !important;
-
-  }
-
-}
-
-@media (max-width: 700px) {
-
-  .faq-hero {
-
-    min-height: 500px !important;
-
-    background-size: 108% auto !important;
-
-    background-position: 66% center !important;
-
-  }
-
-  .faq-hero-text {
-
-    top: 56% !important;
+    line-height: 1.14 !important;
 
   }
 
