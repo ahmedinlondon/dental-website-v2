@@ -125,6 +125,18 @@ body {
 ========================================================= */
 @font-face {
 
+  font-family: 'FasthinScript';
+
+  src: url('/dental-website-v2/fasthin-script.otf') format('opentype');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
+
+@font-face {
+
   font-family: 'PaintBrushScript';
 
   src: url('/dental-website-v2/paint-brush-script.otf') format('opentype');
