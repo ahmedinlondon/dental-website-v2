@@ -87,12 +87,11 @@ body.services-page {
     0 0 1px rgba(198,144,51,0.40),
     0 2px 12px rgba(0,0,0,0.25);
   transform:
-    translateY(18px)
     scaleY(1.18)
     scaleX(1.01)
     skewX(-14deg)
     rotate(0.6deg);
-  transition: opacity 1.15s ease, transform 1.15s ease;
+  transition: opacity 1.15s ease;
 }
 
 .services-hero .hero-title {
