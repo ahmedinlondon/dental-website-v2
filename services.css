@@ -796,7 +796,7 @@ body.services-page {
   .services-hero-content {
     left: 6%;
     right: 6%;
-    top: 58%;
+    top: 66%;
     max-width: none;
   }
 
@@ -821,7 +821,6 @@ body.services-page {
   }
 
   .services-hero .hero-title {
-    margin-top: 30px;
     font-size: 29px;
     line-height: 1.22;
     letter-spacing: 0.13em;
