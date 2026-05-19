@@ -1793,6 +1793,24 @@ body.services-page {
 
   transform:
 
+    translateY(18px)
+
+    scaleY(1.32)
+
+    scaleX(1.02)
+
+    skewX(-20deg)
+
+    rotate(-4deg) !important;
+
+}
+
+.services-page .services-hero.animate .services-hero-script {
+
+  transform:
+
+    translateY(0)
+
     scaleY(1.32)
 
     scaleX(1.02)
