@@ -1945,3 +1945,25 @@ body.services-page {
 
 }
 
+/* =========================================================
+
+   LOCKED GOLD UNDERLINE SYSTEM
+
+========================================================= */
+
+.services-heading-line,
+
+.comparison-heading-line {
+
+  display: block;
+
+  width: 72px;
+
+  height: 3px;
+
+  background: #ddb46a;
+
+  margin-top: 22px;
+
+}
+
