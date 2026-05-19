@@ -1777,6 +1777,8 @@ body.services-page {
 
 .services-page .services-hero-script {
 
+  font-family: 'FasthinScript', cursive !important;
+
   font-size: 58px !important;
 
   letter-spacing: 0.025em !important;
