@@ -1292,5 +1292,44 @@ body.faq-page .site-header {
 
 }
 
+/* =========================================================
+
+   FAQ HERO SCRIPT FINAL STATE LOCK
+
+========================================================= */
+
+.faq-page .faq-hero .script-line,
+
+.faq-page .faq-hero .script-line[style] {
+
+  font-family: 'FasthinScript', cursive !important;
+
+  font-size: 56px !important;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 0.018em !important;
+
+  word-spacing: 0.03em !important;
+
+  line-height: 0.95 !important;
+
+  transform:
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg) !important;
+
+  animation-fill-mode: forwards !important;
+
+}
+
+
+
+
 
 
