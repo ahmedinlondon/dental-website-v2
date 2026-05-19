@@ -1215,3 +1215,31 @@ body.faq-page .site-header {
 
 }
 
+.faq-page .faq-hero .script-line {
+
+  font-family: 'FasthinScript', cursive !important;
+
+  font-size: 64px !important;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 0.018em !important;
+
+  word-spacing: 0.03em !important;
+
+  line-height: 0.95 !important;
+
+  transform:
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg) !important;
+
+}
+
+
+
