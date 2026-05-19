@@ -885,6 +885,94 @@ body.services-page {
 
 }
 
+/* =========================================================
+
+   FINAL HERO ANIMATION / MOBILE POSITION FIX
+
+========================================================= */
+
+/* iPad: restore clean fixed position, no double movement */
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .services-page .services-hero-script {
+
+    position: static !important;
+
+    margin-bottom: 22px !important;
+
+    transform:
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg) !important;
+
+    transition: opacity 1.15s ease !important;
+
+  }
+
+  .services-page .services-hero.animate .services-hero-script {
+
+    transform:
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg) !important;
+
+  }
+
+}
+
+/* Mobile: script up, title down, no double flash */
+
+@media (max-width: 700px) {
+
+  .services-page .services-hero-script {
+
+    position: relative !important;
+
+    top: -52px !important;
+
+    margin-bottom: 120px !important;
+
+    transform:
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg) !important;
+
+    transition: opacity 1.15s ease !important;
+
+  }
+
+  .services-page .services-hero.animate .services-hero-script {
+
+    transform:
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg) !important;
+
+  }
+
+}
+
 
 
 
