@@ -1279,3 +1279,59 @@ body.faq-page .site-header {
   }
 
 }
+
+/* =========================================================
+
+   FAQ MOBILE HERO FINAL TEST — SERVICES MATCH
+
+========================================================= */
+
+@media (max-width: 700px) {
+
+  /* 1. Increase mobile hero banner height */
+
+  .faq-hero {
+
+    min-height: 400px !important;
+
+  }
+
+  /* 2. Move whole hero text slightly up */
+
+  .faq-hero-text {
+
+    top: 62% !important;
+
+  }
+
+  /* 3. Match Services mobile script size */
+
+  .faq-page .faq-hero .script-line {
+
+    font-size: 50px !important;
+
+  }
+
+  /* 4. Match Services mobile title size */
+
+  .faq-hero .hero-title {
+
+    font-size: 42px !important;
+
+    line-height: 1.12 !important;
+
+    letter-spacing: 1.2px !important;
+
+    max-width: 360px !important;
+
+  }
+
+  /* 5. Intro script only — match Services feel */
+
+  .faq-main-script {
+
+    font-size: 46px !important;
+
+  }
+
+}
