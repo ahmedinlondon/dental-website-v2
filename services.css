@@ -1769,4 +1769,32 @@ body.services-page {
 
 }
 
+/* =========================================================
+
+   TEMP FAS-THIN SCRIPT FONT EXPERIMENT
+
+========================================================= */
+
+.services-page .services-hero-script {
+
+  font-size: 58px !important;
+
+  letter-spacing: 0.025em !important;
+
+  word-spacing: 0.02em !important;
+
+  line-height: 0.95 !important;
+
+  transform:
+
+    scaleY(1.22)
+
+    scaleX(1.04)
+
+    skewX(-8deg)
+
+    rotate(-1.5deg) !important;
+
+}
+
 
