@@ -1152,7 +1152,7 @@ body.services-page {
 
   .services-hero {
 
-    height: 470px;
+    height: 450px;
 
     background-position: 63% center;
 
@@ -1172,9 +1172,9 @@ body.services-page {
 
   .services-hero-script {
 
-    font-size: 31px;
+    font-size: 42px;
 
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 
   }
 
