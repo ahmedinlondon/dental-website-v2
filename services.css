@@ -569,293 +569,449 @@ body.services-page {
 }
 
 /* =========================================================
+
    09. iPAD / TABLET
+
 ========================================================= */
 
-@media (max-width: 1180px) {
+@media (min-width: 701px) and (max-width: 1180px) {
 
   .services-hero {
+
     height: 400px;
+
   }
 
   .services-hero-content {
+
     left: 5%;
+
     top: 58%;
+
     max-width: 620px;
+
   }
 
-  .services-hero-script,
-  .services-approach-script,
-  .services-section-heading p,
-  .comparison-title p {
+  .services-hero-script {
+
     font-size: 56px;
+
+    margin-bottom: 22px;
+
+  }
+
+  .services-approach-script,
+
+  .services-section-heading p,
+
+  .comparison-title p {
+
+    font-size: 56px;
+
   }
 
   .services-hero .hero-title {
+
     font-size: 38px;
+
     letter-spacing: 0.035em;
+
   }
 
   .services-approach-section {
+
     padding: 70px 6% 74px;
+
   }
 
   .services-approach-inner h2 {
+
     font-size: 29px;
+
   }
 
   .services-main {
+
     padding-bottom: 64px;
+
   }
 
   .services-grid-section {
+
     padding: 56px 5% 48px;
+
   }
 
   .services-section-heading h2,
+
   .comparison-title h2 {
+
     font-size: 27px;
+
   }
 
   .services-grid {
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 16px;
+
   }
 
   .service-card {
+
     min-height: 112px;
+
     padding: 0 56px 0 24px;
+
   }
 
   .service-card h3 {
+
     font-size: 22px;
+
   }
 
   .services-interactive.panel-open {
+
     display: block;
+
   }
 
   .services-interactive.panel-open .services-grid {
+
     max-width: none;
+
     grid-template-columns: repeat(3, 1fr);
+
   }
 
   .service-panel {
+
     width: 100%;
+
     max-width: none;
+
     height: auto;
+
     max-height: none;
+
     margin-top: 28px;
+
   }
 
   .comparison-section {
+
     width: 90%;
+
   }
 
 }
 
 /* =========================================================
+
    10. MOBILE
+
 ========================================================= */
 
 @media (max-width: 700px) {
 
   .services-hero {
+
     height: 450px;
+
     background-position: 63% center;
+
   }
 
   .services-hero-content {
+
     left: 6%;
+
     right: 6%;
+
     top: 58%;
+
     max-width: none;
+
   }
 
-.services-hero-script {
+  .services-hero-script {
 
-  font-size: 42px;
+    font-size: 42px;
 
-  margin-bottom: 72px;
+    margin-bottom: 92px;
 
-  position: relative;
+    transform:
 
-  top: -52px;
+      translateY(-36px)
 
-  transform:
+      scaleY(1.18)
 
-    scaleY(1.18)
+      scaleX(1.01)
 
-    scaleX(1.01)
+      skewX(-14deg)
 
-    skewX(-14deg)
+      rotate(0.6deg);
 
-    rotate(0.6deg);
+  }
 
-}
+  .services-hero.animate .services-hero-script {
 
-.services-hero.animate .services-hero-script {
+    transform:
 
-  transform:
+      translateY(-36px)
 
-    scaleY(1.18)
+      scaleY(1.18)
 
-    scaleX(1.01)
+      scaleX(1.01)
 
-    skewX(-14deg)
+      skewX(-14deg)
 
-    rotate(0.6deg);
+      rotate(0.6deg);
 
-}
+  }
 
   .services-hero .hero-title {
+
     font-size: 29px;
+
     line-height: 1.22;
+
     letter-spacing: 0.13em;
+
     max-width: 340px;
+
   }
 
   .services-approach-section {
+
     padding: 54px 7% 58px;
+
   }
 
   .services-approach-script,
+
   .services-section-heading p,
+
   .comparison-title p {
+
     font-size: 42px;
+
   }
 
   .services-approach-script {
+
     margin-bottom: 6px;
+
   }
 
   .services-approach-inner h2 {
+
     font-size: 24px;
+
     line-height: 1.3;
+
   }
 
   .services-approach-line {
+
     width: 72px;
+
     height: 3px;
+
     margin: 22px 0 26px;
+
   }
 
   .services-approach-text {
+
     font-size: 14px;
+
     line-height: 1.82;
+
   }
 
   .services-main {
+
     padding-bottom: 52px;
+
   }
 
   .services-grid-section {
+
     padding: 48px 6% 42px;
+
   }
 
   .services-section-heading {
+
     margin-bottom: 28px;
+
   }
 
   .services-section-heading p,
+
   .comparison-title p {
+
     margin-bottom: 14px;
+
   }
 
   .services-section-heading h2,
+
   .comparison-title h2 {
+
     font-size: 25px;
+
     line-height: 1.35;
+
   }
 
   .services-grid {
+
     grid-template-columns: 1fr;
+
     gap: 14px;
+
   }
 
   .service-card {
+
     min-height: 88px;
+
     padding: 0 54px 0 22px;
+
   }
 
   .service-card h3,
+
   .mobile-comparison-card h3 {
+
     font-size: 26px;
+
   }
 
   .service-card span,
+
   .mobile-comparison-card span {
+
     right: 22px;
+
   }
 
   .services-interactive.panel-open {
+
     display: block;
+
   }
 
   .services-interactive.panel-open .services-grid {
+
     grid-template-columns: 1fr;
+
   }
 
   .service-panel {
+
     position: fixed;
+
     top: 50%;
+
     left: 50%;
+
     width: 88%;
+
     max-width: 410px;
+
     max-height: 82vh;
+
     height: auto;
+
     transform: translate(-50%, -50%);
+
     z-index: 20000;
+
     padding: 26px 24px;
+
   }
 
   .service-panel img {
+
     height: 170px;
+
   }
 
   .service-panel h2 {
+
     font-size: 28px;
+
   }
 
   .comparison-section {
+
     width: 88%;
+
     padding-top: 0;
+
   }
 
   .comparison-title {
+
     margin-bottom: 24px;
+
   }
 
   .mobile-comparison-cards {
+
     grid-template-columns: 1fr;
+
     gap: 14px;
+
   }
 
   .mobile-comparison-card {
+
     min-height: 88px;
+
     padding: 0 54px 0 22px;
+
   }
 
   .comparison-popup {
+
     max-width: 390px;
+
     padding: 28px 24px;
+
   }
 
   .comparison-popup h2 {
+
     font-size: 28px;
+
   }
 
   .footer-logo,
+
   .footer-brand,
+
   .footer-left img {
+
     width: 280px !important;
+
     max-width: 80% !important;
+
     margin: 0 auto !important;
+
     display: block !important;
+
   }
 
   .footer-left {
+
     text-align: center !important;
+
   }
 
 }
@@ -884,125 +1040,4 @@ body.services-page {
   }
 
 }
-
-/* =========================================================
-
-   FINAL HERO ANIMATION / MOBILE POSITION FIX
-
-========================================================= */
-
-/* iPad: restore clean fixed position, no double movement */
-
-@media (min-width: 701px) and (max-width: 1180px) {
-
-  .services-page .services-hero-script {
-
-    position: static !important;
-
-    margin-bottom: 22px !important;
-
-    transform:
-
-      scaleY(1.18)
-
-      scaleX(1.01)
-
-      skewX(-14deg)
-
-      rotate(0.6deg) !important;
-
-    transition: opacity 1.15s ease !important;
-
-  }
-
-  .services-page .services-hero.animate .services-hero-script {
-
-    transform:
-
-      scaleY(1.18)
-
-      scaleX(1.01)
-
-      skewX(-14deg)
-
-      rotate(0.6deg) !important;
-
-  }
-
-}
-
-/* Mobile: script up, title down, no double flash */
-
-@media (max-width: 700px) {
-
-  .services-page .services-hero-script {
-
-    position: relative !important;
-
-    top: -52px !important;
-
-    margin-bottom: 120px !important;
-
-    transform:
-
-      scaleY(1.18)
-
-      scaleX(1.01)
-
-      skewX(-14deg)
-
-      rotate(0.6deg) !important;
-
-    transition: opacity 1.15s ease !important;
-
-  }
-
-  .services-page .services-hero.animate .services-hero-script {
-
-    transform:
-
-      scaleY(1.18)
-
-      scaleX(1.01)
-
-      skewX(-14deg)
-
-      rotate(0.6deg) !important;
-
-  }
-
-}
-
-/* =========================================================
-
-   FINAL HERO SCRIPT ANIMATION LOCK
-
-========================================================= */
-
-.services-page .services-hero-script,
-
-.services-page .services-hero.animate .services-hero-script {
-
-  transition:
-
-    opacity 1.15s ease !important;
-
-}
-
-/* ================= MOBILE FINAL POSITION ================= */
-
-@media (max-width: 700px) {
-
-  .services-page .services-hero-script {
-
-    top: -44px !important;
-
-  }
-
-}
-
-
-
-
-
 
