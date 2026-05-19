@@ -935,9 +935,9 @@ body.faq-page .site-header {
 
   display: block;
 
-  width: 62px;
+  width: 72px;
 
-  height: 2px;
+  height: 3px;
 
   margin-top: 16px;
 
@@ -1238,6 +1238,57 @@ body.faq-page .site-header {
     skewX(-14deg)
 
     rotate(0.6deg) !important;
+
+}
+
+
+/* =========================================================
+
+   FAQ HERO SCRIPT ANIMATION LOCK — FAS-THIN
+
+========================================================= */
+
+@keyframes faqScriptReveal {
+
+  0% {
+
+    opacity: 0;
+
+    transform:
+
+      translateY(14px)
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
+    filter: blur(3px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform:
+
+      translateY(0)
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
+    filter: blur(0);
+
+  }
 
 }
 
