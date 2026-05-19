@@ -1173,3 +1173,45 @@ body.faq-page .site-header {
 
 }
 
+/* =========================================================
+
+   FAQ MAIN SCRIPT — FAS-THIN MATCH
+
+========================================================= */
+
+.faq-main-script {
+
+  font-family: 'FasthinScript', cursive !important;
+
+  font-size: 52px !important;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 0.018em !important;
+
+  word-spacing: 0.03em !important;
+
+  line-height: 0.95 !important;
+
+  color: #d9b06b !important;
+
+  opacity: 0.94 !important;
+
+  transform:
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg);
+
+  text-shadow:
+
+    0 0 1px rgba(217,176,107,0.30),
+
+    0 1px 8px rgba(0,0,0,0.04);
+
+}
+
