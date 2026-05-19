@@ -1911,3 +1911,37 @@ body.services-page {
 
 }
 
+/* =========================================================
+
+   SERVICES SCRIPT + LINE FINAL POLISH
+
+========================================================= */
+
+.services-page .services-approach-line,
+
+.services-page .services-section-heading .section-line,
+
+.services-page .comparison-title .section-line,
+
+.services-page .hero-title-line::after {
+
+  width: 72px !important;
+
+  height: 2.5px !important;
+
+  margin-top: 22px !important;
+
+  background: #ddb46a !important;
+
+}
+
+/* Stronger gold only on steel-blue sections */
+
+.services-page .services-section-heading > p,
+
+.services-page .comparison-title > p {
+
+  color: #f0c36f !important;
+
+}
+
