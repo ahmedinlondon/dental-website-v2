@@ -973,6 +973,34 @@ body.services-page {
 
 }
 
+/* =========================================================
+
+   FINAL HERO SCRIPT ANIMATION LOCK
+
+========================================================= */
+
+.services-page .services-hero-script,
+
+.services-page .services-hero.animate .services-hero-script {
+
+  transition:
+
+    opacity 1.15s ease !important;
+
+}
+
+/* ================= MOBILE FINAL POSITION ================= */
+
+@media (max-width: 700px) {
+
+  .services-page .services-hero-script {
+
+    top: -44px !important;
+
+  }
+
+}
+
 
 
 
