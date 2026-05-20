@@ -1,77 +1,66 @@
-<!DOCTYPE html>
+<!--
+=========================================================
+FAQ.HTML — LOCKED GLOBAL DESIGN
+=========================================================
 
+01. Document Head
+02. Global Header - Burger Menu - Floating Buttons
+03. FAQ Hero
+04. FAQ Introduction
+05. FAQ Category Sections
+    05A. Pre-Treatment
+    05B. During Treatment
+    05C. Braces & Aligners
+    05D. Post-Treatment
+06. Global Footer
+07. FAQ Accordion Functions
+08. Page Scripts
+09. Site Data
+
+=========================================================
+-->
+
+<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
 
-  <!-- 01. PAGE SETUP -->
+  <meta charset="UTF-8" />
 
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>FAQ | Embrace Bespoke Orthodontic</title>
 
-  <!-- 02. GLOBAL + PAGE CSS -->
+  <!-- ================= CSS FILES ================= -->
 
-  <link rel="stylesheet" href="design-system.css?v=4">
+  <link rel="stylesheet" href="design-system.css?v=4" />
 
-  <link rel="stylesheet" href="style.css?v=91">
+  <link rel="stylesheet" href="style.css?v=91" />
 
-  <link rel="stylesheet" href="faq.css?v=207">
+  <link rel="stylesheet" href="faq.css?v=207" />
 
-  <!-- 03. ICONS + FONTS -->
+  <!-- ================= SITE DATA ================= -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="site-data.js?v=8"></script>
+
+  <!-- ================= GOOGLE FONTS ================= -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ================= ICONS ================= -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 </head>
 
 <body class="faq-page">
 
-<!-- =========================================================
-
-   FAQ PAGE HTML INDEX
-
-   01. PAGE SETUP
-
-   02. GLOBAL + PAGE CSS
-
-   03. ICONS + FONTS
-
-   04. GLOBAL HEADER
-
-   05. FULL SCREEN BURGER MENU
-
-   06. FAQ HERO
-
-   07. FAQ INTRODUCTION
-
-   08. FAQ CATEGORY SECTIONS
-
-       08A. PRE-TREATMENT
-
-       08B. DURING TREATMENT
-
-       08C. BRACES & ALIGNERS
-
-       08D. POST-TREATMENT
-
-   09. FLOATING CONTACT BUTTONS
-
-   10. GLOBAL FOOTER
-
-   11. PAGE SCRIPTS
-
-========================================================= -->
-
-<!-- =========================================================
-
-   04. GLOBAL HEADER
-
-========================================================= -->
+<!-- ================= 02. GLOBAL HEADER ================= -->
 
 <header class="site-header">
 
@@ -120,9 +109,7 @@
 </header>
 
 <!-- =========================================================
-
-   05. FULL SCREEN BURGER MENU
-
+                 FULL SCREEN BURGER MENU
 ========================================================= -->
 
 <div class="menu-overlay" id="menuOverlay">
@@ -135,7 +122,7 @@
 
       <a href="index.html?v=3" class="menu-logo">
 
-       <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+        <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
 
       </a>
 
@@ -187,11 +174,21 @@
 
 </div>
 
-<!-- =========================================================
+<!-- ================= FLOATING CONTACT BUTTONS ================= -->
 
-                06. FAQ HERO
+<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" target="_blank" aria-label="WhatsApp" data-site-whatsapp-link>
 
-========================================================= -->
+  <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call clinic" data-site-phone-link>
+
+  <i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- ================= 03. FAQ HERO ================= -->
 
 <section class="faq-hero hero-reveal">
 
@@ -210,13 +207,8 @@
   </div>
 
 </section>
-  
-  
-  <!-- =========================================================
 
-   07. FAQ INTRODUCTION
-
-========================================================= -->
+<!-- ================= 04. FAQ INTRODUCTION ================= -->
 
 <main class="faq-main">
 
@@ -224,11 +216,11 @@
 
     <div class="faq-main-heading">
 
-  <p class="faq-main-script">Simply Explained</p>
+      <p class="faq-main-script">Simply Explained</p>
 
-  <h2 class="faq-title">You ask . We answer.</h2>
+      <h2 class="faq-title">You ask . We answer.</h2>
 
-</div>
+    </div>
 
     <div class="faq-intro-copy">
 
@@ -248,15 +240,11 @@
 
   </section>
 
-<!-- =========================================================
-
-   08. FAQ CATEGORY SECTIONS
-
-========================================================= -->
+  <!-- ================= 05. FAQ CATEGORY SECTIONS ================= -->
 
   <section class="faq-categories">
 
-<!-- ================= 08A. PRE-TREATMENT ================= -->
+    <!-- ================= 05A. PRE-TREATMENT ================= -->
 
     <section class="faq-category">
 
@@ -374,7 +362,7 @@
 
     </section>
 
-<!-- ================= 08B. DURING TREATMENT ================= -->
+    <!-- ================= 05B. DURING TREATMENT ================= -->
 
     <section class="faq-category">
 
@@ -444,7 +432,7 @@
 
     </section>
 
-<!-- ================= 08C. BRACES & ALIGNERS ================= -->
+    <!-- ================= 05C. BRACES & ALIGNERS ================= -->
 
     <section class="faq-category">
 
@@ -546,7 +534,7 @@
 
     </section>
 
-<!-- ================= 08D. POST-TREATMENT ================= -->
+    <!-- ================= 05D. POST-TREATMENT ================= -->
 
     <section class="faq-category">
 
@@ -596,29 +584,7 @@
 
 </main>
 
-<!-- =========================================================
-
-   09. FLOATING CONTACT BUTTONS
-
-========================================================= -->
-
-<a href="https://wa.me/201280004688" class="floating-contact float-whatsapp" target="_blank" aria-label="WhatsApp" data-site-whatsapp-link>
-
-  <i class="fa-brands fa-whatsapp"></i>
-
-</a>
-
-<a href="tel:+201280004688" class="floating-contact float-call" aria-label="Call clinic" data-site-phone-link>
-
-  <i class="fa-solid fa-phone"></i>
-
-</a>
-
-<!-- =========================================================
-
-   10. GLOBAL FOOTER
-
-========================================================= -->
+<!-- ================= 06. GLOBAL FOOTER ================= -->
 
 <footer class="site-footer">
 
@@ -704,13 +670,27 @@
 
 </footer>
 
-<!-- =========================================================
+<!-- ================= 07. FAQ ACCORDION FUNCTIONS ================= -->
 
-   11. PAGE SCRIPTS
+<script>
 
-========================================================= -->
+const faqQuestions = document.querySelectorAll(".faq-question");
 
-<script src="site-data.js?v=8"></script>
+faqQuestions.forEach(function(question) {
+
+  question.addEventListener("click", function() {
+
+    const item = question.closest(".faq-item");
+
+    item.classList.toggle("open");
+
+  });
+
+});
+
+</script>
+
+<!-- ================= 08. PAGE SCRIPTS ================= -->
 
 <script>
 
@@ -762,19 +742,11 @@ window.addEventListener("load", function() {
 
 });
 
-const faqQuestions = document.querySelectorAll(".faq-question");
+</script>
 
-faqQuestions.forEach(function(question) {
+<!-- ================= 09. SITE DATA ================= -->
 
-  question.addEventListener("click", function() {
-
-    const item = question.closest(".faq-item");
-
-    item.classList.toggle("open");
-
-  });
-
-});
+<script>
 
 document.addEventListener("DOMContentLoaded", function () {
 
