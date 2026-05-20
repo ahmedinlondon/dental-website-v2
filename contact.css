@@ -1300,4 +1300,20 @@ body.contact-page {
 
 }
 
+/* =========================================
+
+   iPAD — POLYDENT IMAGE MICRO ALIGNMENT
+
+========================================= */
+
+@media (min-width: 701px) and (max-width: 1400px) {
+
+  .location-card:last-child .location-image {
+
+    transform: translateY(-22px) !important;
+
+  }
+
+}
+
 
