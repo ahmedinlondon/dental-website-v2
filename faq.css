@@ -1287,6 +1287,7 @@ body.faq-page .site-header {
 
 ========================================================= */
 
+
 @media (max-width: 700px) {
 
   .faq-hero {
@@ -1297,9 +1298,11 @@ body.faq-page .site-header {
 
     background-size: 145% !important;
 
-    background-position: 62% 94% !important;
+    background-position: calc(50% + 35px) bottom !important;
 
   }
+
+
 
 
   .faq-hero-text {
