@@ -214,9 +214,9 @@ body.contact-page {
 
 .small-line {
 
-  width: 58px;
+  width: 72px;
 
-  height: 1px;
+  height: 3px;
 
   margin: 18px 0 28px;
 
@@ -466,9 +466,9 @@ body.contact-page {
 
   bottom: 0;
 
-  width: 90px;
+  width: 72px;
 
-  height: 1px;
+  height: 3px;
 
   background: rgba(185,150,87,0.74);
 
@@ -1310,7 +1310,7 @@ body.contact-page {
 
   .location-card:last-child .location-image {
 
-    transform: translateY(-40px) !important;
+    transform: translateY(-48px) !important;
 
   }
 
