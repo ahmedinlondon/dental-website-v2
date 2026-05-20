@@ -1226,21 +1226,23 @@ body.contact-page {
 
 }
 
-/* 3. Location maps: slightly taller and aligned */
+
+/* 3. Location maps: taller, extend downward only */
 
 @media (min-width: 701px) {
 
-  .location-map iframe {
-
-    height: 292px !important;
-
-  }
-
   .location-map {
 
-    transform: translateY(-32px) !important;
+    transform: none !important;
 
   }
+
+  .location-map iframe {
+
+    height: 300px !important;
+
+  }
+
 
   .location-buttons {
 
