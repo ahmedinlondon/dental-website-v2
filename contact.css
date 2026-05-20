@@ -1324,21 +1324,25 @@ body.contact-page {
 
 @media (min-width: 701px) and (max-width: 1400px) {
 
-  /* ---------- TWIN TOWERS ---------- */
+/* ---------- TWIN TOWERS ---------- */
 
-  .location-card:first-child .location-buttons {
+.location-card:first-child .location-buttons {
 
-    margin-top: 30px !important;
+  margin-top: 18px !important;
 
-  }
+  transform: translateY(18px) !important;
 
-  /* ---------- POLYDENT ---------- */
+}
 
-  .location-card:last-child .location-buttons {
+/* ---------- POLYDENT ---------- */
 
-    margin-top: 2px !important;
+.location-card:last-child .location-buttons {
 
-  }
+  margin-top: 18px !important;
+
+  transform: translateY(8px) !important;
+
+}
 
   /* ---------- MIDDLE COLUMN TEXT ---------- */
 
