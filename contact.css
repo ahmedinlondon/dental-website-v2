@@ -1316,4 +1316,38 @@ body.contact-page {
 
 }
 
+/* =========================================================
+
+   FINAL iPAD LOCATION MIDDLE COLUMN POLISH
+
+========================================================= */
+
+@media (min-width: 701px) and (max-width: 1400px) {
+
+  /* Move only the middle-column buttons down */
+
+  .location-buttons {
+
+    margin-top: 54px !important;
+
+  }
+
+  /* Give middle-column text more usable width */
+
+  .location-details {
+
+    padding-left: 22px !important;
+
+    padding-right: 18px !important;
+
+  }
+
+  .location-details p {
+
+    column-gap: 10px !important;
+
+  }
+
+}
+
 
