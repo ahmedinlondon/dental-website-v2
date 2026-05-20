@@ -1,1 +1,493 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+  <!-- =========================================================
+
+       01. DOCUMENT HEAD
+
+  ========================================================= -->
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Dr. Yasmine Soliman</title>
+
+  <!-- =========================================================
+
+       02. GLOBAL + PAGE CSS
+
+  ========================================================= -->
+
+  <link rel="stylesheet" href="design-system.css?v=3">
+
+  <link rel="stylesheet" href="style.css?v=61">
+
+  <link rel="stylesheet" href="contact.css?v=71">
+
+  <!-- =========================================================
+
+       03. ICONS + FONTS
+
+  ========================================================= -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="contact-page">
+
+<!-- =========================================================
+
+   CONTACT PAGE HTML INDEX
+
+   01. DOCUMENT HEAD
+
+   02. GLOBAL + PAGE CSS
+
+   03. ICONS + FONTS
+
+   04. GLOBAL HEADER
+
+   05. FULL SCREEN BURGER MENU
+
+   06. FLOATING CONTACT BUTTONS
+
+   07. HERO SECTION
+
+   08. MESSAGE / HELP SECTION
+
+   09. LOCATIONS SECTION
+
+   10. CONTACT FOOTER
+
+   11. FINAL COPYRIGHT STRIP
+
+   12. PAGE SCRIPTS
+
+========================================================= -->
+
+<!-- =========================================================
+
+   04. GLOBAL HEADER
+
+========================================================= -->
+
+<header class="site-header">
+
+  <div class="header-top">
+
+    <div class="header-doctor-name">Dr. Yasmine Soliman</div>
+
+    <div class="header-contact">
+
+      <a href="tel:+201280004688" class="header-phone-link" data-site-phone-link>
+
+        <i class="fa-solid fa-phone"></i>
+
+        <span data-site-phone>+20 128 000 4688</span>
+
+      </a>
+
+      <span>
+
+        <i class="fa-solid fa-globe"></i>
+
+        <span data-site-domain>www.embraceorthodontic.com</span>
+
+      </span>
+
+      <a href="contact.html?v=5" class="header-consultation">
+
+        Book your consultation
+
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="header-main">
+
+    <a href="index.html?v=4" class="site-logo" aria-label="Embrace Bespoke Orthodontic Home">
+
+      <img src="embrace-clear.png" alt="Embrace Bespoke Orthodontic">
+
+    </a>
+
+    <button class="burger-btn" aria-label="Open menu" onclick="toggleMenu()">
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+  </div>
+
+</header>
+
+<!-- =========================================================
+
+   05. FULL SCREEN BURGER MENU
+
+========================================================= -->
+
+<div class="menu-overlay" id="menuOverlay">
+
+  <div class="menu-orthodontic-line"></div>
+
+  <div class="menu-inner">
+
+    <div>
+
+      <a href="index.html?v=3" class="menu-logo">
+
+        <img src="embrace-clear.png?v=1" alt="Embrace Bespoke Orthodontic">
+
+      </a>
+
+      <nav class="menu-nav">
+
+        <a href="index.html?v=3">Home</a>
+
+        <a href="about.html?v=3">About</a>
+
+        <a href="services.html?v=3">Services</a>
+
+        <a href="pricing.html?v=1">Pricing</a>
+
+        <a href="faq.html?v=60">FAQ</a>
+
+        <a href="contact.html?v=3">Contact</a>
+
+      </nav>
+
+    </div>
+
+    <div class="menu-bottom">
+
+      <div>
+
+        <strong>Contact</strong>
+
+        <p data-site-phone>+20 128 000 4688</p>
+
+        <p data-site-email>info@embraceorthodontic.com</p>
+
+        <p data-site-domain>embraceorthodontic.com</p>
+
+      </div>
+
+      <div>
+
+        <strong>Clinics</strong>
+
+        <p data-site-address>Twin Tower, Sheikh Zayed City, Cairo, Egypt</p>
+
+        <p>Polydent, Sheikh Zayed City, Cairo, Egypt</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- =========================================================
+
+   06. FLOATING CONTACT BUTTONS
+
+========================================================= -->
+
+<a href="https://wa.me/201280004688"
+
+   class="floating-contact float-whatsapp"
+
+   aria-label="WhatsApp"
+
+   data-site-whatsapp-link>
+
+  <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+201280004688"
+
+   class="floating-contact float-call"
+
+   aria-label="Call"
+
+   data-site-phone-link>
+
+  <i class="fa-solid fa-phone"></i>
+
+</a>
+
+<!-- =========================================================
+
+   07. HERO SECTION
+
+========================================================= -->
+
+<section class="contact-hero">
+
+  <div class="contact-hero-overlay">
+
+    <h1>CONTACT US</h1>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+
+   08. MESSAGE / HELP SECTION
+
+========================================================= -->
+
+<section class="contact-support-section">
+
+  <!-- ================= FORM CARD ================= -->
+
+  <div class="contact-form-card">
+
+    <h2>Send Us a Message</h2>
+
+    <div class="small-line"></div>
+
+    <form>
+
+      <div class="form-row">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+      </div>
+
+      <textarea placeholder="Your Message" rows="5"></textarea>
+
+      <button type="submit">
+
+        <i class="fa-regular fa-paper-plane"></i>
+
+        Send Message
+
+      </button>
+
+    </form>
+
+    <p class="privacy-note">
+
+      <i class="fa-solid fa-shield-halved"></i>
+
+      We respect your privacy and your information is safe with us.
+
+    </p>
+
+  </div>
+
+  <!-- ================= HELP CARD ================= -->
+
+  <div class="contact-help-card">
+
+    <h2>We’re Here to Help</h2>
+
+    <div class="small-line"></div>
+
+    <p class="help-intro">
+
+      Whether you have a question, need more information, or want to book an appointment, our team is ready to assist you.
+
+    </p>
+
+    <div class="help-item">
+
+      <i class="fa-solid fa-phone-volume"></i>
+
+      <div>
+
+        <strong>Call Us</strong>
+
+        <span>We’re available during working hours.</span>
+
+      </div>
+
+    </div>
+
+    <div class="help-item">
+
+      <i class="fa-regular fa-clock"></i>
+
+      <div>
+
+        <strong>Working Hours</strong>
+
+        <span>Saturday – Thursday: 10:00 AM – 8:00 PM</span>
+
+      </div>
+
+    </div>
+
+    <div class="help-item">
+
+      <i class="fa-regular fa-envelope"></i>
+
+      <div>
+
+        <strong>Email Us</strong>
+
+        <span data-site-email>Info@embraceorthodontic.com</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+
+   09. LOCATIONS SECTION
+
+========================================================= -->
+
+<section class="contact-locations-section">
+
+  <div class="contact-section-heading">
+
+    <span>OUR LOCATIONS</span>
+
+  </div>
+
+  <div class="location-grid">
+
+    <!-- ================= TWIN TOWERS ================= -->
+
+    <div class="location-card">
+
+      <div class="location-image-area">
+
+        <div class="location-image">
+
+          <img src="twintower.png" alt="Twin Towers Medical Center">
+
+        </div>
+
+        <div class="location-buttons">
+
+          <a href="https://www.google.com/maps?q=Twin+Towers+Sheikh+Zayed+Cairo"
+
+             target="_blank"
+
+             class="location-btn dark">
+
+            <i class="fa-regular fa-compass"></i>
+
+            Get Directions
+
+          </a>
+
+          <a href="https://wa.me/201280004688"
+
+             target="_blank"
+
+             class="location-btn light"
+
+             data-site-whatsapp-link>
+
+            <i class="fab fa-whatsapp"></i>
+
+            WhatsApp Us
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="location-info">
+
+        <h2>
+
+          Twin Towers<br>
+
+          Medical Center
+
+        </h2>
+
+        <div class="location-details">
+
+          <p>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span data-site-address>
+
+              Twin Tower, Sheikh Zayed City, Cairo, Egypt
+
+            </span>
+
+          </p>
+
+          <p>
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <a href="mailto:Info@embraceorthodontic.com"
+
+               data-site-email>
+
+               Info@embraceorthodontic.com
+
+            </a>
+
+          </p>
+
+          <p>
+
+            <i class="fa-solid fa-phone"></i>
+
+            <a href="tel:+201280004688"
+
+               data-site-phone-link>
+
+              <span data-site-phone>
+
+                +20 128 000 4688
+
+              </span>
+
+            </a>
+
+          </p>
+
+        </div>
+
+        <div class="location-map">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3454.4307551971683!2d31.0095327!3d30.0244976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585a6b61b3a6b3%3A0x7d0b71070e0b6645!2sTwin%20Towers!5e0!3m2!1sen!2suk!4v1777241336907!5m2!1sen!2suk"
+
+            allowfullscreen=""
+
+            loading="lazy"
+
+            referrerpolicy="no-referrer-when-downgrade">
+
+          </iframe>
+
+        </div>
+
+      </div>
+
+    </div>
