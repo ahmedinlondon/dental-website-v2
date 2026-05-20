@@ -1310,7 +1310,7 @@ body.contact-page {
 
   .location-card:last-child .location-image {
 
-    transform: translateY(-48px) !important;
+    transform: translateY(-50px) !important;
 
   }
 
@@ -1318,27 +1318,35 @@ body.contact-page {
 
 /* =========================================================
 
-   FINAL iPAD LOCATION MIDDLE COLUMN POLISH
+   FINAL iPAD INDIVIDUAL LOCATION ALIGNMENT
 
 ========================================================= */
 
 @media (min-width: 701px) and (max-width: 1400px) {
 
-  /* Move only the middle-column buttons down */
+  /* ---------- TWIN TOWERS ---------- */
 
-  .location-buttons {
+  .location-card:first-child .location-buttons {
 
-    margin-top: 54px !important;
+    margin-top: 46px !important;
 
   }
 
-  /* Give middle-column text more usable width */
+  /* ---------- POLYDENT ---------- */
+
+  .location-card:last-child .location-buttons {
+
+    margin-top: 18px !important;
+
+  }
+
+  /* ---------- MIDDLE COLUMN TEXT ---------- */
 
   .location-details {
 
-    padding-left: 22px !important;
+    padding-left: 14px !important;
 
-    padding-right: 18px !important;
+    padding-right: 24px !important;
 
   }
 
