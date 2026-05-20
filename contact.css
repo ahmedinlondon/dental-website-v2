@@ -1198,4 +1198,94 @@ body.contact-page {
 
 }
 
+/* =========================================================
+
+   FINAL CONTACT POLISH — SAFE OVERRIDE
+
+========================================================= */
+
+/* 1. Hero underline: match site system */
+
+.contact-hero-overlay h1::after {
+
+  width: 92px !important;
+
+  height: 3px !important;
+
+  margin: 22px auto 0 !important;
+
+  background: rgba(185,150,87,0.82) !important;
+
+}
+
+/* 2. Twin Towers image: reveal sign better */
+
+.location-card:first-child .location-image img {
+
+  object-position: center 18% !important;
+
+}
+
+/* 3. Location maps: slightly taller and aligned */
+
+@media (min-width: 701px) {
+
+  .location-map iframe {
+
+    height: 292px !important;
+
+  }
+
+  .location-map {
+
+    transform: translateY(-32px) !important;
+
+  }
+
+  .location-buttons {
+
+    margin-top: 12px !important;
+
+  }
+
+}
+
+/* 4. CTA arrows: single clean arrow, no line */
+
+.contact-form-card button::after,
+
+.location-btn::after,
+
+.contact-footer-cta::after {
+
+  content: "›" !important;
+
+  font-size: 18px !important;
+
+  line-height: 1 !important;
+
+  margin-left: 4px !important;
+
+  transform: translateY(-1px) !important;
+
+}
+
+/* 5. Footer social icons: match other pages */
+
+.contact-footer-socials .icon {
+
+  background: transparent !important;
+
+  border: 1px solid #b88932 !important;
+
+  color: #ffffff !important;
+
+}
+
+.contact-footer-socials .icon i {
+
+  color: #ffffff !important;
+
+}
+
 
