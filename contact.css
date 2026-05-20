@@ -1294,7 +1294,7 @@ body.contact-page {
 
   .location-image {
 
-    transform: translateY(-34px) !important;
+    transform: translateY(-32px) !important;
 
   }
 
@@ -1310,7 +1310,7 @@ body.contact-page {
 
   .location-card:last-child .location-image {
 
-    transform: translateY(-22px) !important;
+    transform: translateY(-32px) !important;
 
   }
 
