@@ -118,8 +118,8 @@ body.faq-page .site-header {
   font-size: 56px;
   line-height: 0.95;
   font-weight: 400;
-  letter-spacing: 0.018em;
-  word-spacing: 0.03em;
+  letter-spacing: 0.045em !important;
+  word-spacing: 0.08em !important;
   text-transform: none;
   opacity: 0;
   animation: faqScriptReveal 3.8s ease forwards;
@@ -216,8 +216,8 @@ body.faq-page .site-header {
   font-size: 46px;
   line-height: 0.95;
   font-weight: 400;
-  letter-spacing: 0.018em;
-  word-spacing: 0.03em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.04em;
   opacity: 0.94;
   transform:
     scaleY(1.18)
