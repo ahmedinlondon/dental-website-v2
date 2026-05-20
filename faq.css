@@ -1294,11 +1294,17 @@ body.faq-page .site-header {
 
     background-image: url('/dental-website-v2/faq-hero-mobile.png') !important;
 
-    background-size: 120% auto !important;
+    background-size: 118% !important;
 
-    background-position: center top !important;
+    background-position: 68% center !important;
 
   }
+
+   .faq-hero-content {
+
+  padding-top: 34px !important;
+
+}
 
   .faq-hero-text {
 
