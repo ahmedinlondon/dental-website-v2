@@ -226,7 +226,7 @@ body.faq-page .site-header {
   font-weight: 400;
   letter-spacing: 0.018em;
   word-spacing: 0.03em;
-  opacity: 0;
+  opacity: 0.94;
   transform:
     scaleY(1.18)
     scaleX(1.01)
