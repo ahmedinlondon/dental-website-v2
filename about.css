@@ -1212,4 +1212,63 @@ body.about-page {
 
   .about-doctor-script {
 
+
+     .about-page .about-section-script,
+
+.about-page .about-doctor-script {
+
+  margin: 0 0 8px !important;
+
+  color: #d99a3e !important;
+
+  font-family: 'FasthinScript', cursive !important;
+
+  font-size: 56px !important;
+
+  line-height: 0.95 !important;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 0.018em !important;
+
+  word-spacing: 0.03em !important;
+
+  opacity: 0.94 !important;
+
+  max-width: none !important;
+
+  text-shadow:
+
+    0 0 1px rgba(217,154,62,0.38),
+
+    0 1px 6px rgba(0,0,0,0.04) !important;
+
+  transform:
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg) !important;
+
+}
+
+@media (max-width: 700px) {
+
+  .about-page .about-section-script,
+
+  .about-page .about-doctor-script {
+
+    font-size: 42px !important;
+
+    margin-bottom: 6px !important;
+
+  }
+
+}
+     
+     
+
    
