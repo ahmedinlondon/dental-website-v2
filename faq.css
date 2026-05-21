@@ -120,38 +120,39 @@ body.faq-page .site-header {
 
 .faq-hero .script-line {
   margin: 0 0 22px 22px;
-  color: rgba(241,210,154,0.98);
+  color: #c69033;
   font-family: 'FasthinScript', cursive;
   font-size: 56px;
   line-height: 0.95;
   font-weight: 400;
-  letter-spacing: 0.045em !important;
-  word-spacing: 0.08em !important;
+  letter-spacing: 0.018em !important;
+  word-spacing: 0.03em !important;
   text-transform: none;
   opacity: 0;
   animation: faqScriptReveal 3.8s ease forwards;
   text-shadow:
-    0 0 18px rgba(255,255,255,0.18),
-    0 2px 12px rgba(5,31,55,0.28);
+    0 0 1px rgba(198,144,51,0.40),
+    0 2px 12px rgba(0,0,0,0.25);
 }
 
 .faq-hero .hero-title {
+
   margin: 0;
-  max-width: 720px;
-  color: rgba(255,255,255,0.98);
+  color: rgba(255,255,255,0.96);
   font-family: 'Montserrat', 'Poppins', sans-serif;
-  font-size: clamp(34px, 3.8vw, 52px);
-  line-height: 1.22;
-  font-weight: 200;
-  letter-spacing: 3px;
+  font-size: 44px;
+  line-height: 1.16;
+  font-weight: 300;
+  letter-spacing: 0.035em;
   text-transform: none;
+  max-width: 720px;
   opacity: 0;
   transform: translateY(50px);
   animation: faqHeroDrop 2.8s ease forwards;
   animation-delay: 2.2s;
   text-shadow:
-    0 0 16px rgba(255,255,255,0.14),
-    0 2px 14px rgba(0,0,0,0.20);
+    0 2px 14px rgba(0,0,0,0.28),
+    0 0 20px rgba(255,255,255,0.08);
 }
 
 .faq-hero .hero-title span {
