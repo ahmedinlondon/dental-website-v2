@@ -6,6 +6,18 @@
 
 /* ================= FONTS + GLOBAL ================= */
 
+
+@font-face {
+
+  font-family: 'FasthinScript';
+
+  src: url('/dental-website-v2/fasthin-script.ttf') format('truetype');
+
+  font-weight: 400;
+
+  font-style: normal;
+
+}
 @font-face {
 
   font-family: 'Kingsley Roman';
