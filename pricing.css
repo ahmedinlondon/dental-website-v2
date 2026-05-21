@@ -1101,13 +1101,23 @@ body.pricing-page {
 
   .pricing-section-heading::after {
 
+    content: "";
+
+    display: block;
+
     width: 72px;
 
     height: 3px;
 
-    margin-top: 22px;
+    margin: 22px 0 26px;
 
     background: rgba(240, 207, 138, 0.92);
+
+    position: relative;
+
+    left: 0;
+
+    bottom: auto;
 
   }
 
