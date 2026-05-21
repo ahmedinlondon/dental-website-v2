@@ -1206,6 +1206,130 @@ body.pricing-page {
 
 }
 
+/* =========================================================
+
+   FINAL PRICING HERO ANIMATION — FAQ MATCH
+
+========================================================= */
+
+.pricing-hero .pricing-hero-script {
+
+  opacity: 0;
+
+  transform:
+
+    translateY(14px)
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg);
+
+  filter: blur(3px);
+
+  animation: none;
+
+}
+
+.pricing-hero .hero-title {
+
+  opacity: 0;
+
+  transform: translateY(-48px);
+
+  filter: blur(2px);
+
+  animation: none;
+
+}
+
+.pricing-hero.animate .pricing-hero-script {
+
+  animation: pricingScriptReveal 3.8s ease forwards;
+
+}
+
+.pricing-hero.animate .hero-title {
+
+  animation: pricingHeroDrop 2.8s ease forwards;
+
+  animation-delay: 2.2s;
+
+}
+
+@keyframes pricingScriptReveal {
+
+  0% {
+
+    opacity: 0;
+
+    transform:
+
+      translateY(14px)
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
+    filter: blur(3px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform:
+
+      translateY(0)
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
+    filter: blur(0);
+
+  }
+
+}
+
+@keyframes pricingHeroDrop {
+
+  0% {
+
+    opacity: 0;
+
+    transform: translateY(-48px);
+
+    filter: blur(2px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    filter: blur(0);
+
+  }
+
+}
+
+
+
 
 
 
