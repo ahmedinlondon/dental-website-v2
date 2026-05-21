@@ -124,27 +124,27 @@ body.pricing-page {
 
 .pricing-hero-script {
 
-  margin: 0 0 18px;
+  margin: 0 0 22px;
+
+  color: #c69033;
 
   font-family: 'FasthinScript', cursive;
 
-  font-size: 58px;
+  font-size: 56px;
 
-  line-height: 0.94;
+  line-height: 0.95;
 
   font-weight: 400;
 
-  letter-spacing: 0.035em;
+  letter-spacing: 0.018em;
 
-  word-spacing: 0.08em;
-
-  color: #d9b06b;
+  word-spacing: 0.03em;
 
   text-shadow:
 
-    0 0 1px rgba(240,207,138,0.45),
+    0 0 1px rgba(198,144,51,0.40),
 
-    0 1px 8px rgba(0,0,0,0.10);
+    0 2px 12px rgba(0,0,0,0.25);
 
 }
 
