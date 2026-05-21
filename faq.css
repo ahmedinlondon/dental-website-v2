@@ -218,14 +218,14 @@ body.faq-page .site-header {
 }
 
 .faq-main-script {
-  margin: 0 0 10px;
-  color: #d9b06b;
+  margin: 0 0 8px;
+  color: #d99a3e;
   font-family: 'FasthinScript', cursive;
-  font-size: 46px;
+  font-size: 56px;
   line-height: 0.95;
   font-weight: 400;
-  letter-spacing: 0.05em;
-  word-spacing: 0.04em;
+  letter-spacing: 0.018em;
+  word-spacing: 0.03em;
   opacity: 0.94;
   transform:
     scaleY(1.18)
@@ -233,18 +233,18 @@ body.faq-page .site-header {
     skewX(-14deg)
     rotate(0.6deg);
   text-shadow:
-    0 0 1px rgba(217,176,107,0.30),
-    0 1px 8px rgba(0,0,0,0.04);
+    0 0 1px rgba(217,154,62,0.38),
+    0 1px 6px rgba(0,0,0,0.04);
 }
 
 .faq-title {
   margin: 0;
-  color: #2d2a26;
+  color: #607485;
   font-family: 'Montserrat', 'Poppins', sans-serif;
-  font-size: 29px;
-  line-height: 1.16;
+  font-size: 32px;
+  line-height: 1.18;
   font-weight: 300;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.03em;
   text-align: left;
 }
 
@@ -253,8 +253,8 @@ body.faq-page .site-header {
   display: block;
   width: 72px;
   height: 3px;
-  margin-top: 16px;
-  background: rgba(198,161,91,0.62);
+  margin: 22px 0 34px;
+  background: #ddb46a;
 }
 
 .faq-intro-copy {
