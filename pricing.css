@@ -158,20 +158,23 @@ body.pricing-page {
 
   font-size: 44px;
 
-  line-height: 1.18;
+  line-height: 1.16;
 
   font-weight: 300;
 
-  letter-spacing: 0.055em;
+  letter-spacing: 0.035em;
+
+  text-transform: none;
 
   max-width: 720px;
 
-  text-rendering: geometricPrecision;
+  text-shadow:
 
-  -webkit-font-smoothing: antialiased;
+    0 2px 14px rgba(255,255,255,0.06),
+
+    0 0 20px rgba(255,255,255,0.04);
 
 }
-
 /* ================= HERO ANIMATION — FAQ MATCH ================= */
 
 .pricing-hero .pricing-hero-script {
@@ -1064,11 +1067,11 @@ body.pricing-page {
 
 .pricing-hero .hero-title {
 
-  font-size: 42px;
+  font-size: 40px;
 
   line-height: 1.08;
 
-  letter-spacing: 0.055em;
+  letter-spacing: 0.035em;
 
   max-width: 320px;
 
