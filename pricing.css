@@ -343,21 +343,39 @@ body.pricing-page {
 
 .pricing-section-heading p {
 
-  margin: 0 0 18px;
+  margin: 0 0 8px;
+
+  color: #d99a3e;
 
   font-family: 'FasthinScript', cursive;
 
-  font-size: 62px;
+  font-size: 56px;
 
   line-height: 0.95;
 
   font-weight: 400;
 
-  letter-spacing: 0.03em;
+  letter-spacing: 0.018em;
 
-  word-spacing: 0.08em;
+  word-spacing: 0.03em;
 
-  color: #d7aa63;
+  opacity: 0.94;
+
+  text-shadow:
+
+    0 0 1px rgba(217,154,62,0.38),
+
+    0 1px 6px rgba(0,0,0,0.04);
+
+  transform:
+
+    scaleY(1.18)
+
+    scaleX(1.01)
+
+    skewX(-14deg)
+
+    rotate(0.6deg);
 
 }
 
@@ -945,17 +963,25 @@ body.pricing-page {
 
   }
 
-  .pricing-hero-script {
+  .pricing-hero-script,
 
-    font-size: 54px;
+  .pricing-section-heading p {
+
+    font-size: 56px;
 
   }
 
   .pricing-hero .hero-title {
 
-    font-size: 42px;
+    font-size: 38px;
 
-    line-height: 1.12;
+    letter-spacing: 0.035em;
+
+  }
+
+  .pricing-section-heading h2 {
+
+    font-size: 29px;
 
   }
 
@@ -1051,19 +1077,41 @@ body.pricing-page {
 
   }
 
-  .pricing-hero-script {
+ .pricing-hero-script {
 
-    font-size: 42px;
+    font-size: 50px;
 
-    margin-bottom: 10px;
+    margin-bottom: 0;
 
-    line-height: 0.92;
+    transform:
 
-    letter-spacing: 0.03em;
+      translateY(-28px)
 
-    word-spacing: 0.06em;
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
 
   }
+
+     .pricing-hero.animate .pricing-hero-script {
+
+    transform:
+
+      translateY(-28px)
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+   
+}
 
   .pricing-hero .hero-title {
 
@@ -1123,27 +1171,48 @@ body.pricing-page {
 
   }
 
-    .pricing-section-heading p {
+  .pricing-section-heading p {
 
     font-family: 'FasthinScript', cursive;
 
     font-size: 42px;
 
-    line-height: 0.92;
+    line-height: 0.95;
 
-    letter-spacing: 0.035em;
+    font-weight: 400;
 
-    word-spacing: 0.08em;
+    letter-spacing: 0.018em;
 
-    margin-bottom: 14px;
+    word-spacing: 0.03em;
 
-    color: #d9b06b;
+    margin-bottom: 6px;
+
+    color: #d99a3e;
+
+    opacity: 0.94;
 
     white-space: nowrap;
 
     max-width: none;
 
+    text-shadow:
+
+      0 0 1px rgba(217,154,62,0.38),
+
+      0 1px 6px rgba(0,0,0,0.04);
+
+    transform:
+
+      scaleY(1.18)
+
+      scaleX(1.01)
+
+      skewX(-14deg)
+
+      rotate(0.6deg);
+
   }
+   
 
   .pricing-section-heading h2 {
 
