@@ -1598,5 +1598,44 @@ body.pricing-page {
 
 }
 
+.pricing-intro .script-line,
+
+.pricing-intro-script,
+
+.pricing-intro h2.script-line {
+
+  font-family: 'FasthinScript', cursive !important;
+
+  font-size: 54px !important;
+
+  line-height: 0.95 !important;
+
+  letter-spacing: 0.03em !important;
+
+  color: #d7aa63 !important;
+
+  margin-bottom: 12px !important;
+
+}
+
+.pricing-intro .gold-line,
+
+.pricing-intro-divider {
+
+  width: 82px !important;
+
+  height: 2px !important;
+
+  background: #d7aa63 !important;
+
+  margin-top: 18px !important;
+
+  margin-bottom: 34px !important;
+
+}
+
+
+
+
 
 
