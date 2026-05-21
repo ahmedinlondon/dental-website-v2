@@ -1087,7 +1087,7 @@ body.pricing-page {
 
   .pricing-intro-section {
 
-    padding: 54px 7% 58px;
+    padding: 38px 7% 58px;
 
   }
 
@@ -1121,7 +1121,7 @@ body.pricing-page {
 
   }
 
-  .pricing-section-heading p {
+    .pricing-section-heading p {
 
     font-family: 'FasthinScript', cursive;
 
@@ -1133,9 +1133,13 @@ body.pricing-page {
 
     word-spacing: 0.08em;
 
-    margin-bottom: 6px;
+    margin-bottom: 14px;
 
     color: #d9b06b;
+
+    white-space: nowrap;
+
+    max-width: none;
 
   }
 
