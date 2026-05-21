@@ -1065,19 +1065,21 @@ body.pricing-page {
 
   }
 
-.pricing-hero .hero-title {
+  .pricing-hero .hero-title {
 
-  margin-top: 30px;
+    margin-top: 30px;
 
-  font-size: 42px;
+    font-size: 42px;
 
-  line-height: 1.22;
+    line-height: 1.22;
 
-  letter-spacing: 0.13em;
+    letter-spacing: 0.13em;
 
-  max-width: 340px;
+    max-width: none;
 
-}
+    width: 92vw;
+
+  }
 
   .pricing-main {
 
