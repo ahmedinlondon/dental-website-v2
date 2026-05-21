@@ -1033,7 +1033,7 @@ body.pricing-page {
 
   .pricing-hero {
 
-    height: 400px;
+    height: 450px;
 
     background-position: 67% center;
 
@@ -1069,7 +1069,7 @@ body.pricing-page {
 
   margin-top: 30px;
 
-  font-size: 38px;
+  font-size: 42px;
 
   line-height: 1.22;
 
@@ -1087,15 +1087,15 @@ body.pricing-page {
 
   .pricing-intro-section {
 
-    padding: 0 6% 38px;
+    padding: 54px 7% 58px;
 
   }
 
   .pricing-section-heading {
 
-    padding-bottom: 24px;
+    padding-bottom: 0;
 
-    margin-bottom: 24px;
+    margin-bottom: 26px;
 
   }
 
@@ -1105,23 +1105,39 @@ body.pricing-page {
 
     height: 3px;
 
+    margin-top: 22px;
+
+    background: rgba(240, 207, 138, 0.92);
+
   }
 
   .pricing-section-heading p {
 
-    font-size: 46px;
+    font-family: 'FasthinScript', cursive;
 
-    margin-bottom: 12px;
+    font-size: 42px;
 
     line-height: 0.92;
+
+    letter-spacing: 0.035em;
+
+    word-spacing: 0.08em;
+
+    margin-bottom: 6px;
+
+    color: #d9b06b;
 
   }
 
   .pricing-section-heading h2 {
 
-    font-size: 34px;
+    font-size: 24px;
 
-    line-height: 1.08;
+    line-height: 1.3;
+
+    letter-spacing: 0.035em;
+
+    font-weight: 300;
 
   }
 
@@ -1129,7 +1145,7 @@ body.pricing-page {
 
     font-size: 14px;
 
-    line-height: 1.72;
+    line-height: 1.82;
 
   }
 
