@@ -1205,53 +1205,49 @@ body.about-page {
   }
 
 }
-
 @media (min-width: 701px) and (max-width: 1180px) {
 
-  .about-section-script,
+  .about-page .about-section-script,
 
-  .about-doctor-script {
+  .about-page .about-doctor-script {
 
+    margin: 0 0 8px !important;
 
-     .about-page .about-section-script,
+    color: #d99a3e !important;
 
-.about-page .about-doctor-script {
+    font-family: 'FasthinScript', cursive !important;
 
-  margin: 0 0 8px !important;
+    font-size: 56px !important;
 
-  color: #d99a3e !important;
+    line-height: 0.95 !important;
 
-  font-family: 'FasthinScript', cursive !important;
+    font-weight: 400 !important;
 
-  font-size: 56px !important;
+    letter-spacing: 0.018em !important;
 
-  line-height: 0.95 !important;
+    word-spacing: 0.03em !important;
 
-  font-weight: 400 !important;
+    opacity: 0.94 !important;
 
-  letter-spacing: 0.018em !important;
+    max-width: none !important;
 
-  word-spacing: 0.03em !important;
+    text-shadow:
 
-  opacity: 0.94 !important;
+      0 0 1px rgba(217,154,62,0.38),
 
-  max-width: none !important;
+      0 1px 6px rgba(0,0,0,0.04) !important;
 
-  text-shadow:
+    transform:
 
-    0 0 1px rgba(217,154,62,0.38),
+      scaleY(1.18)
 
-    0 1px 6px rgba(0,0,0,0.04) !important;
+      scaleX(1.01)
 
-  transform:
+      skewX(-14deg)
 
-    scaleY(1.18)
+      rotate(0.6deg) !important;
 
-    scaleX(1.01)
-
-    skewX(-14deg)
-
-    rotate(0.6deg) !important;
+  }
 
 }
 
