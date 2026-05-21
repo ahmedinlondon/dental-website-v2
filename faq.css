@@ -500,7 +500,7 @@ body.faq-page .site-header {
     align-items: center;
     background-image: url('/dental-website-v2/faq-hero-mobile.png');
     background-size: 145%;
-    background-position: calc(50% - 75px) 22%;
+    background-position: calc(50% - 80px) 22%;
   }
 
   .faq-hero-text {
@@ -508,7 +508,7 @@ body.faq-page .site-header {
     width: 88%;
     max-width: none;
     padding-left: 4%;
-    top: 58%;
+    top: 52%;
     left: 7%;
     transform: translateY(-50%);
   }
