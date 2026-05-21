@@ -505,7 +505,7 @@ body.faq-page .site-header {
 
   .faq-hero-text {
     position: absolute;
-    width: 72%;
+    width: 88%;
     max-width: none;
     padding-left: 4%;
     top: 56%;
@@ -513,15 +513,17 @@ body.faq-page .site-header {
     transform: translateY(-50%);
   }
 
-  .faq-hero .script-line {
-    margin-bottom: 16px;
-    margin-left: -4px;
-    font-size: 50px;
-    line-height: 0.95;
-    text-shadow:
-      0 0 1px rgba(241,210,154,0.95),
-      0 2px 10px rgba(5,31,55,0.35);
-  }
+.faq-hero .script-line {
+  margin-bottom: 16px;
+  margin-left: -4px;
+  font-size: 50px;
+  line-height: 0.95;
+  white-space: nowrap;
+  max-width: none;
+  text-shadow:
+    0 0 1px rgba(241,210,154,0.95),
+    0 2px 10px rgba(5,31,55,0.35);
+}
 
   .faq-hero .hero-title {
     max-width: 330px;
