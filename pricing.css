@@ -1567,3 +1567,36 @@ body.pricing-page {
   }
 
 }
+
+.pricing-hero .script-line,
+
+.pricing-main-script {
+
+  font-family: 'FasthinScript', cursive !important;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 0.035em !important;
+
+  word-spacing: 0.08em !important;
+
+  line-height: 0.95 !important;
+
+  color: #d9b06b !important;
+
+}
+
+.pricing-hero .script-line {
+
+  font-size: 58px !important;
+
+}
+
+.pricing-main-script {
+
+  font-size: 48px !important;
+
+}
+
+
+
