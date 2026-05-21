@@ -1325,7 +1325,7 @@ body.pricing-page {
 
   }
 
-   }
+
 
   .pricing-hero-content {
 
@@ -1599,6 +1599,42 @@ body.pricing-page {
 }
 
 
+
+.pricing-intro .script-line,
+
+.pricing-intro-script,
+
+.pricing-intro h2.script-line {
+
+  font-family: 'FasthinScript', cursive !important;
+
+  font-size: 62px !important;
+
+  line-height: 0.95 !important;
+
+  letter-spacing: 0.03em !important;
+
+  color: #d7aa63 !important;
+
+  margin-bottom: 10px !important;
+
+}
+
+.pricing-intro .gold-line,
+
+.pricing-intro-divider {
+
+  width: 72px !important;
+
+  height: 3px !important;
+
+  background: #d7aa63 !important;
+
+  margin-top: 18px !important;
+
+  margin-bottom: 34px !important;
+
+}
 
 
 
