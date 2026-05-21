@@ -1205,3 +1205,11 @@ body.about-page {
   }
 
 }
+
+@media (min-width: 701px) and (max-width: 1180px) {
+
+  .about-section-script,
+
+  .about-doctor-script {
+
+   
