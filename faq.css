@@ -496,7 +496,7 @@ body.faq-page .site-header {
 
 @media (max-width: 700px) {
   .faq-hero {
-    min-height: 500px;
+    min-height: 450px;
     align-items: center;
     background-image: url('/dental-website-v2/faq-hero-mobile.png');
     background-size: 145%;
